@@ -1,14 +1,15 @@
-#title: Preface Purpose and Setting
-#author: Master Scoy
-// ORIGINS Story Outline
+
+// Start Menu Template
 VAR Seasont1 =          "SEASON TEMPLATE 1"
 VAR St1EpisodeOne =     "EPISODE 1"
 VAR St1EpisodeTwo =     "EPISODE 2"
 VAR St1EpisodeThree =   "EPISODE 3"
 VAR St1EpisodeFour =    "EPISODE 4"
-VAR St1EpisodeFive = "  EPISODE 5"
+VAR St1EpisodeFive =    "EPISODE 5"
 
-VAR SeasonO0 =           "WANDERING IN THE FOREST"
+
+// ORIGINS Story Outline
+VAR SeasonO0 =          "WANDERING IN THE FOREST"
 VAR O0EpisodeOne =      "AWAKE IN THE WOODS"
 VAR O0EpisodeTwo =      "CROSSROADS"
 VAR O0EpisodeThree =    "THE VILLAGE"
@@ -16,7 +17,7 @@ VAR O0EpisodeFour =     "THE BLUE MUG"
 VAR O0EpisodeFive =     "HABITS OF MIND"
 
 VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
-VAR O1EpisodeOne =     "EPISODE 1"
+VAR O1EpisodeOne =      "MUIDERSLOT CASTLE"
 VAR O1EpisodeTwo =     "EPISODE 2"
 VAR O1EpisodeThree =   "EPISODE 3"
 VAR O1EpisodeFour =    "EPISODE 4"
@@ -51,12 +52,12 @@ VAR O5EpisodeFour =    "EPISODE 4"
 VAR O5EpisodeFive =    "EPISODE 5"
 
 // TIME TOMBS Story Outline
-VAR SeasonTT0 =          "WANDERING IN THE FOREST"
-VAR STT0EpisodeOne =     "EPISODE 1"
-VAR STT0EpisodeTwo =     "EPISODE 2"
-VAR STT0EpisodeThree =   "EPISODE 3"
-VAR STT0EpisodeFour =    "EPISODE 4"
-VAR STT0EpisodeFive = "  EPISODE 5"
+VAR SeasonTT0 =       "THE CAVE"
+VAR TT0EpisodeOne =   "THE BLUE MUG"
+VAR TT0EpisodeTwo =   "THE MINE"
+VAR TT0EpisodeThree = "THE ROOM"
+VAR TT0EpisodeFour =  "THE TUNNEL"
+VAR TT0EpisodeFive =  "TIME"
 
 VAR SeasonTT1 =          "DISCOVERY AT CELESTIAL TOWERS"
 VAR STT1EpisodeOne =     "EPISODE 1"

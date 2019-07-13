@@ -1,6 +1,5 @@
-#title: Desert of Time
+#title: The Desert
 #author: Master Scoy
-
 
 INCLUDE origins-GlobalVariables.ink
 
@@ -25,7 +24,7 @@ Start Menu
 -> DONE
 
 === TT2Preface ===
-{Seasont1}
+{SeasonTT2}
 SETTING
 {WorldSetting}
 PURPOSE
@@ -86,7 +85,7 @@ PROLOGUE
 ->DONE
 
 === TT2Ep1 ===
-// Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {TT2EpisodeOne}
     +[Ω]
         ->TT2StartMenu
@@ -96,7 +95,7 @@ PROLOGUE
 ->DONE
 
 === TT2Ep2 ===
-// Room 2: Puzzle/Roleplay Challenge OR Room 1: Guardian
+// Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
 {TT2EpisodeTwo}
     +[Ω]
@@ -150,33 +149,6 @@ VAR TT2EpisodeThree = "EPISODE 3:"
 VAR TT2EpisodeFour = "EPISODE 4:"
 VAR TT2EpisodeFive = "EPISODE 5:"
 
-
-->TT2StartMenu
-==== TT2Preface ====
-#audio: fx-valleys
-<em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-+ [MENU]
-    ->TT2StartMenu
-
-=== TT2StartMenu ===
-<h3>Start Menu</h3>
-<em>Choose wisely</em>
-// + {not TT2Preface} [Preface]
-//    ->TT2Preface
-// + [PRESS START]
-//    -> TT2Prologue
-+ [Episode 1]
-    -> TT2Ep1
-// + [Episode 2]
-    -> TT2Ep2
-// + [Episode 3]
-    -> TT2Ep3
-// + [Episode 4]
-    -> TT2Ep4
-// + [Episode 5]
-    -> TT2Ep5
--> DONE
-
 === TT2Prologue ===
 +[START MENU]
     ->TT2StartMenu
@@ -188,7 +160,7 @@ VAR TT2EpisodeFive = "EPISODE 5:"
 
 
 === TT2Ep1 ===
-<h3>{TT2EpisodeOne}</h3>
+{TT2EpisodeOne}
 {Your} party ventures from the ship's cabin onto the deck. A band of eight crewman have offered to join you ashore for your protection against indigenous animals. This strikes you as odd. The captain acts mistrustful. He suspects you looking for previously hidden treasure and not gathering research about desert animals.
 + You shrug your shoulders with indifference.
     ->c1
@@ -289,7 +261,7 @@ The captain hastily writes a note and attaches it to a crow and sends it off tow
 ->DONE
 
 == TT2Ep2 ==
-<h3>{TT2EpisodeTwo}</h3>
+{TT2EpisodeTwo}
 +[START MENU]
     ->TT2StartMenu
 +[NEXT]
@@ -298,7 +270,7 @@ The captain hastily writes a note and attaches it to a crow and sends it off tow
 ->DONE
 
 == TT2Ep3 ==
-<h3>{TT2EpisodeThree}</h3>
+{TT2EpisodeThree}
 +[START MENU]
     ->TT2StartMenu
 +[NEXT]
@@ -307,7 +279,7 @@ The captain hastily writes a note and attaches it to a crow and sends it off tow
 ->DONE
 
 == TT2Ep4 ==
-<h3>{TT2EpisodeFour}</h3>
+{TT2EpisodeFour}
 +[START MENU]
     ->TT2StartMenu
 +[NEXT]
@@ -316,7 +288,7 @@ The captain hastily writes a note and attaches it to a crow and sends it off tow
 ->DONE
 
 == TT2Ep5 ==
-<h3>{TT2EpisodeFive}</h3>
+{TT2EpisodeFive}
 
 +[START MENU]
     ->TT2StartMenu
@@ -326,7 +298,7 @@ The captain hastily writes a note and attaches it to a crow and sends it off tow
 ->DONE
 
 == TT2Epilogue ==
-<h3>{TT2EpilogueTitle}</h3>
+EPILOGUE
 ->END
 
 -> END

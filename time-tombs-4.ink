@@ -1,6 +1,5 @@
-#title: Grassland of Time
+Puzzle#title: The Grassland
 #author: Master Scoy
-
 
 INCLUDE origins-GlobalVariables.ink
 
@@ -25,7 +24,7 @@ Start Menu
 -> DONE
 
 === TT4Preface ===
-{Seasont1}
+{SeasonTT4}
 SETTING
 {WorldSetting}
 PURPOSE
@@ -86,7 +85,7 @@ PROLOGUE
 ->DONE
 
 === TT4Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {TT4EpisodeOne}
     +[Ω]
         ->TT4StartMenu
@@ -96,7 +95,7 @@ PROLOGUE
 ->DONE
 
 === TT4Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+// Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
 {TT4EpisodeTwo}
     +[Ω]
@@ -144,57 +143,14 @@ PROLOGUE
 
 // VARIABLES for Story Outline
 VAR SeasonTT4Title = "Grassland of Time"
-VAR TT4PrologueTitle = "THE BLUE MUG"
 VAR TT4EpisodeOne = "Room 1"
 VAR TT4EpisodeTwo = "Room 2"
 VAR TT4EpisodeThree = "Room 3"
 VAR TT4EpisodeFour = "Room 4"
 VAR TT4EpisodeFive = "Room 5"
-VAR TT4EpilogueTitle = "Epilogue"
 
-->TT4StartMenu
-
-==== TT4Preface ====
-#audio: fx-valleys
-<em>Welcome weary adventure! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-+ [MENU]
-    ->TT4StartMenu
-
-==== SeasonTT4 ====
-This knot is for the Series and Season Number. For Example "Preface" and "Season 0."
-Purpose: to keep INKY from getting confused between each season "S" and episode "Ep"
-+[START MENU]
-    ->TT4StartMenu
-
-->DONE
-
-=== TT4StartMenu ===
-Start Menu
-<em>Choose wisely</em>
-+ {not TT4Preface} [Preface]
-    ->TT4Preface
-+ [PRESS START]
-    -> TT4Prologue
-+ [Episode 1]
-    -> TT4Ep1
-+ [Episode 2]
-    -> TT4Ep2
-+ [Episode 3]
-    -> TT4Ep3
-+ [Episode 4]
-    -> TT4Ep4
-+ [Episode 5]
-    -> TT4Ep5
-
-
-
--> DONE
-
-
-
-->DONE
 === TT4Prologue ===
-{TT4PrologueTitle}
+PROLOGUE
 +[START MENU]
     ->TT4StartMenu
 +[NEXT]
@@ -202,12 +158,6 @@ Start Menu
 
 ->DONE
 
-<h1>{SeasonTT4Title}</h1>
-This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader.
-+[START MENU]
-    ->TT4StartMenu
-
-->DONE
 
 == TT4Ep1 ==
 {TT4EpisodeOne}

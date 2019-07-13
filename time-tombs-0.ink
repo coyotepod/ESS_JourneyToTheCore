@@ -4,112 +4,84 @@
 INCLUDE origins-GlobalVariables.ink
 
 ->TT0StartMenu
-
 === TT0StartMenu ===
 START MENU
     + {not TT0Preface} [Preface]
         ->TT0Preface
     + [PRESS START]
         ->TT0Prologue
-    + [{O0EpisodeOne}]
+    + [{TT0EpisodeOne}]
         -> TT0Ep1
-    + [{O0EpisodeTwo}]
+    + [{TT0EpisodeTwo}]
         -> TT0Ep2
-    + [{O0EpisodeThree}]
+    + [{TT0EpisodeThree}]
         -> TT0Ep3
-    + [{O0EpisodeFour}]
+    + [{TT0EpisodeFour}]
         -> TT0Ep4
-    + [{O0EpisodeFive}]
+    + [{TT0EpisodeFive}]
         -> TT0Ep5
-    -> DONE
-
+-> DONE
 
 === TT0Preface ===
-{Seasont1}
-SETTING
+PREFACE: {SeasonTT0}
+- WORLD SETTING
 {WorldSetting}
-PURPOSE
+    +[Ω]
+        ->TT0StartMenu
+    + [PURPOSE]
+- PURPOSE
 {CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
     +[Ω]
         ->TT0StartMenu
-    + [next (spoilers if you proceed!)]
-        ->NPCs
+    + [Game Mechanics]
+        ->GameMechanics
+    + [CHARACTERS (potential spoilers if you proceed!)]
 
-=== NPCs ===
-NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->TT0StartMenu
-    + [next]
-        ->DiceRolls
+- (GameMechanics)
+- EXAMPLE DICE ROLLS
+d4      {d4}
+d6      {d6}
+d8      {d8}
+d10     {d10}
+d12     {d12}
+d20     {d20}
+d100    {100}
 
-=== DiceRolls ===
-DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->TT0StartMenu
-    + [next]
-        ->Movement
-
-=== Movement ===
+- MOVEMENT
 Stealth - {MoveStealth}
 Walk - {MoveWalk}
 Hustle - {MoveHustle}
 Run - {MoveRun}
     +[Ω]
         ->TT0StartMenu
-    + [next]
-        ->Movement
-
-=== TT0Prologue ===
-PROLOGUE
+    + [Story Elements (likely spoilers if you proceed)]
+    
+- (StoryElements)
+- CHARACTERS
+CLERIC: {Cleric} (also {TheCleric} & {theCleric})
+FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
+ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
+WIZARD: {Wizard} (also {TheWizard} & {theWizard})
     +[Ω]
         ->TT0StartMenu
-    +[NEXT EPISODE]
-        ->TT0Ep1
+
+- NPCs
+BLUE MUG OWNER: {MugOwner}
+SERVING MAID: {ServingMaid}
+    +[Ω]
+        ->TT0StartMenu
 
 ->DONE
 
-
-=== TT0Epilogue ===
-EPILOGUE
-
-->END
-
-// STORY OUTLINE
-CONST SeasonTT0 =         "The Cave"
-CONST TT0EpisodeOne =   "THE BLUE MUG"
-CONST TT0EpisodeTwo =   "THE MINE"
-CONST TT0EpisodeThree = "THE ROOM"
-CONST TT0EpisodeFour =  "THE TUNNEL"
-CONST TT0EpisodeFive =  "TIME"
-
-->TT0StartMenu
-
-
-=== TT0Pro ===
-{TT0Prologue}
+=== TT0Prologue ===
+PROLOGUE
 #audio:salt-mine
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much.
     +[Take action]
         ->TT0Ep3
     +[Gather your thoughts]
         ->TT0Ep1
+->DONE
 
 === TT0Ep1 ===
 // Puzzle Or Roleplaying Challenge
@@ -379,12 +351,14 @@ TODO: Write Episode 5
     +[Ω]
         ->TT0StartMenu
     +[NEXT EPISODE]
-        ->TT0Epi
+        ->TT0Epilogue
 ->DONE
 
-== TT0Epi ==
-{TT0Epilogue}
+=== TT0Epilogue ===
+EPILOGUE
+
 ->END
+
 
 SEASON: 0."{SeasonTT0}" is a actually a prologue to our a class narrative "Time Tombs."
 PURPOSE:

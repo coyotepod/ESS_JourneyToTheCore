@@ -6,7 +6,7 @@ INCLUDE origins-GlobalVariables.ink
 
 ->O5StartMenu
 === O5StartMenu ===
-Start Menu
+START MENU
     + {not O5Preface} [Preface]
         ->O5Preface
     + [PRESS START]

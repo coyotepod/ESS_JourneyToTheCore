@@ -6,7 +6,7 @@ INCLUDE origins-GlobalVariables.ink
 
 ->O3StartMenu
 === O3StartMenu ===
-Start Menu
+START MENU
     + {not O3Preface} [Preface]
         ->O3Preface
     + [PRESS START]
@@ -86,7 +86,7 @@ PROLOGUE
 ->DONE
 
 === O3Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
     +[Ω]
         ->O3StartMenu
@@ -96,7 +96,7 @@ PROLOGUE
 ->DONE
 
 === O3Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+// Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
 {O3EpisodeTwo}
     +[Ω]
@@ -142,54 +142,8 @@ PROLOGUE
 
 ->END
 
-// VARIABLES for Story Outline
-VAR SeasonO3 = "Journey to the Core"
-VAR O3EpisodeOne = "Episode 1"
-VAR O3EpisodeTwo = "Episode 2"
-VAR O3EpisodeThree = "Episode 3"
-VAR O3EpisodeFour = "Episode 4"
-VAR O3EpisodeFive = "Episode 5"
-
-->O3StartMenu
-==== O3Preface ====
-#audio: fx-valleys
-<em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-+ [MENU]
-    ->O3StartMenu
-
-==== O3Preface ====
-This knot is for the Series and Season Number. For Example "Preface" and "Season 0."
-Purpose: to keep INKY from getting confused between each season "S" and episode "Ep" ->S1
-=== S1 ===
-<h1>{Season3Title}</h1>
-This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader.
-+[START MENU]
-    ->O3StartMenu
-
-->DONE
-
-=== O3StartMenu ===
-<h3>Start Menu</h3>
-<em>Choose wisely</em>
-+ {not Preface} [Preface]
-    ->O3Preface
-+ [PRESS START]
-    ->O3Prologue
-+ [Episode 1]
-    ->O3Ep1
-+ [Episode 2]
-    ->O3Ep2
-+ [Episode 3]
-    ->O3Ep3
-+ [Episode 4]
-    ->O3Ep4
-+ [Episode 5]
-    ->O3Ep5
-
--> DONE
-
 === O3Prologue ===
-<h3>{O3PrologueTitle}</h3>
+PROLOGUE
 You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
 when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall.
 
@@ -219,7 +173,7 @@ YOUNG MAN: This denial gives the young man more forwardness, "Hello, I am Axel a
 YOU: "Greeting Axel and Professor Wegner"
 
 
-+[START MENU]
++[Ω]
     ->O3StartMenu
 +[NEXT]
     ->O3Ep1
@@ -227,8 +181,8 @@ YOU: "Greeting Axel and Professor Wegner"
 ->DONE
 
 == O3Ep1 ==
-<h3>{O3EpisodeOne}</h3>
-+[START MENU]
+O3EpisodeOne}
++[Ω]
     ->O3StartMenu
 +[NEXT]
     ->O3Ep2
@@ -236,8 +190,8 @@ YOU: "Greeting Axel and Professor Wegner"
 ->DONE
 
 == O3Ep2 ==
-<h3>{O3EpisodeTwo}</h3>
-+[START MENU]
+O3EpisodeTwo}
++[Ω]
     ->O3StartMenu
 +[NEXT]
     ->O3Ep3
@@ -245,8 +199,8 @@ YOU: "Greeting Axel and Professor Wegner"
 ->DONE
 
 == O3Ep3 ==
-<h3>{O3EpisodeThree}</h3>
-+[START MENU]
+{O3EpisodeThree}
++[Ω]
     ->O3StartMenu
 +[NEXT]
     ->O3Ep4
@@ -254,8 +208,8 @@ YOU: "Greeting Axel and Professor Wegner"
 ->DONE
 
 == O3Ep4 ==
-<h3>{O3EpisodeFour}</h3>
-+[START MENU]
+{O3EpisodeFour}
++[Ω]
     ->O3StartMenu
 +[NEXT]
     ->O3Ep5
@@ -263,9 +217,9 @@ YOU: "Greeting Axel and Professor Wegner"
 ->DONE
 
 == O3Ep5 ==
-<h3>{O3EpisodeFive}</h3>
+{O3EpisodeFive}
 
-+[START MENU]
++[Ω]
     ->O3StartMenu
 +[NEXT]
     ->Epilogue
@@ -273,8 +227,8 @@ YOU: "Greeting Axel and Professor Wegner"
 ->DONE
 
 == Epilogue ==
-<h3>{O3EpilogueTitle}</h3>
-->END
+EPILOGUE
+  ->END
 
 // ***************************************************************
 //
@@ -288,4 +242,3 @@ YOU: "Greeting Axel and Professor Wegner"
 // What are the predictable patterns caused by Earth’s movement in the solar system?
 //
 // AUDIO
-// <div align="center"><audio src="http://www.regioscientiae.com/files/theme/fx-plains_1.mp3" controls autoplay loop></div>

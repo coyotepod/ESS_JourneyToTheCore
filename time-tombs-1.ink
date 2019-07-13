@@ -1,6 +1,5 @@
-#title: The Mountains of Time
+#title: The Mountain
 #author: Master Scoy
-
 
 INCLUDE origins-GlobalVariables.ink
 

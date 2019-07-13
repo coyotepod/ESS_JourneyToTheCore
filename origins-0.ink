@@ -100,7 +100,7 @@ Yellow rays of light shoot through the dense deciduous forest as the sun just st
 ->DONE
 
 === O0Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O0EpisodeOne}
 You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. Its appears you're completely alone.
    + {inventory < 1} [Check your inventory]
@@ -126,7 +126,7 @@ Once you get your footing on the path its an easy walk. You travel less than {~a
 ->DONE
 
 == O0Ep2 ==
-// CROSSROADS
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O0EpisodeTwo}
 An overgrown single-track trail snakes westwards towards a dark foreboding tower. Probably less than a day's march. To the east, a well worn path cuts through the forest.
     + {not ForestPath} [Head east on the forest path]
@@ -143,7 +143,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 - Besides the occasional bushwhacking the walk isn't too difficult and soon you approach the dark tower’s main gate.
 - Stones have fallen around it.
     + [The place is clearly abandoned.]
-    - At least you <i>thought</i> it was abandoned. The Drow warrior slips from a shadowy side entrance.
+    - At least you thought it was abandoned. The Drow warrior slips from a shadowy side entrance.
         + [Fight]
         + [Flee]
 - Blades move so fast they are a blur. You have no time to react. This quickly ends your otherwise pleasant walk.
@@ -178,7 +178,7 @@ The forest comes to a clearing and opens to village.
 
 == O0Ep3 ==
 {O0EpisodeThree}
-- A small village lies before you. The village center is loosely surrounded by a variety of stout timbered buildings. You are greeted by a weathered signpost <i>Canis Villa</i>.
+- A small village lies before you. The village center is loosely surrounded by a variety of stout timbered buildings. You are greeted by a weathered signpost "Canis Villa".
     + [Enter the village]
 - You walk the main path between two buildings into the village center. It opens to a grassy courtyard.
     -> courtyard_views
@@ -187,7 +187,7 @@ The forest comes to a clearing and opens to village.
     + [Looking to the south side] -> sign
      // *[Looking to your right] Apothecary
      // *[Looking to your left]
-     // *[Looking to the eastern farside of the courtyard] Path leading away from town and black
+     // *[Looking to the eastern far side of the courtyard] Path leading away from town and black
      // *[Looking along the northern side] Blacksmith shop
      + [Walk farther into the courtyard] -> courtyard1
 
@@ -220,7 +220,7 @@ You decide the village is not for you. You head back west. It takes much longer 
     + [Closer observation]
 - A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves.
  - The people look beaten down. This community needs helps.
-    + [...the kindess of strangers.]
+    + [...the kindness of strangers.]
 - Helping others is the right thing to do though there are times when testing one's own abilities is necessary.
     + The serving maid comes over and interrupts your thoughts.
 - "Hi! My name is {ServingMaid}. What can I get you?
@@ -247,7 +247,7 @@ You decide the village is not for you. You head back west. It takes much longer 
     + [next]
 - It is rumored that these Masters can grant access to a magical library in the ether. This magical library contains more information than any of the worldly libraries. It is said to contain books that can be summoned with special instruments. You'll have access to special scrolls, training strategies, and the ability to battle Bosses of varying levels.
     + [next]
-- Keep in mind that a Master Jedi is a <i>guide</i> only. <i>You</i> must lead your own learning. You must ask for help and clarification. Great tools and gear mean nothing if you are unwilling to pick them up and use them properly.
+- Keep in mind that a Master Jedi is a guide only. YOU must lead your own learning. You must ask for help and clarification. Great tools and gear mean nothing if you are unwilling to pick them up and use them properly.
     + [next]
 - That is all ...for now. You hear whispers of troubling things. You suspect that very soon you may be called upon to go adventuring.
     + [next]
@@ -274,7 +274,7 @@ You have {items}.
     + {Death < 2} You have died.
         -- Do not fear death weary adventurer. It is possible to have your life renewed by one of the kind paladins or clerics that wander these lands. They have a way of knowing if you are worthy of a 1-UP.
         ++ Tennessee Williams quote:
-        --- "I have always depended on the kindess of strangers."
+        --- "I have always depended on the kindness of strangers."
         +++[next]
         ---...
         +++[next]
@@ -288,7 +288,7 @@ You have {items}.
         +++ [next]
             ->O0Ep1
     + {Death > 1} You have died. Again.
-        -- Do not fear death weary adventurer. The kindess of strangers has already saved you at least once. Sometimes life's quests knock you down.
+        -- Do not fear death weary adventurer. The kindness of strangers has already saved you at least once. Sometimes life's quests knock you down.
         ++ Winston Churchill:
             --- Never give up.
             +++ [next]
@@ -307,7 +307,7 @@ You have {items}.
 -
         ->O0Ep1
 // Soon enough your bones will be found and your life renewed.
-// You are demostrating PERSISTENCE and GRIT. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.
+// You are demonstrating PERSISTENCE and GRIT. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.
         ->O0Ep1
 ->DONE
 
@@ -325,9 +325,9 @@ VAR Farmer2 =           "Robert"
 VAR Villager1 =         "Dan"
 VAR Boy1    =           "Timothy"
 VAR Girl1   =           "Becca"
-VAR BanditStats =      "<b>BANDIT</b> AC: 12 HP: 11"
-VAR BanditAction1 =     "<b>Scimitar</b> +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
-VAR BanditAction2 =     "<b>Light Crossbow</b> +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+VAR BanditStats =      "BANDIT AC: 12 HP: 11"
+VAR BanditAction1 =     "SCIMITAR +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+VAR BanditAction2 =     "LIGHT CROSSBOW +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
 VAR Drow =              ""
 
 // MONSTERS

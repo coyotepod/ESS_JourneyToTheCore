@@ -1,6 +1,5 @@
-#title: Forest of Time
+#title: The Forest
 #author: Master Scoy
-
 
 INCLUDE origins-GlobalVariables.ink
 
@@ -25,7 +24,7 @@ Start Menu
 -> DONE
 
 === TT3Preface ===
-{Seasont1}
+{SeasonTT4}
 SETTING
 {WorldSetting}
 PURPOSE
@@ -86,7 +85,7 @@ PROLOGUE
 ->DONE
 
 === TT3Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {TT3EpisodeOne}
     +[Ω]
         ->TT3StartMenu
@@ -96,7 +95,7 @@ PROLOGUE
 ->DONE
 
 === TT3Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+// Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
 {TT3EpisodeTwo}
     +[Ω]
@@ -150,43 +149,8 @@ VAR TT3EpisodeThree = "Room 3"
 VAR TT3EpisodeFour = "Room 4"
 VAR TT3EpisodeFive = "Room 5"
 
-->TT3StartMenu
-
-==== TT3Preface ====
-#audio: fx-valleys
-<em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-+ [MENU]
-    ->TT3StartMenu
-
-==== P0 ====
-This knot is for the Series and Season Number. For Example "Preface" and "Season 0."
-Purpose: to keep INKY from getting confused between each season "S" and episode "Ep"
-+[START MENU]
-    ->TT3StartMenu
-
-->DONE
-
-=== TT3StartMenu ===
-<h3>Start Menu</h3>
-<em>Choose wisely</em>
-+ {not TT3Preface} [Preface]
-    ->TT3Preface
-+ [PRESS START]
-    -> TT3Prologue
-+ [Episode 1]
-    -> TT3Ep1
-+ [Episode 2]
-    -> TT3Ep2
-+ [Episode 3]
-    -> TT3Ep3
-+ [Episode 4]
-    -> TT3Ep4
-+ [Episode 5]
-    -> TT3Ep5
--> DONE
-
 == TT3Ep1 ==
-<h3>{TT3EpisodeOne}</h3>
+{TT3EpisodeOne}
 +[START MENU]
     ->TT3StartMenu
 +[NEXT]
@@ -195,7 +159,7 @@ Purpose: to keep INKY from getting confused between each season "S" and episode 
 ->DONE
 
 == TT3Ep2 ==
-<h3>{TT3EpisodeTwo}</h3>
+{TT3EpisodeTwo}
 +[START MENU]
     ->TT3StartMenu
 +[NEXT]
@@ -204,7 +168,7 @@ Purpose: to keep INKY from getting confused between each season "S" and episode 
 ->DONE
 
 == TT3Ep3 ==
-<h3>{TT3EpisodeThree}</h3>
+{TT3EpisodeThree}
 +[START MENU]
     ->TT3StartMenu
 +[NEXT]
@@ -213,7 +177,7 @@ Purpose: to keep INKY from getting confused between each season "S" and episode 
 ->DONE
 
 == TT3Ep4 ==
-<h3>{TT3EpisodeFour}</h3>
+{TT3EpisodeFour}
 +[START MENU]
     ->TT3StartMenu
 +[NEXT]
@@ -222,7 +186,7 @@ Purpose: to keep INKY from getting confused between each season "S" and episode 
 ->DONE
 
 == TT3Ep5 ==
-<h3>{TT3EpisodeFive}</h3>
+{TT3EpisodeFive}
 
 +[START MENU]
     ->TT3StartMenu

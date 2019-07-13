@@ -1,116 +1,68 @@
-#title: Water of Time
+Role-play#title: The Water
 #author: Master Scoy
 
 
 INCLUDE origins-GlobalVariables.ink
 
-->St1StartMenu
-=== St1StartMenu ===
+->TT5StartMenu
+=== TT5StartMenu ===
 Start Menu
-    + {not St1Preface} [Preface]
-        ->St1Preface
+    + {not TT5Preface} [Preface]
+        ->TT5Preface
     + [PRESS START]
-        -> St1Prologue
-    + [{St1EpisodeOne}]
-        -> St1Ep1
-    + [{St1EpisodeTwo}]
-        -> St1Ep2
-    + [{St1EpisodeThree}]
-        -> St1Ep3
-    + [{St1EpisodeFour}]
-        -> S0Ep4
-    + [{St1EpisodeFive}]
-        -> St1Ep5
+        -> TT5Prologue
+    + [{TT5EpisodeOne}]
+        -> TT5Ep1
+    + [{TT5EpisodeTwo}]
+        -> TT5Ep2
+    + [{TT5EpisodeThree}]
+        -> TT5Ep3
+    + [{TT5EpisodeFour}]
+        -> TT5Ep4
+    + [{TT5EpisodeFive}]
+        -> TT5Ep5
 
 -> DONE
 
-=== St1Preface ===
-{Seasont1}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
+=== TT5Preface ===
 
-=== Characters ===
-CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->St1StartMenu
-    + [next (spoilers if you proceed!)]
-        ->NPCs
+->DONE
 
-=== NPCs ===
-NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->St1StartMenu
-    + [next]
-        ->DiceRolls
-
-=== DiceRolls ===
-DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->St1StartMenu
-    + [next]
-        ->Movement
-
-=== Movement ===
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->St1StartMenu
-    + [next]
-        ->Movement
-
-=== St1Prologue ===
+=== TT5Prologue ===
 PROLOGUE
     +[Ω]
-        ->St1StartMenu
+        ->TT5StartMenu
     +[NEXT EPISODE]
-        ->St1Ep1
+        ->TT5Ep1
 
 ->DONE
 
-=== St1Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
-{St1EpisodeOne}
+=== TT5Ep1 ===
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
+{TT5EpisodeOne}
     +[Ω]
-        ->St1StartMenu
+        ->TT5StartMenu
     +[NEXT EPISODE]
-        ->St1Ep1
+        ->TT5Ep1
 
 ->DONE
 
-=== St1Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+=== TT5Ep2 ===
+// Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
-{St1EpisodeTwo}
+{TT5EpisodeTwo}
     +[Ω]
-        ->St1StartMenu
+        ->TT5StartMenu
     +[NEXT EPISODE]
-        ->St1Ep3
+        ->TT5Ep3
 
 ->DONE
 
-=== St1Ep3 ===
+=== TT5Ep3 ===
 // Room 3: Trick or Setback
-{St1EpisodeThree}
+{TT5EpisodeThree}
     +[Ω]
-        ->St1StartMenu
+        ->TT5StartMenu
     +[NEXT EPISODE]
         ->S0Ep4
 
@@ -118,26 +70,26 @@ PROLOGUE
 
 === S0Ep4 ===
 // Room 4: Climax
-{St1EpisodeFour}
+{TT5EpisodeFour}
     +[Ω]
-        ->St1StartMenu
+        ->TT5StartMenu
     +[NEXT EPISODE]
-        ->St1Ep5
+        ->TT5Ep5
 
 ->DONE
 
-=== St1Ep5 ===
+=== TT5Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{St1EpisodeFive}
+{TT5EpisodeFive}
 
     +[Ω]
-        ->St1StartMenu
+        ->TT5StartMenu
     +[NEXT EPISODE]
-        ->St1Epilogue
+        ->TT5Epilogue
 
 ->DONE
 
-=== St1Epilogue ===
+=== TT5Epilogue ===
     EPILOGUE
 
 ->END
@@ -151,17 +103,6 @@ VAR TT5EpisodeFour = "Room 4"
 VAR TT5EpisodeFive = "Room 5"
 
 ->TT5StartMenu
-
-==== TT5Preface ====
-#audio: fx-valleys
-<em>Welcome weary adventurer! This story takes place in <em>Regio Scientiae: A Land of Understanding. Its a world of magic and steampunk, and a place for you to develop grit and explore curiosities. The quest narratives maybe done solo. However, they are best experienced the first time as playful interaction with the game master and neighboring, real life players.
-+ [MENU]
-    ->TT5StartMenu
-
-This knot is for the Series and Season Number. For Example "Preface" and "Season 0."
-Purpose: to keep INKY from getting confused between each season "S" and episode "Ep"
-
-
 === SeasonTT5 ===
 +[START MENU]
     ->TT5StartMenu
@@ -170,7 +111,6 @@ Purpose: to keep INKY from getting confused between each season "S" and episode 
 
 === TT5StartMenu ===
 Start Menu
-<em>Choose wisely</em>
 + {not TT5Preface} [Preface]
     ->TT5Preface
 + [PRESS START]
@@ -193,13 +133,6 @@ Start Menu
     ->TT5StartMenu
 +[NEXT]
     ->TT5Ep1
-
-->DONE
-
-<h1>{SeasonTT5Title}</h1>
-This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader.
-+[START MENU]
-    ->TT5StartMenu
 
 ->DONE
 

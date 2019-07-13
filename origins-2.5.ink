@@ -1,26 +1,25 @@
-#title: ORIGINS Arrakis Heroes
+#title: Battle at Arrakis
 #author: Master Scoy
-
 
 INCLUDE origins-GlobalVariables.ink
 
 ->O2_5StartMenu
 === O2_5StartMenu ===
-Start Menu
+START MENU
     + {not O2_5Preface} [Preface]
         ->O2_5Preface
     + [PRESS START]
-        -> O2_5Prologue
+        ->O2_5Prologue
     + [{O2_5EpisodeOne}]
-        -> O2_5Ep1
+        ->O2_5Ep1
     + [{O2_5EpisodeTwo}]
-        -> O2_5Ep2
+        ->O2_5Ep2
     + [{O2_5EpisodeThree}]
-        -> O2_5Ep3
+        ->O2_5Ep3
     + [{O2_5EpisodeFour}]
-        -> S0Ep4
+        ->O2_5Ep4
     + [{O2_5EpisodeFive}]
-        -> O2_5Ep5
+        ->O2_5Ep5
 
 -> DONE
 
@@ -159,25 +158,24 @@ Run - {MoveRun}
 //
 ///////////////////////////////////////////
 = Scene1
-// An Invitation to The Arrakis Sandworms Raid”</b>
+// An Invitation to The Arrakis Sandworms Raid”
 
-<h3>AN INVITATION TO ARRAKIS</h3>
+AN INVITATION TO ARRAKIS
 Recently an expedition party in the southeast has disturbed a previously unknown colony of Arrakis Sandworms.
-+ [...]
++ [next]
 - Naturalists have determined that these are not the same worms from the Arrakis Wasteland. They are in fact a new species resulting from an evolutionary process when this colony became physically separated. They are still plenty big and a potential threat to the entire region.
-+ [...]
++ [next]
 - Storm Crown has declared an emergency, and is calling upon members of the “League of Heroes.”
-+[...]
++[next]
 - The battle will demand a force of epic proportions including the use of siege engines to drive the worms back down. Many parties of heroes from across multiple factions will be needed to win the day.
-+ [...]
-- If a party is filled with all <i>League of Heroes</i> members, Storm Crown will send a steam-powered dirigible to pick you up and take you to the battlefield. Whereupon, you will need to build and operate a siege weapon.
-+ <i>Storm Crown and the entire realm are counting on you!</i>
-- You must be a member in the <i>League of Heroes</i> in order to join this raid. You can become a member of the league by totally mastering all Quests to this point (i.e. green check on the folder in Schoology).
-+[...]
++ [next]
+- If a party is filled with all "League of Heroes" members, Storm Crown will send a steam-powered dirigible to pick you up and take you to the battlefield. Whereupon, you will need to build and operate a siege weapon.
++ Storm Crown and the entire realm are counting on you!
+- You must be a member in the "League of Heroes" in order to join this raid. You can become a member of the league by totally mastering all Quests to this point (i.e. green check on the folder in Schoology).
++[next]
 - Make plans to prepare and determine when & where any Elite Bosses might respawn.
-+ [...]
++ [next]
 - Party members should help one another with preparations including studying notes together or playing Quizlet games. We're in this together!
-<i>Do or do not, there is no try.</i>
 
 -> DONE
 🖋 // {EndChapter}

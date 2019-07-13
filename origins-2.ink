@@ -1,12 +1,11 @@
 #title: Expedition of Origins
 #author: Master Scoy
 
-
 INCLUDE origins-GlobalVariables.ink
 
 ->O2StartMenu
 === O2StartMenu ===
-Start Menu
+START MENU
     + {not O2Preface} [Preface]
         ->O2Preface
     + [PRESS START]
@@ -168,8 +167,8 @@ VAR O2Epilogue =        "Epilogue"
 #audio: fx-valleys
 {CYOAPurpose}
 {Setting}
-    + [...]
--<h4>Objectives of <em>{Season2}</em></h4>
+    + [next]
+-Objectives of SeasonO2}
 \* Content
 \* Content
 \* Content
@@ -178,7 +177,7 @@ VAR O2Epilogue =        "Epilogue"
 
 FIRST PUBLISHED:
 LAST UPDATED:
-+ NPCs & MONSTERS (Spoliers)
++ NPCs & MONSTERS (Spoilers)
 -
 + [MENU]
     ->StartMenu2
@@ -186,8 +185,7 @@ LAST UPDATED:
 ->DONE
 
 === StartMenu2 ===
-<h3>Start Menu</h3>
-<em>Choose wisely</em>
+Start Menu
 TODO: Write Prologue
 TODO: Write Episode 1
 TODO: Write Episode 2
@@ -214,8 +212,8 @@ TODO: Write Epilogue
 -> DONE
 
 === O2Pro ===
-<h3>{O2Prologue}</h3>
-+[START MENU]
+{O2Prologue}
++[Ω]
     ->StartMenu2
 +[NEXT EPISODE]
     ->O2Ep1
@@ -223,8 +221,8 @@ TODO: Write Epilogue
 ->DONE
 
 == O2Ep1 ==
-<h3>{O2EpisodeOne}</h3>
-+[START MENU]
+{O2EpisodeOne}
++[Ω]
     ->StartMenu2
 +[NEXT EPISODE]
     ->O2Ep2
@@ -232,8 +230,8 @@ TODO: Write Epilogue
 ->DONE
 
 == O2Ep2 ==
-<h3>{O2EpisodeTwo}</h3>
-+[START MENU]
+{O2EpisodeTwo}
++[Ω]
     ->StartMenu2
 +[NEXT EPISODE]
     ->O2Ep3
@@ -241,8 +239,8 @@ TODO: Write Epilogue
 ->DONE
 
 == O2Ep3 ==
-<h3>{O2EpisodeThree}</h3>
-+[START MENU]
+{O2EpisodeThree}
++[Ω]
     ->StartMenu2
 +[NEXT EPISODE]
     ->O2Ep4
@@ -250,8 +248,8 @@ TODO: Write Epilogue
 ->DONE
 
 == O2Ep4 ==
-<h3>{O2EpisodeFour}</h3>
-+[START MENU]
+{O2EpisodeFour}
++[Ω]
     ->StartMenu2
 +[NEXT EPISODE]
     ->O2Ep5
@@ -259,18 +257,18 @@ TODO: Write Epilogue
 ->DONE
 
 == O2Ep5 ==
-<h3>{O2EpisodeFive}</h3>
+{O2EpisodeFive}
 
 +[NEXT EPISODE]
     ->O2Epi
 
 ->DONE
 
-== O2Epi ==
-<h3>{O2Epilogue}</h3>
+== O2Epilogue ==
+EPILOGUE
 ->END
 
 // NPCS
 
 // MONSTERS
-VAR StoneElemental = "<b>STONE ELEMENTAL</b>"
+VAR StoneElemental = "STONE ELEMENTAL"

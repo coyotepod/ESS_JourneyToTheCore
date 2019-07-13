@@ -6,7 +6,7 @@ INCLUDE origins-GlobalVariables.ink
 
 ->O4StartMenu
 === O4StartMenu ===
-Start Menu
+START MENU
     + {not O4Preface} [Preface]
         ->O4Preface
     + [PRESS START]
