@@ -34,6 +34,7 @@ PURPOSE
 
 === Characters ===
 CHARACTERS
+--------------------------------
 CLERIC: {Cleric} (also {TheCleric} & {theCleric})
 FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
 ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
@@ -42,6 +43,7 @@ WIZARD: {Wizard} (also {TheWizard} & {theWizard})
         ->O1StartMenu
     + [next (spoilers if you proceed!)]
 NPCs
+--------------------------------
 BLUE MUG OWNER: {MugOwner}
 SERVING MAID: {ServingMaid}
     +[Ω]
@@ -49,6 +51,7 @@ SERVING MAID: {ServingMaid}
     + [next]
 
 DICE ROLL
+--------------------------------
 d4 {d4}
 d6 {d6}
 d8 {d8}
@@ -61,6 +64,7 @@ d100 {100}
     + [next]
 
 - MOVEMENT
+--------------------------------
 Stealth - {MoveStealth}
 Walk - {MoveWalk}
 Hustle - {MoveHustle}
@@ -72,12 +76,12 @@ Run - {MoveRun}
 === O1Prologue ===
 - PROLOGUE
 - Blue Mug
-- Your party is enjoying another hearty meal at The Blue Mug inn & tavern when the serving maid {ServingMaid} comes up to the table.
-- {ServingMaid} asks, "Anything else I can get you brave adventurers?" and looks at your party.
-    + [Glance at your party]
-    - You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to serving maid]
-- You turn back towards {ServingMaid} and reply,
+- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a{~ warm| big| kind} smile.
+- {ServingMaid}: "Welcome weary adventurers! Anything else I can get the you?"
+    + [Look at your companions]
+      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
+    + [Turn to {ServingMaid}]
+- You: <>
     + "Do you have any news? We grow tired of town life."
         // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
         // + "We are interested in another meal," as your stomach gurgles. -> meal
@@ -134,7 +138,7 @@ You continue almost in a whisper, "We want to understand the universe and its gl
 ->DONE
 
 = quick_leave_to_mars_tower
-You decide there's nothing else to learn here, and make your way towards {MarsTower}. 
+You decide there's nothing else to learn here, and make your way towards {MarsTower}.
     //-> MarsTower
 ->DONE
 
@@ -142,7 +146,7 @@ You decide there's nothing else to learn here, and make your way towards {MarsTo
 You say, "We should learn something about these two advisors before we just go knocking on their door."
 {theWizard} nods approvingly.
 + "An excellent suggestion," replies {theCleric}
-- 
+-
 + "There's nothing else to learn here. Let's go" answers {theFighter}.
 - {theCleric} says "Sorry. You're out numbered on this one."
 - You turn to {castellan},
@@ -371,4 +375,4 @@ VAR castellan = "Mr. Hillenar"
 VAR BraheDescription = "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models, and created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
 VAR KeplerDescription = "Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
 
-->END 
+->END
