@@ -1,4 +1,5 @@
-CHOOSE YOUR OWN ADVENTURE INKs
+<h2>REGIO SCIENTIAE - INK Assets</h2>
+CHOOSE YOUR OWN ADVENTURE
 
 Master folder for Ink narratives used in Earth Space Science, Biology, and Zoology classes. Stories are mostly original with some inspiration from classic adventure novels.
 
