@@ -216,7 +216,7 @@ You decide the village is not for you. You head back west. It takes much longer 
 {O0EpisodeFour}
 - You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with a bar and dining on the first floor. Worn stairs lead above to rooms. The decor is simple and slighty dingy, but of stout timber material.
     + [Observe the occupants.]
--  The inn and tavern could be a metaphor for most of the patrons: simple, slighty dingy, and stout frame.
+-  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and stout frame.
     + [Closer observation]
 - A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves.
  - The people look beaten down. This community needs helps.
@@ -225,7 +225,7 @@ You decide the village is not for you. You head back west. It takes much longer 
     + The serving maid comes over and interrupts your thoughts.
 - "Hi! My name is {ServingMaid}. What can I get you?
     + You: "What good food and drink do you have?"
-- {ServingMaid}: "Today we're cooking up {~roasted boar|chicken|vegetables}"
+- {ServingMaid}: "Today we're cooking up{~ roasted boar| chicken| vegetables}"
     + You: "That sounds good"
     + You: Not what you were hoping for, but reply "OK, I'll have some."
 - The meal is good and quickly finish eating.
