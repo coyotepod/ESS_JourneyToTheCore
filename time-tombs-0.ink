@@ -22,57 +22,6 @@ START MENU
         -> TT0Ep5
 -> DONE
 
-=== TT0Preface ===
-PREFACE: {SeasonTT0}
-- WORLD SETTING
-{WorldSetting}
-    +[Ω]
-        ->TT0StartMenu
-    + [PURPOSE]
-- PURPOSE
-{CYOAPurpose}
-    +[Ω]
-        ->TT0StartMenu
-    + [Game Mechanics]
-        ->GameMechanics
-    + [CHARACTERS (potential spoilers if you proceed!)]
-
-- (GameMechanics)
-- EXAMPLE DICE ROLLS
-d4      {d4}
-d6      {d6}
-d8      {d8}
-d10     {d10}
-d12     {d12}
-d20     {d20}
-d100    {100}
-
-- MOVEMENT
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->TT0StartMenu
-    + [Story Elements (likely spoilers if you proceed)]
-    
-- (StoryElements)
-- CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->TT0StartMenu
-
-- NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->TT0StartMenu
-
-->DONE
-
 === TT0Prologue ===
 PROLOGUE
 #audio:salt-mine
@@ -116,9 +65,9 @@ Distraught woman: Starts to tear up. "I don't have much money, but I need him ba
 ->DONE
 
 === TT0Ep2 ===
-{TT0EpisodeTwo} #location: mine arrival
+{TT0EpisodeTwo} #mine-arrival.mp3
 The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
-    + Make your way into the mine. #location: mine ambience
+    + Make your way into the mine. #mine-ambience.mp3
     + Look around outside.
     -- Seems like a typical mine entrance. You enter the mine.
 - Tools of the trade such as pick axes and hammers are scattered haphhazardly. It would appear the miners left in a hurry.
@@ -135,47 +84,26 @@ The next day the party arrives at the mine without incident. There doesn't seem 
                 --- You don't notice anything unusual except for the quantity of blood spilled.
     + Probably best to keeping moving along.
 - How do you want to proceed down the tunnel?
-    + You {MoveStealth} down the tunnel.
-        ->tunnel_stealth
-    + You {MoveWalk} down the tunnel.
-        ->tunnel_walk
-    + You {MoveHustle} down the tunnel.
-        ->tunnel_hustle
-    + You {MoveRun} down the tunnel.
-        ->tunnel_run
-
-== tunnel_stealth
-    ->spiders
-== tunnel_walk
-    ->spiders
-== tunnel_hustle
-    ->spiders
-==tunnel_run
-    ->spiders
-== spiders
+    + (tunnel_stealth) You {MoveStealth} down the tunnel.
+    + (tunnel_walk) You {MoveWalk} down the tunnel.
+    + (tunnel_hustle) You {MoveHustle} down the tunnel.
+    + (tunnel_run) You {MoveRun} down the tunnel.
 - A few minor twists and turns later
     + ... <>
 -{~Two|Three} menacing giant spiders at the edge of the torch light suddenly rush up the tunnel towards the party, chattering loudly. #spiders
     + {tunnel_stealth} [You were being stealthy so you surprise the beasts. You get an extra attack and fight with advantage the first round!]
-        ->spiders_2A
     + {tunnel_stealth} [You may attempt to flee undetected]
-        ->spiders_2A
     + {tunnel_walk} [Fight!]
-        ->spiders_2A
     + {tunnel_walk} [Flee!]
-        ->spiders_2A
     + {tunnel_hustle or tunnel_run} [You are surprised by the beasts! They get the first attack and with advantage]
-        ->spiders_2A
 
--> DONE
-= spiders_2A
 // To flee now would be unwise (<em>the spiders get bonus attacks if you insist</em>).
-The party prepares for combat!
-    + <em>[Roll INITIATIVE!]<em>
-    --<h4>INITIATIVE</h4>
+- The party prepares for combat!
+    + [Roll INITIATIVE!]
+    --INITIATIVE
     {InitiativeExplained}
-    ++ <em>[Back to the action]</em>
-    + <em>[Continue the narrative]</em>
+    ++[Back to the action]
+    + [Continue the narrative]
 
 - {TheFighter} hacks and slashes at the legs of one giant spider. {TheRogue} stabs at the multiple eyes on another giant spider and effectively blinds it. # magic-missle.mp3 #fleshy-stab.mp3
     + Flee. <>
@@ -196,10 +124,8 @@ The party prepares for combat!
     + "Leave the bats alone" {TheWizard} cautions.
     + "Crossbow is ready!" {TheFighter} says.
 - Your party opts to leave the bats alone. They fly overhead harmlessly and leave you alone.
-
 Not much longer you find two bodies, presumably miners. A third that stirs ever so slightly when hearing you approach.
-TODO: Healing spell stats
-<em>What to do...</em>
+What to do...
     + "Perhaps I should perform a minor healing spell (1d8)?" asks {theCleric}.
         -- You say "I was thinking the same thing." {TheCleric} performs a <em><Minor Healing</em>.
     + "I'll give him a <em>potion of healing</em> (2d4 + 2)" you say.
@@ -219,26 +145,23 @@ A booming roar fills the tunnel. #audio: bear roar
     + "<em>Lumos!</em>" says {theWizard}.
     -- {TheWizard}'s wand tip now glows softly and reveals a large pair glinting eyes.
 
-TODO: Bear stats
 - A large cave bear (<em>about 5 ft at shoulder height, +900 lbs</em>) opens its maw and roars again. #audio: bear roar
 
-The cave bear charges. <em>What do you do?</em>
-    + <>{TheRogue} is the first to attack!
+The cave bear charges.
+    + \ {TheRogue} is the first to attack!
         -- {TheRogue} releases two throwing knives into the front shoulders of the cave bear. It barely pauses before crashing into the party. Everyone in the party takes bludgeoning damage.
-    + <>{TheWizard} casts a quick cantrip (spell)!
+    + \ {TheWizard} casts a quick cantrip (spell)!
         -- {TheWizard} reflexively fires three magic missiles at the cave bear. It barely pauses before crashing into the party. Everyone in the party takes (d) bludgeoning damage.
-    + <>{TheFighter} steps in front.
-        -- '{TheFighter} quickly brings his buckler up. The impact splinters the shield into dozens of pieces and throws him into the side of tunnel. {TheFighter} takes (d) bludgeoning damage. {TheFighter} remains stunned for the next (1+1d4) rounds.
-TODO: Look up bite damage
+    + \ {TheFighter} steps in front.
+        -- {TheFighter} quickly brings his buckler up. The impact splinters the shield into dozens of pieces and throws him into the side of tunnel. {TheFighter} takes (d) bludgeoning damage. {TheFighter} remains stunned for the next (1+1d4) rounds.
 - The cave bear turns quickly and bites at {~{theRogue}|{theFighter}|{YoungMiner}} doing additional damage. #bite
 - You realize that the injured man and at least half of your party are in no condition to move soon. Something needs to be done to draw the beast away.
     +  Smash the vial of venom on the cave bear
     + [Poke the bear with a stick.]
         -- You consider poking the bear with a stick but your intution is "thar's a bad idea." Nor do you have stick at the moment.
-- You hurl the vial of spider venom at the bear's face while {theWizard} simultaneously blast the beast with a lightning bolt for (1d) damage and (1d) damage.
-    + [>>]
+- You hurl the vial of spider venom at the bear's face while {theWizard} simultaneously blast the beast with a lightning bolt for energy damage and posion damage.
+    + [next]
         -- The bear stands up on its hind legs to a full 9 feet before the ceiling prevents it from going further. #stand
-
 // Only the rogue's uncanny reflexes save him as he takes a grazing, but damaging hit from one of the razor sharp claws.
 // You remember a vial of acid stashed in your pack. You pull it out as quickly and uncork the vial. {TheWizard} is standing next to you.
 - It was too much to hope for that the cave bear would run off. It falls and rolls on the ground. Then it gets up and charges you.
@@ -247,6 +170,7 @@ TODO: Look up bite damage
     + You shove {theWizard} towards the bear.
         -- Both the bear and {theWizard} look surprised. The cave bear ignores {theWizard} and chase you.
 - You turn tail and literally run for your life.
+- You dart and dash through numerous side passages. Suddenly you have the sensation of flying through the air headfirst in utter darkness.
     +[Ω]
         ->TT0StartMenu
     +{TT0Ep3 > 1} [{TT0EpisodeThree}]
@@ -259,51 +183,33 @@ TODO: Look up bite damage
 {TT0EpisodeThree}
 // Entrance And Guardian
 # audio:SaltMine
-    ->senses_in_the_dark
-
-=senses_in_the_dark
-- <em>What do you want {to do?| to do now?| to try next?}</em>
-* [Peer into the darkness]
-    ->see
-* [Listen intently]
-    ->hear
-* [Lick the floor]
-    ->taste
-* [Inhale deeply]
-    ->smell
-* [Touch a hand to the floor]
-    ->touch
-* {senses_in_the_dark > 3} [Reach into your tunic]
-    ->reach_into_tunic
-
-=see
+- (senses_in_the_dark)
+What do you want {to do?| to do now?| to try next?}
+* (see) [Peer into the darkness]
 You peer into the dark, but don't see much. {~Illumination|Light} of some type would be extremely helpful.
-    ->senses_in_the_dark
-=hear
+* (hear) [Listen intently]
 You listen intently, but don't hear anything at first. After a few moments you think you can hearing ... rustling in the dark? You hear a scraping sound...far off? Its difficult to judge distance in the {~foreboding} darkness.
-    ->senses_in_the_dark
-=taste
+* (taste) [Lick the floor]
 You give the floor a big lick. It taste salty with a slight burning sensation. Hopefully it's nothing too acidic, alkaline, or otherwise poisonous. In retrospect, it was {~a rather stupid decision|a hasty decision|an idiotic decision} to lick an unknown substance. One never knows what sort of tiny creatures cover a surface.
-    ->senses_in_the_dark
-=smell
+* (smell) [Inhale deeply]
 You inhale deeply. It smells salty and lacks any organic smells. A moment later, a very gentle air current brings faint new smells of a musty, dank nature.
-    ->senses_in_the_dark
-=touch
+* (touche) [Touch a hand to the floor]
 You reach a hand down and touch the floor. It has a rough, crystalline feel to it. Its has the feel of being carved or smoothed though by tools.
-    ->senses_in_the_dark
-=reach_into_tunic
-Reaching into your tunic you grasp the handle of a greasy torch and pull it out. Feeling around some more you find a small pouch tucked into your trousers with flint and steel in it.
+* {senses_in_the_dark > 3} [Reach into your tunic]
+Reaching into your tunic you grasp the handle of a greasy torch and pull it out. Feeling around some more you find a small pouch tucked into your trousers with flint and steel in it. ->reach_into_tunic
+- (try_senses) ->senses_in_the_dark
 
-+ You strike the flint and steel near the torch.
+- (reach_into_tunic)
+    + You strike the flint and steel near the torch.
     ->flint_strike
-* {reach_into_tunic > 1} Throw the flint and steel against the floor in frustration. ->throw_flint
+    * {reach_into_tunic > 1} Throw the flint and steel against the floor in frustration. ->throw_flint
 
-=throw_flint
+- (throw_flint)
 After standing in the dark for a moment, you realize that was {~an idiotic choice|a dumb decision|a rather stupid decision|a hasty decision|not well thought out|not an intelligent choice|not a smart idea}. You fumble around for ten or fifteen minutes on the floor before finding the flint and steel.
     + You strike the flint and steel near the torch.
     ->flint_strike
 
-=flint_strike
+- (flint_strike)
 {~Nothing happens|A spark starts a flame but it fizzles out|The torch whooshes to life and then quickly dies}.
     + {flint_strike_fail < 4} You strike the flint and steel near the torch again.
     ->flint_strike_fail
@@ -359,6 +265,56 @@ EPILOGUE
 
 ->END
 
+=== TT0Preface ===
+PREFACE: {SeasonTT0}
+- WORLD SETTING
+{WorldSetting}
+    +[Ω]
+        ->TT0StartMenu
+    + [PURPOSE]
+- PURPOSE
+{CYOAPurpose}
+    +[Ω]
+        ->TT0StartMenu
+    + [Game Mechanics]
+        ->GameMechanics
+    + [CHARACTERS (potential spoilers if you proceed!)]
+
+- (GameMechanics)
+- EXAMPLE DICE ROLLS
+d4      {d4}
+d6      {d6}
+d8      {d8}
+d10     {d10}
+d12     {d12}
+d20     {d20}
+d100    {100}
+
+- MOVEMENT
+Stealth - {MoveStealth}
+Walk - {MoveWalk}
+Hustle - {MoveHustle}
+Run - {MoveRun}
+    +[Ω]
+        ->TT0StartMenu
+    + [Story Elements (likely spoilers if you proceed)]
+    
+- (StoryElements)
+- CHARACTERS
+CLERIC: {Cleric} (also {TheCleric} & {theCleric})
+FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
+ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
+WIZARD: {Wizard} (also {TheWizard} & {theWizard})
+    +[Ω]
+        ->TT0StartMenu
+
+- NPCs
+BLUE MUG OWNER: {MugOwner}
+SERVING MAID: {ServingMaid}
+    +[Ω]
+        ->TT0StartMenu
+
+->DONE
 
 SEASON: 0."{SeasonTT0}" is a actually a prologue to our a class narrative "Time Tombs."
 PURPOSE:
