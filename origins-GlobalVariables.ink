@@ -134,8 +134,15 @@ CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to d
 // PREFACE
 VAR WorldSetting           = "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and steampunk. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
 
-VAR CYOAPurpose    = "Purpose of the \"Origins Series\" "
-// ->PrefaceCopy // Only use for testing and display purposes. Remove divert for games.
+VAR CYOAPurpose    = "Purpose of the series..."
+CONST HabitsOfMindEG = "Curiosity, Openness to New Ideas, Critical Thinking, Perseverance, Creative Thinking, Adaptability, Self-direction, Integrity, and Growth Mindset."
+CONST Curiosity =""
+CONST Openness ="" //Openness to New Ideas
+CONST CriticalThinking =""
+CONST Perseverance =""
+CONST CreativeThinking =""
+CONST Adaptability =""
+CONST Selfdirection =""
+CONST Integrity =""
+CONST GrowthMindset =""
 
-
-// ->PrefaceCopy // Only use for testing and display purposes. Remove divert for games.

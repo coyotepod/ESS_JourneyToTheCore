@@ -22,66 +22,9 @@ START MENU
         -> O0Ep5
     -> DONE
 
-=== O0Preface ===
-#audio: fx-valleys
-{SeasonO0}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-- Objectives of {SeasonO0}
-  \* Content
-  \* Content
-  \* Content
-  \* Content
-  \* Habits of Mind -
-
-- FIRST PUBLISHED: 2017
-- LAST UPDATED: Summer 2019
-    +[Ω]
-      ->O0StartMenu
-    + [next]
-
-- CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O0StartMenu
-    + [next]
-
-- NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O0StartMenu
-    + [next]
-
--DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O0StartMenu
-    + [next]
-- Movement
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-
-    +[Ω]
-        ->O0StartMenu
-->DONE
-
 === O0Prologue ===
 PROLOGUE
-Yellow rays of light shoot through the dense deciduous forest as the sun just starts peaking over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscieous in some bushes along the side of this dirt path in the forests.
+Yellow rays of light shoot through the dense deciduous forest as the sun just starts peaking over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscious in some bushes along the side of this dirt path in the forests.
     +[Ω]
         ->O0StartMenu
     +[NEXT EPISODE]
@@ -123,7 +66,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
             ++ [Fight]
             ++ [Flee]
         // -- Blades move so fast they are a blur. You have no time to react. This quickly ends your otherwise pleasant walk.
-        -- Its attacks with Life Drain dealing necrotic damage (-32 pts).  
+        -- Its attacks with Life Drain dealing necrotic damage (-32 pts).
             ++ [next]
             ->Death
     + {not Forest_Path} [Head east on the forest path]
@@ -162,7 +105,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 
 = Forest_Path
 - You walk down the forest path for a few minutes. A short while later a group of bandits rushes out onto the path.
-- The {~five|six|seven|eight} bandits are wearing red bandanas and loose gray clothing. Two of them are dual weilding daggers with the remainder carrying short swords.
+- The {~five|six|seven|eight} bandits are wearing red bandanas and loose gray clothing. Two of them are dual wielding daggers with the remainder carrying short swords.
     + [Fight]
     -- You attempt hand-to-hand combat, but you're no match for them. Perhaps if you had a weapon, tool, or had been training you might stand a chance. Unfortunately you don't.
         ++ [next]
@@ -223,14 +166,14 @@ You decide the village is not for you. You head back west. It takes much longer 
 
 == O0Ep4 ==
 {O0EpisodeFour}
-- You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with a bar and dining on the first floor. Worn stairs lead above to rooms. The decor is simple and slighty dingy, but of stout timber material.
+- You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with a bar and dining on the first floor. Worn stairs lead above to rooms. The furnishings are simple and slightly dingy, but of stout timber material.
     + [Observe the occupants.]
 -  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and stout frame.
     + [Closer observation]
 - A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves.
  - The locals look down on their luck. This community is in need of help.
     + Reflecting on "the kindness of strangers"...<>
-- Occasionally strangers and not-so-good friends have done you wrong. Yet, strangers and friends have also helped you out in a pinch more than once. There are times when life tests your individual abilities, but having a community that helps one another is definitely preferrable.
+- Occasionally strangers and not-so-good friends have done you wrong. Yet, strangers and friends have also helped you out in a pinch more than once. There are times when life tests your individual abilities, but having a community that helps one another is definitely preferable.
     + [next]
 - One day a stranger may be a hero for you. Another day you might be a hero for a stranger.
     + A serving maid comes over and interrupts your thoughts.
@@ -250,7 +193,7 @@ You decide the village is not for you. You head back west. It takes much longer 
         ++ You: "Thank you {ServingMaid}! You've been extremely helpful."
         -- {ServingMaid} smiles.
         ++ You: "I'm thinking of staying in the area for awhile. I'm sure we'll see each other again."
-    
+
 //-- "You must hone your skills if you plan on traveling in this area of the realm. Training and practicing one's skills before taking part in Adventures or attacking Bosses is always a good idea" she says.
 -
     +[Ω]
@@ -261,15 +204,27 @@ You decide the village is not for you. You head back west. It takes much longer 
 
 == O0Ep5 ==
 {O0EpisodeFive}
-- Habits of Mind are a way of looking at life and the decision making process. When you are faced with learning challenges, you have to make a lot of decisions and your perspective or thought processes are critical in helping you make decisions. 
+- Habits of Mind are a way of looking at life and the decision making process. When you are faced with learning challenges, you have to make a lot of decisions and your perspective or thought processes are critical in helping you make decisions.
     + [next]
-- Being prepared for class and life's adventures takes planning and work on your part. No one wants to die five minutes into the adventure. Practice and success at smaller challenges are critical for building your base understanding. You'll be expected to master class challenges before moving on to the next. 
+- Being prepared for class and life's adventures takes planning and work on your part. No one wants to die five minutes into the adventure. Practice and success at smaller challenges are critical for building your base understanding. You'll be expected to master class challenges before moving on to the next.
     + [next]
-- You may not understand something YET but you'll get there eventually. Some players understand a concept after one time, but most of us need to attack complex concepts more than once - sometimes MANY, MANY times. 
+- You may not understand something YET but you'll get there eventually. Some players understand a concept after one time, but most of us need to attack complex concepts more than once - sometimes MANY, MANY times.
     + [next]
 - Mindsets of enthusiasm, maximum effort, focus, and growth mindsets are a few of the mindsets you'll need to be successful.
     + [next]
 /**********************************
+CONST {HabitsOfMindEG} = "Curiosity, Openness to New Ideas, Critical Thinking, Perseverance, Creative Thinking, Adaptability, Self-direction, Integrity, and Growth Mindset."
+CONST Curiosity =""
+CONST Openness to New Ideas =""
+CONST Critical Thinking =""
+CONST Perseverance =""
+CONST Creative Thinking =""
+CONST Adaptability =""
+CONST Self-direction =""
+CONST Integrity =""
+CONST Growth Mindset =""
+
+CURIOSITY, OPENNESS TO NEW IDEAS
 - It is rumored that these Masters can grant access to a magical library in the ether. This magical library contains more information than any of the worldly libraries. It is said to contain books that can be summoned with special instruments. You'll have access to special scrolls, training strategies, and the ability to battle Bosses of varying levels.
     + [next]
 - Keep in mind that a Master Jedi is a guide only. YOU must lead your own learning. You must ask for help and clarification. Great tools and gear mean nothing if you are unwilling to pick them up and use them properly.
@@ -334,9 +289,66 @@ You have {items}.
             +++ [next]
                 ->O0Ep1
 -
-        
+
 // You are demonstrating PERSISTENCE and GRIT. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.
         ->O0Ep1
+->DONE
+
+=== O0Preface ===
+#audio: fx-valleys
+{SeasonO0}
+SETTING
+{WorldSetting}
+PURPOSE
+{CYOAPurpose}
+- Objectives of {SeasonO0}
+  \* Content
+  \* Content
+  \* Content
+  \* Content
+  \* Habits of Mind -
+
+- FIRST PUBLISHED: 2017
+- LAST UPDATED: Summer 2019
+    +[Ω]
+      ->O0StartMenu
+    + [next]
+
+- CHARACTERS
+CLERIC: {Cleric} (also {TheCleric} & {theCleric})
+FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
+ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
+WIZARD: {Wizard} (also {TheWizard} & {theWizard})
+    +[Ω]
+        ->O0StartMenu
+    + [next]
+
+- NPCs
+BLUE MUG OWNER: {MugOwner}
+SERVING MAID: {ServingMaid}
+    +[Ω]
+        ->O0StartMenu
+    + [next]
+
+-DICE ROLL
+d4 {d4}
+d6 {d6}
+d8 {d8}
+d10 {d10}
+d12 {d12}
+d20 {d20}
+d100 {100}
+    +[Ω]
+        ->O0StartMenu
+    + [next]
+- Movement
+Stealth - {MoveStealth}
+Walk - {MoveWalk}
+Hustle - {MoveHustle}
+Run - {MoveRun}
+
+    +[Ω]
+        ->O0StartMenu
 ->DONE
 
 // INVENTORY VARIABLES
