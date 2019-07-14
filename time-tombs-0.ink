@@ -88,9 +88,9 @@ The next day the party arrives at the mine without incident. There doesn't seem 
     + (tunnel_walk) You {MoveWalk} down the tunnel.
     + (tunnel_hustle) You {MoveHustle} down the tunnel.
     + (tunnel_run) You {MoveRun} down the tunnel.
-- A few minor twists and turns later
-    + ... <>
--{~Two|Three} menacing giant spiders at the edge of the torch light suddenly rush up the tunnel towards the party, chattering loudly. #spiders
+- A few minor twists and turns later,
+    + [...next] <>
+-{~two|three} giant spiders at the edge of the torch light suddenly rush up the tunnel towards the party, chattering loudly looking very menacing. #spiders
     + {tunnel_stealth} [You were being stealthy so you surprise the beasts. You get an extra attack and fight with advantage the first round!]
     + {tunnel_stealth} [You may attempt to flee undetected]
     + {tunnel_walk} [Fight!]
