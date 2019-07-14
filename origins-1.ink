@@ -4,75 +4,10 @@
 INCLUDE origins-GlobalVariables.ink
 
 
+
+
+
 ->O1StartMenu
-=== O1StartMenu ===
-START MENU
-//    + {not O1Preface} [Preface]
-//      ->O1Preface
-//    + [PRESS START]
-//        ->O1Prologue
-//    + [{O1EpisodeOne}]
-//       ->O1Ep1
-//    + [{O1EpisodeTwo}]
-//       ->O1Ep2
-//    + [{O1EpisodeThree}]
-//        ->O1Ep3
-//    + [{O1EpisodeFour}]
-//        ->O1Ep4
-//    + [{O1EpisodeFive}]
-//       ->O1Ep5
--> DONE
-
-
-=== O1Preface ===
-{SeasonO1}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
---------------------------------
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O1StartMenu
-    + [next (spoilers if you proceed!)]
-NPCs
---------------------------------
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O1StartMenu
-    + [next]
-
-DICE ROLL
---------------------------------
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O1StartMenu
-    + [next]
-
-- MOVEMENT
---------------------------------
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->O1StartMenu
-//    + [next]
-
 === O1Prologue ===
 - PROLOGUE
 - Blue Mug
@@ -89,7 +24,7 @@ Run - {MoveRun}
 - {ServingMaid} says, "Well I've heard talk of a falling star that has the Queen's interest."
 - {TheCleric}'s eyebrows arch.
     + "Tell us more about the falling star"
-- {rumorSS}
+- {RumorsOne}
 - Your party talks over your options.
     + {TheWizard} says, "If we want to accept this quest, asking questions at the castle of the noble family makes the most sense."
     + {TheCleric} says, "I could check with other priests to find out their interpretation of the omen," she pauses and continues, "Going to all of those towers will require a lot of travel and we'll still need to go to the castle."
@@ -105,30 +40,30 @@ Run - {MoveRun}
 // Room 1: Guardian OR Room 2: Puzzle/Role play Challenge
 {O1EpisodeOne}
 - You answer,
-+ "Lets go to {castle2}, home of the noble family" ->O1Ep1
++ "Lets go to {CastleTwo}, home of the noble family" ->O1Ep1
 + "Lets go to {MoonTower}" -> Moon_Tower
 + "Let's go to {SunTower}" -> Sun_Tower
 + "Let's go to {MarsTower}." -> Mars_Tower
-- The trip to {castle2} is uneventful. You are greeted by {castellan} the castellan, the custodian of the {nobleFamily}'s castle.
+- The trip to {CastleTwo} is uneventful. You are greeted by {Castellan} the Castellan, the custodian of the {NobleFamily}'s castle.
 + [next]
 
-{castellan} says with exasperation, "Another party of adventurers hoping to earn easy gold from the royal family. I'll stop you now. You will get paid NOTHING in advance."
+{Castellan} says with exasperation, "Another party of adventurers hoping to earn easy gold from the royal family. I'll stop you now. You will get paid NOTHING in advance."
 He pauses.
 At this {theFighter} looks around indicating you should all leave.
-    + You motion for the castellan to continue.
-- He shrugs and continues, "You will only be paid IF you learn something that {queen} doesn't already know. {queen} already has advisors. You must provide EVIDENCE for any new knowledge."
+    + You motion for the Castellan to continue.
+- He shrugs and continues, "You will only be paid IF you learn something that {Queen} doesn't already know. {Queen} already has advisors. You must provide EVIDENCE for any new knowledge."
 He pauses again.
-- {castellan} finishes with, "If you would kindly leave the castle grounds," and gestures back towards the road.
+- {Castellan} finishes with, "If you would kindly leave the castle grounds," and gestures back towards the road.
   + "Thanks for nothing" {theFighter} says and turns away.
   + A firm hand from {theCleric} grabs {theFighter} and makes him wait.
 - You quickly reply, "We are serious understanding how objects travel through the ether and why objects are falling out it."
 You continue almost in a whisper, "We want to understand the universe and its glowing stars."
 + [next]
-- {castellan} is still skeptical.
+- {Castellan} is still skeptical.
 - Roll PERSUASION and check with the game master.
   + [Succeeds]
   + [Fails]
-  -- {castellan} is not persuaded and turns to go. You slip him {~a gold piece|2 gold pieces|3 gold pieces|4 gold pieces}.]
+  -- {Castellan} is not persuaded and turns to go. You slip him {~a gold piece|2 gold pieces|3 gold pieces|4 gold pieces}.]
 - He stops to reconsider. He notices the scholarly robes of {theWizard} and the wholesome looking {theCleric}.
 "Well if you are serious, I suggest you seek out Sir Tycho Brahe and his mage Kepler," and he turns to go.
     + You say, "Wait!"
@@ -145,38 +80,38 @@ You decide there's nothing else to learn here, and make your way towards {MarsTo
 = stayOrGo
 You say, "We should learn something about these two advisors before we just go knocking on their door."
 {theWizard} nods approvingly.
-+ "An excellent suggestion," replies {theCleric}
++ \ {TheCleric}: "An excellent suggestion"
 -
-+ "There's nothing else to learn here. Let's go" answers {theFighter}.
++ \ {TheFighter}: "There's nothing else to learn here. Let's go".
 - {theCleric} says "Sorry. You're out numbered on this one."
-- You turn to {castellan},
+- You turn to {Castellan},
   + "Do you have anything else that might aid us?"
-- The castellan turns back to you. {castellan} says, "I would recommend reading Astronomia nova."
+- The Castellan turns back to you. {Castellan} says, "I would recommend reading Astronomia nova."
   + {theFighter} scrunches his eyebrows in confusion.
-  -- {castellan} says: "Its a book!" and rolls his eyes.
+  -- {Castellan} says: "Its a book!" and rolls his eyes.
   + {theCleric} takes the book, "Thank you."
 
 - You open the cover of the book and see a description of the astronomers on the first pages.
     + [Description of Brahe]
-        -- {BraheDescription}
+        -- {AboutBrahe}
     + Description of Kepler
-        -- {KeplerDescription}
-    + [Skipe the descriotions]
-- {theFighter} says sarcastically, "Well this is going to be interesting."
-- "Indeed it will," says {theWizard} without any hint of sarcasm.
-+ [Go to {Mars_Tower}] // -> MarsTower
+        -- {AboutKepler}
+    + [Skip the descriptions]
+- {TheFighter}: says sarcastically, "Well this is going to be interesting."
+- {TheWizard}: says without sarcasm, "Indeed it will"
++ [Go to {Mars_Tower}] // -> MarsTowers
 ->DONE
 
 === Moon_Tower ===
  {MoonTower}
-You arrive at {MoonTower}, but don't learn anything helpful. For now, it's best to go to {castle2}.
+You arrive at {MoonTower}, but don't learn anything helpful. For now, it's best to go to {CastleTwo}.
 + [next] ->O1Ep1
 
 -> DONE
 
 === Sun_Tower ===
  {SunTower}
-You arrive at {SunTower}, but don't learn anything helpful. For now, it's best to go to {castle2}.
+You arrive at {SunTower}, but don't learn anything helpful. For now, it's best to go to {CastleTwo}.
 + [next] ->O1Ep1
 -> DONE
 
@@ -216,19 +151,18 @@ You arrive at {MarsTower}.
 -> DONE
 
 = early
-You arrive at {MarsTower}, but don't learn anything helpful. For now, it's best to go to {castle2}.
+You arrive at {MarsTower}, but don't learn anything helpful. For now, it's best to go to {CastleTwo}.
 + [next] ->O1Ep1
 
 
 === ChapterOne ===
 -> DONE
 
-=== CastleOne ===
-= scene
- >{castle1}
-You arrive at {castle1} and find it underwhelming. Many stones have fallen from the outer walls, and thick mosses and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied. You walk through the outer rubble, and enter the tower.
+=== Castle_One ===
+You arrive at {Castle_One} and find it underwhelming. Many stones have fallen from the outer walls, and thick mosses and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied. You walk through the outer rubble, and enter the tower.
 + On the inside, <>
 - it is surprisingly nicer. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right. -> vestibule
+->DONE
 
 = vestibule
 // Choices could be conditionally based on what options players have seen before
@@ -335,7 +269,72 @@ Players will travel to the wandering Wizard's Tower to look for him. Some of the
     ->O1StartMenu
 ->DONE
 
+=== O1StartMenu ===
+START MENU
+    + {not O1Preface} [Preface]
+    ->O1Preface
+    + [PRESS START]
+    ->O1Prologue
+    + [{O1EpisodeOne}]
+    ->O1Ep1
+    + [{O1EpisodeTwo}]
+    ->O1Ep2
+    + [{O1EpisodeThree}]
+    ->O1Ep3
+    + [{O1EpisodeFour}]
+    ->O1Ep4
+    + [{O1EpisodeFive}]
+    ->O1Ep5
+-> DONE
 
+=== O1Preface ===
+{SeasonO1}
+SETTING
+{WorldSetting}
+PURPOSE
+{CYOAPurpose}
+->Characters
+
+=== Characters ===
+CHARACTERS
+--------------------------------
+CLERIC: {Cleric} (also {TheCleric} & {theCleric})
+FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
+ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
+WIZARD: {Wizard} (also {TheWizard} & {theWizard})
+    +[Ω]
+        ->O1StartMenu
+    + [next (spoilers if you proceed!)]
+NPCs
+--------------------------------
+BLUE MUG OWNER: {MugOwner}
+SERVING MAID: {ServingMaid}
+    +[Ω]
+        ->O1StartMenu
+    + [next]
+
+DICE ROLL
+--------------------------------
+d4 {d4}
+d6 {d6}
+d8 {d8}
+d10 {d10}
+d12 {d12}
+d20 {d20}
+d100 {100}
+    +[Ω]
+        ->O1StartMenu
+    + [next]
+
+- MOVEMENT
+--------------------------------
+Stealth: {MoveStealth}
+Walk: {MoveWalk}
+Hustle: {MoveHustle}
+Run: {MoveRun}
+->DONE
+    +[Ω] ->O1StartMenu
+->DONE
 
 
 
@@ -354,25 +353,8 @@ Players will travel to the wandering Wizard's Tower to look for him. Some of the
 // AUDIO
 // ***************************************************************
 
-// ***************************************************************
-// SCENES
-// ***************************************************************
-VAR castle1 = "Clun Castle"
-VAR CelestialTower = "Celestial Tower"  // Celestial Towers
-VAR MoonTower = "The Tower of Lunae"
-VAR SunTower = "The Tower of Helios"
-VAR MarsTower = "The Tower of Nergal"
 
-// ***************************************************************
-// PEOPLE
-// ***************************************************************
-VAR servingMaid2 = "JoJo"
-VAR rumorSS = "As you may know, the Queen has been planning a 'coming of age' party for the crown prince. It is said that a star has fallen in the nearby swamps to the north. The Queen would like to know if this is a favorable sign from the gods or an evil sign. She would also like to know if more falling stars can be expected. She does not want ill favored events surrounding the prince's celebration."
-VAR queen = "Queen Justina"
-VAR nobleFamily = "Noord Vlakte"
-VAR castle2 = "Muiderslot Castle"
-VAR castellan = "Mr. Hillenar"
-VAR BraheDescription = "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models, and created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
-VAR KeplerDescription = "Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+
+
 
 ->END
