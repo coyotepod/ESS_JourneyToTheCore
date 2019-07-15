@@ -30,8 +30,11 @@ VAR O0EpisodeFive =     "HABITS OF MIND"
 \-------------------------------------------------------
 - ABOUT "{SeasonO1}"
 \-------------------------------------------------------
-Players make their way to a wizard's (astronomy) tower where they must gain entry, fight a spectre, find a notebook, and get a teaser about Origins.
-(1) Players wake up in the woods disoriented and not knowing what to do. (2) They learn that choices impact the story and must be persistent. (3) Players go from: roadside TO a deadly battle in ruins TO a deadly roadside battle TO exploring a village TO role-playing in The Blue Mug.
+(1) Gain entry to the Wizard's tower
+(2) Fight a spectre
+(3) Find and interpret the wizard's notebook
+(4) Fight an alcolyte of the fire and minor fire elemental. Fire Elemental air, earth, fire, or water
+(5) Teaser about Origins
 Purpose:
 \* learn how to interact with a Choose Your Own Adventure story
 \* build a sense of community with classmates
@@ -174,14 +177,15 @@ VAR RoomFive = "Reward, Revelation, Plot Twist"
 // RUMORS
 VAR ORumorsOne =       "As you may know, the Queen has been planning a 'coming of age' party for the crown prince. It is said that a star has fallen in the nearby swamps to the north. The Queen would like to know if this is a favorable sign from the gods or an evil sign. She would also like to know if more falling stars can be expected. She does not want ill favored events surrounding the prince's celebration."
 
-VAR ORumorsTwo = ""
-VAR ORumorsThree = ""
-VAR ORumorsFour = ""
-VAR ORumorsFive = ""
-VAR TTRumorsTwo = ""
-VAR TTRumorsThree = ""
-VAR TTRumorsFour = ""
-VAR TTRumorsFive = ""
+VAR OriginsRumorsTwo = ""
+VAR OriginsRumorsThree = ""
+VAR OriginsRumorsFour = ""
+VAR OriginsRumorsFive = ""
+VAR TimeTombsRumorsOne = ""
+VAR TimeTombsRumorsTwo = ""
+VAR TimeTombsRumorsThree = ""
+VAR TimeTombsRumorsFour = ""
+VAR TimeTombsRumorsFive = ""
 
 
 // MAIN CHARACTERS
