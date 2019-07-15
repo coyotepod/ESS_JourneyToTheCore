@@ -20,6 +20,8 @@ START MENU
         -> O0Ep4
     + [{O0EpisodeFive}]
         -> O0Ep5
+//   + [ALPHA] // Button to go to Master Start Menu?
+//        ->MasterStartMenu
     -> DONE
 
 === O0Prologue ===
@@ -351,21 +353,4 @@ Run - {MoveRun}
         ->O0StartMenu
 ->DONE
 
-// INVENTORY VARIABLES
-VAR food =          "no food"
-VAR weapons =       "no weapons"
-VAR armor =         "no armor"
-VAR items =         "no special items, not even flint and steel"
 
-// NPCS
-VAR Farmer1 =           "James"
-VAR Farmer2 =           "Robert"
-VAR Villager1 =         "Dan"
-VAR Boy1    =           "Timothy"
-VAR Girl1   =           "Becca"
-VAR BanditStats =      "BANDIT AC: 12 HP: 11"
-VAR BanditAction1 =     "SCIMITAR +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
-VAR BanditAction2 =     "LIGHT CROSSBOW +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
-VAR Drow =              ""
-
-// MONSTERS

@@ -11,7 +11,7 @@ INCLUDE origins-GlobalVariables.ink
 === O1Prologue ===
 - PROLOGUE
 - Blue Mug
-- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a{~ warm| big| kind} smile.
+- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a {~ warm| big| kind} smile.
 - {ServingMaid}: "Welcome weary adventurers! Anything else I can get the you?"
     + [Look at your companions]
       -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
@@ -24,7 +24,7 @@ INCLUDE origins-GlobalVariables.ink
 - {ServingMaid} says, "Well I've heard talk of a falling star that has the Queen's interest."
 - {TheCleric}'s eyebrows arch.
     + "Tell us more about the falling star"
-- {RumorsOne}
+- {ORumorsOne}
 - Your party talks over your options.
     + {TheWizard} says, "If we want to accept this quest, asking questions at the castle of the noble family makes the most sense."
     + {TheCleric} says, "I could check with other priests to find out their interpretation of the omen," she pauses and continues, "Going to all of those towers will require a lot of travel and we'll still need to go to the castle."
@@ -285,6 +285,9 @@ START MENU
     ->O1Ep4
     + [{O1EpisodeFive}]
     ->O1Ep5
+    + ABOUT 
+    ->About
+    
 -> DONE
 
 === O1Preface ===
@@ -336,25 +339,14 @@ Run: {MoveRun}
     +[Ω] ->O1StartMenu
 ->DONE
 
-
-
 // ***************************************************************
-//
 // ORGINS an Earth & Space Science story
-//
 // ***************************************************************
 //
 // ENDURING QUESTIONS
 // What is the universe?
 // What goes on in stars?
 // What are the predictable patterns caused by Earth’s movement in the solar system?
-
+//
 // ***************************************************************
-// AUDIO
-// ***************************************************************
-
-
-
-
-
 ->END
