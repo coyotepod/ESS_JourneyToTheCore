@@ -34,7 +34,7 @@ VAR O0EpisodeFive =     "HABITS OF MIND"
 (2) Fight a spectre
 (3) Find and interpret the wizard's notebook
 (4) Fight an alcolyte of the fire and minor fire elemental. Fire Elemental air, earth, fire, or water
-(5) Teaser about Origins
+(5) Teaser about Origins. Learn that a wizard or mage is behind the appearance of elementals. There is a plot to remake the world in his image. He thinks this can be accomplished by controlling elementals.
 Purpose:
 \* learn how to interact with a Choose Your Own Adventure story
 \* build a sense of community with classmates
@@ -56,14 +56,13 @@ VAR O1EpisodeFive =     "A BOOK"
 (1) Hook (2) Learn (3) Players go from:
 \-------------------------------------------------------
 VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
-VAR O2EpisodeOne =     "EPISODE 1"
-VAR O2EpisodeTwo =     "EPISODE 2"
-VAR O2EpisodeThree =   "EPISODE 3"
-VAR O2EpisodeFour =    "EPISODE 4"
-VAR O2EpisodeFive =    "EPISODE 5"
+VAR O2EpisodeOne =      "EPISODE 1"
+VAR O2EpisodeTwo =      "EPISODE 2"
+VAR O2EpisodeThree =    "EPISODE 3"
+VAR O2EpisodeFour =     "EPISODE 4"
+VAR O2EpisodeFive =     "EPISODE 5"
 + [next]
-
-
+A history of sorts? How the elementals created the world. There are unsual time anachronisms. Time needs to be stablized. Suspect that wizard or mage has been trying something with the time gem in the time tombs. 
 \-------------------------------------------------------
 - ABOUT "{SeasonO3}"
 \-------------------------------------------------------
