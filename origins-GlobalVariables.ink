@@ -52,25 +52,22 @@ Purpose:
 
 \-------------------------------------------------------
 - ABOUT "{SeasonO1}"
+VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
+VAR O1EpisodeOne =      "ENTERING THE TOWER"
+VAR O1EpisodeTwo =      "SKELETON ENCOUNTER"
+VAR O1EpisodeThree =    "MAGE'S NOTEBOOK"
+VAR O1EpisodeFour =     "FIRE ELEMENTAL ENCOUNTER"
+VAR O1EpisodeFive =     "A MAGE'S CODE"
+
 (1) Gain entry to the Wizard's tower by completing a "quiz" about the scientists or picking a lock. Depends if students read the backstory
-(2) Fight a skeletons on the landing before the evil mage's study
+(2) Fight skeletons on the stairs landing before entering the evil mage's study
 (3) Find and attempt to decipher the mages's notebook
 (4) Battle a Fire Elemental
-(5) Teaser about Origins. Learn that a wizard or mage is behind the appearance of elementals. There is a plot to remake the world in his image. He thinks this can be accomplished by controlling elementals.
+(5) Learn that an evil mage is behind the appearance of elementals. There is a hidden plot to remake the world with a dark crystal the controls elementals. You need to gather your own anti-matter / crystal shards / essence of elementals
 PURPOSE:
-
-\-------------------------------------------------------
+Habits of Mind:
 + [next]
 
-
-VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
-VAR O1EpisodeOne =      "SPECTRE ENCOUNTER"
-VAR O1EpisodeTwo =      "ENTERING THE TOWER"
-VAR O1EpisodeThree =    "THE STUDY (BREAKOUT)"
-VAR O1EpisodeFour =     "ACOLYTE-MAGE ENCOUNTER"
-VAR O1EpisodeFive =     "A MAGE'S NOTEBOOK"
-
-\-------------------------------------------------------
 - ABOUT "{SeasonO2}"
 (1) A history of sorts? How the elementals created the world. There are unusual time anachronisms. Time needs to be stabilized. Suspect that wizard or mage has been trying something with the time gem in the time tombs.
 (1)
