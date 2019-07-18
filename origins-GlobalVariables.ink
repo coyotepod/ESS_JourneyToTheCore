@@ -38,7 +38,8 @@ VAR O0EpisodeFive =     "HABITS OF MIND"
 (3) Ruins & Ambush: Engage in deadline combat (Bandits, Spectre) at the ruins and roadside, but eventually get to ride into the village
 (2) The Village: Explore the village briefly before arriving at The Blue Mug where they engage role-play
 (5) Blue Mug: Reflect on the Habits of Mind both in game and real world
-Purpose:
+
+PURPOSE:
 \* learn how to interact with a Choose Your Own Adventure story
 \* build a sense of community with classmates
 \* discover major staging area for stories (The Blue Mug)
@@ -47,8 +48,6 @@ Purpose:
 \* learn about role-playing COMBAT
 \-------------------------------------------------------
 + [next]
-
-
 
 \-------------------------------------------------------
 - ABOUT "{SeasonO1}"
@@ -69,60 +68,64 @@ Habits of Mind:
 + [next]
 
 - ABOUT "{SeasonO2}"
-(1) A history of sorts? How the elementals created the world. There are unusual time anachronisms. Time needs to be stabilized. Suspect that wizard or mage has been trying something with the time gem in the time tombs.
-(1)
-(2)
-(3)
-(4)
-(5)
-\-------------------------------------------------------
-+ [next]
+(1) Cliffs of Scotland (analogy): encounter sand beetles before making way to the exposed layers. Charles Lyle and Alfred Wegener make an appearance in this storyline. A history of sorts? How the elementals created the world. There are unusual time anachronisms. Time needs to be stabilized. Suspect that wizard or mage has been trying something with the time gem in the time tombs.
+(2) Figure out the sequence of rocks and events in the rock layers which will (somehow) gain players entry to maze of erosion valleys.
+(3) Weathering and Erosion (stream erosion or flooded river?) inhibit the progress of players.
+(4) Battle an Air Elemental before gaining possession of the meteorite ore. The meteorite ore is needed to forge magical talisman which in turn is needed to craft Essence of Ether.
+(5) Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
+
 VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
-VAR O2EpisodeOne =      "EPISODE 1"
-VAR O2EpisodeTwo =      "EPISODE 2"
+VAR O2EpisodeOne =      "FINDING LYELL IN THE HIGHLANDS"
+VAR O2EpisodeTwo =      "STONE GIANTS & BEETLES""
 VAR O2EpisodeThree =    "EPISODE 3"
 VAR O2EpisodeFour =     "EPISODE 4"
 VAR O2EpisodeFive =     "EPISODE 5"
 
+HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
+LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time.
+Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
++ [next]
 
-\-------------------------------------------------------
 - ABOUT "{SeasonO3}"
-(1)
-(2)
-(3) Breakout
-(4)
-(5)
-\-------------------------------------------------------
 VAR SeasonO3 =          "JOURNEY TO THE CORE"
 VAR O3EpisodeOne =     "EPISODE 1"
 VAR O3EpisodeTwo =     "EPISODE 2"
 VAR O3EpisodeThree =   "EPISODE 3"
 VAR O3EpisodeFour =    "EPISODE 4"
 VAR O3EpisodeFive =    "EPISODE 5"
+
+(1) Take meteorite to village and find out that need to go to Ironforge
+(2) Fight Deurgar to enter the Iron Gate. perhaps a key to enter the gates?
+(3) Journey deeper into the earth
+(4) Discover and Trick OR Battle an Earth Elemental
+(5) trapped deep in the earth but ride a spring of water upwards
+
+
 + [next]
 
-\-------------------------------------------------------
+
 - ABOUT "{SeasonO4}"
-(1)
-(2)
-(3) Breakout
-(4)
-(5)
-\-------------------------------------------------------
-VAR SeasonO4 =          "VOYOGE UNDER THE SEA"
+VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
 VAR O4EpisodeOne =     "EPISODE 1"
 VAR O4EpisodeTwo =     "EPISODE 2"
 VAR O4EpisodeThree =   "EPISODE 3"
 VAR O4EpisodeFour =    "EPISODE 4"
 VAR O4EpisodeFive =    "EPISODE 5"
+Get an underwater vessel from the gnomes to enter an underwater kingdom. Merimidon
+(1)
+(2)
+(3)
+(4) Negotiate OR Battle a Water Elemental
+(5)
+
 + [next]
 
 // ***************************************************************
 - ABOUT {SeasonO5}
 (1)
 (2)
-(3) Breakout
-(4)
+(3)
+(4) Create an Essence of Ether
 (5)
 \-------------------------------------------------------
 VAR SeasonO5 =          "ADVENTURE TO NEW HORIZONS"
@@ -345,14 +348,38 @@ VAR MarsTower = "The Tower of Nergal"
 // MONSTERS
 // ***************************************************************
 VAR BanditStats =       "BANDIT AC: 12 HP: 11"
-VAR BanditAction1 =     "SCIMITAR +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
-VAR BanditAction2 =     "LIGHT CROSSBOW +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+  VAR BanditAction1 =     "SCIMITAR +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+  VAR BanditAction2 =     "LIGHT CROSSBOW +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
 VAR Drow =              ""
+  VAR DrowAction1 =              ""
+  VAR DrowAction2 =              ""
+VAR CaveBearStats = "AC: HP:"
+  VAR CaveBearAction1 = "BITE"
+  VAR CaveBearAction2 = "CLAW"
+VAR AirElementalStats = ""
+  VAR AirElementalAction1 = ""
+  VAR AirElementalAction2 = ""
+VAR FireElementalStats =""
+  VAR FireElementalAction1 = ""
+  VAR FireElementalAction2 = ""
+VAR EarthElementalStats = ""
+  VAR EarthElementalAction1 = ""
+  VAR EarthElementalAction2 = ""
+VAR WaterElementalStats = ""
+  VAR WaterElementalAction1 = ""
+  VAR WaterElementalAction2 = ""
+VAR SkeletonStats = ""
+  VAR SkeletonAction1 = ""
+  VAR SkeletonAction2 = ""
+VAR SpectreStats = ""
+  VAR SpectreAction1 = ""
+  VAR SpectreAction2 = ""
+
 
 // ***************************************************************
 // PREFACE
 // ***************************************************************
-VAR WorldSetting =      "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and steampunk. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
+VAR WorldSetting =      "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and invention. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
 
 VAR CYOAPurpose =       "Purpose of the series..."
 CONST HabitsOfMind  =   "way of thinking"
@@ -394,8 +421,7 @@ VAR items =             "no special items, not even flint and steel"
 ->DONE
 
 
-
-
-
+VAR EpicWeapon = "Sickle of Cronus"
+VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the Time Tombs. It can only be crafted at the forge of Hephaestus. The hearth must be crafted with special bricks. The hearth bricks are from a special type of rock only found deep in the planet's interior where players battle an earth elemental and fire elemental. The fire is started and maintained from the essence of a fire elemental. The bellows must be filled with the essence of an air elemental. The ore of the sickle comes from a meteorite. The sickle blade must be quenched in oil and water when complete though that water must come from the essence of a water elemental."
 // END OF GLOBAL VARIABLES
 -> END
