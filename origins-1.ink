@@ -93,9 +93,9 @@ You say, "We should learn something about these two advisors before we just go k
 
 - You open the cover of the book and see a description of the astronomers on the first pages.
     + [Description of Brahe]
-        -- {AboutBrahe}
+        -- {BraheAbout}
     + Description of Kepler
-        -- {AboutKepler}
+        -- {KeplerAbout}
     + [Skip the descriptions]
 - {TheFighter}: says sarcastically, "Well this is going to be interesting."
 - {TheWizard}: says without sarcasm, "Indeed it will"

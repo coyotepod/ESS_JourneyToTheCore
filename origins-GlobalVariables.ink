@@ -267,6 +267,7 @@ VAR Wizard =        "WIZARD"
 // LOCATIONS
 // ***************************************************************
 VAR CastleOne = "Clun Castle"
+VAR CastleTwo = "Muilder Slot"
 VAR CelestialTower = "Celestial Tower"  // Celestial Towers
 VAR MoonTower = "The Tower of Lunae"
 VAR SunTower = "The Tower of Helios"
