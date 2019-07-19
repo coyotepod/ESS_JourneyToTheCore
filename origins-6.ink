@@ -1,107 +1,87 @@
 #title: Mining the Caverns of Time
 #author: Master Scoy
 
-->St1StartMenu
+// ->O6StartMenu
 
-INCLUDE origins-GlobalVariables.ink
-INCLUDE time-tombs-GlobalVariables.ink
-
-
+// INCLUDE global-variables.ink
+// INCLUDE origins-variables.ink
 
 
-=== TTEp1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
-{St1EpisodeOne}
-    +[Ω]
-        ->St1StartMenu
+=== O6Ep1 ===
+// Room 1: Guardian OR Room 2: Puzzle / Roleplay Challenge
+{O6EpisodeOne}
+    // +[Ω]
+        // ->O6StartMenu
     +[NEXT EPISODE]
-        ->St1Ep1
-    
+        ->O6Ep2
+
 ->DONE
 
-=== St1Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+=== O6Ep2 ===
+// Room 2: Puzzle / Roleplay Challenge OR Room 1: Guardian
 
-{St1EpisodeTwo}
-    +[Ω]
-        ->St1StartMenu
+{O6EpisodeTwo}
+    // +[Ω]
+        // ->O6StartMenu
     +[NEXT EPISODE]
-        ->St1Ep3
-    
+        ->O6Ep3
+
 ->DONE
 
-=== St1Ep3 ===
+=== O6Ep3 ===
 // Room 3: Trick or Setback
-{St1EpisodeThree}
-    +[Ω]
-        ->St1StartMenu
+{O6EpisodeThree}
+    // +[Ω]
+        // ->O6StartMenu
     +[NEXT EPISODE]
         ->S0Ep4
-    
+
 ->DONE
 
 === S0Ep4 ===
 // Room 4: Climax
-{St1EpisodeFour}
-    +[Ω]
-        ->St1StartMenu
+{O6EpisodeFour}
+    // +[Ω]
+        // ->O6StartMenu
     +[NEXT EPISODE]
-        ->St1Ep5
-        
+        ->O6Ep5
+
 ->DONE
 
-=== St1Ep5 ===
+=== O6Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{St1EpisodeFive}
+{O6EpisodeFive}
 
-    +[Ω]
-        ->St1StartMenu
+    // +[Ω]
+        // ->O6StartMenu
     +[NEXT EPISODE]
-        ->St1Epilogue
-    
+        ->O6Epilogue
+
 ->DONE
 
-=== St1Epilogue ===
+=== O6Epilogue ===
     EPILOGUE
-    +[Ω]
-        ->St1StartMenu
+    // +[Ω]
+        // ->O6StartMenu
+->DONE
 
-=== St1StartMenu ===
-Start Menu
-//    + {not St1Preface} [Preface]
-//        ->St1Preface
-    + [PRESS START]
-        -> St1Prologue
-    + [{St1EpisodeOne}]
-        -> St1Ep1
-    + [{St1EpisodeTwo}]
-        -> St1Ep2
-    + [{St1EpisodeThree}]
-        -> St1Ep3
-    + [{St1EpisodeFour}]
-        -> S0Ep4
-    + [{St1EpisodeFive}]
-        -> St1Ep5
-
--> DONE
-
-=== St1Preface ===
+=== O6Preface ===
 {Seasont1}
 SETTING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
 ->DONE
-    +[Ω]
-        ->St1StartMenu
+    // +[Ω]
+        // ->O6StartMenu
 
-=== St1Prologue ===
+=== O6Prologue ===
 PROLOGUE
-    +[Ω]
-        ->St1StartMenu
+    // +[Ω]
+        // ->O6StartMenu
     +[NEXT EPISODE]
-        ->St1Ep1
-    
+        ->O6Ep1
+
 ->DONE
 ->END
 <b>Chapter 2: AN INVITATION</b> // An Invitation to The Arrakis Sandworms Raid”</b>

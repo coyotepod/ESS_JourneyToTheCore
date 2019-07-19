@@ -2,32 +2,13 @@
 #author: Master Scoy
 
 
-->O5StartMenu
-
-INCLUDE origins-GlobalVariables.ink
-
-
-=== O5StartMenu ===
-START MENU
-    + [PRESS START]
-        -> O5Prologue
-    + [{O5EpisodeOne}]
-        -> O5Ep1
-    + [{O5EpisodeTwo}]
-        -> O5Ep2
-    + [{O5EpisodeThree}]
-        -> O5Ep3
-    + [{O5EpisodeFour}]
-        -> O5Ep4
-    + [{O5EpisodeFive}]
-        -> O5Ep5
-
--> DONE
+// INCLUDE global-variables.ink
+// INCLUDE origins-variables.ink
 
 === O5Prologue ===
 PROLOGUE
-    +[Ω]
-        ->O5StartMenu
+    // +[Ω]
+        // ->O5StartMenu
     +[NEXT EPISODE]
         ->O5Ep1
 
@@ -36,8 +17,8 @@ PROLOGUE
 === O5Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
 {O5EpisodeOne}
-    +[Ω]
-        ->O5StartMenu
+    // +[Ω]
+        // ->O5StartMenu
     +[NEXT EPISODE]
         ->O5Ep1
 
@@ -47,8 +28,8 @@ PROLOGUE
 // Room 2: Puzzle/Roleplay Challenge OR Room 1: Guardian
 
 {O5EpisodeTwo}
-    +[Ω]
-        ->O5StartMenu
+    // +[Ω]
+        // ->O5StartMenu
     +[NEXT EPISODE]
         ->O5Ep3
 
@@ -57,8 +38,8 @@ PROLOGUE
 === O5Ep3 ===
 // Room 3: Trick or Setback
 {O5EpisodeThree}
-    +[Ω]
-        ->O5StartMenu
+    // +[Ω]
+        // ->O5StartMenu
     +[NEXT EPISODE]
         ->O5Ep4
 
@@ -67,8 +48,8 @@ PROLOGUE
 === O5Ep4 ===
 // Room 4: Climax
 {O5EpisodeFour}
-    +[Ω]
-        ->O5StartMenu
+    // +[Ω]
+        // ->O5StartMenu
     +[NEXT EPISODE]
         ->O5Ep5
 
@@ -78,8 +59,8 @@ PROLOGUE
 // Room 5: Reward, Revelation, or Twist
 {O5EpisodeFive}
 
-    +[Ω]
-        ->O5StartMenu
+    // +[Ω]
+        // ->O5StartMenu
     +[NEXT EPISODE]
         ->O5Epilogue
 

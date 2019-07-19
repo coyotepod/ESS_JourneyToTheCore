@@ -2,32 +2,16 @@
 #author: Master Scoy
 
 
-->O4StartMenu
+// INCLUDE global-variables.ink
+// INCLUDE origins-variables.ink
 
-INCLUDE origins-GlobalVariables.ink
-INCLUDE time-tombs-GlobalVariables.ink
-
-=== O4StartMenu ===
-START MENU
-    + [PRESS START]
-        -> O4Prologue
-    + [{O4EpisodeOne}]
-        -> O4Ep1
-    + [{O4EpisodeTwo}]
-        -> O4Ep2
-    + [{O4EpisodeThree}]
-        -> O4Ep3
-    + [{O4EpisodeFour}]
-        -> O4Ep4
-    + [{O4EpisodeFive}]
-        -> O4Ep5
 
 -> DONE
 
 === O4Prologue ===
 PROLOGUE
-    +[Ω]
-        ->O4StartMenu
+//    +[Ω]
+//        ->O4StartMenu
     +[NEXT EPISODE]
         ->O4Ep1
 
@@ -36,10 +20,10 @@ PROLOGUE
 === O4Ep1 ===
 // Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
 {O4EpisodeOne}
-    +[Ω]
-        ->O4StartMenu
+//    +[Ω]
+//        ->O4StartMenu
     +[NEXT EPISODE]
-        ->O4Ep1
+        ->O4Ep2
 
 ->DONE
 
@@ -47,8 +31,8 @@ PROLOGUE
 // Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
 
 {O4EpisodeTwo}
-    +[Ω]
-        ->O4StartMenu
+//    +[Ω]
+//        ->O4StartMenu
     +[NEXT EPISODE]
         ->O4Ep3
 
@@ -57,8 +41,8 @@ PROLOGUE
 === O4Ep3 ===
 // Room 3: Trick or Setback
 {O4EpisodeThree}
-    +[Ω]
-        ->O4StartMenu
+//    +[Ω]
+//        ->O4StartMenu
     +[NEXT EPISODE]
         ->O4Ep4
 
@@ -67,8 +51,8 @@ PROLOGUE
 === O4Ep4 ===
 // Room 4: Climax
 {O4EpisodeFour}
-    +[Ω]
-        ->O4StartMenu
+//    +[Ω]
+//        ->O4StartMenu
     +[NEXT EPISODE]
         ->O4Ep5
 
@@ -78,8 +62,8 @@ PROLOGUE
 // Room 5: Reward, Revelation, or Twist
 {O4EpisodeFive}
 
-    +[Ω]
-        ->O4StartMenu
+//    +[Ω]
+//        ->O4StartMenu
     +[NEXT EPISODE]
         ->O4Epilogue
 

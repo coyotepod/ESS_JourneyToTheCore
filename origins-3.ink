@@ -2,10 +2,9 @@
 #author: Master Scoy
 
 
-->O3StartMenu
-INCLUDE origins-GlobalVariables.ink
 
-
+// INCLUDE global-variables.ink
+// INCLUDE origins-variables.ink
 
 === O3Prologue ===
 PROLOGUE
@@ -36,8 +35,8 @@ OLD MAN: "Absolutely not."
 YOUNG MAN: This denial gives the young man more forwardness, "Hello, I am Axel and this my uncle, Alfred Wegner, a professor of geology.
 
 YOU: "Greeting Axel and Professor Wegner"
-    +[Ω]
-        ->O3StartMenu
+//    +[Ω]
+//        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep1
 
@@ -46,10 +45,10 @@ YOU: "Greeting Axel and Professor Wegner"
 === O3Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
-    +[Ω]
-        ->O3StartMenu
+//    +[Ω]
+//        ->O3StartMenu
     +[NEXT EPISODE]
-        ->O3Ep1
+        ->O3Ep2
 
 ->DONE
 
@@ -57,8 +56,8 @@ YOU: "Greeting Axel and Professor Wegner"
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
 {O3EpisodeTwo}
-    +[Ω]
-        ->O3StartMenu
+//    +[Ω]
+//        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep3
 
@@ -67,16 +66,15 @@ YOU: "Greeting Axel and Professor Wegner"
 === O3Ep3 ===
 // Room 3: Trick or Setback
 {O3EpisodeThree}
-    +[Ω]
-        ->O3StartMenu
+//    +[Ω]
+//        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep4
 === O3Ep4 ===
 // Room 4
 {O3EpisodeFour}
-    +[Ω]
-        ->O3StartMenu
-    +[NEXT EPISODE]
+//        ->O3StartMenu
+//    +[NEXT EPISODE]
         ->O3Ep5
 ->DONE
 === O3Ep5 ===
@@ -94,21 +92,3 @@ EPILOGUE
 // ENDURING QUESTIONS
 // AUDIO
 // ***************************************************************
-=== O3StartMenu ===
-START MENU
-//    + {not O3Preface} [Preface]
-//        ->O3Preface
-    + [PRESS START]
-        -> O3Prologue
-    + [{O3EpisodeOne}]
-        -> O3Ep1
-    + [{O3EpisodeTwo}]
-        -> O3Ep2
-    + [{O3EpisodeThree}]
-        -> O3Ep3
-    + [{O3EpisodeFour}]
-        -> O3Ep4
-    + [{O3EpisodeFive}]
-        -> O3Ep5
-
--> DONE

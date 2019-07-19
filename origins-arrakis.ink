@@ -1,34 +1,15 @@
 #title: Heroes of Arrakis
 #author: Master Scoy
 
-->ArrakisStartMenu
-INCLUDE origins-GlobalVariables.ink
 
-
-
-
-=== ArrakisStartMenu ===
-START MENU
-    + [PRESS START]
-        ->ArrakisPrologue
-    + [{ArrakisEpisodeOne}]
-        ->ArrakisEp1
-    + [{ArrakisEpisodeTwo}]
-        ->ArrakisEp2
-    + [{ArrakisEpisodeThree}]
-        ->ArrakisEp3
-    + [{ArrakisEpisodeFour}]
-        ->ArrakisEp4
-    + [{ArrakisEpisodeFive}]
-        ->ArrakisEp5
-
--> DONE
+// INCLUDE global-variables.ink
+// INCLUDE origins-variables.ink
 
 
 === ArrakisPrologue ===
 PROLOGUE
-    +[Ω]
-        ->ArrakisStartMenu
+//    +[Ω]
+//        ->ArrakisStartMenu
     +[NEXT EPISODE]
         ->ArrakisEp1
 
@@ -76,8 +57,8 @@ Your party ventures from the cabin onto the ship's deck. A band of eight pirates
 - The captain hastily writes a note and attaches it to a crow and sends it off toward Storm Crown.
 
 
-    +[Ω]
-        ->ArrakisStartMenu
+ //   +[Ω]
+ //       ->ArrakisStartMenu
     +[NEXT EPISODE]
         ->ArrakisEp1
 
@@ -102,8 +83,8 @@ Recently an expedition party in the southeast has disturbed a previously unknown
 - Party members should help one another with preparations including studying notes together or playing Quizlet games. We're in this together!
 
 {ArrakisEpisodeTwo}
-    +[Ω]
-        ->ArrakisStartMenu
+//    +[Ω]
+//        ->ArrakisStartMenu
     +[NEXT EPISODE]
         ->ArrakisEp3
 
@@ -112,8 +93,8 @@ Recently an expedition party in the southeast has disturbed a previously unknown
 === ArrakisEp3 ===
 // Room 3: Trick or Setback
 {ArrakisEpisodeThree}
-    +[Ω]
-        ->ArrakisStartMenu
+//    +[Ω]
+//        ->ArrakisStartMenu
     +[NEXT EPISODE]
         ->ArrakisEp4
 
@@ -122,8 +103,8 @@ Recently an expedition party in the southeast has disturbed a previously unknown
 === ArrakisEp4 ===
 // Room 4: Climax
 {ArrakisEpisodeFour}
-    +[Ω]
-        ->ArrakisStartMenu
+//    +[Ω]
+//        ->ArrakisStartMenu
     +[NEXT EPISODE]
         ->ArrakisEp5
 
@@ -133,8 +114,8 @@ Recently an expedition party in the southeast has disturbed a previously unknown
 // Room 5: Reward, Revelation, or Twist
 {ArrakisEpisodeFive}
 
-    +[Ω]
-        ->ArrakisStartMenu
+//    +[Ω]
+//        ->ArrakisStartMenu
     +[NEXT EPISODE]
         ->ArrakisEpilogue
 

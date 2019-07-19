@@ -2,35 +2,16 @@
 #author: Master Scoy
 
 
-->O0StartMenu
-INCLUDE origins-variables.ink
-INCLUDE global-variables.ink
 
 
-=== O0StartMenu ===
-//    + {not O0Preface} [Preface]
-//        ->O0Preface
-    + [PRESS START]
-        ->O0Prologue
-    + [{O0EpisodeOne}]
-        -> O0Ep1
-    + [{O0EpisodeTwo}]
-        -> O0Ep2
-    + [{O0EpisodeThree}]
-        -> O0Ep3
-    + [{O0EpisodeFour}]
-        -> O0Ep4
-    + [{O0EpisodeFive}]
-        -> O0Ep5
-//   + [ALPHA] // Button to go to Master Start Menu?
-//        ->MasterStartMenu
-    -> DONE
+
+
 
 === O0Prologue ===
 PROLOGUE
 Yellow rays of light shoot through the dense deciduous forest as the sun just starts peaking over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscious in some bushes along the side of this dirt path in the forests.
-    +[Ω]
-        ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep1
 ->DONE
@@ -51,8 +32,8 @@ You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sor
         -- You have {items}.
         ++ You decide to get up and start walking.
 - Once you get your footing on the path its an easy walk. You travel less than {~a quarter-mile|a half mile|a mile} before coming to a crossroads.
-    +[Ω]
-        ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
     + [NEXT EPISODE]
         ->O0Ep2
 ->DONE
@@ -126,8 +107,8 @@ The forest comes to a clearing and opens to village.
 // + [Go towards the village] -> Ep4
 // + [Go back west] -> CanisVilla.leave_early
 
-    +[Ω]
-        ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep3
 ->DONE
@@ -156,15 +137,16 @@ You walk into the courtyard, but nothing seems to be going on there. Most people
 = leave_early
 You decide the village is not for you. You head back west. It takes much longer without a ride, but you come to the crossroads again.
     // + You continue west. -> ClunCastle.early
-    +[Ω]
-        ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
+->DONE
 
 = sign
  A hanging sign with a dark blue mug above catches your eye. An inscription along the bottom reads "Drink from the cup of knowledge." This looks like a place to find some answers.
     + [Enter the Blue Mug]
     -
-    +[Ω]
-        ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep4
 
@@ -200,8 +182,8 @@ You decide the village is not for you. You head back west. It takes much longer 
 
 //-- "You must hone your skills if you plan on traveling in this area of the realm. Training and practicing one's skills before taking part in Adventures or attacking Bosses is always a good idea" she says.
 -
-    +[Ω]
-        ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep5
 ->DONE
@@ -314,8 +296,9 @@ PURPOSE
 
 - FIRST PUBLISHED: 2017
 - LAST UPDATED: Summer 2019
-    +[Ω]
-      ->O0StartMenu
+//   / +[Ω]
+//        ->O0StartMenu
+
     +[NEXT]
         ->O0Ep1
       

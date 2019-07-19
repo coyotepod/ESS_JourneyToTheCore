@@ -2,11 +2,9 @@
 #author: Master Scoy
 
 
-->O1StartMenu
-INCLUDE origins-GlobalVariables.ink
 
-
-
+// INCLUDE global-variables.ink
+// INCLUDE origins-variables.ink
 
 === O1Prologue ===
 - PROLOGUE
@@ -30,8 +28,8 @@ INCLUDE origins-GlobalVariables.ink
     + {TheCleric} says, "I could check with other priests to find out their interpretation of the omen," she pauses and continues, "Going to all of those towers will require a lot of travel and we'll still need to go to the castle."
     + "I just want to crack some skulls," replies {theFighter}.
 - They turn and look to you.
-    +[Ω]
-        ->O1StartMenu
+//    +[Ω]
+//        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep1
 ->DONE
@@ -202,12 +200,9 @@ Upon entering the tower room you see stacks of papers and books
 
 === O1Death ===
 You have died
-+ REZ ->O1StartMenu
 
 ->DONE
 
-+[Ω]
-    ->O1StartMenu
 +[NEXT]
     ->O1Ep1
 
@@ -218,8 +213,8 @@ You have died
 
 {O1EpisodeTwo}
     +[Ω]
-        ->O1StartMenu
-    +[NEXT EPISODE]
+//        ->O1StartMenu
+//    +[NEXT EPISODE]
         ->O1Ep3
 
 ->DONE
@@ -227,8 +222,8 @@ You have died
 === O1Ep3 ===
 // Room 3: Trick or Setback
 {O1EpisodeThree}
-    +[Ω]
-        ->O1StartMenu
+//    +[Ω]
+//        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep4
 
@@ -237,8 +232,8 @@ You have died
 === O1Ep4 ===
 // Room 4: Climax
 {O1EpisodeFour}
-    +[Ω]
-        ->O1StartMenu
+//    +[Ω]
+//        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep5
 
@@ -248,8 +243,8 @@ You have died
 // Room 5: Reward, Revelation, or Twist
 {O1EpisodeFive}
 
-    +[Ω]
-        ->O1StartMenu
+//    +[Ω]
+//        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Epilogue
 
@@ -265,28 +260,9 @@ DCI - Big Bang Theory, Cosmic Background Radiation, Redshift & galaxies moving a
 
 // Synposis
 Players will travel to the wandering Wizard's Tower to look for him. Some of the locals suspect that the wandering wizard is the one who is causing changes and their weather. While at the tower players will learn some
-+[Ω]
-    ->O1StartMenu
+// +[Ω]
+//    ->O1StartMenu
 ->DONE
-
-=== O1StartMenu ===
-START MENU
-//    + {not O1Preface} [Preface]
-//    ->O1Preface
-    + [PRESS START]
-    ->O1Prologue
-    + [{O1EpisodeOne}]
-    ->O1Ep1
-    + [{O1EpisodeTwo}]
-    ->O1Ep2
-    + [{O1EpisodeThree}]
-    ->O1Ep3
-    + [{O1EpisodeFour}]
-    ->O1Ep4
-    + [{O1EpisodeFive}]
-    ->O1Ep5
-    
--> DONE
 
 === O1Preface ===
 {SeasonO1}
@@ -294,47 +270,6 @@ SETTING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
---------------------------------
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O1StartMenu
-    + [next (spoilers if you proceed!)]
-NPCs
---------------------------------
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O1StartMenu
-    + [next]
-
-DICE ROLL
---------------------------------
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O1StartMenu
-    + [next]
-
-- MOVEMENT
---------------------------------
-Stealth: {MoveStealth}
-Walk: {MoveWalk}
-Hustle: {MoveHustle}
-Run: {MoveRun}
-->DONE
-    +[Ω] ->O1StartMenu
 ->DONE
 
 // ***************************************************************
