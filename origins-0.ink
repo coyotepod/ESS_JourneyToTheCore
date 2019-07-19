@@ -3,12 +3,11 @@
 
 
 ->O0StartMenu
-INCLUDE origins-GlobalVariables.ink
-
+INCLUDE origins-variables.ink
+INCLUDE global-variables.ink
 
 
 === O0StartMenu ===
-START MENU
 //    + {not O0Preface} [Preface]
 //        ->O0Preface
     + [PRESS START]
@@ -317,43 +316,7 @@ PURPOSE
 - LAST UPDATED: Summer 2019
     +[Ω]
       ->O0StartMenu
-    + [next]
-
-- CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O0StartMenu
-    + [next]
-
-- NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O0StartMenu
-    + [next]
-
--DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O0StartMenu
-    + [next]
-- Movement
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-
-    +[Ω]
-        ->O0StartMenu
-->DONE
-
-
+    +[NEXT]
+        ->O0Ep1
+      
+->END

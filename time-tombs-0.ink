@@ -2,9 +2,9 @@
 # author: Master Scoy
 
 ->TT0StartMenu
+
 INCLUDE origins-GlobalVariables.ink
-
-
+INCLUDE time-tombs-GlobalVariables.ink
 
 
 === TT0StartMenu ===

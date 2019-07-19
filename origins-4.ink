@@ -5,7 +5,7 @@
 ->O4StartMenu
 
 INCLUDE origins-GlobalVariables.ink
-
+INCLUDE time-tombs-GlobalVariables.ink
 
 === O4StartMenu ===
 START MENU

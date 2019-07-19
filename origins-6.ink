@@ -1,54 +1,109 @@
-//
+#title: Mining the Caverns of Time
+#author: Master Scoy
 
-// --> ArrakisSandworms.Chapter1
+->St1StartMenu
 
-
-=== ArrakisSandworms ===
-= Chapter1
-<b>Chapter 1: INSULAR MARSUPIALIA</b>
-Your party ventures from the cabin onto the ship's deck. A band of eight pirates, err crewman, have offered to join you ashore for your protection against indigenous animals.
-+ This strikes you as odd. <>
-- It seems the captain suspects you are not searching for animals, and instead looking for previously hidden treasure. You shrug your shoulders with indifference and the party heads to shore
-+ [next]
-- You travel inland a no more than a half mile before coming to a strange landform.
-+ Up ahead you see a perfect circle of desert pavement cover the path which looks fairly benignnext<>
-- except for the numerous bones scattered around the edges. You decide that one person should check out the path first while the others provide cover.
-+ The rogue would be the natural choice to send ahead on a scouting task such as this.
-- The rogue complains loudly,“Why do I always get the raw end of the deal?”
-+ The warrior chimes in, <>
-- “Oh? What about six weeks ago when we encountered those stone trolls?” He continues mockingly, “Oh looks like something needs to get beaten down - let’s send in the warrior! I’m always getting the raw end of the deal.”
-+ [next]
-- The mage clears his throat, “At least you all get to wear armor. When I’m exhausted, I’ve nothing protecting my skin.”
-+ [next]
-- “What?!” The entire party blurts out together.
-+ [next]
-- The healer continues, “You can shoot fireballs and summon lightning! I have to ask my deity for help.” He looks upwards and quickly adds, “Not that I’m complaining.”
-+ A pirate interrupts, <>
-- “Would you yellow bellowed children stop complaining. Someone needs to woman-up and just go.” He turns to the youngest pirate, “You there, young sea dog. You’ll go first."
-+ [next]
-- The youngest member gulps and starts walking forward. He makes it to the far edge of the circle and turns around with a timid grin that slowly changes to a more confident smile.
-+ [next]
--The ground instantaneously falls away as a massive Arrakis sandworm burst from the ground. It was thought that Arrakis sandworms only lived in the western deserts of the Arrakis Wastelands.
-+ [next]
-- It would appear that your party has discovered a new species from the <i>lumbricus</i> genus, phylum Annelida. They must have evolved and adapted to the iron rich sands of Insula Marsupialia.
-+ [next]
-- Your party shouts expletives of surprise and quickly runs back to the ship.
-+ [next]
-- You blurt the story out quickly to the captain.
-+ [next]
-- Captain Flint replies somberly, “The last time sandworms were encountered in the Wastelands they rampaged for six weeks and destroyed four towns before they were driven back underground."
-+ [next]
-- He continues, "I’m no patron of the king, but this is something that Storm Crown needs to know about.”
-+ [next]
-- He continues even more seriously, “This is not a fight we can win. It must a battle complete with heroes and siege engines.”
-+ [next]
-- The captain hastily writes a note and attaches it to a crow and sends it off toward Storm Crown.
-<i>~</i>
-
-+ [NEXT CHAPTER] -> Chapter2
+INCLUDE origins-GlobalVariables.ink
+INCLUDE time-tombs-GlobalVariables.ink
 
 
-= Chapter2
+
+
+=== TTEp1 ===
+// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+{St1EpisodeOne}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep1
+    
+->DONE
+
+=== St1Ep2 ===
+// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+
+{St1EpisodeTwo}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep3
+    
+->DONE
+
+=== St1Ep3 ===
+// Room 3: Trick or Setback
+{St1EpisodeThree}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->S0Ep4
+    
+->DONE
+
+=== S0Ep4 ===
+// Room 4: Climax
+{St1EpisodeFour}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep5
+        
+->DONE
+
+=== St1Ep5 ===
+// Room 5: Reward, Revelation, or Twist
+{St1EpisodeFive}
+
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Epilogue
+    
+->DONE
+
+=== St1Epilogue ===
+    EPILOGUE
+    +[Ω]
+        ->St1StartMenu
+
+=== St1StartMenu ===
+Start Menu
+//    + {not St1Preface} [Preface]
+//        ->St1Preface
+    + [PRESS START]
+        -> St1Prologue
+    + [{St1EpisodeOne}]
+        -> St1Ep1
+    + [{St1EpisodeTwo}]
+        -> St1Ep2
+    + [{St1EpisodeThree}]
+        -> St1Ep3
+    + [{St1EpisodeFour}]
+        -> S0Ep4
+    + [{St1EpisodeFive}]
+        -> St1Ep5
+
+-> DONE
+
+=== St1Preface ===
+{Seasont1}
+SETTING
+{WorldSetting}
+PURPOSE
+{CYOAPurpose}
+->DONE
+    +[Ω]
+        ->St1StartMenu
+
+=== St1Prologue ===
+PROLOGUE
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep1
+    
+->DONE
+->END
 <b>Chapter 2: AN INVITATION</b> // An Invitation to The Arrakis Sandworms Raid”</b>
 Recently an expedition party in the southeast has disturbed a previously unknown colony of Arrakis Sandworms.
 + [next]

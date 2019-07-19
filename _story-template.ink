@@ -1,13 +1,71 @@
 #title: Template
 #author: Master Scoy
 
+->St1StartMenu
+
 INCLUDE origins-GlobalVariables.ink
 
-->St1StartMenu
+
+
+=== St1Ep1 ===
+// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+{St1EpisodeOne}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep1
+    
+->DONE
+
+=== St1Ep2 ===
+// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+
+{St1EpisodeTwo}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep3
+    
+->DONE
+
+=== St1Ep3 ===
+// Room 3: Trick or Setback
+{St1EpisodeThree}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->S0Ep4
+    
+->DONE
+
+=== S0Ep4 ===
+// Room 4: Climax
+{St1EpisodeFour}
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Ep5
+        
+->DONE
+
+=== St1Ep5 ===
+// Room 5: Reward, Revelation, or Twist
+{St1EpisodeFive}
+
+    +[Ω]
+        ->St1StartMenu
+    +[NEXT EPISODE]
+        ->St1Epilogue
+    
+->DONE
+
+=== St1Epilogue ===
+    EPILOGUE
+
 === St1StartMenu ===
 Start Menu
-    + {not St1Preface} [Preface]
-        ->St1Preface
+//    + {not St1Preface} [Preface]
+//        ->St1Preface
     + [PRESS START]
         -> St1Prologue
     + [{St1EpisodeOne}]
@@ -83,60 +141,4 @@ PROLOGUE
         ->St1Ep1
     
 ->DONE
-
-=== St1Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
-{St1EpisodeOne}
-    +[Ω]
-        ->St1StartMenu
-    +[NEXT EPISODE]
-        ->St1Ep1
-    
-->DONE
-
-=== St1Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
-
-{St1EpisodeTwo}
-    +[Ω]
-        ->St1StartMenu
-    +[NEXT EPISODE]
-        ->St1Ep3
-    
-->DONE
-
-=== St1Ep3 ===
-// Room 3: Trick or Setback
-{St1EpisodeThree}
-    +[Ω]
-        ->St1StartMenu
-    +[NEXT EPISODE]
-        ->S0Ep4
-    
-->DONE
-
-=== S0Ep4 ===
-// Room 4: Climax
-{St1EpisodeFour}
-    +[Ω]
-        ->St1StartMenu
-    +[NEXT EPISODE]
-        ->St1Ep5
-        
-->DONE
-
-=== St1Ep5 ===
-// Room 5: Reward, Revelation, or Twist
-{St1EpisodeFive}
-
-    +[Ω]
-        ->St1StartMenu
-    +[NEXT EPISODE]
-        ->St1Epilogue
-    
-->DONE
-
-=== St1Epilogue ===
-    EPILOGUE
-    
 ->END

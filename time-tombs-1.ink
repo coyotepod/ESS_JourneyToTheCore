@@ -1,9 +1,12 @@
 #title: The Mountain
 #author: Master Scoy
 
-INCLUDE origins-GlobalVariables.ink
-
 ->TT1StartMenu
+
+INCLUDE origins-GlobalVariables.ink
+INCLUDE time-tombs-GlobalVariables.ink
+
+
 === TT1StartMenu ===
 Start Menu
 //    + {not TT1Preface} [Preface]
@@ -25,7 +28,6 @@ Start Menu
 
 === TT1Prologue ===
 PROLOGUE
-{TT1Prologue}
 "Welcome weary adventurers!" {Maid}, the serving maid, says as she greets you with a big smile.
 Your party of adventurers is once again at the Blue Mug inn & tavern.
 // The owner likes to brag about it being the best inn and tavern in the village. The joke of course is that its the only one.
@@ -187,14 +189,7 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 // Biology concepts include: homeostasis, muscle systems
 
 // VARIABLES for Story Outline
-VAR Season1 = "The Mountains of Time"
-VAR TT1Prologue = "The Blue Mug"
-VAR TT1EpisodeOne = "The Illness"
-VAR TT1EpisodeTwo = "The Mountain"
-VAR TT1EpisodeThree = "Leadville"
-VAR TT1EpisodeFour = "The Cave"
-VAR TT1EpisodeFive = "The Mountain II."
-VAR TT1Epilogue = "Epilogue"
+
 
 //== TT1Ep3 ==
 {TT1EpisodeThree}
@@ -259,8 +254,7 @@ You find yourselves sitting at the Blue Mug when the serving maid Jane comes up 
 ->END
 
 // CHARACTERS
-VAR FarmBoy = "Timothy"
-VAR Maid = "Jane"
+
 
 
 // INVENTORY VARIABLES

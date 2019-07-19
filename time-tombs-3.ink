@@ -1,13 +1,16 @@
 #title: The Forest
 #author: Master Scoy
 
-INCLUDE origins-GlobalVariables.ink
-
 ->TT3StartMenu
+INCLUDE origins-GlobalVariables.ink
+INCLUDE time-tombs-GlobalVariables.ink
+
+
+
 === TT3StartMenu ===
 Start Menu
-    + {not TT3Preface} [Preface]
-        ->TT3Preface
+//    + {not TT3Preface} [Preface]
+//        ->TT3Preface
     + [PRESS START]
         -> TT3Prologue
     + [{TT3EpisodeOne}]
@@ -139,61 +142,4 @@ PROLOGUE
 === TT3Epilogue ===
     EPILOGUE
 
-->END
-
-// VARIABLES for Story Outline
-VAR SeasonTT3 = "Forest of Time"
-VAR TT3EpisodeOne = "Room 1"
-VAR TT3EpisodeTwo = "Room 2"
-VAR TT3EpisodeThree = "Room 3"
-VAR TT3EpisodeFour = "Room 4"
-VAR TT3EpisodeFive = "Room 5"
-
-== TT3Ep1 ==
-{TT3EpisodeOne}
-+[START MENU]
-    ->TT3StartMenu
-+[NEXT]
-    ->TT3Ep1
-
-->DONE
-
-== TT3Ep2 ==
-{TT3EpisodeTwo}
-+[START MENU]
-    ->TT3StartMenu
-+[NEXT]
-    ->TT3Ep3
-
-->DONE
-
-== TT3Ep3 ==
-{TT3EpisodeThree}
-+[START MENU]
-    ->TT3StartMenu
-+[NEXT]
-    ->TT3Ep4
-
-->DONE
-
-== TT3Ep4 ==
-{TT3EpisodeFour}
-+[START MENU]
-    ->TT3StartMenu
-+[NEXT]
-    ->TT3Ep5
-
-->DONE
-
-== TT3Ep5 ==
-{TT3EpisodeFive}
-
-+[START MENU]
-    ->TT3StartMenu
-+[NEXT]
-    ->TT3Epilogue
-
-->DONE
-
-== TT3Epilogue ==
 ->END

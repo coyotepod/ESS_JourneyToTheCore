@@ -16,150 +16,6 @@ CONST Integrity =       ""
 CONST GrowthMindset =   ""
 
 // ***************************************************************
-// ORIGINS Outlines
-// ***************************************************************
-VAR ORumorsOne =       "As you may know, the Queen has been planning a 'coming of age' party for the crown prince. It is said that a star has fallen in the nearby swamps to the north. The Queen would like to know if this is a favorable sign from the gods or an evil sign. She would also like to know if more falling stars can be expected. She does not want ill favored events surrounding the prince's celebration."
-VAR OriginsRumorsTwo = ""
-VAR OriginsRumorsThree = ""
-VAR OriginsRumorsFour = ""
-VAR OriginsRumorsFive = ""
-
-// ***************************************************************
-VAR SeasonO0 =          "WANDERING IN THE FOREST"
-// ***************************************************************
-VAR O0EpisodeOne =      "AWAKE IN THE WOODS"
-VAR O0EpisodeTwo =      "CROSSROADS"
-VAR O0EpisodeThree =    "THE VILLAGE"
-VAR O0EpisodeFour =     "THE BLUE MUG"
-VAR O0EpisodeFive =     "HABITS OF MIND"
-
-// ***************************************************************
-VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
-// ***************************************************************
-VAR O1EpisodeOne =      "ENTERING THE TOWER"
-VAR O1EpisodeTwo =      "SKELETON ENCOUNTER"
-VAR O1EpisodeThree =    "MAGE'S NOTEBOOK"
-VAR O1EpisodeFour =     "FIRE ELEMENTAL ENCOUNTER"
-VAR O1EpisodeFive =     "A MAGE'S CODE"
-
-// ***************************************************************
-VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
-// ***************************************************************
-VAR O2EpisodeOne =      "THE HIGHLANDER BARDS"
-VAR O2EpisodeTwo =      "STONE GIANTS & BEETLES"
-VAR O2EpisodeThree =    "EPISODE 3"
-VAR O2EpisodeFour =     "EPISODE 4"
-VAR O2EpisodeFive =     "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonO3 =          "JOURNEY TO THE CORE"
-// ***************************************************************
-VAR O3EpisodeOne =     "EPISODE 1"
-VAR O3EpisodeTwo =     "EPISODE 2"
-VAR O3EpisodeThree =   "EPISODE 3"
-VAR O3EpisodeFour =    "EPISODE 4"
-VAR O3EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
-// ***************************************************************
-VAR O4EpisodeOne =     "EPISODE 1"
-VAR O4EpisodeTwo =     "EPISODE 2"
-VAR O4EpisodeThree =   "EPISODE 3"
-VAR O4EpisodeFour =    "EPISODE 4"
-VAR O4EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonO5 =          "ADVENTURE TO NEW HORIZONS"
-// ***************************************************************
-VAR O5EpisodeOne =      "EPISODE 1"
-VAR O5EpisodeTwo =      "EPISODE 2"
-VAR O5EpisodeThree =    "EPISODE 3"
-VAR O5EpisodeFour =     "EPISODE 4"
-VAR O5EpisodeFive =     "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonArrakis =     "HEROES OF ARRAKIS"
-// ***************************************************************
-VAR ArrakisEpisodeOne =    "EPISODE 1"
-VAR ArrakisEpisodeTwo =    "EPISODE 2"
-VAR ArrakisEpisodeThree =  "EPISODE 3"
-VAR ArrakisEpisodeFour =  "EPISODE 4"
-VAR ArrakisEpisodeFive =   "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonO6 =          "MINING THE CAVERNS OF TIME"
-// ***************************************************************
-VAR O6EpisodeOne =      "EPISODE 1"
-VAR O6EpisodeTwo =      "EPISODE 2"
-VAR O6EpisodeThree =    "EPISODE 3"
-VAR O6EpisodeFour =     "EPISODE 4"
-VAR O6EpisodeFive =     "EPISODE 5"
-
-// ***************************************************************
-// TIME TOMBS Story Outline
-// ***************************************************************
-VAR TimeTombsRumorsOne = ""
-VAR TimeTombsRumorsTwo = ""
-VAR TimeTombsRumorsThree = ""
-VAR TimeTombsRumorsFour = ""
-VAR TimeTombsRumorsFive = ""
-
-// ***************************************************************
-VAR SeasonTT0 =       "THE CAVE"
-// ***************************************************************
-VAR TT0EpisodeOne =   "THE BLUE MUG"
-VAR TT0EpisodeTwo =   "THE MINE"
-VAR TT0EpisodeThree = "THE ROOM"
-VAR TT0EpisodeFour =  "THE TUNNEL"
-VAR TT0EpisodeFive =  "TIME"
-
-// ***************************************************************
-VAR SeasonTT1 =          "THE MOUNTAIN"
-// ***************************************************************
-VAR STT1EpisodeOne =     "EPISODE 1"
-VAR STT1EpisodeTwo =     "EPISODE 2"
-VAR STT1EpisodeThree =   "EPISODE 3"
-VAR STT1EpisodeFour =    "EPISODE 4"
-VAR STT1EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonTT2 =          "THE FOREST"
-// ***************************************************************
-VAR STT2EpisodeOne =     "EPISODE 1"
-VAR STT2EpisodeTwo =     "EPISODE 2"
-VAR STT2EpisodeThree =   "EPISODE 3"
-VAR STT2EpisodeFour =    "EPISODE 4"
-VAR STT2EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonTT3 =          "THE DESERT"
-// ***************************************************************
-VAR STT3EpisodeOne =     "EPISODE 1"
-VAR STT3EpisodeTwo =     "EPISODE 2"
-VAR STT3EpisodeThree =   "EPISODE 3"
-VAR STT3EpisodeFour =    "EPISODE 4"
-VAR STT3EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonTT4 =          "THE GRASSLAND"
-// ***************************************************************
-VAR STT4EpisodeOne =     "EPISODE 1"
-VAR STT4EpisodeTwo =     "EPISODE 2"
-VAR STT4EpisodeThree =   "EPISODE 3"
-VAR STT4EpisodeFour =    "EPISODE 4"
-VAR STT4EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
-VAR SeasonTT5 =          "THE WATER"
-// ***************************************************************
-VAR STT5EpisodeOne =     "EPISODE 1"
-VAR STT5EpisodeTwo =     "EPISODE 2"
-VAR STT5EpisodeThree =   "EPISODE 3"
-VAR STT5EpisodeFour =    "EPISODE 4"
-VAR STT5EpisodeFive =    "EPISODE 5"
-
-// ***************************************************************
 // 5 Room Dungeon
 // ***************************************************************
 VAR RoomOne =   "ROOM ONE: Gain Entrance" // or Guardian
@@ -172,6 +28,8 @@ VAR RoomFive =  "ROOM FIVE: Revelation" // or Reward or Plot Twist
 // ***************************************************************
 // MAIN CHARACTERS
 // ***************************************************************
+VAR Your = "Your"
+VAR You = "You"
 VAR Cleric =        "CLERIC"
     VAR TheCleric = "The cleric"
     VAR theCleric = "the cleric"
@@ -208,7 +66,8 @@ VAR BraheAbout =        "Tycho Brahe built an observatory from which he made the
 VAR KeplerAbout =       "Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
 VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
 VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
-
+VAR FarmBoy = "Timothy"
+VAR Maid = "Jane"
 // ***************************************************************
 // LOCATIONS
 // ***************************************************************
@@ -299,6 +158,12 @@ VAR St1EpisodeTwo =     "EPISODE 2"
 VAR St1EpisodeThree =   "EPISODE 3"
 VAR St1EpisodeFour =    "EPISODE 4"
 VAR St1EpisodeFive =    "EPISODE 5"
+
+
+// END OF GLOBAL VARIABLES
+
+-> DONE
+pisodeFive =    "ROOM FIVE: Revelation"
 
 
 // END OF GLOBAL VARIABLES
