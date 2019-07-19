@@ -7,8 +7,6 @@ INCLUDE origins-GlobalVariables.ink
 ->O5StartMenu
 === O5StartMenu ===
 START MENU
-    + {not O5Preface} [Preface]
-        ->O5Preface
     + [PRESS START]
         -> O5Prologue
     + [{O5EpisodeOne}]
@@ -23,58 +21,6 @@ START MENU
         -> O5Ep5
 
 -> DONE
-
-=== O5Preface ===
-{SeasonO5}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O5StartMenu
-    + [next (spoilers if you proceed!)]
-        ->NPCs
-
-=== NPCs ===
-NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O5StartMenu
-    + [next]
-        ->DiceRolls
-
-=== DiceRolls ===
-DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O5StartMenu
-    + [next]
-        ->Movement
-
-=== Movement ===
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->O5StartMenu
-    + [next]
-        ->Movement
 
 === O5Prologue ===
 PROLOGUE

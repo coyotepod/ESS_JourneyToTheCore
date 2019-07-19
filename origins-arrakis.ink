@@ -3,145 +3,90 @@
 
 INCLUDE origins-GlobalVariables.ink
 
-->O2_5StartMenu
-=== O2_5StartMenu ===
+->ArrakisStartMenu
+=== ArrakisStartMenu ===
 START MENU
-    + {not O2_5Preface} [Preface]
-        ->O2_5Preface
     + [PRESS START]
-        ->O2_5Prologue
-    + [{O2_5EpisodeOne}]
-        ->O2_5Ep1
-    + [{O2_5EpisodeTwo}]
-        ->O2_5Ep2
-    + [{O2_5EpisodeThree}]
-        ->O2_5Ep3
-    + [{O2_5EpisodeFour}]
-        ->O2_5Ep4
-    + [{O2_5EpisodeFive}]
-        ->O2_5Ep5
+        ->ArrakisPrologue
+    + [{ArrakisEpisodeOne}]
+        ->ArrakisEp1
+    + [{ArrakisEpisodeTwo}]
+        ->ArrakisEp2
+    + [{ArrakisEpisodeThree}]
+        ->ArrakisEp3
+    + [{ArrakisEpisodeFour}]
+        ->ArrakisEp4
+    + [{ArrakisEpisodeFive}]
+        ->ArrakisEp5
 
 -> DONE
 
 
-=== O2_5Prologue ===
+=== ArrakisPrologue ===
 PROLOGUE
     +[Ω]
-        ->O2_5StartMenu
+        ->ArrakisStartMenu
     +[NEXT EPISODE]
-        ->O2_5Ep1
+        ->ArrakisEp1
 
 ->DONE
 
-=== O2_5Ep1 ===
+=== ArrakisEp1 ===
 // Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
-{O2_5EpisodeOne}
+{ArrakisEpisodeOne}
     +[Ω]
-        ->O2_5StartMenu
+        ->ArrakisStartMenu
     +[NEXT EPISODE]
-        ->O2_5Ep1
+        ->ArrakisEp1
 
 ->DONE
 
-=== O2_5Ep2 ===
+=== ArrakisEp2 ===
 // Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
 
-{O2_5EpisodeTwo}
+{ArrakisEpisodeTwo}
     +[Ω]
-        ->O2_5StartMenu
+        ->ArrakisStartMenu
     +[NEXT EPISODE]
-        ->O2_5Ep3
+        ->ArrakisEp3
 
 ->DONE
 
-=== O2_5Ep3 ===
+=== ArrakisEp3 ===
 // Room 3: Trick or Setback
-{O2_5EpisodeThree}
+{ArrakisEpisodeThree}
     +[Ω]
-        ->O2_5StartMenu
+        ->ArrakisStartMenu
     +[NEXT EPISODE]
-        ->S0Ep4
+        ->ArrakisEp4
 
 ->DONE
 
-=== S0Ep4 ===
+=== ArrakisEp4 ===
 // Room 4: Climax
-{O2_5EpisodeFour}
+{ArrakisEpisodeFour}
     +[Ω]
-        ->O2_5StartMenu
+        ->ArrakisStartMenu
     +[NEXT EPISODE]
-        ->O2_5Ep5
+        ->ArrakisEp5
 
 ->DONE
 
-=== O2_5Ep5 ===
+=== ArrakisEp5 ===
 // Room 5: Reward, Revelation, or Twist
-{O2_5EpisodeFive}
+{ArrakisEpisodeFive}
 
     +[Ω]
-        ->O2_5StartMenu
+        ->ArrakisStartMenu
     +[NEXT EPISODE]
-        ->O2_5Epilogue
+        ->ArrakisEpilogue
 
 ->DONE
 
-=== O2_5Epilogue ===
+=== ArrakisEpilogue ===
     EPILOGUE
 
 ->END
-
-=== O2_5Preface ===
-{Seasont1}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O2_5StartMenu
-    + [next (spoilers if you proceed!)]
-        ->NPCs
-
-=== NPCs ===
-NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O2_5StartMenu
-    + [next]
-        ->DiceRolls
-
-=== DiceRolls ===
-DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O2_5StartMenu
-    + [next]
-        ->Movement
-
-=== Movement ===
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->O2_5StartMenu
-    + [next]
-        ->Movement
-
 
 ->StartMenu
 
@@ -158,10 +103,10 @@ Run - {MoveRun}
 //
 ///////////////////////////////////////////
 = Scene1
-// An Invitation to The Arrakis Sandworms Raid”
+// An Invitation to The Arrakis Sand worms Raid”
 
 AN INVITATION TO ARRAKIS
-Recently an expedition party in the southeast has disturbed a previously unknown colony of Arrakis Sandworms.
+Recently an expedition party in the southeast has disturbed a previously unknown colony of Arrakis Sand worms.
 + [next]
 - Naturalists have determined that these are not the same worms from the Arrakis Wasteland. They are in fact a new species resulting from an evolutionary process when this colony became physically separated. They are still plenty big and a potential threat to the entire region.
 + [next]

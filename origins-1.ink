@@ -1,13 +1,13 @@
 #title: Discovery in the Celestial Towers
 #author: Master Scoy
 
+
+->O1StartMenu
 INCLUDE origins-GlobalVariables.ink
 
 
 
 
-
-->O1StartMenu
 === O1Prologue ===
 - PROLOGUE
 - Blue Mug
@@ -271,8 +271,8 @@ Players will travel to the wandering Wizard's Tower to look for him. Some of the
 
 === O1StartMenu ===
 START MENU
-    + {not O1Preface} [Preface]
-    ->O1Preface
+//    + {not O1Preface} [Preface]
+//    ->O1Preface
     + [PRESS START]
     ->O1Prologue
     + [{O1EpisodeOne}]
@@ -285,8 +285,6 @@ START MENU
     ->O1Ep4
     + [{O1EpisodeFive}]
     ->O1Ep5
-    + ABOUT 
-    ->About
     
 -> DONE
 

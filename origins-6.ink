@@ -69,7 +69,6 @@ Recently an expedition party in the southeast has disturbed a previously unknown
 -
 + [Ω]
 - Party members should help one another with preparations including studying notes together or playing Quizlet games. We're in this together!
-    + Preview of the *NEW* series Time Tombs!->TT0StartMenu
 
 -> DONE
 

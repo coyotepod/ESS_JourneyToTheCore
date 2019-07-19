@@ -7,8 +7,6 @@ INCLUDE origins-GlobalVariables.ink
 ->O4StartMenu
 === O4StartMenu ===
 START MENU
-    + {not O4Preface} [Preface]
-        ->O4Preface
     + [PRESS START]
         -> O4Prologue
     + [{O4EpisodeOne}]
@@ -23,58 +21,6 @@ START MENU
         -> O4Ep5
 
 -> DONE
-
-=== O4Preface ===
-{Seasont1}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->O4StartMenu
-    + [next (spoilers if you proceed!)]
-        ->NPCs
-
-=== NPCs ===
-NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->O4StartMenu
-    + [next]
-        ->DiceRolls
-
-=== DiceRolls ===
-DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->O4StartMenu
-    + [next]
-        ->Movement
-
-=== Movement ===
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->O4StartMenu
-    + [next]
-        ->Movement
 
 === O4Prologue ===
 PROLOGUE
@@ -116,7 +62,7 @@ PROLOGUE
 
 ->DONE
 
-=== S0Ep4 ===
+=== S4Ep4 ===
 // Room 4: Climax
 {O4EpisodeFour}
     +[Ω]

@@ -1,6 +1,7 @@
-#title: Time Tombs
+#title: The Complete TIME TOMBS Series
 #author: Master Scoy
 
+INCLUDE time-tombs-about.ink
 INCLUDE time-tombs-0.ink
 INCLUDE time-tombs-1.ink
 INCLUDE time-tombs-2.ink

@@ -1,13 +1,16 @@
 #title: Wandering in the Forest
 #author: Master Scoy
 
-INCLUDE origins-GlobalVariables.ink
 
 ->O0StartMenu
+INCLUDE origins-GlobalVariables.ink
+
+
+
 === O0StartMenu ===
 START MENU
-    + {not O0Preface} [Preface]
-        ->O0Preface
+//    + {not O0Preface} [Preface]
+//        ->O0Preface
     + [PRESS START]
         ->O0Prologue
     + [{O0EpisodeOne}]
