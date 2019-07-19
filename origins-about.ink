@@ -13,135 +13,180 @@
 \ ***************************************
 PROLOGUE: {SeasonO0}
 \ ***************************************
-EPISODE 1. {O0EpisodeOne}
-  Players wake up in the woods disoriented and not knowing what to do.
-EPISODE 2. {O0EpisodeTwo}
-  Players learn their choices impacts the story. Making a choice to be active or sedentary both have consequences. They come to the same crossroads more than once.
-EPISODE 3. {O0EpisodeThree}
-  Players engage in deadly combat with BANDITS and a SPECTRE on the road and ruins respectively. They learn a little about the COMBAT system. They must demonstrate persistence to be successful. Eventually players get a ride into the village. 
-EPISODE 4. {O0EpisodeFour}
-  Players explore the village briefly. Eventually they arrive at The Blue Mug. Inside they engage in role-playing with the serving maid {ServingMaid}.
-EPISODE 5. {O0EpisodeFive}
-  Players learn that game is about having fun, but there are also Habits of Mind (i.e. morals of the story) to be learned. Players will also Reflect on the Habits of Mind both in game and real world
+- EPISODE 1. {O0EpisodeOne}
+  You wake up in the woods disoriented and not knowing what to do. You can: stay where you are and hope someone rescues you or (2) get up and explore your options. Making a choice to be active or sedentary both have consequences.
+- EPISODE 2. {O0EpisodeTwo}
+  Your choices impacts the story (and your life).  You come to the same crossroads (decisions) more than once. Each time you choose something different you face a different challenge and observe the outcomes.
+- EPISODE 3. {O0EpisodeThree}
+  You engage in combat with BANDITS on the road and a SPECTRE in the ruins. Eventually you get a ride into the village. You learn that death (setbacks) are temporary. In our game - and classroom - you get second chances. However you will see that the game and our classroom are much easier when you are prepared and make quality choices the first time. You also learn a little about the COMBAT system of our game. You must demonstrate persistence to be successful in the game, the classroom, and in life.
+- EPISODE 4. {O0EpisodeFour}
+  You explore the village briefly. Eventually you make your way to The Blue Mug. Inside, you engage in role-playing with the serving maid {ServingMaid}.
+- EPISODE 5. {O0EpisodeFive}
+  You learn that game is about having fun, but there are Habits of Mind (i.e. morals of the story) to be learned as well.
 
-PURPOSE:
-\* learn how to interact with a Choose Your Own Adventure story
-\* build a sense of community with classmates
+OBJECTIVES:
+\* use the Habits of Mind: perseverance, self-direction
+\* add a sense of fun and engagement
+\* build a sense of community between students
+\* interact with students in a non-academic capacity
 \* discover major staging area for stories (The Blue Mug)
-\* learn about Habits of Mind: perseverance, self-direction
-\* demonstrate persistence
+\* learn about role-playing game CHOICES (Choose Your Own Adventure or CYOA)
 \* learn about role-playing COMBAT
++ [NEXT]
+-
 
 + [Season 1]
--- (Season1)
+- (Season1)
 \ ***************************************
 SEASON 1: {SeasonO1}
 \ ***************************************
-    The Queen is  planning a 'coming of age' party for the crown prince. It is said that a star has fallen in the nearby swamps to the north. The Queen would like to know if this is a favorable sign from the gods or an evil sign. She would also like to know if more falling stars can be expected. She does not want ill favored events surrounding the prince's celebration.
-EPISODE 1. {O1EpisodeOne}
-    Players must figure out a way to enter the Celestial Tower. If they read the book ASTRONOMIA NOVA and correctly answer the questions the castellan will let them enter. If they answer incorrectly or skip the reading, players need to sneak in a side door by successful picking the lock.
-EPISODE 2. {O1EpisodeTwo}
-    Players enter the castle. If entering with the castellan's consent, they enter knowing they must climb to the 13th floor. Otherwise, players climb the stairs until they reach the top. Along the way (floors 3-12 at random) they encounter skeletons and must defeat them before proceeding. They have an extra encounter if they sneak in the castle.
-EPISODE 3. {O1EpisodeThree}
-    Players enter the mage's study and discover his notebook. They cannot open the notebook without first demonstrating an understanding of: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Opening the notebook triggers a trap that calls forth a MOB
-EPISODE 4. {O1EpisodeFour}
-    Players encounter and must defeat a GELATINOUS CUBE. After it becomes an oozing puddle, they notice an unusual ore from the CUBE and take it with them. They later find out the ore is a meteorite - rock from the celestial plane itself and possess unique properties.
-EPISODE 5. {O1EpisodeFive}
-    There is a final code in the back of the mage's notebook which suggest to students a plot to remake the universe by recreating the Big Bang. It is further suggested that Air Elements, Fire Elementals, Earth Elementals, and Water Elementals will somehow be part of an evil mage's final solution. It is unclear if Brahe and Keplerare behind the plan or if their discoveries are being used for ill purposes without their consent.
-
+- EPISODE 1. {O1EpisodeOne}
+VAR an_alternative_entrance = "how to successfully pick the lock on a side door."
+- A very large fireball recently streaked through the sky. Some locals say that part of it fell to the ground nearby creating a crater and a patch of scorched land. It is also rumored that the mages in the Celestial Tower collected the piece. The queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower. You can read the book ASTRONOMIA NOVA and correctly answer the trivia questions put forth by the castellan to gain entry as an "assistant" to the mages.
+- If you answer incorrectly or skip the reading, you need figure out an alternative entrance to the tower. *{an_alternative_entrance}
++ [next]
+- EPISODE 2. {O1EpisodeTwo}
+    VAR helpful_information = "to travel cautiously up to the 13th floor and you are likely to encounter less problems"
+- You gain entrance to the castle. If you gain entrance with the castellan's consent, you are told helpful information and have 1 encounter with skeletons. *{helpful_information}
+- Otherwise, you hastily climb the stairs until they reach the top. Along the way you encounter skeletons and must defeat them before proceeding. Without the helpful information, you have 1+1d4 encounters with skeletons.
++ [next]
+- EPISODE 3. {O1EpisodeThree}
+- You enter the mage's study and discover his notebook on the desk. It is magically locked. A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
+- You unlock and open the notebook! Unfortunately, the mage has also left a guardian and the trap has been triggered. A monster oozes from behind towards the party.
++ [next]
+- EPISODE 4. {O1EpisodeFour}
+- You encounter and must defeat the GELATINOUS CUBE slowly approaching from study's doorway.
+- You battle the ooze and eventually defeat it.
+- After it becomes an oozing puddle, you notice an unusual ore left on the floor from the CUBE. You stuff the notebook and ore into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
++ [next]
+- EPISODE 5. {O1EpisodeFive}
+- You leave the castle tower without incident the same way you entered.
+- You make your way back to the Blue Mug Tavern & Inn. You go through the notebook and find an encoded message code.
+- The party deciphers the Galifrean code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
+- You take the ore to your blacksmithing friend, a dwarf. He tells you it is an ore called a meteorite which originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. He doesn't know how it would be used, but suggest that THE HIGHLANDER ALCHEMISTS might.
++ [NEXT]
+-
 + [Season 2]
--- (Season2)
+- (Season2)
 \ ***************************************
-SEASON 2: {SeasonO2}
+- SEASON 2: {SeasonO2}
 \ ***************************************
-  Players search the highlands (analogous to Scottish cliffs & highlands) for a couple of (Scottish) bards. They first encounter SAND BEETLES before making their way to the exposed layers in the cliff. Charles Lyell and James Hutton first make an appearance in the storyline. Alfred Wegener make an appearance in this storyline later. Players learn how the elemental forces created the world. They also learn the important concept that understanding the present is the key to past - and in this case the future, too. 
-EPISODE 1. {O2EpisodeOne}
-  Players search the highlands (analogous to Scottish cliffs & highlands) for a couple of (Scottish) bards. They first encounter SAND BEETLES before making their way to the exposed layers in the cliff. Charles Lyell and James Hutton first make an appearance in the storyline. Alfred Wegener make an appearance in this storyline later. Players learn how the elemental forces created the world. They also learn the important concept that understanding the present is the key to past - and in this case the future, too. 
-EPISODE 2. {O2EpisodeTwo}
-  Players figure out the sequence of rocks and events in the rock layers which will (somehow) gain players entry to maze of erosion valleys.
-EPISODE 3. {O2EpisodeThree}
-  Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
-EPISODE 4. {O2EpisodeFour}
-  Players reach the Air Temple and battle an Air Elemental. They gather the air essence that lingers afterward so it can be used later at the forge.
-EPISODE 5. {O2EpisodeFive}
-  Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
-
+- EPISODE 1. {O2EpisodeOne}
+VAR Hutton = "James Hutton"
+VAR Lyell = "Charles Lyell"
+VAR village5 = "Glasgow"
+- You travel to the highlands in search of a pair of alchemists named {Hutton} and  {Lyell}. A villager in {village5}, tells you that the pair spends a lot of time near the cliffs.
+- You make your way towards the cliffs along a nice wide beach and almost immediately ({d4}) SAND BEETLES
+- The party defeats the SAND BEETLES and finds the exposed cliff. Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
+- You tell them about your rare meteorite ore and would like them to examine it more closely. The pair agree to help if the party can answer their riddle about the sequence of bedrock layers.
+- Understanding the present is the key to understanding the past. It is also the key to predicting what is likely or unlikely in the future.
+- Although some party members struggle, you eventually figure it out. Hutton and Lyell tell you they were kidding; they'd never pass on an oppurtunity to look at rare ores.
+- After performing a few field tests (Moh's scale, etc) on the sample, the pair concur that it is a meteorite from the celestial plane. It also has some unique properties as it seems to ever so slightly bend nearby space-time. If it were purified and concentrated, it could be extremely powerful.
+- Hutton and Lyell tell you about another mage's research theorizing the creation of the universe and the evidence for it.
+- You decide to show the pair the notebook. Hutton and Lyell think that large quantities of elemental essence, smelted meteorite ore, and powerful magic might very likely cause a cataclysmic event like this evil mage desires.
+- "understanding the present is the key to past." In this case the future, too.
++ [next]
+- EPISODE 2. {O2EpisodeTwo}
+- Players figure out the sequence of rocks and events in the rock layers which will (somehow) gain players entry to maze of erosion valleys.
++ [next]
+- EPISODE 3. {O2EpisodeThree}
+- Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
++ [next]
+- EPISODE 4. {O2EpisodeFour}
+- Players reach the Air Temple and battle an Air Elemental. They gather the air essence that lingers afterward so it can be used later at the forge.
++ [next]
+- EPISODE 5. {O2EpisodeFive}
+- Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
++ [NEXT]
+-
 + [Season 3]
--- (Season3)
+- (Season3)
 \ ***************************************
 SEASON 3: {SeasonO3}
 \ ***************************************
-EPISODE 1. {O3EpisodeOne}
+- EPISODE 1. {O3EpisodeOne}
   Take meteorite to village and find out that need to go to Iron Forge
-EPISODE 2. {O3EpisodeTwo}
++ [next]
+- EPISODE 2. {O3EpisodeTwo}
   Fight Deurgar to enter the Iron Gate. perhaps a key to enter the gates?
-EPISODE 3. {O3EpisodeThree}
++ [next]
+- EPISODE 3. {O3EpisodeThree}
   Journey deeper into the earth
-EPISODE 4. {O3EpisodeFour}
++ [next]
+- EPISODE 4. {O3EpisodeFour}
   Discover and Trick OR Battle an Earth Elemental
-EPISODE 5. {O3EpisodeFive}
++ [next]
+- EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
++ [NEXT]
+-
 
 + [Season 4]
--- (Season4)
+- (Season4)
 \ ***************************************
 SEASON 4: {SeasonO4}
 \ ***************************************
-EPISODE 1. {O4EpisodeOne}
+- EPISODE 1. {O4EpisodeOne}
   Get an underwater vessel from the gnomes to enter an underwater kingdom.
-EPISODE 2. {O4EpisodeTwo}
+- EPISODE 2. {O4EpisodeTwo}
 
-EPISODE 3. {O4EpisodeThree}
+- EPISODE 3. {O4EpisodeThree}
 
-EPISODE 4. {O4EpisodeFour}
+- EPISODE 4. {O4EpisodeFour}
   Negotiate OR Battle a Water Elemental
-EPISODE 5. {O4EpisodeFive}
-
+- EPISODE 5. {O4EpisodeFive}
++ [NEXT]
+-
 + [Season 5]
--- (Season5)
+- (Season5)
 \ ***************************************
-SEASON 5: {SeasonO5}
+- SEASON 5: {SeasonO5}
 \ ***************************************
-EPISODE 1. {O5EpisodeOne}
+- EPISODE 1. {O5EpisodeOne}
 
-EPISODE 2. {O5EpisodeTwo}
+- EPISODE 2. {O5EpisodeTwo}
 
-EPISODE 3. {O5EpisodeThree}
+- EPISODE 3. {O5EpisodeThree}
 
-EPISODE 4. {O5EpisodeFour}
+- EPISODE 4. {O5EpisodeFour}
 
-EPISODE 5. {O5EpisodeFive}
-
+- EPISODE 5. {O5EpisodeFive}
++ [NEXT]
+-
 + [{SeasonArrakis}]
--- (SeasonARRAKIS)
+- (SeasonARRAKIS)
 \ ***************************************
 SEASON: {SeasonArrakis}
 \ ***************************************
-EPISODE 1. {ArrakisEpisodeOne}
+- EPISODE 1. {ArrakisEpisodeOne}
   Some PLAYERS will receive an invitation to battle the giant sand worms in the Arrakis desert. This quest is only available to players of suitable level. They will use siege machinery to battle the gargantuan beasts. The will co-op (at least narratively) with Legendary players from the Time Tombs storyline.
-EPISODE 2. {ArrakisEpisodeTwo}
-
-EPISODE 3. {ArrakisEpisodeThree}
-
-EPISODE 4. {ArrakisEpisodeFour}
-
-EPISODE 5. {ArrakisEpisodeFive}
++ [next]
+- EPISODE 2. {ArrakisEpisodeTwo}
++ [next]
+- EPISODE 3. {ArrakisEpisodeThree}
++ [next]
+- EPISODE 4. {ArrakisEpisodeFour}
++ [next]
+- EPISODE 5. {ArrakisEpisodeFive}
++ [NEXT]
+-
 
 + [Epilogue]
--- (SeasonEpilogue)
+- (SeasonEpilogue)
 \ ***************************************
 EPILOGUE: {SeasonO6}
 \ ***************************************
-EPISODE 1. {O6EpisodeOne}
+- EPISODE 1. {O6EpisodeOne}
   The Calumet Mining Company received a charter to mine a particular iron-coal-diamond-gold mine. Players are brought into action when time anachronisms start occurring.
-EPISODE 2. {O6EpisodeTwo}
-
-EPISODE 3. {O6EpisodeThree}
-
-EPISODE 4. {O6EpisodeFour}
-
-EPISODE 5. {O6EpisodeFive}
-
++ [next]
+- EPISODE 2. {O6EpisodeTwo}
++ [next]
+- EPISODE 3. {O6EpisodeThree}
++ [next]
+- EPISODE 4. {O6EpisodeFour}
++ [next]
+- EPISODE 5. {O6EpisodeFive}
++ [next]
 \ ***************************************
 //+ [OMEGA]
 //    -> OriginsStartMenu
