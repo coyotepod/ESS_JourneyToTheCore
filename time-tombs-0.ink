@@ -1,9 +1,12 @@
 # title: The Cave
 # author: Master Scoy
 
+->TT0StartMenu
 INCLUDE origins-GlobalVariables.ink
 
-->TT0StartMenu
+
+
+
 === TT0StartMenu ===
 START MENU
     + {not TT0Preface} [Preface]
@@ -345,10 +348,10 @@ MONSTERS:
 
 
 // INVENTORY VARIABLES
-VAR food =          "no food"
-VAR weapons =       "no weapons"
-VAR armor =         "no armor"
-VAR items =         "flint and steel"
+// VAR food =          "no food"
+// VAR weapons =       "no weapons"
+// VAR armor =         "no armor"
+// VAR items =         "flint and steel"
 
 
 // MOVEMENT

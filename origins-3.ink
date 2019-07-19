@@ -2,38 +2,12 @@
 #author: Master Scoy
 
 
+->O3StartMenu
 INCLUDE origins-GlobalVariables.ink
 
-->O3StartMenu
-=== O3StartMenu ===
-START MENU
-    + {not O3Preface} [Preface]
-        ->O3Preface
-    + [PRESS START]
-        -> O3Prologue
-    + [{O3EpisodeOne}]
-        -> O3Ep1
-    + [{O3EpisodeTwo}]
-        -> O3Ep2
-    + [{O3EpisodeThree}]
-        -> O3Ep3
-    + [{O3EpisodeFour}]
-        -> O3Ep4
-    + [{O3EpisodeFive}]
-        -> O3Ep5
 
--> DONE
-
-=== O3Preface ===
-{Seasont1}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
 
 === O3Prologue ===
-PROLOGUE
 PROLOGUE
 You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
 when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall.
@@ -96,7 +70,7 @@ YOU: "Greeting Axel and Professor Wegner"
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
-        ->S0Ep4
+        ->O3Ep4
 === O3Ep4 ===
 // Room 4
 {O3EpisodeFour}
@@ -116,14 +90,25 @@ EPILOGUE
   ->END
 
 // ***************************************************************
-//
-// ORGINS an Earth & Space Science story
-//
-// ***************************************************************
-//
+////
 // ENDURING QUESTIONS
-// What is the universe?
-// What goes on in stars?
-// What are the predictable patterns caused by Earth’s movement in the solar system?
-//
 // AUDIO
+// ***************************************************************
+=== O3StartMenu ===
+START MENU
+//    + {not O3Preface} [Preface]
+//        ->O3Preface
+    + [PRESS START]
+        -> O3Prologue
+    + [{O3EpisodeOne}]
+        -> O3Ep1
+    + [{O3EpisodeTwo}]
+        -> O3Ep2
+    + [{O3EpisodeThree}]
+        -> O3Ep3
+    + [{O3EpisodeFour}]
+        -> O3Ep4
+    + [{O3EpisodeFive}]
+        -> O3Ep5
+
+-> DONE

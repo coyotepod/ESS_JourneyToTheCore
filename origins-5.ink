@@ -2,9 +2,11 @@
 #author: Master Scoy
 
 
+->O5StartMenu
+
 INCLUDE origins-GlobalVariables.ink
 
-->O5StartMenu
+
 === O5StartMenu ===
 START MENU
     + [PRESS START]
@@ -16,7 +18,7 @@ START MENU
     + [{O5EpisodeThree}]
         -> O5Ep3
     + [{O5EpisodeFour}]
-        -> S0Ep4
+        -> O5Ep4
     + [{O5EpisodeFive}]
         -> O5Ep5
 
@@ -58,11 +60,11 @@ PROLOGUE
     +[Ω]
         ->O5StartMenu
     +[NEXT EPISODE]
-        ->S0Ep4
+        ->O5Ep4
 
 ->DONE
 
-=== S0Ep4 ===
+=== O5Ep4 ===
 // Room 4: Climax
 {O5EpisodeFour}
     +[Ω]

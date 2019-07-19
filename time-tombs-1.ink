@@ -6,8 +6,8 @@ INCLUDE origins-GlobalVariables.ink
 ->TT1StartMenu
 === TT1StartMenu ===
 Start Menu
-    + {not TT1Preface} [Preface]
-        ->TT1Preface
+//    + {not TT1Preface} [Preface]
+//        ->TT1Preface
     + [PRESS START]
         -> TT1Prologue
     + [{TT1EpisodeOne}]
@@ -23,165 +23,8 @@ Start Menu
 
 -> DONE
 
-=== TT1Preface ===
-{Seasont1}
-SETTING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->Characters
-
-=== Characters ===
-CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->TT1StartMenu
-    + [next (spoilers if you proceed!)]
-        ->NPCs
-
-=== NPCs ===
-NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->TT1StartMenu
-    + [next]
-        ->DiceRolls
-
-=== DiceRolls ===
-DICE ROLL
-d4 {d4}
-d6 {d6}
-d8 {d8}
-d10 {d10}
-d12 {d12}
-d20 {d20}
-d100 {100}
-    +[Ω]
-        ->TT1StartMenu
-    + [next]
-        ->Movement
-
-=== Movement ===
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->TT1StartMenu
-    + [next]
-        ->Movement
-
 === TT1Prologue ===
 PROLOGUE
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->TT1Ep1
-
-->DONE
-
-=== TT1Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
-{TT1EpisodeOne}
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->TT1Ep1
-
-->DONE
-
-=== TT1Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
-
-{TT1EpisodeTwo}
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->TT1Ep3
-
-->DONE
-
-=== TT1Ep3 ===
-// Room 3: Trick or Setback
-{TT1EpisodeThree}
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->S0Ep4
-
-->DONE
-
-=== S0Ep4 ===
-// Room 4: Climax
-{TT1EpisodeFour}
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->TT1Ep5
-
-->DONE
-
-=== TT1Ep5 ===
-// Room 5: Reward, Revelation, or Twist
-{TT1EpisodeFive}
-
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->TT1Epilogue
-
-->DONE
-
-=== TT1Epilogue ===
-    EPILOGUE
-
-->END
-
-// TIME TOMBS Foundation
-// Biology concepts include: homeostasis, muscle systems
-
-// VARIABLES for Story Outline
-VAR Season1 = "The Mountains of Time"
-VAR TT1Prologue = "The Blue Mug"
-VAR TT1EpisodeOne = "The Illness"
-VAR TT1EpisodeTwo = "The Mountain"
-VAR TT1EpisodeThree = "Leadville"
-VAR TT1EpisodeFour = "The Cave"
-VAR TT1EpisodeFive = "The Mountain II."
-VAR TT1Epilogue = "Epilogue"
-
-->TT1StartMenu
-=== TT1StartMenu ===
-Start Menu
-    + {not TT1Preface} [Preface]
-        ->TT1Preface
-    + [PRESS START]
-        -> TT1Pro
-    + [{TT1EpisodeOne}]
-        -> TT1Ep1
-    + [{TT1EpisodeTwo}]
-        -> TT1Ep2
-    + [{TT1EpisodeThree}]
-        -> TT1Ep3
-    + [{TT1EpisodeFour}]
-        -> TT1Ep4
-    + [{TT1EpisodeFive}]
-        -> TT1Ep5
--> DONE
-
-==== TT1Preface ====
-#audio: fx-valleys
-    +[Ω]
-        ->TT1StartMenu
-    +[NEXT EPISODE]
-        ->TT1Ep1
-->DONE
-
-=== TT1Pro ===
 {TT1Prologue}
 "Welcome weary adventurers!" {Maid}, the serving maid, says as she greets you with a big smile.
 Your party of adventurers is once again at the Blue Mug inn & tavern.
@@ -212,8 +55,16 @@ A boy yells in gasps, "My sister! ... My sister!"
         ->TT1Ep1
 
 ->DONE
+    +[Ω]
+        ->TT1StartMenu
+    +[NEXT EPISODE]
+        ->TT1Ep1
 
-== TT1Ep1 ==
+->DONE
+
+=== TT1Ep1 ===
+// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+{TT1EpisodeOne}
 // Entrance And Guardian
 {TT1EpisodeOne}
 {TheWizard} says, "I think its best the townsfolk stay outside."
@@ -283,29 +134,69 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
         ->TT1Ep2
 ->DONE
 
-== TT1Ep2 ==
+->DONE
+
+=== TT1Ep2 ===
+// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+
 {TT1EpisodeTwo}
-“It's too bad that you didn't have more time for training. Twelve months or more would be great an ultra run like this, but even three or four months would be extremely beneficial," says Timothy and Becca's dad.
-He continues, "My family would spend 80% of the week running modest distances at a modest intensity. Maybe we'd run really far once or twice a week, but it'd still be a low intensity. About 20% of the time we'd run or stack wood with great intensity. The human body is really quite amazing. You give it just the right amount of stress and it responds by getting stronger!”
-- “Your party continues talking to Timothy and Becca's father who suggest eating a lot of dried meats. You talk to another local runner that suggest eating dried fruits and nuts. You talk to another neighbor and get more conflicting advice. He suggest eating lots of grains and pastas.
-- It would seem that everyone has advice on endurance food and different foods seem to work for different people. The only thing to do is bring a variety of foods.
-{TheCleric} says "We are going to have to find a balance between bringing enough, but not so much it slows down."
-- "I agree" {TheWizard} replies. "We should keep a journal of what we eat, too and see how it effects us.”
-- “You say "I think we ought to check on our new druid friend and hit the trail soon."
-- {TheCleric} "Yes, Becca's condition is not getting any better last I checked. She needs this medicine."
-- Provisions are packed into small rucksacks and water skins filled. The party wakes the sleeping druid.
-- {TheFighter} says "OK let's roll" and the party starts off with a light jog down the trail.”
-- Your party of adventures have been running for about 90 minutes now. You've been hydrating, now it's time to refuel. Each member tries a couple different foods. Another 30 minutes passes and you all feel varying amounts of energy.
-- {TheWizard}: "I suggest taking a 5 minute rest and perhaps massage or stretch sore muscles. During that time I can perform a short alchemy test on the different foods. This will let us know the basic components of the food. I've heard some wizards or alchemists refer these components as macromolecules or macronutrients. In any case, once we figured what foods seem to work best for each of us and know their main components we can customize our diet for maximum energy release.
-- After the short rest, the food analysis is performed and each runner does some reflection on how they are feeling. Darius learns that he tends to eat foods high in protein and fat. He finds that eating foods with similar amounts of protein and fat make him feel better. The remaining team members didn't share much in common with food before running. Now though they all seem to feel better eating high carbohydrate based foods.
-- Your party of runners continues in this way for a total of 12 hours. Each runner experiences highs and lows, but the party trudges on up the trail and mountain. During this time, the druid in pronghorn form seems just fine.
     +[Ω]
         ->TT1StartMenu
     +[NEXT EPISODE]
         ->TT1Ep3
+
 ->DONE
 
-== TT1Ep3 ==
+=== TT1Ep3 ===
+// Room 3: Trick or Setback
+{TT1EpisodeThree}
+    +[Ω]
+        ->TT1StartMenu
+    +[NEXT EPISODE]
+        ->S0Ep4
+
+->DONE
+
+=== S0Ep4 ===
+// Room 4: Climax
+{TT1EpisodeFour}
+    +[Ω]
+        ->TT1StartMenu
+    +[NEXT EPISODE]
+        ->TT1Ep5
+
+->DONE
+
+=== TT1Ep5 ===
+// Room 5: Reward, Revelation, or Twist
+{TT1EpisodeFive}
+
+    +[Ω]
+        ->TT1StartMenu
+    +[NEXT EPISODE]
+        ->TT1Epilogue
+
+->DONE
+
+=== TT1Epilogue ===
+    EPILOGUE
+
+->END
+
+// TIME TOMBS Foundation
+// Biology concepts include: homeostasis, muscle systems
+
+// VARIABLES for Story Outline
+VAR Season1 = "The Mountains of Time"
+VAR TT1Prologue = "The Blue Mug"
+VAR TT1EpisodeOne = "The Illness"
+VAR TT1EpisodeTwo = "The Mountain"
+VAR TT1EpisodeThree = "Leadville"
+VAR TT1EpisodeFour = "The Cave"
+VAR TT1EpisodeFive = "The Mountain II."
+VAR TT1Epilogue = "Epilogue"
+
+//== TT1Ep3 ==
 {TT1EpisodeThree}
 - The party finally enters the small village of Leadville.
 - {TheCleric} grabs a nearby man: "Where is your healer?!"
@@ -342,7 +233,7 @@ He continues, "My family would spend 80% of the week running modest distances at
         ->TT1Ep5
 ->DONE
 
-== TT1Ep5 ==
+//== TT1Ep5 ==
 {TT1EpisodeFive}
 - {TheCleric} smiles as you enter the hut. You are unsure if its a maniacal smile or one of pleasant surprise. You still don't know, but after a moments hesitation you all enter, and she takes the fungi. She brews a foul smelling potion for Becca to drink.
 - {TheCleric}: "Be sure she drinks half of the immediately upon your return and the other half the next day. She must drink it ALL. If she does not, she will get better from half of the potion but the sickness will return within a few days and be even stronger. She would not survive the second strain."
@@ -387,3 +278,23 @@ VAR 1items = "flint and steel"
 // THE CAVE AND STONE GIANT
 // THE RETURN JOURNEY
 // THE CURE
+
+{TT1EpisodeTwo}
+“It's too bad that you didn't have more time for training. Twelve months or more would be great an ultra run like this, but even three or four months would be extremely beneficial," says Timothy and Becca's dad.
+He continues, "My family would spend 80% of the week running modest distances at a modest intensity. Maybe we'd run really far once or twice a week, but it'd still be a low intensity. About 20% of the time we'd run or stack wood with great intensity. The human body is really quite amazing. You give it just the right amount of stress and it responds by getting stronger!”
+- “Your party continues talking to Timothy and Becca's father who suggest eating a lot of dried meats. You talk to another local runner that suggest eating dried fruits and nuts. You talk to another neighbor and get more conflicting advice. He suggest eating lots of grains and pastas.
+- It would seem that everyone has advice on endurance food and different foods seem to work for different people. The only thing to do is bring a variety of foods.
+{TheCleric} says "We are going to have to find a balance between bringing enough, but not so much it slows down."
+- "I agree" {TheWizard} replies. "We should keep a journal of what we eat, too and see how it effects us.”
+- “You say "I think we ought to check on our new druid friend and hit the trail soon."
+- {TheCleric} "Yes, Becca's condition is not getting any better last I checked. She needs this medicine."
+- Provisions are packed into small rucksacks and water skins filled. The party wakes the sleeping druid.
+- {TheFighter} says "OK let's roll" and the party starts off with a light jog down the trail.”
+- Your party of adventures have been running for about 90 minutes now. You've been hydrating, now it's time to refuel. Each member tries a couple different foods. Another 30 minutes passes and you all feel varying amounts of energy.
+- {TheWizard}: "I suggest taking a 5 minute rest and perhaps massage or stretch sore muscles. During that time I can perform a short alchemy test on the different foods. This will let us know the basic components of the food. I've heard some wizards or alchemists refer these components as macromolecules or macronutrients. In any case, once we figured what foods seem to work best for each of us and know their main components we can customize our diet for maximum energy release.
+- After the short rest, the food analysis is performed and each runner does some reflection on how they are feeling. Darius learns that he tends to eat foods high in protein and fat. He finds that eating foods with similar amounts of protein and fat make him feel better. The remaining team members didn't share much in common with food before running. Now though they all seem to feel better eating high carbohydrate based foods.
+- Your party of runners continues in this way for a total of 12 hours. Each runner experiences highs and lows, but the party trudges on up the trail and mountain. During this time, the druid in pronghorn form seems just fine.
+    +[Ω]
+        ->TT1StartMenu
+    +[NEXT EPISODE]
+        ->TT1Ep3
