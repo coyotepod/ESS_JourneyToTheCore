@@ -5,7 +5,8 @@
 SEASON 4: {SeasonO4}
 \ ***************************************
 - EPISODE 1. {O4EpisodeOne}
-  Get an underwater vessel from the gnomes to enter an underwater kingdom.
+  Get an underwater vessel from the gnomes to enter an underwater kingdom. Players need to kill a certain MOB to gain the favor of Gnomes, Dwarves, or Hephaestus.
+  Enter a labyrinth at the bottom of an ocean kingdom to rescue a daughter of Hephaestus.
 - EPISODE 2. {O4EpisodeTwo}
 
 - EPISODE 3. {O4EpisodeThree}
@@ -37,7 +38,7 @@ PROLOGUE
 ->DONE
 
 === O4Ep1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle /Role-play Challenge
 {O4EpisodeOne}
 //    +[Ω]
 //        ->O4StartMenu
@@ -47,7 +48,7 @@ PROLOGUE
 ->DONE
 
 === O4Ep2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+// Room 2: Puzzle /Role-play Challenge OR Room 1: Guardian
 
 {O4EpisodeTwo}
 //    +[Ω]
