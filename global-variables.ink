@@ -61,10 +61,14 @@ VAR Villager1 =         "Dan"
 VAR Boy1    =           "Timothy"
 VAR Girl1   =           "Becca"
 VAR Castellan =         "Mr. Hillenar"
-VAR TychoBrahe =        "Mr. Brahe"
-VAR BraheAbout =        "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models, and created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
-VAR KeplerAbout =       "Johannes Kepler, assistant and student of Tycho Brahe. He has used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+VAR Copernicus =        "astronomical model developed by Nicolaus Copernicus and published in 1543. This model positioned the Sun near the center of the Universe, motionless, with Earth and the other planets orbiting around it in circular paths, modified by epicycles, and at uniform speeds. The Copernican model displaced the geocentric model of Ptolemy that had prevailed for centuries, which had placed Earth at the center of the Universe. Copernican heliocentrism is often regarded as the launching point to modern astronomy and the Scientific Revolution."
+VAR Brahe =             "an astronomer and nobleman" // Tycho Brahe
+VAR BraheAbout =        "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
+VAR Kepler =            "an astronomer and mathematician" //    Johannes Kepler
+VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+VAR Hutton =    "" //   James Hutton
 VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
+VAR Lyell =     ""  //  Charles Lyell
 VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
 VAR FarmBoy = "Timothy"
 VAR Maid = "Jane"
@@ -74,9 +78,9 @@ VAR Maid = "Jane"
 VAR CastleOne = "Clun Castle"
 VAR CastleTwo = "Muilder Slot"
 VAR CelestialTower = "Celestial Tower"
-VAR MoonTower = "The Tower of Lunae"
-VAR SunTower = "The Tower of Helios"
-VAR MarsTower = "The Tower of Nergal"
+VAR MoonTower = "Lunae Tower"
+VAR SunTower = "Helios Tower"
+VAR MarsTower = "Nergal Tower"
 
 // ***************************************************************
 // MONSTERS

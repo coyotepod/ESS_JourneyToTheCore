@@ -1,10 +1,19 @@
 #title: Wandering in the Forest
 #author: Master Scoy
 
-
-
-
-
+\ ***************************************
+PROLOGUE: {SeasonO0}
+\ ***************************************
+- EPISODE 1. {O0EpisodeOne}
+  You wake up in the woods disoriented and not knowing what to do. You can: stay where you are and hope someone rescues you or (2) get up and explore your options. Making a choice to be active or sedentary both have consequences.
+- EPISODE 2. {O0EpisodeTwo}
+  Your choices impacts the story (and your life).  You come to the same crossroads (decisions) more than once. Each time you choose something different you face a different challenge and observe the outcomes.
+- EPISODE 3. {O0EpisodeThree}
+  You engage in combat with BANDITS on the road and a SPECTRE in the ruins. Eventually you get a ride into the village. You learn that death (setbacks) are temporary. In our game - and classroom - you get second chances. However you will see that the game and our classroom are much easier when you are prepared and make quality choices the first time. You also learn a little about the COMBAT system of our game. You must demonstrate persistence to be successful in the game, the classroom, and in life.
+- EPISODE 4. {O0EpisodeFour}
+  You explore the village briefly. Eventually you make your way to The Blue Mug. Inside, you engage in role-playing with the serving maid {ServingMaid}.
+- EPISODE 5. {O0EpisodeFive}
+  You learn that game is about having fun, but there are Habits of Mind (i.e. morals of the story) to be learned as well.
 
 
 === O0Prologue ===
@@ -115,35 +124,37 @@ The forest comes to a clearing and opens to village.
 
 == O0Ep3 ==
 {O0EpisodeThree}
-- A small village lies before you. The village center is loosely surrounded by a variety of stout timbered buildings. You are greeted by a weathered signpost "Canis Villa".
-    + [Enter the village]
-- You walk the main path between two buildings into the village center. It opens to a grassy courtyard.
-    -> courtyard_views
+- A small village lies before you. You are greeted by a weathered signpost "Canis Villa". The farmer stops at the edge of the village and lets you out of the cart.
+- Farmer: "Good luck to ya"
+    + [Walk into the village]
+- You walk the main path into the village center. It opens to a grassy courtyard. The village center is loosely surrounded by a variety of stout timbered buildings. You walk into the courtyard and look around.
+- (courtyard_views)
+    + (north_canis) Looking to the northern side, <>
+        -- you see a blacksmith workshop with a dwarf hammering away on a set of horseshoes.
+        ++ [You don't need to go there, at least not yet.] ->courtyard_views
+        ++ {north_canis > 1} [Walk toward the blackmith]
+        --- A sword, warhammer, or even a simple knife would be nice, but you really don't need to go there yet. You have no money either. ->courtyard_views
+    + (south_canis) Looking to the southern side, <>
+        -- you see a hanging sign with a dark blue mug that catches your eye. An inscription along the bottom reads "Drink from the cup of knowledge." This looks like a place to find some answers.
+        ++ Look around the courtyard more. ->courtyard_views
+        ++ [Enter the Blue Mug]
+    + (east_canis) Looking to the eastern side, <>
+        -- you see the path you followed exit the village. Next to it is a general store. ->courtyard_views
+    + (west_canis) Looking to the western side, <>
+        -- you see an apothecary shop and the path you followed into Canis Villa. ->courtyard_views
+    + {(north_canis && west_canis && east_canis)} [next]
+- Nothing much going on around Canis Villa. Most people are either coming or going from a large inn & tavern on the southern side. At least there you could sit in the shade.
+ + [Enter the Blue Mug]
 
-= courtyard_views
-    + [Looking to the south side] -> sign
-     // *[Looking to your right] Apothecary
-     // *[Looking to your left]
-     // *[Looking to the eastern far side of the courtyard] Path leading away from town and black
-     // *[Looking along the northern side] Blacksmith shop
-     + [Walk farther into the courtyard] -> courtyard1
-
-= courtyard1
-You walk into the courtyard, but nothing seems to be going on there. Most people are either coming or going from a large inn on the southern side.
-    + [Head towards the inn]
-        -> sign
+// + [Head towards the inn]
     // + [Leave the village to the west] ->leave_early
-
-= leave_early
-You decide the village is not for you. You head back west. It takes much longer without a ride, but you come to the crossroads again.
+// = leave_early
+// You decide the village is not for you. You head back west. It takes much longer without a ride, but you come to the crossroads again.
     // + You continue west. -> ClunCastle.early
 //   / +[Ω]
 //        ->O0StartMenu
-->DONE
 
-= sign
- A hanging sign with a dark blue mug above catches your eye. An inscription along the bottom reads "Drink from the cup of knowledge." This looks like a place to find some answers.
-    + [Enter the Blue Mug]
+
     -
 //   / +[Ω]
 //        ->O0StartMenu
@@ -152,13 +163,13 @@ You decide the village is not for you. You head back west. It takes much longer 
 
 == O0Ep4 ==
 {O0EpisodeFour}
-- You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with a bar and dining on the first floor. Worn stairs lead above to rooms. The furnishings are simple and slightly dingy, but of stout timber material.
+- You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with the bar and dining on the first floor. Worn stairs lead above to rooms. The furnishings are simple and slightly dingy, but of stout timber material.
     + [Observe the occupants.]
 -  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and stout frame.
+- A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves
     + [Closer observation]
-- A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves.
  - The locals look down on their luck. This community is in need of help.
-    + Reflecting on "the kindness of strangers"...<>
+    + Reflecting on "the kindness of strangers". <>
 - Occasionally strangers and not-so-good friends have done you wrong. Yet, strangers and friends have also helped you out in a pinch more than once. There are times when life tests your individual abilities, but having a community that helps one another is definitely preferable.
     + [next]
 - One day a stranger may be a hero for you. Another day you might be a hero for a stranger.
@@ -301,5 +312,5 @@ PURPOSE
 
     +[NEXT]
         ->O0Ep1
-      
+
 ->END

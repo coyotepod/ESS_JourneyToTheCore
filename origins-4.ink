@@ -6,11 +6,9 @@
 
 INCLUDE global-variables.ink
 INCLUDE origins-variables.ink
-INCLUDE origins-4.ink
+INCLUDE origins-4-story.ink
 
 === O4StartMenu ===
-//    + {not O4Preface} [Preface]
-//    ->O1Preface
     + [PRESS START]
         ->O4Prologue
     + [{O4EpisodeOne}]
@@ -23,7 +21,5 @@ INCLUDE origins-4.ink
         ->O4Ep4
     + [{O4EpisodeFive}]
     ->O4Ep5
-//    + {OriginsStartMenu} [ALPHA]
-//        ->OriginsStartMenu
-    
+
 -> DONE

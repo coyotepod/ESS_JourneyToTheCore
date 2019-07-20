@@ -1,12 +1,13 @@
+#title: Expedition of Origins
+#author: Master Scoy
+
 ->O1StartMenu
 
 INCLUDE global-variables.ink
 INCLUDE origins-variables.ink
-INCLUDE origins-1.ink
+INCLUDE origins-1-story.ink
 
 === O1StartMenu ===
-//    + {not O1Preface} [Preface]
-//    ->O1Preface
     + [PRESS START]
         ->O1Prologue
     + [{O1EpisodeOne}]
@@ -19,7 +20,5 @@ INCLUDE origins-1.ink
         ->O1Ep4
     + [{O1EpisodeFive}]
     ->O1Ep5
-//    + {OriginsStartMenu} [ALPHA]
-//        ->OriginsStartMenu
-    
+
 -> DONE

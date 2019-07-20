@@ -1,13 +1,39 @@
 #title: Journey to the Core
 #author: Master Scoy
 
+\ ***************************************
+SEASON 3: {SeasonO3}
+\ ***************************************
+- EPISODE 1. {O3EpisodeOne}
+  Take meteorite to village and find out that need to go to Iron Forge
++ [next]
+- EPISODE 2. {O3EpisodeTwo}
+  Fight Deurgar to enter the Iron Gate. perhaps a key to enter the gates?
++ [next]
+- EPISODE 3. {O3EpisodeThree}
+  Journey deeper into the earth
++ [next]
+- EPISODE 4. {O3EpisodeFour}
+  Discover and Trick OR Battle an Earth Elemental
++ [next]
+- EPISODE 5. {O3EpisodeFive}
+  trapped deep in the earth but ride a spring of water upwards
 
 
-// INCLUDE global-variables.ink
-// INCLUDE origins-variables.ink
+
 
 === O3Prologue ===
 PROLOGUE
+- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a {~ warm| big| kind} smile.
+- {ServingMaid}: "Welcome weary adventurers! Anything else I can get the you?"
+    + [Look at your companions]
+      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
+    + [Turn to {ServingMaid}]
+- You: <>
+    + "Do you have any news? We grow tired of town life."
+        // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
+        // + "We are interested in another meal," as your stomach gurgles. -> meal
+        // -- {servingMaid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
 You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
 when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall.
 
