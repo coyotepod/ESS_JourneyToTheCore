@@ -6,7 +6,7 @@ VAR CYOAPurpose =       "Purpose of the series..."
 CONST HabitsOfMind  =   "way of thinking"
 CONST HabitsOfMindEG =  "Curiosity, Openness to New Ideas, Critical Thinking, Perseverance, Creative Thinking, Adaptability, Self-direction, Integrity, and Growth Mindset."
 CONST Curiosity =       ""
-CONST Openness =        "" //Openness to New Ideas
+CONST Openness =        "" // Openness to New Ideas
 CONST CriticalThinking = ""
 CONST Perseverance =    ""
 CONST CreativeThinking = ""
@@ -50,8 +50,8 @@ VAR Wizard =        "WIZARD"
 // NPCs
 // ***************************************************************
 VAR MugOwner =          "Shamis"
-VAR ServingMaid =       "Jane"
-VAR ServingMaidTwo =    "Suzie"
+VAR Maid =       "Jane"
+VAR MaidTwo =    "Suzie"
 VAR DwarfSmith =        "Gimli" // a mostly friendly blacksmithing dwarf in Canis Villa
 VAR EvilMage  =         "Evil Mage"
 VAR Queen =             "Queen Justina"
@@ -64,24 +64,30 @@ VAR Girl1   =           "Becca"
 VAR Castellan =         "Mr. Hillenar"
 VAR Copernicus =        "astronomical model developed by Nicolaus Copernicus and published in 1543. This model positioned the Sun near the center of the Universe, motionless, with Earth and the other planets orbiting around it in circular paths, modified by epicycles, and at uniform speeds. The Copernican model displaced the geocentric model of Ptolemy that had prevailed for centuries, which had placed Earth at the center of the Universe. Copernican heliocentrism is often regarded as the launching point to modern astronomy and the Scientific Revolution."
 VAR Brahe =             "an astronomer and nobleman" // Tycho Brahe
-VAR BraheAbout =        "Tycho Brahe built an observatory from which he made the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he made detailed records of his findings. He believes that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which the planets orbit the Sun and the Sun orbits the Earth."
+VAR BraheAbout =        "Tycho Brahe built an observatory from which he makes the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he has made detailed records of his findings. He thniks that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which (1) the planets orbit the Sun and (2) the Sun orbits the Earth."
 VAR Kepler =            "an astronomer and mathematician" //    Johannes Kepler
-VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He therefore used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time. The third law was a masterpiece of simplicity: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, has often used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time which basically means as orbiting objects like planets get closer to the sun they speed up and when farther away they go slower. Later, the third law was developed: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
 VAR Hutton =    "" //   James Hutton
 VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
 VAR Lyell =     ""  //  Charles Lyell
 VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
 VAR FarmBoy = "Timothy"
-VAR Maid = "Jane"
 // ***************************************************************
 // LOCATIONS
 // ***************************************************************
+VAR village1 = "Canis Villa"
+VAR village2 = ""
+VAR village3 = ""
+VAR village4 = ""
+VAR village5 = "Berwickshire"
+
 VAR CastleOne = "Clun Castle"
 VAR CastleTwo = "Muilder Slot"
 VAR CelestialTower = "Celestial Tower"
 VAR MoonTower = "Lunae Tower"
 VAR SunTower = "Helios Tower"
 VAR MarsTower = "Nergal Tower"
+
 
 // ***************************************************************
 // MONSTERS

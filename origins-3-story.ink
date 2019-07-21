@@ -8,7 +8,7 @@ SEASON 3: {SeasonO3}
   Take meteorite to village and find out that need to go to Iron Forge
 + [next]
 - EPISODE 2. {O3EpisodeTwo}
-  Fight Deurgar to enter the Iron Gate. perhaps a key to enter the gates?
+  Fight Duergar to enter the Iron Gate. perhaps a key to enter the gates?
 + [next]
 - EPISODE 3. {O3EpisodeThree}
   Journey deeper into the earth
@@ -24,11 +24,11 @@ SEASON 3: {SeasonO3}
 
 === O3Prologue ===
 PROLOGUE
-- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a {~ warm| big| kind} smile.
-- {ServingMaid}: "Welcome weary adventurers! Anything else I can get the you?"
+- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
+- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
     + [Look at your companions]
       -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {ServingMaid}]
+    + [Turn to {Maid}]
 - You: <>
     + "Do you have any news? We grow tired of town life."
         // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
@@ -61,8 +61,8 @@ OLD MAN: "Absolutely not."
 YOUNG MAN: This denial gives the young man more forwardness, "Hello, I am Axel and this my uncle, Alfred Wegner, a professor of geology.
 
 YOU: "Greeting Axel and Professor Wegner"
-//    +[Ω]
-//        ->O3StartMenu
+    +[Ω]
+        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep1
 
@@ -71,8 +71,8 @@ YOU: "Greeting Axel and Professor Wegner"
 === O3Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
-//    +[Ω]
-//        ->O3StartMenu
+    +[Ω]
+        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep2
 
@@ -82,8 +82,8 @@ YOU: "Greeting Axel and Professor Wegner"
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
 {O3EpisodeTwo}
-//    +[Ω]
-//        ->O3StartMenu
+    +[Ω]
+        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep3
 
@@ -92,15 +92,15 @@ YOU: "Greeting Axel and Professor Wegner"
 === O3Ep3 ===
 // Room 3: Trick or Setback
 {O3EpisodeThree}
-//    +[Ω]
-//        ->O3StartMenu
+    +[Ω]
+        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep4
 === O3Ep4 ===
 // Room 4
 {O3EpisodeFour}
-//        ->O3StartMenu
-//    +[NEXT EPISODE]
+        ->O3StartMenu
+    +[NEXT EPISODE]
         ->O3Ep5
 ->DONE
 === O3Ep5 ===

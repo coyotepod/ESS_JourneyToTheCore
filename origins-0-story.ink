@@ -1,26 +1,16 @@
 #title: Wandering in the Forest
 #author: Master Scoy
 
-\ ***************************************
-PROLOGUE: {SeasonO0}
-\ ***************************************
-- EPISODE 1. {O0EpisodeOne}
-  You wake up in the woods disoriented and not knowing what to do. You can: stay where you are and hope someone rescues you or (2) get up and explore your options. Making a choice to be active or sedentary both have consequences.
-- EPISODE 2. {O0EpisodeTwo}
-  Your choices impacts the story (and your life).  You come to the same crossroads (decisions) more than once. Each time you choose something different you face a different challenge and observe the outcomes.
-- EPISODE 3. {O0EpisodeThree}
-  You engage in combat with BANDITS on the road and a SPECTRE in the ruins. Eventually you get a ride into the village. You learn that death (setbacks) are temporary. In our game - and classroom - you get second chances. However you will see that the game and our classroom are much easier when you are prepared and make quality choices the first time. You also learn a little about the COMBAT system of our game. You must demonstrate persistence to be successful in the game, the classroom, and in life.
-- EPISODE 4. {O0EpisodeFour}
-  You explore the village briefly. Eventually you make your way to The Blue Mug. Inside, you engage in role-playing with the serving maid {ServingMaid}.
-- EPISODE 5. {O0EpisodeFive}
-  You learn that game is about having fun, but there are Habits of Mind (i.e. morals of the story) to be learned as well.
+
+
+
 
 
 === O0Prologue ===
 PROLOGUE
 Yellow rays of light shoot through the dense deciduous forest as the sun just starts peaking over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscious in some bushes along the side of this dirt path in the forests.
-//   / +[Ω]
-//        ->O0StartMenu
+    +[Ω]
+      ->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep1
 ->DONE
@@ -41,8 +31,8 @@ You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sor
         -- You have {items}.
         ++ You decide to get up and start walking.
 - Once you get your footing on the path its an easy walk. You travel less than {~a quarter-mile|a half mile|a mile} before coming to a crossroads.
-//   / +[Ω]
-//        ->O0StartMenu
+    +[Ω]
+        ->O0StartMenu
     + [NEXT EPISODE]
         ->O0Ep2
 ->DONE
@@ -116,8 +106,8 @@ The forest comes to a clearing and opens to village.
 // + [Go towards the village] -> Ep4
 // + [Go back west] -> CanisVilla.leave_early
 
-//   / +[Ω]
-//        ->O0StartMenu
++[Ω]
+->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep3
 ->DONE
@@ -151,13 +141,13 @@ The forest comes to a clearing and opens to village.
 // = leave_early
 // You decide the village is not for you. You head back west. It takes much longer without a ride, but you come to the crossroads again.
     // + You continue west. -> ClunCastle.early
-//   / +[Ω]
-//        ->O0StartMenu
++[Ω]
+->O0StartMenu
 
 
     -
-//   / +[Ω]
-//        ->O0StartMenu
++[Ω]
+->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep4
 
@@ -174,27 +164,27 @@ The forest comes to a clearing and opens to village.
     + [next]
 - One day a stranger may be a hero for you. Another day you might be a hero for a stranger.
     + A serving maid comes over and interrupts your thoughts.
-- Serving maid: "Welcome weary adventurer! I'm {ServingMaid}. What can I get you?" she says with a {~ kind | warm | big} smile.
+- Serving maid: "Welcome weary adventurer! I'm {Maid}. What can I get you?" she says with a {~ kind | warm | big} smile.
     + You: "What good food and drink do you have?"
-        -- {ServingMaid}: "Today we're cooking up{~ roasted boar| chicken| vegetables}"
+        -- {Maid}: "Today we're cooking up{~ roasted boar| chicken| vegetables}"
         ++ You: "That sounds good"
         ++ You: Not what you were hoping for, but reply "OK, I'll have some."
-        -- The meal is good and quickly finish eating. Your thoughts go back to earlier encounters. You were not well prepared. {ServingMaid} comes back to the table.
+        -- The meal is good and quickly finish eating. Your thoughts go back to earlier encounters. You were not well prepared. {Maid} comes back to the table.
         ++ [next] -> prepare
     + (prepare) You: "How or where might I prepare for future adventures?"
-        -- {ServingMaid}: "I reckon you want to seek a Master trainer just east of town. The King's army rarely makes it to small villages like ours, so we've had to learn to protect ourselves." she says with pride.
+        -- {Maid}: "I reckon you want to seek a Master trainer just east of town. The King's army rarely makes it to small villages like ours, so we've had to learn to protect ourselves." she says with pride.
         ++ You: "What can a Master do?"
-        -- {ServingMaid}: "Most villages have at least one Master though some have two or more. Often other trainees can help you in the Training grounds if the Masters are busy."
+        -- {Maid}: "Most villages have at least one Master though some have two or more. Often other trainees can help you in the Training grounds if the Masters are busy."
         ++ [next]
-        -- {ServingMaid}: "Masters can give you activities and tools to better prepare you for life and adventures beyond the village. However, its up to you do the training"
-        ++ You: "Thank you {ServingMaid}! You've been extremely helpful."
-        -- {ServingMaid} smiles.
+        -- {Maid}: "Masters can give you activities and tools to better prepare you for life and adventures beyond the village. However, its up to you do the training"
+        ++ You: "Thank you {Maid}! You've been extremely helpful."
+        -- {Maid} smiles.
         ++ You: "I'm thinking of staying in the area for awhile. I'm sure we'll see each other again."
 
 //-- "You must hone your skills if you plan on traveling in this area of the realm. Training and practicing one's skills before taking part in Adventures or attacking Bosses is always a good idea" she says.
 -
-//   / +[Ω]
-//        ->O0StartMenu
++[Ω]
+->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep5
 ->DONE
@@ -307,8 +297,8 @@ PURPOSE
 
 - FIRST PUBLISHED: 2017
 - LAST UPDATED: Summer 2019
-//   / +[Ω]
-//        ->O0StartMenu
++[Ω]
+->O0StartMenu
 
     +[NEXT]
         ->O0Ep1

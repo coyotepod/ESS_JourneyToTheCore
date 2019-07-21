@@ -12,7 +12,7 @@ VAR wizard_full = "Zack Swordhand, a male human wizard"
 
 VAR you = "You"
 <h1>Journey to the Core</h1>
-“Somewhere, something incredible is waiting to be known.”  
+“Somewhere, something incredible is waiting to be known.”
 Carl Sagan
 + [PRESS START to BEGIN]->TOC
 
@@ -21,7 +21,7 @@ Carl Sagan
 * PROLOGUE ->Setting
 + CHAPTER 1 ->Chapter1
 + CHAPTER 2 ->Chapter2
--> DONE 
+-> DONE
 
 == Setting ==
 - Welcome weary adventurer to <i>Regio Scientiae</i>! Its a medieval realm of science and clever engineering with a touch of magic. Good luck in your noble pursuit of heroic learning experiences.
@@ -40,12 +40,12 @@ The adventurers in this story include:
 + [TABLE OF CONTENTS] ->TOC
 
 == Chapter1 ==
-- Your party of adventurers is sitting around a heavy oaken table at the Blue Mug Inn. This rag-tag group includes the powerful {fighter_full}, the humble {cleric_full}, the deadly {rogue_full}, the mysterious and ill-named {wizard_full}, and yourself. You are recounting both tales and coin from your  most recent quest. 
+- Your party of adventurers is sitting around a heavy oaken table at the Blue Mug Inn. This rag-tag group includes the powerful {fighter_full}, the humble {cleric_full}, the deadly {rogue_full}, the mysterious and ill-named {wizard_full}, and yourself. You are recounting both tales and coin from your  most recent quest.
 + [>>]
-- "I'm still can't believe that airship made it off world!" {fighter} says in amazement. 
+- "I'm still can't believe that airship made it off world!" {fighter} says in amazement.
 - {rogue} sarcastically says "Even more amazing that {wizard}'s portal got us back safely."
 + [>>]
-- {wizard} pretends to ignore the rogue, and continues eating mindlessly while studying a spell book. 
+- {wizard} pretends to ignore the rogue, and continues eating mindlessly while studying a spell book.
 - {cleric} finishes a prayer and joins the conversation, "Faith and a willingness to explore the unknown can lead to many pleasant surprises."
 + [>>]
 - {fighter} says, "Not all surprises are pleasant, but I think you're right {cleric}. An open mind and a will to try new, difficult things leads to amazing adventures."
@@ -61,7 +61,7 @@ The adventurers in this story include:
 - You reply, <>
 + "Be nice, {rogue}. We can never know the life journey of another person based on outward appearances"
 + "{rogue} is right. He looks like a beggar."
-- Axel shrugs, "I have proposition that will benefit all of us. It will not be easy, but the potential rewards in gems will be to your liking young rogue." 
+- Axel shrugs, "I have proposition that will benefit all of us. It will not be easy, but the potential rewards in gems will be to your liking young rogue."
 - {rogue} raises an eyebrow.
 + [>>]
 - He continues, "I think those of you seeking knowledge and adventure will also find the quest rewarding."
@@ -109,5 +109,5 @@ The adventurers in this story include:
 == FinalQuote ==
 "Not all those who wander are lost"
 <i>The Lord of the Rings</i>
-J. R. R. Tolkien 
+J. R. R. Tolkien
 -> END

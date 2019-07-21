@@ -7,24 +7,23 @@
 
 
 === O1Prologue ===
-- PROLOGUE
-- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a {~ warm| big| kind} smile.
-- {ServingMaid}: "Welcome weary adventurers! Anything else I can get the you?"
+PROLOGUE
+- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
+- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
     + [Look at your companions]
       -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {ServingMaid}]
+    + [Turn to {Maid}]
 - You: <>
-    + Do you have any news? We grow tired of town life.
+    + We grow tired of town life. Do you have any news?
         // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
         // + "We are interested in another meal," as your stomach gurgles. -> meal
         // -- {servingMaid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
-- {ServingMaid}: <>
+- {Maid}: <>
 - Well, {OneRumor}.
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."
 //    + {TheCleric}: "I could check with other priests to find out their interpretation of the omen."
 //    +
 - {TheWizard}: We could use some coin.
-- {TheCleric}: Perhaps we should read the book "Astronomia nova" before going?
 - {TheFighter}: I just want to crack some skulls.
 - You:
     + "Lets head to the {CelestialTower}."
@@ -35,12 +34,12 @@
     +[NEXT EPISODE]
         ->O1Ep1
 ->DONE
-"to travel cautiously up to the 13th floor and you are likely to encounter less problems"
+
 === O1Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Role play Challenge
 {O1EpisodeOne}
-- You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick mosses and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied.
-- {TheCleric}: "Lets read "Astronomia nova" before going inside."
+- You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick moss and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied.
+- {TheCleric}: Mr. Kepler, one of the mages, wrote a book that I just so happen to have in my BAG OF HOLDING. I think we should read "Astronomia nova" before going inside.
 - You: <>
     + Great idea! Its best to be prepared.
     -- (Astronomia_Nova) {TheCleric} opens the book and reads.
@@ -70,7 +69,7 @@
         ++ Brahe thinks the our planet is at the center of the solar system, but not the universe
         --- Imbeciles!
         ->enter_side
-        ++ Brahe thinks the nearby planets orbit the sun but the sun orbits our planet. 
+        ++ Brahe thinks the nearby planets orbit the sun but the sun orbits our planet.
         -> enter_front
 - (enter_front)
 - {Castellan}: Sorry for doubting you -
@@ -106,9 +105,9 @@ The party walks down the path a little aways from the tower and stops to talk.
 - (enter_celestial_towers)
     +[Ω]
         ->O1StartMenu
-+ {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [NeXT] 
++ {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [NeXT]
     ->O1Ep2.Side_Door
-+ {enter_front} [NEXT] 
++ {enter_front} [NEXT]
     ->O1Ep2.Front_Door
 
 === O1Ep2 ===
@@ -117,12 +116,12 @@ The party walks down the path a little aways from the tower and stops to talk.
 + [Side door]
 -- (Side_Door)
 -{O1EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
--Inside the tower is a little nicer than the exterior. You are in a small vestibule. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
+-The tower interior is a little nicer than the exterior. You are in a small vestibule. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
     + [next]->vestibule
 - (vestibule)
 + [Go through the door] -> into_the_kitchen
 + [Take stairs up] -> up_the_stairs
-+ [Have a seat at the table] -> sit_in_dining
++ [Sit at the table] -> sit_in_dining
 
 - (into_the_kitchen)
 You head to the kitchen. No one is around except {~a couple rats chewing on moldy bread.|a few dozen spiders eating flies.}
@@ -142,15 +141,15 @@ You walk back to the vestibule. A shadowy figure steps into the entrance front o
 + [next]
 - You engaged in combat with the SKELETONS.
     + You defeat the SKELETONS ->landing
-    ++ {Side_Door} The party continues running up the stairs. 
+    ++ {Side_Door} The party continues running up the stairs.
     -- You face SKELETONS. Again.
     +++ You defeat the SKELETONS.
     --- {TheWizard}: I think we might try walking rather than running the rest of the way.
     --- The party agrees.
-    ++ You die ->O1StartMenu 
+    ++ You die ->O1StartMenu
     ++ {Front_Door} The party continues walking up the stairs.
     + You die an unglorious death. ->O1StartMenu
-- (landing) You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower. 
+- (landing) You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower.
     +[Ω]
        ->O1StartMenu
     +[NEXT EPISODE]
@@ -160,29 +159,29 @@ You walk back to the vestibule. A shadowy figure steps into the entrance front o
 === O1Ep3 ===
 // Room 3: Trick or Setback
 {O1EpisodeThree}
-- You enter the mage's study and discover his notebook on the desk. It is magically locked. 
+- You enter the mage's study and discover his notebook on the desk. It is magically locked.
 + [next]
 - A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
 - (concept_keys)
 {correct_concept} CORRECT \|\| {missed_concept} INCORRECT
-+ {not yes1} {missed_concept < 2} [CONCEPT 1: Correct] 
++ {not yes1} {missed_concept < 2} [CONCEPT 1: Correct]
 -- (yes1)->correct_concept
-+ {not yes2} {missed_concept < 2} [CONCEPT 2: Correct] 
++ {not yes2} {missed_concept < 2} [CONCEPT 2: Correct]
 -- (yes2)->correct_concept
-+ {not yes3} {missed_concept < 2} [CONCEPT 3: Correct] 
++ {not yes3} {missed_concept < 2} [CONCEPT 3: Correct]
 -- (yes3)->correct_concept
-+ {not yes4} {missed_concept < 2} [CONCEPT 4: Correct] 
++ {not yes4} {missed_concept < 2} [CONCEPT 4: Correct]
 -- (yes4)->correct_concept
 --- (correct_concept) -> concept_keys
 + {missed_concept == 0} {correct_concept < 4} [ANY CONCEPT: Incorrect] ->missed_concept
 + {missed_concept == 1} [ANOTHER CONCEPT: Incorrect] ->missed_concept
 + {missed_concept == 2} THE POWER OF YET.
 -- You haven't mastered the concepts...YET. You'll get the concepts soon enough by using retrevial practice and discussing the ideas with classmates and the local Master.
--- Unfortunately, a micro-black hole has formed near the notebook, stretching you from head to toe. Death by blackhole. 
+-- Unfortunately, a micro-black hole has formed near the notebook, stretching you from head to toe. Death by blackhole.
 (reload the webpage to start again) ->END
 -- (missed_concept) ->concept_keys
 + {correct_concept ==4} [UNLOCKED!]
-- You unlock and open the notebook! 
+- You unlock and open the notebook!
 Unfortunately, the mage has also left a guardian as a trap and the trap has been triggered. A monster oozes from behind towards the party.
 
 - (enter_tower_study)
@@ -207,7 +206,7 @@ A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway t
 + You visually inspect the puddle.
 -- {TheWizard} casts "MAGE HAND" and loots the puddle without taking any damage.
 + Avoid the puddle entirely and leave the room.
--- {TheCleric}: I've got a bad feeling about this. Let's take a closer look at the puddle. 
+-- {TheCleric}: I've got a bad feeling about this. Let's take a closer look at the puddle.
 The part goes back in and {theFighter} swishes the ooze around with his hand and takes acid damage in the process.
 - You notice an unusual ore left on the floor from the CUBE. You stuff the ore and mage's notebook into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
     +[Ω]
@@ -238,7 +237,7 @@ YOU:
 + We'd rather not say for now
 -- {DwarfSmith}: Fine I guess.
 -- He shrugs his shoulders.
-- {DwarfSmith}: I don't know how it would be used. Perhaps THE HIGHLANDER ALCHEMISTS, Hutton & Lyell, might be able to help. You'll find them - you guessed it - in the highlands. 
+- {DwarfSmith}: I don't know how it would be used. Perhaps THE HIGHLANDER ALCHEMISTS, Hutton & Lyell, might be able to help. You'll find them - you guessed it - in the highlands.
 Good luck weary adventurers!
 
     +[Ω]

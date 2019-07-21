@@ -16,17 +16,17 @@ PROLOGUE
 ->DONE
 
 === ArrakisEp1 ===
-// Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
+// Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
 {ArrakisEpisodeOne} AT INSULAR MARSUPIALIA
 Your party ventures from the cabin onto the ship's deck. A band of eight pirates, err crewman, have offered to join you ashore for your protection against indigenous animals.
 + This strikes you as odd. <>
 - It seems the captain suspects you are not searching for animals, and instead looking for previously hidden treasure. You shrug your shoulders with indifference and the party heads to shore
 + [next]
 - You travel inland a no more than a half mile before coming to a strange landform.
-+ Up ahead you see a perfect circle of desert pavement cover the path which looks fairly benignnext<>
++ Up ahead you see a perfect circle of desert pavement cover the path which looks fairly benign next<>
 - except for the numerous bones scattered around the edges. You decide that one person should check out the path first while the others provide cover.
 + The rogue would be the natural choice to send ahead on a scouting task such as this.
-- The rogue complains loudly,“Why do I always get the raw end of the deal?”
+- The rogue complains loudly, “Why do I always get the raw end of the deal?”
 + The warrior chimes in, <>
 - “Oh? What about six weeks ago when we encountered those stone trolls?” He continues mockingly, “Oh looks like something needs to get beaten down - let’s send in the warrior! I’m always getting the raw end of the deal.”
 + [next]
@@ -65,7 +65,7 @@ Your party ventures from the cabin onto the ship's deck. A band of eight pirates
 ->DONE
 
 === ArrakisEp2 ===
-// Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
+// Room 2: Puzzle/Roleplay Challenge OR Room 1: Guardian
 Recently an expedition party in the southeast has disturbed a previously unknown colony of Arrakis Sand worms.
 + [next]
 - Naturalists have determined that these are not the same worms from the Arrakis Wasteland. They are in fact a new species resulting from an evolutionary process when this colony became physically separated. They are still plenty big and a potential threat to the entire region.

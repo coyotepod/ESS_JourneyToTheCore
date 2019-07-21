@@ -1,9 +1,10 @@
 // ***************************************************************
 // ORIGINS Outlines
 // ***************************************************************
-VAR OneRumor =       "a very large fireball recently streaked through the sky. Some locals say that part of it fell to the ground nearby creating a crater and a patch of scorched land. It is also rumored that the mages in the Celestial Tower collected the piece. The queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower"
-VAR TwoRumor = ""
-VAR ThreeRumor = ""
+VAR RumorOne = "a very large fireball recently streaked through the sky. Its rumored that part of it fell to the ground nearby creating a crater and a patch of scorched land. The mages in the Celestial Tower collected the piece. I'd say its just rumor, but  the Queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower though. These mages are notoriously reclusive."
+VAR RumorTwo = "there are two alchemists in The Highlands that study rocks. Perhaps seeking them out"
+"
+VAR RumorThree = ""
 VAR FourRumor = ""
 VAR FiveRumor = ""
 

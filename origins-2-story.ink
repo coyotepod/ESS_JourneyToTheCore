@@ -5,9 +5,6 @@
 - SEASON 2: {SeasonO2}
 \ ***************************************
 + EPISODE 1. {O2EpisodeOne}
-VAR Hutton = "James Hutton"
-VAR Lyell = "Charles Lyell"
-VAR village5 = "Glasgow"
 - You travel to the highlands in search of a pair of alchemists named {Hutton} and  {Lyell}. A villager in {village5}, tells you that the pair spends a lot of time near the cliffs.
 - You make your way towards the cliffs along a nice wide beach and almost immediately ({d4}) SAND BEETLES attack.
 - The party defeats the SAND BEETLES and finds the exposed cliff. Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
@@ -34,18 +31,16 @@ VAR village5 = "Glasgow"
 
 === O2Prologue ===
 PROLOGUE
-- Your party is at The Blue Mug inn & tavern when {ServingMaid} comes up to the table with a {~ warm| big| kind} smile.
-- {ServingMaid}: "Welcome weary adventurers! Anything else I can get the you?"
+- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
+- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
     + [Look at your companions]
       -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {ServingMaid}]
+    + [Turn to {Maid}]
 - You: <>
     + "Do you have any news? We grow tired of town life."
-        // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
-        // + "We are interested in another meal," as your stomach gurgles. -> meal
-        // -- {servingMaid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
-//    +[Ω]
-//        ->O2StartMenu
+    - {RumorTwo}
+   +[Ω]
+       ->O2StartMenu
     +[NEXT EPISODE]
         ->O2Ep1
 
@@ -55,8 +50,8 @@ PROLOGUE
 // Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
 {O2EpisodeOne}
     +[Ω]
-//        ->O2StartMenu
-//    +[NEXT EPISODE]
+->O2StartMenu
++[NEXT EPISODE]
         ->O2Ep2
 
 ->DONE
@@ -66,8 +61,8 @@ PROLOGUE
 
 {O2EpisodeTwo}
     +[Ω]
-//        ->O2StartMenu
-//    +[NEXT EPISODE]
+->O2StartMenu
++[NEXT EPISODE]
         ->O2Ep3
 
 ->DONE
@@ -75,8 +70,8 @@ PROLOGUE
 === O2Ep3 ===
 // Room 3: Trick or Setback
 {O2EpisodeThree}
-//    +[Ω]
-//        ->O2StartMenu
+   +[Ω]
+       ->O2StartMenu
     +[NEXT EPISODE]
         ->O2Ep4
 
@@ -85,8 +80,8 @@ PROLOGUE
 === O2Ep4 ===
 // Room 4: Climax
 {O2EpisodeFour}
-//    +[Ω]
-//        ->O2StartMenu
+   +[Ω]
+       ->O2StartMenu
     +[NEXT EPISODE]
         ->O2Ep5
 
@@ -96,8 +91,8 @@ PROLOGUE
 // Room 5: Reward, Revelation, or Twist
 {O2EpisodeFive}
 
-//    +[Ω]
-//        ->O2StartMenu
+   +[Ω]
+       ->O2StartMenu
     +[NEXT EPISODE]
         ->O2Epilogue
 
@@ -105,13 +100,13 @@ PROLOGUE
 
 === O2Epilogue ===
     EPILOGUE
-//     +[Ω]
-//        ->O2StartMenu
++[Ω]
+->O2StartMenu
 
 -> DONE
 
 === O2Preface ===
-{Seasont1}
+{SeasonO2}
 SETTING
 {WorldSetting}
 PURPOSE
