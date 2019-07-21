@@ -17,9 +17,9 @@ PROLOGUE
     + We grow tired of town life. Do you have any news?
         // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
         // + "We are interested in another meal," as your stomach gurgles. -> meal
-        // -- {servingMaid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
+        // -- {Maid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
 - {Maid}: <>
-- Well, {OneRumor}.
+- Well, {RumorOne}.
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."
 //    + {TheCleric}: "I could check with other priests to find out their interpretation of the omen."
 //    +
