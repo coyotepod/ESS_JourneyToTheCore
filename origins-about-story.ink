@@ -38,7 +38,7 @@ PROLOGUE: {SeasonO0}
   You explore the village briefly. Eventually you make your way to The Blue Mug. Inside, you engage in role-playing with the serving maid {ServingMaid}.
 - EPISODE 5. {O0EpisodeFive}
   You learn that game is about having fun, but there are Habits of Mind (i.e. morals of the story) to be learned as well.
-+ OBJECTIVES:
++ OBJECTIVES
 -- (Season0Ojbectives)
 \* use the Habits of Mind: perseverance, self-direction
 \* add a sense of fun and engagement
@@ -47,7 +47,11 @@ PROLOGUE: {SeasonO0}
 \* discover major staging area for stories (The Blue Mug)
 \* learn about role-playing game CHOICES (Choose Your Own Adventure or CYOA)
 \* learn about role-playing COMBAT
-+ [NEXT]
++ [next]
+-
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 -
 
 + [Season 1]
@@ -75,7 +79,9 @@ VAR an_alternative_entrance = "how to successfully pick the lock on a side door.
 - You make your way back to the Blue Mug Tavern & Inn. You go through the notebook and find an encoded message code.
 - The party deciphers the Galifrean code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
 - You take the ore to your blacksmithing friend, a dwarf. He tells you it is an ore called a meteorite which originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. He doesn't know how it would be used, but suggest that THE HIGHLANDER ALCHEMISTS might.
-+ [NEXT]
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 -
 + [Season 2]
 - (Season2)
@@ -83,8 +89,6 @@ VAR an_alternative_entrance = "how to successfully pick the lock on a side door.
 - SEASON 2: {SeasonO2}
 \ ***************************************
 + EPISODE 1. {O2EpisodeOne}
-VAR Hutton = "James Hutton"
-VAR Lyell = "Charles Lyell"
 VAR village5 = "Glasgow"
 - You travel to the highlands in search of a pair of alchemists named {Hutton} and  {Lyell}. A villager in {village5}, tells you that the pair spends a lot of time near the cliffs.
 - You make your way towards the cliffs along a nice wide beach and almost immediately ({d4}) SAND BEETLES attack.
@@ -106,7 +110,9 @@ VAR village5 = "Glasgow"
 - Players reach the Air Temple and battle an Air Elemental. They gather the air essence that lingers afterward so it can be used later at the forge.
 - EPISODE 5. {O2EpisodeFive}
 - Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
-+ [NEXT]
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 -
 + [Season 3]
 - (Season3)
@@ -127,7 +133,9 @@ SEASON 3: {SeasonO3}
 + [next]
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
-+ [NEXT]
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 -
 
 + [Season 4]
@@ -144,7 +152,9 @@ SEASON 4: {SeasonO4}
 - EPISODE 4. {O4EpisodeFour}
   Negotiate OR Battle a Water Elemental
 - EPISODE 5. {O4EpisodeFive}
-+ [NEXT]
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 -
 + [Season 5]
 - (Season5)
@@ -160,8 +170,9 @@ SEASON 4: {SeasonO4}
 - EPISODE 4. {O5EpisodeFour}
 
 - EPISODE 5. {O5EpisodeFive}
-+ [NEXT]
--
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 + [{SeasonArrakis}]
 - (SeasonARRAKIS)
 \ ***************************************
@@ -177,7 +188,9 @@ SEASON: {SeasonArrakis}
 - EPISODE 4. {ArrakisEpisodeFour}
 + [next]
 - EPISODE 5. {ArrakisEpisodeFive}
-+ [NEXT]
+    +[Ω]
+        ->AboutStartMenu
+    + [NEXT]
 -
 
 + [Epilogue]
