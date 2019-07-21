@@ -4,18 +4,17 @@
 \ ***************************************
 SEASON 1: {SeasonO1}
 \ ***************************************
-- EPISODE 1. {O1EpisodeOne}
+EPISODE 1. {O1EpisodeOne}
 - RUMOR A very large fireball recently streaked through the sky. Some locals say that part of it fell to the ground nearby creating a crater and a patch of scorched land. It is also rumored that the mages in the Celestial Tower collected the piece. The queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower.
-- You can read the book ASTRONOMIA NOVA and correctly answer the trivia questions put forth by the castellan to gain entry as an "assistant" to the mages.
+- You can read the book "Astronomia nova" and correctly answer the trivia questions put forth by the castellan to gain entry as an "assistant" to the mages.
 - If you answer incorrectly or skip the reading, you need figure out an alternative entrance to the tower.
-- EPISODE 2. {O1EpisodeTwo}
-    VAR helpful_information = "to travel cautiously up to the 13th floor and you are likely to encounter less problems"
-- You gain entrance to the castle. If you gain entrance with the castellan's consent, you are told helpful information and have 1 encounter with skeletons. *{helpful_information}
+EPISODE 2. {O1EpisodeTwo}
+- You gain entrance to the castle. If you gain entrance with the castellan's consent, you are told helpful information and have 1 encounter with skeletons.
 - Otherwise, you hastily climb the stairs until they reach the top. Along the way you encounter skeletons and must defeat them before proceeding. Without the helpful information, you have 1+1d4 encounters with skeletons.
-- EPISODE 3. {O1EpisodeThree}
+EPISODE 3. {O1EpisodeThree}
 - You enter the mage's study and discover his notebook on the desk. It is magically locked. A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
 - You unlock and open the notebook! Unfortunately, the mage has also left a guardian and the trap has been triggered. A monster oozes from behind towards the party.
-- EPISODE 4. {O1EpisodeFour}
+EPISODE 4. {O1EpisodeFour}
 - You encounter and must defeat the GELATINOUS CUBE slowly approaching from study's doorway.
 - You battle the ooze and eventually defeat it.
 - After it becomes an oozing puddle, you notice an unusual ore left on the floor from the CUBE. You stuff the notebook and ore into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
@@ -49,16 +48,16 @@ SEASON 1: {SeasonO1}
 - {TheWizard}: We could use some coin.
 - {TheCleric}: Perhaps we should read the book "Astronomia nova" before going?
 - {TheFighter}: I just want to crack some skulls.
-- You: 
+- You:
     + "Lets head to the {CelestialTower}."
-    
--    
+
+-
     +[Ω]
         ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep1
 ->DONE
-
+"to travel cautiously up to the 13th floor and you are likely to encounter less problems"
 === O1Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Role play Challenge
 {O1EpisodeOne}
@@ -67,7 +66,7 @@ SEASON 1: {SeasonO1}
 - You: <>
     + Great idea! Its best to be prepared.
     -- (Astronomia_Nova) {TheCleric} opens the book and reads.
-        Tycho Brahe is {Brahe}. 
+        Tycho Brahe is {Brahe}.
         {BraheAbout}
     ++ [next]
     -- Johannes Kepler is {Kepler}.
@@ -83,93 +82,108 @@ SEASON 1: {SeasonO1}
     + Yes, this was a bad idea.
     + We are assistants to the mages.
 - {Castellan}: Really? <>
-    + {not Astronomia_Nova} I don't believe you. ->sneak_in
+    + {not Astronomia_Nova} I don't believe you.
+      ->enter_side
     + {Astronomia_Nova } Then you should have no problem providing evidence to your claim.
         -- You: Sure,
         ++ Brahe thinks our planet is at the center of the universe and our solar system
-            --- Incorrect! ->sneak_in
+            --- Incorrect!
+            ->enter_side
         ++ Brahe thinks the our planet is at the center of the solar system, but not the universe
-        --- Imbeciles! ->sneak_in
-        ++ Brahe thinks our planet is not at the center of the universe nor the center of the solar system -> front_door
-- (front_door)
+        --- Imbeciles!
+        ->enter_side
+        ++ Brahe thinks our planet is not at the center of the universe nor the center of the solar system
+        -> enter_front
+- (enter_front)
+{Castellan}: Sorry for doubting you. A word of caution, travel cautiously up to the 13th floor and you are likely to encounter...less problems.
+The party looks at each other questioningly.  The party walks inside the main door.
+  ->enter_celestial_towers
 
-- (sneak_in)   
+- (enter_side)
 You need to leave. The castellan slams the door ending the conversation.
 The party walks down the path a little aways from the tower and stops to talk.
-- {TheFighter}: "Perhaps we could sneak in a side door?" 
+- {TheFighter}: "Perhaps we could sneak in a side door?"
 - You: Its worth a shot.
-- You: 
+- You:
     + Walk around to the right of the tower.
     + Walk around to the left of the tower.
 - You find a small door for the serving staff. Its locked.
+- (open_the_door)
     + Ask {TheFighter} to break down the door.
+    -- ROLL a STRENGTH check
+    ++ [Success]
+    ++ [Fail] ->open_the_door
     + You attempt to pick the lock.
+    -- ROLL a DEXTERITY check
+    ++ [Success]
+    ++ [Fail] ->open_the_door
     + Ask {TheWizard} to use a spell to unlock the door.
-- The door unlocks.
+    -- ROLL a WISDOM check
+    ++ [Success]
+    ++ [Fail] ->open_the_door
+- (enter_celestial_towers)
++ {enter_side} [Next] 
+    ->O1Ep2.Side_Door
++ {enter_front} [NEXT] 
+    ->O1Ep2.Front_Door
+
+=== O1Ep2 ===
+{O1EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
++ [Front Door]
+-- (Front_Door) ->vestibule
++ [Side door]
+-- (Side_Door) ->vestibule
 - On the inside it is surprisingly nicer. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
     + [next]->vestibule
 - (vestibule)
-// Choices could be conditionally based on what options players have seen before
 + [Go through the door] -> into_the_kitchen
 + [Take stairs up] -> up_the_stairs
 + [Have a seat at the table] -> sit_in_dining
 
-= into_the_kitchen
+- (into_the_kitchen)
 You head to the kitchen. No one is around except {~a couple rats chewing on moldy bread.|a few dozen spiders eating flies.}
 + You turn around and go back to the dining area. -> sit_in_dining
 
-= sit_in_dining
+- (sit_in_dining)
 You decide to have a seat. After ten creepy minutes alone,  nothing happens.
 Leave the castle -> leave_castle_early
 Go up the stairs -> up_the_stairs
-= leave_castle_early
+- (leave_castle_early)
 You walk back to the vestibule. A shadowy figure steps into the entrance front of you with a drawn dagger. You turn and bolt up the stairs .-> up_the_stairs
-= up_the_stairs
-You go up the stairs at a fast pace. It's probably the best place to look for the tower's master.
-You pass seven floors before coming to a final stout door.
-+ [You enter the top tower room]
-- to be continued.
--> DONE
 
-= enter_tower
-With a gentle nudge of the thick wooden door, you enter the top room of the tower. The room is filled with tombs of knowledge, thick stacks of parchment, and apparatus scattered throughout.
--> END
-
-// Early Arrival
-= early
-Besides the occasional bushwhacking the walk isn't too difficult and soon you approach the dark tower’s main gate.
-Stones have fallen around it.
-+ [The place is clearly abandoned.]
-- At least you thought it was abandoned. The Drow warrior slips from a shadowy side entrance. Blades move so fast they are a blur. This quickly ends your otherwise pleasant walk.
-Upon entering the tower room you see stacks of papers and books
--> DONE
-
-=== O1Death ===
-You have died
-
-->DONE
-
-+[NEXT]
-    ->O1Ep1
-
-->DONE
-
-=== O1Ep2 ===
-// Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
-
-{O1EpisodeTwo}
+- (up_the_stairs)
+    + {Front_Door} You go up the stairs at a walking pace. You pass seven floors before coming to a final stout door.
+    + {Side_Door} You go up the stairs at a fast pace.
+  -- After {d4} floors, you encounter {d4} skeletons.
+  -- [next]
+  -- You engaged in combat with the SKELETONS.
+    ++ You defeat the SKELETONS
+    --- You run up another {d4} floors. You encounter SKELETONS. Again. There are {d4}
+    +++ You defeat the SKELETONS.
+    +++ You Die
+    ++ You Die
+-
++ [next]
+- You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower. 
     +[Ω]
-//        ->O1StartMenu
-//    +[NEXT EPISODE]
+       ->O1StartMenu
+    +[NEXT EPISODE]
         ->O1Ep3
-
 ->DONE
 
 === O1Ep3 ===
 // Room 3: Trick or Setback
 {O1EpisodeThree}
-//    +[Ω]
-//        ->O1StartMenu
+- You enter the mage's study and discover his notebook on the desk. It is magically locked. A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
+- You unlock and open the notebook! Unfortunately, the mage has also left a guardian and the trap has been triggered. A monster oozes from behind towards the party.
+
+
+
+
+- (enter_tower_study)
+The room is filled with tombs of knowledge, thick stacks of parchment, and apparatus scattered throughout.
+    +[Ω]
+        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep4
 
@@ -178,8 +192,12 @@ You have died
 === O1Ep4 ===
 // Room 4: Climax
 {O1EpisodeFour}
-//    +[Ω]
-//        ->O1StartMenu
+EPISODE 4. {O1EpisodeFour}
+- You encounter and must defeat the GELATINOUS CUBE slowly approaching from study's doorway.
+- You battle the ooze and eventually defeat it.
+- After it becomes an oozing puddle, you notice an unusual ore left on the floor from the CUBE. You stuff the notebook and ore into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
+    +[Ω]
+        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep5
 
@@ -188,9 +206,14 @@ You have died
 === O1Ep5 ===
 // Room 5: Reward, Revelation, or Twist
 {O1EpisodeFive}
+- EPISODE 5. {O1EpisodeFive}
+- You leave the castle tower without incident the same way you entered.
+- You make your way back to the Blue Mug Tavern & Inn. You go through the notebook and find an encoded message code.
+- The party deciphers the Gallifreyan code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
+- You take the ore to your blacksmithing friend, a dwarf. He tells you it is an ore called a meteorite which originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. He doesn't know how it would be used, but suggest that THE HIGHLANDER ALCHEMISTS might.
 
-//    +[Ω]
-//        ->O1StartMenu
+    +[Ω]
+        ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Epilogue
 
@@ -204,7 +227,7 @@ You have died
 // Essential Outcome
 DCI - Big Bang Theory, Cosmic Background Radiation, Redshift & galaxies moving away, many light elements
 
-// Synposis
+// Synopsis
 Players will travel to the wandering Wizard's Tower to look for him. Some of the locals suspect that the wandering wizard is the one who is causing changes and their weather. While at the tower players will learn some
 // +[Ω]
 //    ->O1StartMenu
@@ -341,4 +364,22 @@ You arrive at {MarsTower}, but don't learn anything helpful. For now, it's best 
 -> DONE
 
 === Castle_One ===
+->DONE
+// Early Arrival
+= early
+Besides the occasional bushwhacking the walk isn't too difficult and soon you approach the dark tower’s main gate.
+Stones have fallen around it.
++ [The place is clearly abandoned.]
+- At least you thought it was abandoned. The Drow warrior slips from a shadowy side entrance. Blades move so fast they are a blur. This quickly ends your otherwise pleasant walk.
+Upon entering the tower room you see stacks of papers and books
+-> DONE
+
+=== O1Death ===
+You have died
+
+->DONE
+
++[NEXT]
+    ->O1Ep1
+
 ->DONE

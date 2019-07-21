@@ -19,11 +19,11 @@ VAR O0EpisodeFive =     "THE HABITS OF MIND"
 // ***************************************************************
 VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
 // ***************************************************************
-VAR O1EpisodeOne =      "THE TOWER"
-VAR O1EpisodeTwo =      "THE SKELETONS"
-VAR O1EpisodeThree =    "THE MAGE'S NOTEBOOK"
-VAR O1EpisodeFour =     "THE ORE"
-VAR O1EpisodeFive =     "THE MAGE'S CODE"
+VAR O1EpisodeOne =      "AT THE DOOR"
+VAR O1EpisodeTwo =      "UP THE STAIRS"
+VAR O1EpisodeThree =    "IN THE STUDY"
+VAR O1EpisodeFour =     "AFTER THE CUBE"
+VAR O1EpisodeFive =     "A MAGE'S CODE"
 
 // ***************************************************************
 VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
@@ -79,4 +79,5 @@ VAR O6EpisodeThree =    "THE FRACTURE"
 VAR O6EpisodeFour =     "THE EVIL MAGE"
 VAR O6EpisodeFive =     "THE TIME TOMBS"
 
+VAR KeplersLaws = "(1) The orbit of a planet is an ellipse with the Sun at one of the two foci. (2) A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. (3) The square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit."
 -> DONE
