@@ -8,7 +8,7 @@
 
 === O0Prologue ===
 PROLOGUE
-Yellow rays of light shoot through the dense deciduous forest as the sun just starts peaking over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscious in some bushes along the side of this dirt path in the forests.
+Yellow rays of light shoot through the dense deciduous forest as the sun just peaks over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscious in some bushes along the side of a dirt path in the forest.
     +[Ω]
       ->O0StartMenu
     +[NEXT EPISODE]
@@ -18,7 +18,7 @@ Yellow rays of light shoot through the dense deciduous forest as the sun just st
 === O0Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O0EpisodeOne}
-You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. Its appears you're completely alone.
+You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone.
     + You stumble out into a path and start walking. <>
     + [Sit tight and wait for help]
         -- You opt to sit tight and wait for help, but after a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you.
@@ -50,7 +50,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
             ++ [Fight]
             ++ [Flee]
         // -- Blades move so fast they are a blur. You have no time to react. This quickly ends your otherwise pleasant walk.
-        -- Its attacks with Life Drain dealing necrotic damage (-32 pts).
+        -- Its attacks with LIFE DRAIN dealing necrotic damage (-32 pts).
             ++ [next]
             ->Death
     + {not Forest_Path} [Head east on the forest path]
@@ -102,7 +102,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 
 = Village_Path
 - Not long after midday a friendly farmer offers you a ride in {~his|her} {~turnip|carrot|potato} cart towards the nearest village.
-The forest comes to a clearing and opens to village.
+The forest comes to a clearing and opens to a village.
 // + [Go towards the village] -> Ep4
 // + [Go back west] -> CanisVilla.leave_early
 
@@ -121,7 +121,7 @@ The forest comes to a clearing and opens to village.
 - (courtyard_views)
     + (north_canis) Looking to the northern side, <>
         -- you see a blacksmith workshop with a dwarf hammering away on a set of horseshoes.
-        ++ [You don't need to go there, at least not yet.] ->courtyard_views
+        ++ [You don't need to go there (at least not yet).] ->courtyard_views
         ++ {north_canis > 1} [Walk toward the blackmith]
         --- A sword, warhammer, or even a simple knife would be nice, but you really don't need to go there yet. You have no money either. ->courtyard_views
     + (south_canis) Looking to the southern side, <>
@@ -129,9 +129,9 @@ The forest comes to a clearing and opens to village.
         ++ Look around the courtyard more. ->courtyard_views
         ++ [Enter the Blue Mug]
     + (east_canis) Looking to the eastern side, <>
-        -- you see the path you followed exit the village. Next to it is a general store. ->courtyard_views
+        -- you see the main path exit the village. Next to the path is a general store. ->courtyard_views
     + (west_canis) Looking to the western side, <>
-        -- you see an apothecary shop and the path you followed into Canis Villa. ->courtyard_views
+        -- you see an apothecary shop and main path entering {village1} (the one you followed in). ->courtyard_views
     + {(north_canis && west_canis && east_canis)} [next]
 - Nothing much going on around Canis Villa. Most people are either coming or going from a large inn & tavern on the southern side. At least there you could sit in the shade.
  + [Enter the Blue Mug]
@@ -155,14 +155,14 @@ The forest comes to a clearing and opens to village.
 {O0EpisodeFour}
 - You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with the bar and dining on the first floor. Worn stairs lead above to rooms. The furnishings are simple and slightly dingy, but of stout timber material.
     + [Observe the occupants.]
--  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and stout frame.
+-  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and made from a stout frame.
 - A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves
     + [Closer observation]
  - The locals look down on their luck. This community is in need of help.
     + Reflecting on "the kindness of strangers". <>
-- Occasionally strangers and not-so-good friends have done you wrong. Yet, strangers and friends have also helped you out in a pinch more than once. There are times when life tests your individual abilities, but having a community that helps one another is definitely preferable.
+- Occasionally strangers and not-so-good friends have done you wrong. Yet, strangers and friends have also helped you out in a pinch more than once. There are times when life tests your individual abilities, but having a kind, helpful community is definitely preferable.
     + [next]
-- One day a stranger may be a hero for you. Another day you might be a hero for a stranger.
+- One day a stranger may be a hero for you. Yet, on another day you might be the hero that someone needs.
     + A serving maid comes over and interrupts your thoughts.
 - Serving maid: "Welcome weary adventurer! I'm {Maid}. What can I get you?" she says with a {~ kind | warm | big} smile.
     + You: "What good food and drink do you have?"
