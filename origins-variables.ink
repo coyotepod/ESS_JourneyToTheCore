@@ -23,7 +23,7 @@ VAR O1EpisodeOne =      "AT THE DOOR"
 VAR O1EpisodeTwo =      "UP THE STAIRS"
 VAR O1EpisodeThree =    "IN THE STUDY"
 VAR O1EpisodeFour =     "AFTER THE CUBE"
-VAR O1EpisodeFive =     "A MAGE'S CODE"
+VAR O1EpisodeFive =     "FOR A CODE"
 
 // ***************************************************************
 VAR SeasonO2 =          "EXPEDITION OF ORIGINS"

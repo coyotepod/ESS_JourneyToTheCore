@@ -52,6 +52,7 @@ VAR Wizard =        "WIZARD"
 VAR MugOwner =          "Shamis"
 VAR ServingMaid =       "Jane"
 VAR ServingMaidTwo =    "Suzie"
+VAR DwarfSmith =        "Gimli" // a mostly friendly blacksmithing dwarf in Canis Villa
 VAR EvilMage  =         "Evil Mage"
 VAR Queen =             "Queen Justina"
 VAR NobleFamily =       "Noord Vlakte"

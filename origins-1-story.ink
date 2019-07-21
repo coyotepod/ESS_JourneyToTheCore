@@ -1,28 +1,6 @@
 #title: Discovery in the Celestial Towers
 #author: Master Scoy
 
-\ ***************************************
-SEASON 1: {SeasonO1}
-\ ***************************************
-EPISODE 1. {O1EpisodeOne}
-- RUMOR A very large fireball recently streaked through the sky. Some locals say that part of it fell to the ground nearby creating a crater and a patch of scorched land. It is also rumored that the mages in the Celestial Tower collected the piece. The queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower.
-- You can read the book "Astronomia nova" and correctly answer the trivia questions put forth by the castellan to gain entry as an "assistant" to the mages.
-- If you answer incorrectly or skip the reading, you need figure out an alternative entrance to the tower.
-EPISODE 2. {O1EpisodeTwo}
-- You gain entrance to the castle. If you gain entrance with the castellan's consent, you are told helpful information and have 1 encounter with skeletons.
-- Otherwise, you hastily climb the stairs until they reach the top. Along the way you encounter skeletons and must defeat them before proceeding. Without the helpful information, you have 1+1d4 encounters with skeletons.
-EPISODE 3. {O1EpisodeThree}
-- You enter the mage's study and discover his notebook on the desk. It is magically locked. A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
-- You unlock and open the notebook! Unfortunately, the mage has also left a guardian and the trap has been triggered. A monster oozes from behind towards the party.
-EPISODE 4. {O1EpisodeFour}
-- You encounter and must defeat the GELATINOUS CUBE slowly approaching from study's doorway.
-- You battle the ooze and eventually defeat it.
-- After it becomes an oozing puddle, you notice an unusual ore left on the floor from the CUBE. You stuff the notebook and ore into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
-- EPISODE 5. {O1EpisodeFive}
-- You leave the castle tower without incident the same way you entered.
-- You make your way back to the Blue Mug Tavern & Inn. You go through the notebook and find an encoded message code.
-- The party deciphers the Galifrean code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
-- You take the ore to your blacksmithing friend, a dwarf. He tells you it is an ore called a meteorite which originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. He doesn't know how it would be used, but suggest that THE HIGHLANDER ALCHEMISTS might.
 
 
 
@@ -92,11 +70,15 @@ EPISODE 4. {O1EpisodeFour}
         ++ Brahe thinks the our planet is at the center of the solar system, but not the universe
         --- Imbeciles!
         ->enter_side
-        ++ Brahe thinks our planet is not at the center of the universe nor the center of the solar system
+        ++ Brahe thinks the nearby planets orbit the sun but the sun orbits our planet. 
         -> enter_front
 - (enter_front)
-{Castellan}: Sorry for doubting you. A word of caution, travel cautiously up to the 13th floor and you are likely to encounter...less problems.
-The party looks at each other questioningly.  The party walks inside the main door.
+- {Castellan}: Sorry for doubting you -
+- {TheWizard}: We weren't finished. We have reason and evidence to support the idea that the planets orbit the sun as Brahe stated, BUT our planet also orbits the sun.
++ [next]
+- {Castellan}: Oh my, now that's an original! I'm sure Master Brahe and Kepler will have...thoughts on your idea. A word of caution; move cautiously up to the 13th floor to meet them and you are likely to encounter...less problems.
++ [next]
+You glance at {theWizard} surprised by his additional idea. The entire party looks at each other questioningly at {Castellan}'s warning.  The party walks inside the main door.
   ->enter_celestial_towers
 
 - (enter_side)
@@ -122,18 +104,20 @@ The party walks down the path a little aways from the tower and stops to talk.
     ++ [Success]
     ++ [Fail] ->open_the_door
 - (enter_celestial_towers)
-+ {enter_side} [Next] 
+    +[Ω]
+        ->O1StartMenu
++ {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [NeXT] 
     ->O1Ep2.Side_Door
 + {enter_front} [NEXT] 
     ->O1Ep2.Front_Door
 
 === O1Ep2 ===
-{O1EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
 + [Front Door]
--- (Front_Door) ->vestibule
+-- (Front_Door)
 + [Side door]
--- (Side_Door) ->vestibule
-- On the inside it is surprisingly nicer. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
+-- (Side_Door)
+-{O1EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
+-Inside the tower is a little nicer than the exterior. You are in a small vestibule. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
     + [next]->vestibule
 - (vestibule)
 + [Go through the door] -> into_the_kitchen
@@ -146,25 +130,27 @@ You head to the kitchen. No one is around except {~a couple rats chewing on mold
 
 - (sit_in_dining)
 You decide to have a seat. After ten creepy minutes alone,  nothing happens.
-Leave the castle -> leave_castle_early
-Go up the stairs -> up_the_stairs
++ Leave the castle -> leave_castle_early
++ Go up the stairs -> up_the_stairs
 - (leave_castle_early)
 You walk back to the vestibule. A shadowy figure steps into the entrance front of you with a drawn dagger. You turn and bolt up the stairs .-> up_the_stairs
 
 - (up_the_stairs)
-    + {Front_Door} You go up the stairs at a walking pace. You pass seven floors before coming to a final stout door.
-    + {Side_Door} You go up the stairs at a fast pace.
-  -- After {d4} floors, you encounter {d4} skeletons.
-  -- [next]
-  -- You engaged in combat with the SKELETONS.
-    ++ You defeat the SKELETONS
-    --- You run up another {d4} floors. You encounter SKELETONS. Again. There are {d4}
-    +++ You defeat the SKELETONS.
-    +++ You Die
-    ++ You Die
--
+    + {Front_Door} You walk up the stairs.
+    + {Side_Door} You run up the stairs.
+- After {d4} floors, you encounter {d4} skeletons.
 + [next]
-- You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower. 
+- You engaged in combat with the SKELETONS.
+    + You defeat the SKELETONS ->landing
+    ++ {Side_Door} The party continues running up the stairs. 
+    -- You face SKELETONS. Again.
+    +++ You defeat the SKELETONS.
+    --- {TheWizard}: I think we might try walking rather than running the rest of the way.
+    --- The party agrees.
+    ++ You die ->O1StartMenu 
+    ++ {Front_Door} The party continues walking up the stairs.
+    + You die an unglorious death. ->O1StartMenu
+- (landing) You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower. 
     +[Ω]
        ->O1StartMenu
     +[NEXT EPISODE]
@@ -174,28 +160,56 @@ You walk back to the vestibule. A shadowy figure steps into the entrance front o
 === O1Ep3 ===
 // Room 3: Trick or Setback
 {O1EpisodeThree}
-- You enter the mage's study and discover his notebook on the desk. It is magically locked. A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
-- You unlock and open the notebook! Unfortunately, the mage has also left a guardian and the trap has been triggered. A monster oozes from behind towards the party.
-
-
-
+- You enter the mage's study and discover his notebook on the desk. It is magically locked. 
++ [next]
+- A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
+- (concept_keys)
+{correct_concept} CORRECT \|\| {missed_concept} INCORRECT
++ {not yes1} {missed_concept < 2} [CONCEPT 1: Correct] 
+-- (yes1)->correct_concept
++ {not yes2} {missed_concept < 2} [CONCEPT 2: Correct] 
+-- (yes2)->correct_concept
++ {not yes3} {missed_concept < 2} [CONCEPT 3: Correct] 
+-- (yes3)->correct_concept
++ {not yes4} {missed_concept < 2} [CONCEPT 4: Correct] 
+-- (yes4)->correct_concept
+--- (correct_concept) -> concept_keys
++ {missed_concept == 0} {correct_concept < 4} [ANY CONCEPT: Incorrect] ->missed_concept
++ {missed_concept == 1} [ANOTHER CONCEPT: Incorrect] ->missed_concept
++ {missed_concept == 2} THE POWER OF YET.
+-- You haven't mastered the concepts...YET. You'll get the concepts soon enough by using retrevial practice and discussing the ideas with classmates and the local Master.
+-- Unfortunately, a micro-black hole has formed near the notebook, stretching you from head to toe. Death by blackhole. 
+(reload the webpage to start again) ->END
+-- (missed_concept) ->concept_keys
++ {correct_concept ==4} [UNLOCKED!]
+- You unlock and open the notebook! 
+Unfortunately, the mage has also left a guardian as a trap and the trap has been triggered. A monster oozes from behind towards the party.
 
 - (enter_tower_study)
-The room is filled with tombs of knowledge, thick stacks of parchment, and apparatus scattered throughout.
     +[Ω]
         ->O1StartMenu
     +[NEXT EPISODE]
         ->O1Ep4
+The room is filled with tombs of knowledge, thick stacks of parchment, and apparatus scattered throughout.
 
 ->DONE
 
 === O1Ep4 ===
 // Room 4: Climax
 {O1EpisodeFour}
-EPISODE 4. {O1EpisodeFour}
-- You encounter and must defeat the GELATINOUS CUBE slowly approaching from study's doorway.
-- You battle the ooze and eventually defeat it.
-- After it becomes an oozing puddle, you notice an unusual ore left on the floor from the CUBE. You stuff the notebook and ore into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
+A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway that leads into and out of the study's.
+- Battle the GELATINOUS CUBE
++ VICTORY
++ DEFEAT
+- With a shudder, the previously coagulated cube collapses and becomes an oozing puddle.
++ You inspect and loot the puddle with your hand.
+-- You take acid damage on your hand every 5 seconds you are in contact with the ooze.
++ You visually inspect the puddle.
+-- {TheWizard} casts "MAGE HAND" and loots the puddle without taking any damage.
++ Avoid the puddle entirely and leave the room.
+-- {TheCleric}: I've got a bad feeling about this. Let's take a closer look at the puddle. 
+The part goes back in and {theFighter} swishes the ooze around with his hand and takes acid damage in the process.
+- You notice an unusual ore left on the floor from the CUBE. You stuff the ore and mage's notebook into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
     +[Ω]
         ->O1StartMenu
     +[NEXT EPISODE]
@@ -206,11 +220,26 @@ EPISODE 4. {O1EpisodeFour}
 === O1Ep5 ===
 // Room 5: Reward, Revelation, or Twist
 {O1EpisodeFive}
-- EPISODE 5. {O1EpisodeFive}
 - You leave the castle tower without incident the same way you entered.
-- You make your way back to the Blue Mug Tavern & Inn. You go through the notebook and find an encoded message code.
+- You make your way back to the Blue Mug Inn & Tavern. You go through the notebook and find an encoded message code.
++ [next]
+- (encoded_message) Ask the Game Master for a copy of the coded message if you're up to the challenge.
++ SUCCESS
++ FAIL (for now)
+-- Comeback another time after you've figured it out.
+-- END for now ->END
++ A hint please?
+++ [The language of Dr. Who] ->encoded_message
 - The party deciphers the Gallifreyan code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
-- You take the ore to your blacksmithing friend, a dwarf. He tells you it is an ore called a meteorite which originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. He doesn't know how it would be used, but suggest that THE HIGHLANDER ALCHEMISTS might.
++ [next]
+- You take the ore to your blacksmithing friend, a dwarf.
+{DwarfSmith}: it is an ore called a meteorite. It originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. How did you come by it?
+YOU:
++ We'd rather not say for now
+-- {DwarfSmith}: Fine I guess.
+-- He shrugs his shoulders.
+- {DwarfSmith}: I don't know how it would be used. Perhaps THE HIGHLANDER ALCHEMISTS, Hutton & Lyell, might be able to help. You'll find them - you guessed it - in the highlands. 
+Good luck weary adventurers!
 
     +[Ω]
         ->O1StartMenu
@@ -239,7 +268,10 @@ SETTING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
-->DONE
+    +[Ω]
+        ->O1StartMenu
+    +[NEXT EPISODE]
+        ->O1Epilogue
 
 // ***************************************************************
 // ORGINS an Earth & Space Science story
