@@ -96,9 +96,11 @@ PROLOGUE
     + \ {TheFighter}: What's an intrusion?
       -- Lyell: An intrusion a volcanic formation. For example, when magma from below the surface squeezes up through cracks or flows on top of a layer before being buried.
       ++ \ {TheFighter} nods his head in understanding or at least fakes Understanding
-    +
-
-Hutton and Lyell tell you they were kidding; they'd never pass on an oppurtunity to look at rare ores.
+    + You: The intrusion must be YOUNGER than any layers it cuts across or rests upon.
+    -- Lyell: Correct!
+    + You: The intrusion must be OLDER than any layers it cuts across or rests upon.
+- Lyell: Think of it this way. You can't cut across something if its not there. The layer to be cut across must be their FIRST. Then the intrusion cuts across it.
+Hutton and Lyell tell you they were kidding; they'd never pass on an opportunity to look at rare ores.
 
 + [next]
 - Lyell: "Understanding the present is the key to past."
