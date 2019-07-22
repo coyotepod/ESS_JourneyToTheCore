@@ -24,7 +24,6 @@ VAR RoomThree = "ROOM THREE: Setback" // or Trick
 VAR RoomFour =  "ROOM FOUR: Big Battle" // or Climax or Conflict
 VAR RoomFive =  "ROOM FIVE: Revelation" // or Reward or Plot Twist
 
-
 // ***************************************************************
 // MAIN CHARACTERS
 // ***************************************************************
