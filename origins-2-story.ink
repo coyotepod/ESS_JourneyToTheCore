@@ -78,7 +78,11 @@ Suddenly you are attacked by {1d4} SAND BEETLES attack.
 - You:
     + Attack
     + Flee
-- The party defeats the SAND BEETLES and finds the exposed cliff. Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
+- You defeat the SAND BEETLES
++ [next]
+- You go a short distance  before seeing Hutton & Lyell walking towards you.
+- Hutton: Hello there. We heard a commotition and came to see what it was about
+- Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
 + [next]
 - You tell them about your rare meteorite ore and would like them to examine it more closely. The pair agree to help if the party can answer their riddle about the sequence of bedrock layers.
 + [next]
