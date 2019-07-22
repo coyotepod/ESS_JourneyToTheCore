@@ -38,7 +38,7 @@ PROLOGUE
 - {Maid}: So <>{RumorTwo}
 - {TheCleric}: This is promising news. Thank you {Maid}!
 - You: Sounds like we'll be venturing off to {village5}?
-- The whole party agrees. 
+- The whole party agrees.
 - You gather supplies and decide to set out the next morning.
    +[Ω]
        ->O2StartMenu
@@ -77,16 +77,33 @@ PROLOGUE
     ++ [next]
 - You defeat the SAND BEETLES
 + [next]
-- You go a short distance  before seeing Hutton & Lyell walking towards you.
+- You go a short distance before seeing Hutton & Lyell walking towards you.
 - Hutton: Hello there. We heard a commotion and came to see what it was about.
-- Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
-+ [next]
-- You tell them about your rare meteorite ore and would like them to examine it more closely. The pair agree to help if the party can answer their riddle about the sequence of bedrock layers.
+- Sure enough, Hutton and Lyell are there study the stratigraphy (layers).
+- Lyell: The beach is not the best approach. Ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
+    + You face palm.
+    + {TheFighter} cuffs you on the back of the head.
+- Hutton: You must be the lads and lasses {DwarfSmith} mentioned. So you have a rock sample for us?
++ You get out the meteorite ore
+- They examine it more closely.
+- Hutton: We'll run a few field tests likes its Moh's hardness and examine its mineral crystal structure. Meanwhile, the lot of you need to figure out the relative dating and relative age of those bedrock rock layers for us.
+    + \ {TheFighter}: What's relative dating and relative age? It sounds weird.
+    + You: Agreed!
+- Although some party members struggle, you eventually figure it out.
+    + You: The rock layers at the bottom are the oldest and the rock layers near the top are the youngest
+    + You: The rock layers at the top are the oldest and the rock layers near the bottom are the youngest
+- Lyell: Well done! But what about that intrusion cutting across and up the first three layers we see?
+    + \ {TheFighter}: What's an intrusion?
+      -- Lyell: An intrusion a volcanic formation. For example, when magma from below the surface squeezes up through cracks or flows on top of a layer before being buried.
+      ++ \ {TheFighter} nods his head in understanding or at least fakes Understanding
+    +
+
+Hutton and Lyell tell you they were kidding; they'd never pass on an oppurtunity to look at rare ores.
+
 + [next]
 - Lyell: "Understanding the present is the key to past."
 - It is also the key to predicting what is likely or unlikely in the future.
 + [next]
-- Although some party members struggle, you eventually figure it out. Hutton and Lyell tell you they were kidding; they'd never pass on an oppurtunity to look at rare ores.
 + [next]
 - After performing a few field tests (Moh's scale, etc) on the sample, the pair concur that it is a meteorite from the celestial plane. It also has some unique properties as it seems to ever so slightly bend nearby space-time. If it were purified and concentrated, it could be extremely powerful.
 + [next]
@@ -119,7 +136,7 @@ PROLOGUE
        ->O2StartMenu
     +[NEXT EPISODE]
         ->O2Ep4
-
+abstract
 ->DONE
 
 === O2Ep4 ===

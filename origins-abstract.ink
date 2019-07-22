@@ -1,9 +1,9 @@
-#title: ORIGINS SUMMARY
+#title: ORIGINS ABSTRACT
 ->AboutStartMenu
 
 INCLUDE global-variables.ink
 INCLUDE origins-variables.ink
-INCLUDE origins-about-story.ink
+INCLUDE origins-abstract-story.ink
 
 === AboutStartMenu ===
     + [{SeasonO0}]
