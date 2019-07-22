@@ -19,6 +19,5 @@ INCLUDE origins-1-story.ink
     + [{O1EpisodeFour}]
         ->O1Ep4
     + [{O1EpisodeFive}]
-    ->O1Ep5
-
+        ->O1Ep5
 -> DONE

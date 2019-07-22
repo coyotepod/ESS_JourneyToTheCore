@@ -6,7 +6,7 @@
 \ ***************************************
 + EPISODE 1. {O2EpisodeOne}
 - You travel to the highlands in search of a pair of alchemists named {Hutton} and  {Lyell}. A villager in {village5}, tells you that the pair spends a lot of time near the cliffs.
-- You make your way towards the cliffs along a nice wide beach and almost immediately ({d4}) SAND BEETLES attack.
+- You make your way towards the cliffs along a nice wide beach and almost immediately {d4()} SAND BEETLES attack.
 - The party defeats the SAND BEETLES and finds the exposed cliff. Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
 - You tell them about your rare meteorite ore and would like them to examine it more closely. The pair agree to help if the party can answer their riddle about the sequence of bedrock layers.
 - Lyell: "Understanding the present is the key to past."
@@ -40,17 +40,14 @@ PROLOGUE
 - You: Sounds like we'll be venturing off to {village5}?
 - The whole party agrees. 
 - You gather supplies and decide to set out the next morning.
-
    +[Ω]
        ->O2StartMenu
     +[NEXT EPISODE]
         ->O2Ep1
-
 ->DONE
 
 === O2Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
-~temp 1d4 = RANDOM(1,4)
 {O2EpisodeOne}
 - You travel to the highlands in search of {Hutton} and {Lyell}.
 + [next]
@@ -62,26 +59,26 @@ PROLOGUE
         -- {TheFighter}: are we sure we want to cross numerous cliff top ravines without climbing gear?
         -- You:
             ++ We should take the shorter route on top. What could possibly go wrong up here?
-            ++ We should take the longer switchback. A little walking never killed anyone right?
-            
-        --- You cross {2+1d4} ravines. Then {~{theWizard}|{theFighter}|{theRogue}} slips and falls into you. The remaining party members try to grab you, but you partially pull and knock the rest of them off their feet in the process.
+            ++ We should take the longer switchback. A little walking never killed anyone right? ->switchback
+        --- You cross {2+d4()} ravines. Then {~{theWizard}|{theFighter}|{theRogue}} slips and falls into you. The remaining party members try to grab you, but you partially pull and knock the rest of them off their feet in the process.
         --- You have just enough time to shout explatives and wish you had climbing gear or a FEATHER FALL spell before you and the party is greeted by hard granite two hundred feet below.
         --- If its not obvious, you have died a painful splattering death. -> O2Ep1
-    -
     + [along the beach at the cliff base]
-- You make your way down the switchback from the cliff tops. Its a long, difficult route but you make your way safely to the beach.
+- (switchback) You make your way down the switchback from the cliff tops. Its a long, difficult route but you make your way safely to the beach.
 + [next]
-- You walk {~a quarter mile|a half mile} along the beach noticing the multicolored rock layers to your right and upwards
+- You walk {~a quarter mile|a half mile} along the beach noticing the wall of multicolored rock layers to your right and upwards
 + [next]
-Suddenly you are attacked by {1d4} SAND BEETLES attack.
+- Suddenly you are attacked by {d4()} SAND BEETLES attack.
 + [next]
 - You:
     + Attack
-    + Flee
+    + Flee <>
+    -- ? Really? Your party has weapons, spell casters, armor...don't be a sissy
+    ++ [next]
 - You defeat the SAND BEETLES
 + [next]
 - You go a short distance  before seeing Hutton & Lyell walking towards you.
-- Hutton: Hello there. We heard a commotition and came to see what it was about
+- Hutton: Hello there. We heard a commotion and came to see what it was about.
 - Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
 + [next]
 - You tell them about your rare meteorite ore and would like them to examine it more closely. The pair agree to help if the party can answer their riddle about the sequence of bedrock layers.

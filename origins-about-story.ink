@@ -2,9 +2,6 @@
 #author: Master Scoy
 
 
-
-// INCLUDE global-variables.ink
-// INCLUDE origins-variables.ink
 - (AboutMenu)
     + [{SeasonO0}]
         ->Season0
@@ -24,6 +21,10 @@
         ->SeasonEpilogue
 ->DONE
 
+
++ MENU ->AboutStartMenu
+
+->DONE
 - (Season0)
 \ ***************************************
 PROLOGUE: {SeasonO0}
@@ -60,12 +61,10 @@ PROLOGUE: {SeasonO0}
 SEASON 1: {SeasonO1}
 \ ***************************************
 - EPISODE 1. {O1EpisodeOne}
-VAR an_alternative_entrance = "how to successfully pick the lock on a side door."
 - A very large fireball recently streaked through the sky. Some locals say that part of it fell to the ground nearby creating a crater and a patch of scorched land. It is also rumored that the mages in the Celestial Tower collected the piece. The queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower. You can read the book ASTRONOMIA NOVA and correctly answer the trivia questions put forth by the castellan to gain entry as an "assistant" to the mages.
-- If you answer incorrectly or skip the reading, you need figure out an alternative entrance to the tower. *{an_alternative_entrance}
+- If you answer incorrectly or skip the reading, you need figure out an alternative entrance to the tower.
 - EPISODE 2. {O1EpisodeTwo}
-    VAR helpful_information = "to travel cautiously up to the 13th floor and you are likely to encounter less problems"
-- You gain entrance to the castle. If you gain entrance with the castellan's consent, you are told helpful information and have 1 encounter with skeletons. *{helpful_information}
+- You gain entrance to the castle. If you gain entrance with the castellan's consent, you are told helpful information and have 1 encounter with skeletons.
 - Otherwise, you hastily climb the stairs until they reach the top. Along the way you encounter skeletons and must defeat them before proceeding. Without the helpful information, you have 1+1d4 encounters with skeletons.
 - EPISODE 3. {O1EpisodeThree}
 - You enter the mage's study and discover his notebook on the desk. It is magically locked. A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
@@ -89,8 +88,9 @@ VAR an_alternative_entrance = "how to successfully pick the lock on a side door.
 - SEASON 2: {SeasonO2}
 \ ***************************************
 + EPISODE 1. {O2EpisodeOne}
+
 - You travel to the highlands in search of a pair of alchemists named {Hutton} and  {Lyell}. A villager in {village5}, tells you that the pair spends a lot of time near the cliffs.
-- You make your way towards the cliffs along a nice wide beach and almost immediately ({d4}) SAND BEETLES attack.
+- You make your way towards the cliffs along a nice wide beach and almost immediately {d4()} SAND BEETLES attack.
 - The party defeats the SAND BEETLES and finds the exposed cliff. Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.
 - You tell them about your rare meteorite ore and would like them to examine it more closely. The pair agree to help if the party can answer their riddle about the sequence of bedrock layers.
 - Lyell: "Understanding the present is the key to past."
@@ -211,4 +211,7 @@ EPILOGUE: {SeasonO6}
 \ ***************************************
 //+ [OMEGA]
 //    -> OriginsStartMenu
+
+
+
 ->END

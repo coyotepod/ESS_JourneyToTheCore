@@ -24,7 +24,6 @@ VAR RoomThree = "ROOM THREE: Setback" // or Trick
 VAR RoomFour =  "ROOM FOUR: Big Battle" // or Climax or Conflict
 VAR RoomFive =  "ROOM FIVE: Revelation" // or Reward or Plot Twist
 
-
 // ***************************************************************
 // MAIN CHARACTERS
 // ***************************************************************
@@ -146,13 +145,34 @@ VAR items =             "no special items, not even flint and steel"
 // ***************************************************************
 // DICE ROLLS
 // ***************************************************************
-VAR d4 =                "1d4"
-VAR d6 =                "1d6"
-VAR d8 =                "1d8"
-VAR d10 =               "1d10"
-VAR d12 =               "1d12"
-VAR d20 =               "1d20"
-VAR d100 =              "1d100"
+//~ temp d4 = RANDOM (1,4)
+//~ temp d6 = RANDOM (1,6)
+//~ temp d8 = RANDOM (1,8)
+//~ temp d10 = RANDOM (1,10)
+//~ temp d12 = RANDOM (1,12)
+//~ temp d20 = RANDOM (1,20)
+//~ temp d100 = RANDOM (1,100)
+
+=== function d4() ===
+~ return RANDOM(1, 4)
+
+=== function d6() ===
+~ return RANDOM(1, 6)
+
+=== function d8() ===
+~ return RANDOM(1, 8)
+
+=== function d10() ===
+~ return RANDOM(1, 10)
+
+=== function d12() ===
+~ return RANDOM(1, 12)
+
+=== function d20() ===
+~ return RANDOM(1, 20)
+
+=== function d100() ===
+~ return RANDOM(1, 100)
 
 // ***************************************************************
 // SPECIAL ITEMS
@@ -172,11 +192,5 @@ VAR St1EpisodeFive =    "EPISODE 5"
 
 
 // END OF GLOBAL VARIABLES
-
--> DONE
-pisodeFive =    "ROOM FIVE: Revelation"
-
-
-// END OF GLOBAL VARIABLES
-
+=== GlobalVariables ===
 -> DONE

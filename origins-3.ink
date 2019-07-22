@@ -21,5 +21,4 @@ INCLUDE origins-3-story.ink
         ->O3Ep4
     + [{O3EpisodeFive}]
        ->O3Ep5
-
 -> DONE

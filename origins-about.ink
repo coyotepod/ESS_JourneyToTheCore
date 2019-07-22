@@ -3,7 +3,7 @@
 
 INCLUDE global-variables.ink
 INCLUDE origins-variables.ink
-INCLUDE origins-about.ink
+INCLUDE origins-about-story.ink
 
 === AboutStartMenu ===
     + [{SeasonO0}]
@@ -22,7 +22,4 @@ INCLUDE origins-about.ink
         ->SeasonARRAKIS
     + [{SeasonO6}]
         ->SeasonEpilogue
-//    + {OriginsStartMenu} [ALPHA]
-//        ->OriginsStartMenu
-    
 -> DONE
