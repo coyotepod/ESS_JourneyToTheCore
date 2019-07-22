@@ -237,8 +237,9 @@ YOU:
 + We'd rather not say for now
 -- {DwarfSmith}: Fine I guess.
 -- He shrugs his shoulders.
-- {DwarfSmith}: I don't know how it would be used. Perhaps THE HIGHLANDER ALCHEMISTS, Hutton & Lyell, might be able to help. You'll find them - you guessed it - in the highlands.
-Good luck weary adventurers!
+- {DwarfSmith}: I don't know how it would be used. Perhaps THE HIGHLANDER ALCHEMISTS, Hutton & Lyell, might be able to help? I'm not sure of their whereabouts right now. I'll get word out to my contacts and see if we can't setup a meeting.
+- You: Let's keep this as secret as possible. I think the fewer people that know, the better. We would be interested in meeting these gentleman though. Thank you {DwarfSmith}!
+- {DwarfSmith}: Good luck weary adventurers!
 
     +[Ω]
         ->O1StartMenu

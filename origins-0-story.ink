@@ -68,8 +68,8 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
                 --- You are quickly slashed and stabbed numerous times.
                     +++ [next]
                     ->Death
-    + {Clun_Castle} {Forest_Path} You take a few moments to consider your choices.
-    -- Now that you've had a chance to calm your mind, you're feeling optimistic about the eastern the path.
+    + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind and consider your choices.
+    -- You notice a small deer path going east running mostly parallel to the main path.
     ++ [next] ->Village_Path
 
 ->DONE
@@ -101,8 +101,8 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 ->DONE
 
 = Village_Path
-- Not long after midday a friendly farmer offers you a ride in {~his|her} {~turnip|carrot|potato} cart towards the nearest village.
-The forest comes to a clearing and opens to a village.
+- Not long after midday a friendly farmer comes down the main path. You step out onto the main path and talk. He offers you a ride in his {~turnip|carrot|potato} cart towards the nearest village.
+The forest comes to a clearing and opens to the village.
 // + [Go towards the village] -> Ep4
 // + [Go back west] -> CanisVilla.leave_early
 
@@ -134,20 +134,11 @@ The forest comes to a clearing and opens to a village.
         -- you see an apothecary shop and main path entering {village1} (the one you followed in). ->courtyard_views
     + {(north_canis && west_canis && east_canis)} [next]
 - Nothing much going on around Canis Villa. Most people are either coming or going from a large inn & tavern on the southern side. At least there you could sit in the shade.
- + [Enter the Blue Mug]
-
-// + [Head towards the inn]
-    // + [Leave the village to the west] ->leave_early
-// = leave_early
-// You decide the village is not for you. You head back west. It takes much longer without a ride, but you come to the crossroads again.
-    // + You continue west. -> ClunCastle.early
-+[Ω]
-->O0StartMenu
-
+    + [Enter the Blue Mug]
 
     -
-+[Ω]
-->O0StartMenu
+    +[Ω]
+        ->O0StartMenu
     +[NEXT EPISODE]
         ->O0Ep4
 
