@@ -3,13 +3,7 @@
 
 
 
-- EPISODE 3. {O2EpisodeThree}
-- Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
-+ [next]
-- EPISODE 4. {O2EpisodeFour}
-- Players reach the Air Temple and battle an Air Elemental. They gather the air essence that lingers afterward so it can be used later at the forge.
-- EPISODE 5. {O2EpisodeFive}
-- Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
+
 
 === O2Prologue ===
 PROLOGUE
@@ -37,7 +31,7 @@ PROLOGUE
 - You travel to the highlands in search of {Hutton} and {Lyell}. You arrive without any significant events along the way.  A villager in {village5} tells you the pair spends a lot of time near the local exposed cliffs.
 + [next]
 - You leave the village on a path that comes out at the top of the cliffs. Paths run along the cliff tops with numerous ragged ravines in between cliff tops. The mountain paths seem to be a more direct, but more dangerous route. There is also a switchback trail heading down to a beach along the base of the cliffs. The switchback looks like a longer and more difficult trip.
-- {TheCleric}: We probably should've have asked for more specific directions. 
+- {TheCleric}: We probably should've have asked for more specific directions.
 + [next]
 - {TheWizard}: Where do you look for these men?
     + [along the high cliff tops]
@@ -113,7 +107,7 @@ PROLOGUE
         ++ Hutton: Are you wanting to hear about your ore now?
 - Lyell: Keep in mind 'understanding the present is the key to past.' Likewise, you could infer that understanding the present is the key to predicting what is likely or unlikely in the future.
 + [next]
-- Hutton: We agree the ore is a meteorite from the celestial plane. 
+- Hutton: We agree the ore is a meteorite from the celestial plane.
 + [next]
 - Hutton continues: Meteorites are the leftovers of the solar system's beginning. Kind of like  time capsule. They can tell us a lot about the planet's formation and the formation of the solar system. In many ways, they are the origins.
 + [Mind blown...]
@@ -148,6 +142,10 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 === O2Ep3 ===
 // Room 3: Trick or Setback
 {O2EpisodeThree}
+- Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
++ [next]
+You climb the peak for the better part of the day and arrive around dinner time.
+
    +[Ω]
        ->O2StartMenu
     +[NEXT EPISODE]
@@ -158,6 +156,8 @@ abstract
 === O2Ep4 ===
 // Room 4: Climax
 {O2EpisodeFour}
+- Players reach the Air Temple and battle an Air Elemental. They gather the air essence that lingers afterward so it can be used later at the forge.
+
    +[Ω]
        ->O2StartMenu
     +[NEXT EPISODE]
@@ -168,6 +168,7 @@ abstract
 === O2Ep5 ===
 // Room 5: Reward, Revelation, or Twist
 {O2EpisodeFive}
+- Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
 
    +[Ω]
        ->O2StartMenu
