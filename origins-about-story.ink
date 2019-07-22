@@ -35,7 +35,7 @@ PROLOGUE: {SeasonO0}
 - EPISODE 3. {O0EpisodeThree}
   You engage in combat with BANDITS on the road and a SPECTRE in the ruins. Eventually you get a ride into the village. You learn that death (setbacks) are temporary. In our game - and classroom - you get second chances. However you will see that the game and our classroom are much easier when you are prepared and make quality choices the first time. You also learn a little about the COMBAT system of our game. You must demonstrate persistence to be successful in the game, the classroom, and in life.
 - EPISODE 4. {O0EpisodeFour}
-  You explore the village briefly. Eventually you make your way to The Blue Mug. Inside, you engage in role-playing with the serving maid {ServingMaid}.
+  You explore the village briefly. Eventually you make your way to The Blue Mug. Inside, you engage in role-playing with the serving maid {Maid}.
 - EPISODE 5. {O0EpisodeFive}
   You learn that game is about having fun, but there are Habits of Mind (i.e. morals of the story) to be learned as well.
 + OBJECTIVES
@@ -89,7 +89,6 @@ VAR an_alternative_entrance = "how to successfully pick the lock on a side door.
 - SEASON 2: {SeasonO2}
 \ ***************************************
 + EPISODE 1. {O2EpisodeOne}
-VAR village5 = "Glasgow"
 - You travel to the highlands in search of a pair of alchemists named {Hutton} and  {Lyell}. A villager in {village5}, tells you that the pair spends a lot of time near the cliffs.
 - You make your way towards the cliffs along a nice wide beach and almost immediately ({d4}) SAND BEETLES attack.
 - The party defeats the SAND BEETLES and finds the exposed cliff. Sure enough, Hutton and Lyell are there study the stratigraphy or layers. The pair tells you that the beach is not the best approach and that ascending or descending the crevasse is LESS hazardous because SAND BEETLES cannot climb.

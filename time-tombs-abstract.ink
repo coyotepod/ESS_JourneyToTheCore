@@ -1,13 +1,13 @@
-# title: About TIME TOMBS
+# title: TIME TOMBS ABSTRACT
 # author: Master Scoy
 
 
--> AboutTimeTombs
+-> AbstractTimeTombs
 
 INCLUDE global-variables.ink
 INCLUDE time-tombs-variables.ink
 
-=== AboutTimeTombs ===
+=== AbstractTimeTombs ===
 \ ***************************************
 PROLOGUE: {SeasonTT0}
 \ ***************************************
