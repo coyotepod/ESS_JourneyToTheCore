@@ -137,7 +137,7 @@ You walk back to the vestibule. A shadowy figure steps into the entrance front o
 - (up_the_stairs)
     + {Front_Door} You walk up the stairs.
     + {Side_Door} You run up the stairs.
-- After {d4} floors, you encounter {d4} skeletons.
+- After {2+d4()} floors, you encounter {d4()} skeletons.
 + [next]
 - You engaged in combat with the SKELETONS.
     + You defeat the SKELETONS ->landing

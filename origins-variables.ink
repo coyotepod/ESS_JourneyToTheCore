@@ -28,10 +28,10 @@ VAR O1EpisodeFive =     "FOR A CODE"
 // ***************************************************************
 VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
 // ***************************************************************
-VAR O2EpisodeOne =      "THE HIGHLANDERS & DEEP TIME"
-VAR O2EpisodeTwo =      "THE STONE GIANT & BEETLES"
+VAR O2EpisodeOne =      "THE HIGHLANDERS"
+VAR O2EpisodeTwo =      "THE DEEP TIME"
 VAR O2EpisodeThree =    "THE RIVER"
-VAR O2EpisodeFour =     "THE AIR ELEMENTAL"
+VAR O2EpisodeFour =     "THE AIR TEMPLE"
 VAR O2EpisodeFive =     "THE FORGE MASTER"
 
 // ***************************************************************
