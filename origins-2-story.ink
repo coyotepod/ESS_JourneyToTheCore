@@ -142,7 +142,13 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 === O2Ep3 ===
 // Room 3: Trick or Setback
 {O2EpisodeThree}
-- Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
+- You travel for a few hours into the heat of the afternoon. You come to a deep channeled mountain river. The water practically tumbles and crashes from glacial melt above down the side of the mountain. It cuts through canyons and sprays outward in other areas. You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge has recently been washed out.
+  -- Moving water is an amazing force in the moment and over time. Water and wind literally moves mountain over time. You notice wash out areas and the pattern of deposits in places where the river overran its banks.
+  -- The heaviest load in the river such as boulders and rocks are deposited first.
+  -- Afterwards, the medium sized sediments are deposited.
+  -- The next to be deposited is the fine sands and silts.
+  -- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
+  . . its immediate power and its   Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
 + [next]
 You climb the peak for the better part of the day and arrive around dinner time.
 
