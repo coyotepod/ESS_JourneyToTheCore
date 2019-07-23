@@ -136,21 +136,44 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 ->O2StartMenu
 +[NEXT EPISODE]
         ->O2Ep3
-
 ->DONE
 
 === O2Ep3 ===
 // Room 3: Trick or Setback
 {O2EpisodeThree}
-- You travel for a few hours into the heat of the afternoon. You come to a deep channeled mountain river. The water practically tumbles and crashes from glacial melt above down the side of the mountain. It cuts through canyons and sprays outward in other areas. You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge has recently been washed out.
+- You travel for a few hours into the heat of the afternoon. You come to a deep channeled mountain river.
+- The water practically tumbles and crashes from glacial melt above down the side of the mountain. It cuts through canyons and sprays outward in other areas.
+- You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge has recently been washed out.
   -- Moving water is an amazing force in the moment and over time. Water and wind literally moves mountain over time. You notice wash out areas and the pattern of deposits in places where the river overran its banks.
   -- The heaviest load in the river such as boulders and rocks are deposited first.
   -- Afterwards, the medium sized sediments are deposited.
   -- The next to be deposited is the fine sands and silts.
   -- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
-  . . its immediate power and its   Players progress is stopped by a river. They must figure out a way to cross the deep river, noting the erosion of and deposition occurring along its banks.
-+ [next]
+- You need to figure out a way to cross the deep river. The routes up or downstream are not an option and wouldn't offer any easier crossing anyway.
+ARROW
+FUN
+How to Cross a River Without a Bridge
+ThinkStock
+THINKSTOCK
+Need to cross a roaring river? It’s always best to find a bridge, but if you absolutely must make it to the other side on your own, a few easy steps can keep you high and relatively dry.
+
+1. Scout Around
+Invest a little time in finding the best place to make your crossing. Avoid bends in the river, where water whips around the fastest. Once you find a suitable spot, walk downstream a few hundred feet to make sure there aren’t any hazards. It’s always good to know about the pesky 30-foot waterfall around the bend.
+
+2. Don’t Be Narrow-Minded
+They look tempting, but narrow crossings can be the most dangerous—they’re often the deepest part of the river. Look for the widest section instead. Keep an eye out for mild ripples—which are safe to cross—and avoid whitecaps, which can be treacherously slippery.
+
+3. Ditch Your Duds
+If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall.
+
+
+4. Shuffle Up
+Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing.
+
+<a href="http://mentalfloss.com/article/53005/how-cross-river-without-bridge">link</a>
 You climb the peak for the better part of the day and arrive around dinner time.
+
+Keep in mind that a river fed by snowmelt or glacial ice will, all else being equal, be running lowest in the morning and highest in afternoon and early evening. So try to schedule your crossing for early in the day, and if you reach the riverbanks too late in the day and the current looks too muscular, hold off and cross the next day.
 
    +[Ω]
        ->O2StartMenu
