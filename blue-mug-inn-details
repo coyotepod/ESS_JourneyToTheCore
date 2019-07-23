@@ -1,10 +1,10 @@
 InnMenu = "(1) Buckwheat Bread and Whey Cheese, Mug of Ale (5 cp) (2) Boiled Eggs and Soft Cheese, Tankard of Beer (10 cp) (3) Boiled Mutton and Chestnut Bread, Tankard of Stout (11 cp) (4) Boiled Eggs and Bitter Cheese, Tankard of Perry (10 cp)"
 
-MugKeeper = "Fin"
-MugKeeper2 = "Herey"
+InnKeeper = "Fin"
+InnKeeper2 = "Herey"
 
-MugInnkeeperAbout = "The innkeeper is a short female elf named Findanye. She secretly leads a small cult of a monstrous goddess."
-MugInnkeeper2About = "The innkeeper is a tall female human named Herey.
+InnkeeperAbout = "The innkeeper is a short female elf named Findanye. She secretly leads a small cult of a monstrous goddess."
+Innkeeper2About = "The innkeeper is a tall female human named Herey.
 
 Patrons	= "Azal, Glinarv, Geoffrey, Duri, Imar Chinell"
 Azal: Female Dwarf Peasant, Good. Azal has a square face, with white hair and dark brown eyes. She wears modest garments and several small tools hang from her belt. Azal seeks an illusionist to apprentice under.
