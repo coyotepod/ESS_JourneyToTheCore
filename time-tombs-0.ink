@@ -301,7 +301,7 @@ Run - {MoveRun}
     +[Ω]
         ->TT0StartMenu
     + [Story Elements (likely spoilers if you proceed)]
-    
+
 - (StoryElements)
 - CHARACTERS
 CLERIC: {Cleric} (also {TheCleric} & {theCleric})

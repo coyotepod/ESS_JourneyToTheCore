@@ -48,11 +48,11 @@ VAR Wizard =        "WIZARD"
 // ***************************************************************
 // NPCs
 // ***************************************************************
-VAR MugOwner =          "Shamis"
-VAR Maid =       "Jane"
-VAR MaidTwo =    "Suzie"
-VAR DwarfSmith =        "Gimli" // a mostly friendly blacksmithing dwarf in Canis Villa
-VAR EvilMage  =         "Evil Mage"
+VAR Innkeeper =         "Fin"
+VAR Maid =              "Jane"
+VAR MaidTwo =           "Suzie"
+VAR DwarfSmith =        "Cedalion" // Say-dale-yon // a mostly friendly blacksmithing dwarf in Canis Villa or KABEIROI
+VAR EvilMage  =         "Malum Magus" // Ma-loom
 VAR Queen =             "Queen Justina"
 VAR NobleFamily =       "Noord Vlakte"
 VAR Farmer1 =           "James"
@@ -86,6 +86,7 @@ VAR CelestialTower = "Celestial Tower"
 VAR MoonTower = "Lunae Tower"
 VAR SunTower = "Helios Tower"
 VAR MarsTower = "Nergal Tower"
+VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
 
 
 // ***************************************************************

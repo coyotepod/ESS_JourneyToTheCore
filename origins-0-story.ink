@@ -144,7 +144,7 @@ The forest comes to a clearing and opens to the village.
 
 == O0Ep4 ==
 {O0EpisodeFour}
-- You enter and look around "The Blue Mug." Its a basic, two story wooden inn and tavern with the bar and dining on the first floor. Worn stairs lead above to rooms. The furnishings are simple and slightly dingy, but of stout timber material.
+- You enter and look around "The Blue Mug." Its a two-story wooden inn & tavern with a heavy wooden door and wooden tables and chairs reinforced with iron. Worn stairs lead above (probably to the rooms). The furnishings are simple and slightly dingy, but of stout timber material.
     + [Observe the occupants.]
 -  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and made from a stout frame.
 - A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves
@@ -156,6 +156,8 @@ The forest comes to a clearing and opens to the village.
 - One day a stranger may be a hero for you. Yet, on another day you might be the hero that someone needs.
     + A serving maid comes over and interrupts your thoughts.
 - Serving maid: "Welcome weary adventurer! I'm {Maid}. What can I get you?" she says with a {~ kind | warm | big} smile.
+    + Who owns this establishment?
+        -- {Maid}: That'd be {Innkeeper}. She's a fine lady with good food, honest prices and never waters down the ale. ->prepare
     + You: "What good food and drink do you have?"
         -- {Maid}: "Today we're cooking up{~ roasted boar| chicken| vegetables}"
         ++ You: "That sounds good"

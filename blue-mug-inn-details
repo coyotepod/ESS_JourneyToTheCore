@@ -1,0 +1,34 @@
+InnMenu = "(1) Buckwheat Bread and Whey Cheese, Mug of Ale (5 cp) (2) Boiled Eggs and Soft Cheese, Tankard of Beer (10 cp) (3) Boiled Mutton and Chestnut Bread, Tankard of Stout (11 cp) (4) Boiled Eggs and Bitter Cheese, Tankard of Perry (10 cp)"
+
+MugKeeper = "Fin"
+MugKeeper2 = "Herey"
+
+MugInnkeeperAbout = "The innkeeper is a short female elf named Findanye. She secretly leads a small cult of a monstrous goddess."
+MugInnkeeper2About = "The innkeeper is a tall female human named Herey.
+
+Patrons	= "Azal, Glinarv, Geoffrey, Duri, Imar Chinell"
+Azal: Female Dwarf Peasant, Good. Azal has a square face, with white hair and dark brown eyes. She wears modest garments and several small tools hang from her belt. Azal seeks an illusionist to apprentice under.
+Glinarv: Female Dwarf Mercenary, Good. Glinarv has gray hair and brown eyes. She wears chain mail and wields a long sword. Glinarv serves Sielach, an ancient but forgotten fire goddess.
+Geoffrey: Male Halfling Scofflaw, Evil. Geoffrey has short brown hair and light gray eyes. He wears worn clothing and a wooden holy symbol. Geoffrey is searching for his missing son.
+Duri: Male Dwarf Scofflaw, Neutral. Duri has a long face, with black hair and soft brown eyes. He wears modest garments and several small tools hang from his belt. Duri seeks to atone for past sins.
+Imar Chinell: Male Halfling Mercenary, Good. Imar has a square face, with brown hair and sharp amber eyes. He wears studded leather and wields a mace. Imar seeks a company of adventurers to escort his daughter to the orphanage of the Abbey of the Cerulean Sky."
+
+inn ="Description
+The inn is a two-story timber and brick building, with a reinforced wooden door and dwarf-wrought iron tables and chairs. Accommodations consist of several large rooms with beds and straw mattresses and wooden cots near the hearth.
+
+Innkeeper
+The innkeeper is a short female elf named Findanye. She secretly leads a small cult of a monstrous goddess.
+
+Menu
+
+Patrons
+Lungonerdh: Male Elf Mercenary, Good. Lungonerdh has matted white hair and blue eyes. He wears studded leather and wields a short sword and heavy crossbow. Lungonerdh seeks a company of adventurers to expose a corrupt aristocrat who serves Obam the Vampire Prince.
+Aemald: Male Human Alchemist, Neutral. Aemald is short and slender, with thick blonde hair and sharp green eyes. He wears tailored clothing and a copper amulet. Aemald is wrongly sought by the paladins of the Temple of the Silver Sky for theft.
+Solve: Female Dwarf Artist, Good. Solve has a long face, with cropped black hair and hazel eyes. She wears fine clothing and a dragonscale cloak. Solve is haunted by the ghost of someone she killed.
+Eril: Female Elf Mercenary, Neutral. Eril has white hair and blue eyes. She wears leather armor and wields a military fork. Eril is a pack-rat, and carries a satchel of random junk.
+Rumors
+Tortgiua has been missing for days, and was last seen hiding a purse of coins on South Ashwood Way.
+Conbeornr the merchant deals in magical weapons, but they're all cursed.
+A horde of demons has been summoned into the Secret Crypts of Souls.
+The statue on Muck Side is actually a petrified adventurer.
+The reeve has been seen near the Dark Temple of Ulfang the Black with a company of adventurers."

@@ -5,6 +5,7 @@
 
 
 
+
 === O2Prologue ===
 PROLOGUE
 - Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
@@ -142,39 +143,48 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 // Room 3: Trick or Setback
 {O2EpisodeThree}
 - You travel for a few hours into the heat of the afternoon. You come to a deep channeled mountain river.
-- The water practically tumbles and crashes from glacial melt above down the side of the mountain. It cuts through canyons and sprays outward in other areas.
-- You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge has recently been washed out.
++ [next]
+- The water practically tumbles and crashes from glacial melt above and down the side of the mountain. It cuts through canyons and sprays outward in other areas.
++ [next]
+- You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge appears to have recently been washed out.
++ [Water details]
   -- Moving water is an amazing force in the moment and over time. Water and wind literally moves mountain over time. You notice wash out areas and the pattern of deposits in places where the river overran its banks.
+++ [Water deposits]
   -- The heaviest load in the river such as boulders and rocks are deposited first.
   -- Afterwards, the medium sized sediments are deposited.
   -- The next to be deposited is the fine sands and silts.
   -- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
-- You need to figure out a way to cross the deep river. The routes up or downstream are not an option and wouldn't offer any easier crossing anyway.
-ARROW
-FUN
-How to Cross a River Without a Bridge
-ThinkStock
-THINKSTOCK
-Need to cross a roaring river? It’s always best to find a bridge, but if you absolutely must make it to the other side on your own, a few easy steps can keep you high and relatively dry.
++ [How to cross...]
+- You need to figure out a way to cross the deep river. It looks like a narrow crossing here and there's a bend in the river.
+    + [Scout around]
+    -- You invest a little time in finding the best place to make your crossing. 
+    -- Avoiding bends in the river is best. Sure its slower on the one side of a bend, but on the other side water whips around the fastest. 
+    -- You think you've found a suitable spot, and walk downstream a few hundred feet to make sure there aren’t any hazards. 
+    -- You find out there's unknown pesky 30-foot waterfall around the bend.
+   --- {TheWizard}: {GlacialRiverMelt}.  
+  ++ Try to cross today. ->downriver
+  ++ Camp and wait until morning.
+   --- {TheWizard}: It would stand to reason that this glacial melt river will be running lowest in the morning and highest in afternoon and early evening. 
+  --- {TheCleric}: Anyone else afraid of bandits or monsters attacking in the night if we camp?
+  +++ You: True, lets cross here today.
+        ->cross_here
+  +++ You: We will take turns posting a watchman.
+  --- Nothing happens in the night.
+ 
+  -- The next morning you cross safely to the other side.
+  // So try to schedule your crossing for early in the day, and if you reach the riverbanks too late in the day and the current looks too muscular, hold off and cross the next day.
 
-1. Scout Around
-Invest a little time in finding the best place to make your crossing. Avoid bends in the river, where water whips around the fastest. Once you find a suitable spot, walk downstream a few hundred feet to make sure there aren’t any hazards. It’s always good to know about the pesky 30-foot waterfall around the bend.
-
-2. Don’t Be Narrow-Minded
-They look tempting, but narrow crossings can be the most dangerous—they’re often the deepest part of the river. Look for the widest section instead. Keep an eye out for mild ripples—which are safe to cross—and avoid whitecaps, which can be treacherously slippery.
-
-3. Ditch Your Duds
-If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall.
-
-
-4. Shuffle Up
-Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing.
+  + [Cross here]
+    -- (cross_here) Unfortunately, narrow crossings can be the most dangerous because they’re often the deepest part of the river which happens to be the case with this river spot.
+    -- You ignore the whitecaps and plunge in.
+    ++ [next]
+    -- (downriver) You are swept downriver and off the 30-foot waterfall that was around the bend.
+    -- In a torrent of water, whitecaps, and rocks - you die.
+        ->O2Ep3
+// Ditch Your Duds - If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall. 4. Shuffle Up - Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing.
 
 <a href="http://mentalfloss.com/article/53005/how-cross-river-without-bridge">link</a>
-You climb the peak for the better part of the day and arrive around dinner time.
-
-Keep in mind that a river fed by snowmelt or glacial ice will, all else being equal, be running lowest in the morning and highest in afternoon and early evening. So try to schedule your crossing for early in the day, and if you reach the riverbanks too late in the day and the current looks too muscular, hold off and cross the next day.
-
+-
    +[Ω]
        ->O2StartMenu
     +[NEXT EPISODE]
@@ -185,7 +195,11 @@ abstract
 === O2Ep4 ===
 // Room 4: Climax
 {O2EpisodeFour}
-- Players reach the Air Temple and battle an Air Elemental. They gather the air essence that lingers afterward so it can be used later at the forge.
+- Your party reaches the Air Temple
+- You gather ore
+- (enter_air_temple) You enter the Air Temple.
+- You battle an Air Elemental.
+- You gather the air essence that lingers afterwards so it can be used later at the forge.
 
    +[Ω]
        ->O2StartMenu
