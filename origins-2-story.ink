@@ -149,41 +149,39 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 - You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge appears to have recently been washed out.
 + [Water details]
   -- Moving water is an amazing force in the moment and over time. Water and wind literally moves mountain over time. You notice wash out areas and the pattern of deposits in places where the river overran its banks.
-++ [Water deposits]
-  -- The heaviest load in the river such as boulders and rocks are deposited first.
-  -- Afterwards, the medium sized sediments are deposited.
-  -- The next to be deposited is the fine sands and silts.
-  -- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
+  ++ [Water deposits]
+    -- The heaviest load in the river such as boulders and rocks are deposited first.
+    -- Afterwards, the medium sized sediments are deposited.
+    -- The next to be deposited is the fine sands and silts.
+    -- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
 + [How to cross...]
 - You need to figure out a way to cross the deep river. It looks like a narrow crossing here and there's a bend in the river.
     + [Scout around]
-    -- You invest a little time in finding the best place to make your crossing. 
-    -- Avoiding bends in the river is best. Sure its slower on the one side of a bend, but on the other side water whips around the fastest. 
-    -- You think you've found a suitable spot, and walk downstream a few hundred feet to make sure there aren’t any hazards. 
+    -- You invest a little time in finding the best place to make your crossing.
+    -- {TheFighter}: Avoiding bends in the river is best. Sure its slower on the one side of a bend, but on the other side water whips around the fastest.
+    ++ You walk downstream[.]
+    -- <> a few hundred feet to make sure there aren’t any hazards.
     -- You find out there's unknown pesky 30-foot waterfall around the bend.
-   --- {TheWizard}: {GlacialRiverMelt}.  
-  ++ Try to cross today. ->downriver
+    -- When you cross, you'll want to be down past the waterfall even if it adds an hour or two of hiking over and around boulders.
+  ++ Try to cross here today. ->downriver
   ++ Camp and wait until morning.
-   --- {TheWizard}: It would stand to reason that this glacial melt river will be running lowest in the morning and highest in afternoon and early evening. 
-  --- {TheCleric}: Anyone else afraid of bandits or monsters attacking in the night if we camp?
-  +++ You: True, lets cross here today.
+    -- {TheWizard}: {GlacialRiverMelt}.
+   --- {TheCleric}: Anyone else afraid of bandits or monsters attacking in the night if we camp?
+   +++ You: True, lets cross here today.
         ->cross_here
-  +++ You: We will take turns posting a watchman.
-  --- Nothing happens in the night.
- 
-  -- The next morning you cross safely to the other side.
-  // So try to schedule your crossing for early in the day, and if you reach the riverbanks too late in the day and the current looks too muscular, hold off and cross the next day.
+   +++ You: We will take turns posting a watchman.
+   --- Nothing happens in the night.
+  -- (cross_safely) The next morning you cross safely to the other side.
 
   + [Cross here]
     -- (cross_here) Unfortunately, narrow crossings can be the most dangerous because they’re often the deepest part of the river which happens to be the case with this river spot.
+    -- {GlacialRiverMelt}. You arrived in the midday heat.
     -- You ignore the whitecaps and plunge in.
     ++ [next]
     -- (downriver) You are swept downriver and off the 30-foot waterfall that was around the bend.
     -- In a torrent of water, whitecaps, and rocks - you die.
         ->O2Ep3
-// Ditch Your Duds - If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall. 4. Shuffle Up - Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing.
-
-<a href="http://mentalfloss.com/article/53005/how-cross-river-without-bridge">link</a>
+// Ditch Your Duds - If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall. 4. Shuffle Up - Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing. <a href="http://mentalfloss.com/article/53005/how-cross-river-without-bridge">link</a>
 -
    +[Ω]
        ->O2StartMenu
@@ -195,8 +193,8 @@ abstract
 === O2Ep4 ===
 // Room 4: Climax
 {O2EpisodeFour}
-- Your party reaches the Air Temple
-- You gather ore
+- Your party reaches the Air Temple.
+- You gather ore.
 - (enter_air_temple) You enter the Air Temple.
 - You battle an Air Elemental.
 - You gather the air essence that lingers afterwards so it can be used later at the forge.
