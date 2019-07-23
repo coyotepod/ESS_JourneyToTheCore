@@ -135,13 +135,6 @@ VAR MoveWalk =          "walk"
 VAR MoveHustle =        "move briskly"
 VAR MoveRun =           "run"
 
-// ***************************************************************
-// INVENTORY VARIABLES
-// ***************************************************************
-VAR food =              "no food"
-VAR weapons =           "no weapons"
-VAR armor =             "no armor"
-VAR items =             "no special items, not even flint and steel"
 
 // ***************************************************************
 // DICE ROLLS
@@ -174,6 +167,22 @@ VAR items =             "no special items, not even flint and steel"
 
 === function d100() ===
 ~ return RANDOM(1, 100)
+
+// ***************************************************************
+// INVENTORY VARIABLES
+// ***************************************************************
+
+LIST inventory = (none), flint_and_steel
+
+LIST kits = (zero), ClimbingKit, HerbalistKit
+
+LIST weapons = fists, dagger
+
+LIST armor = (none), leather, chain_mail, plate_armor
+
+LIST healing = (none), potion_of_minor_healing
+ 
+VAR items =             "no special items, not even flint and steel"
 
 // ***************************************************************
 // SPECIAL ITEMS

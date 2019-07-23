@@ -79,7 +79,7 @@ PROLOGUE
     + You: We can do that.
 - Although some party members struggle, you eventually figure it out.
     + You: The rock layers at the bottom are the oldest and the rock layers near the top are the youngest
-        -- Lyell: Nicely deduced on those sedimentary layers! sedimentary rock layers on the bottom are older than the sedimentary rock layers above it.
+        -- Lyell: Nicely deduced on those sedimentary layers! Sedimentary rock layers on the bottom are older than the sedimentary rock layers above it.
     + You: The rock layers at the top are the oldest and the rock layers near the bottom are the youngest
         -- Lyell: Not quite. Sedimentary rock forms in layers. You need to start with layers at the bottom before you can pile on more layers. If the layer was created on the bottom - earlier - then is must be older.
 - Lyell: What about that intrusion cutting across the first three layers we see?
@@ -106,7 +106,8 @@ PROLOGUE
     + No thanks.
         -- Hutton: Well if you're sure...Read our published works coming out later this year.
         ++ Hutton: Are you wanting to hear about your ore now?
-- Lyell: Keep in mind 'understanding the present is the key to past.' Likewise, you could infer that understanding the present is the key to predicting what is likely or unlikely in the future.
+- Lyell: Keep in mind 'understanding the present is the key to past.'
+- Hutton: One might also say, 'Understanding the present is the key to predicting the future.'
 + [next]
 - Hutton: We agree the ore is a meteorite from the celestial plane.
 + [next]
@@ -120,19 +121,29 @@ PROLOGUE
     -- Lyell: It'd be interesting to know how you came to possess this ore and who had it previously. It be troubling to think how it could be used.
     ++ Perhaps it would be better to show them the notebook.
     ++ You still don't trust them.
-    -- Hutton: OK well if thats all you have...Right. Well, we wish you luck!
+    -- Hutton: OK well if that's all you have...Right. Well, we wish you luck!
         ++ [next]
     -- You take the ore and travel back towards home. A few miles before Canis Villa you are ambushed by {5+d12()} ACOLYTES of the evil mage. You manage to kill a few of them, but they overrun your party. Its a TPK (Total Party Kill). The ore is taken back for nefarious purposes. ->O2StartMenu
     -- ->END
 - They take a minute to look through the notebook.
 Lyell: We think large quantities of smelted ore (purified) when combined with ELEMENTAL ESSENCE and powerful magic would likely lead to a cataclysmic event. Perhaps even a second Big Bang which seems to be the goal of this evil mage.
 + [next]
-- Hutton: The dwarves of Iron Forge could tell you more. We recommend traveling to the Air Temple on the highest peak of this mountain chain. Gather rock from the peak. Even small samples of the rock are highly prized by the dwarves who prefer to stay deep in the mines. The rock would give you something to barter for information.
+- Hutton: I'm sure the dwarves of Iron Forge could tell you more. We recommend traveling to the Air Temple on the highest peak of this mountain chain. Gather rock from near the peak. Even small samples of the thorium ore are highly prized by the dwarves. The thorium would give you something to barter for information.
 + [next]
-- You: We greatly appreciate your help. On our travels, we will be sure to let the bards know the genius of James Hutton and Charles Lyell!
-- You borrow a spare CLIMBING KIT from them.
-+ The party sets out for the peaks of the Air Temple.
--
+- You: We greatly appreciate your help. We shall tell every bard we meet about the genius of James Hutton and Charles Lyell!
+  + { kits == zero } You: One more thing[...]
+    -- <>, can we borrow a spare CLIMBING KIT?
+    -- Absolutely! I'm surprised you didn't bring one to the mountains (both men laugh) and give you a kit.
+    ~ kits = ClimbingKit
+    ++ [next]
+    -- You have added a {kits} to your "kits."
+  + You: We must be off now!
+    {kits == ClimbingKit:
+    -else:
+           {TheFighter}: (thinking to himself) we probably should have borrowed a Climbing Kit. Oh well.
+    }
+- The party sets out for the peaks of the Air Temple.
+
     +[Ω]
 ->O2StartMenu
 +[NEXT EPISODE]
@@ -147,42 +158,46 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 - The water practically tumbles and crashes from glacial melt above and down the side of the mountain. It cuts through canyons and sprays outward in other areas.
 + [next]
 - You do not see any bridges nearby even though you've definitely been following a traveled path up the mountain. As far as you can tell, people were crossing here but the bridge appears to have recently been washed out.
-+ [Water details]
-  -- Moving water is an amazing force in the moment and over time. Water and wind literally moves mountain over time. You notice wash out areas and the pattern of deposits in places where the river overran its banks.
-  ++ [Water deposits]
-    -- The heaviest load in the river such as boulders and rocks are deposited first.
-    -- Afterwards, the medium sized sediments are deposited.
-    -- The next to be deposited is the fine sands and silts.
-    -- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
-+ [How to cross...]
+    + [Water details]
+    -- Moving water is an amazing force in the moment and over time. Water and wind literally moves mountain over time. You notice wash out areas and the pattern of deposits in places where the river overran its banks.
+    ++ [Water deposits]
+    --- The heaviest load in the river such as boulders and rocks are deposited first.
+    --- Afterwards, the medium sized sediments are deposited.
+    --- The next to be deposited is the fine sands and silts.
+    --- Lastly is the dissolved load which is not deposited until the water evaporates or becomes more saturated with dissolved sediments.
+    + [Figure out how to cross]
 - You need to figure out a way to cross the deep river. It looks like a narrow crossing here and there's a bend in the river.
     + [Scout around]
-    -- You invest a little time in finding the best place to make your crossing.
-    -- {TheFighter}: Avoiding bends in the river is best. Sure its slower on the one side of a bend, but on the other side water whips around the fastest.
-    ++ You walk downstream[.]
-    -- <> a few hundred feet to make sure there aren’t any hazards.
-    -- You find out there's unknown pesky 30-foot waterfall around the bend.
+        -- You invest a little time in finding the best place to make your crossing.
+        -- {TheFighter}: Avoiding bends in the river is best. Sure its slower on the one side of a bend, but on the other side water whips around the fastest.
+        ++ You walk downstream[.]
+        -- <> a few hundred feet to make sure there aren’t any hazards.
+        -- You find out there's unknown pesky 30-foot waterfall around the bend.
     -- When you cross, you'll want to be down past the waterfall even if it adds an hour or two of hiking over and around boulders.
   ++ Try to cross here today. ->downriver
   ++ Camp and wait until morning.
-    -- {TheWizard}: {GlacialRiverMelt}.
-   --- {TheCleric}: Anyone else afraid of bandits or monsters attacking in the night if we camp?
-   +++ You: True, lets cross here today.
+    --- {TheWizard}: {GlacialRiverMelt}.
+    --- {TheCleric}: Anyone else afraid of bandits or monsters attacking in the night if we camp?
+    +++ You: True, lets cross here today.
         ->cross_here
-   +++ You: We will take turns posting a watchman.
-   --- Nothing happens in the night.
-  -- (cross_safely) The next morning you cross safely to the other side.
-
+    +++ You: We will take turns posting a watchman.
+    --- Nothing happens in the night.
+    ++++ { kits == ClimbingKit} [Cross]
+        ---- You cross safely.
+    -> end_episode
+    ++++ { kits == zero} [Cross without rope]
+    -- You almost make it across but slip on a slimy rock. You reach out for the person in front of you effectively pulling them into the water and knocking everyone behind you into the water. Too bad you didn't have a rope.
+        ->river_death
   + [Cross here]
-    -- (cross_here) Unfortunately, narrow crossings can be the most dangerous because they’re often the deepest part of the river which happens to be the case with this river spot.
-    -- {GlacialRiverMelt}. You arrived in the midday heat.
-    -- You ignore the whitecaps and plunge in.
+    --- (cross_here) Unfortunately, narrow crossings can be the most dangerous because they’re often the deepest part of the river which happens to be the case with this river spot.
+    --- {GlacialRiverMelt}. You arrived in the midday heat.
+    --- You ignore the whitecaps and plunge in.
     ++ [next]
-    -- (downriver) You are swept downriver and off the 30-foot waterfall that was around the bend.
-    -- In a torrent of water, whitecaps, and rocks - you die.
+    --- (downriver) You are swept downriver and off the 30-foot waterfall that was around the bend.
+    --- (river_death) In a torrent of water, whitecaps, and rocks - you die.
         ->O2Ep3
 // Ditch Your Duds - If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall. 4. Shuffle Up - Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing. <a href="http://mentalfloss.com/article/53005/how-cross-river-without-bridge">link</a>
--
+- (end_episode)
    +[Ω]
        ->O2StartMenu
     +[NEXT EPISODE]
