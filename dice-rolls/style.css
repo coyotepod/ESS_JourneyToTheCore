@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
-    background: white;
+    font-family: 'Lato', sans-serif;
+    background: #F4DEC6;
 }
 
 body.dark {
@@ -12,23 +11,26 @@ body.dark {
 }
 
 h1, h2 {
+    color: #181719; /* Eerie Black */
     text-align: center;
-    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Alegreya', Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-size: 30pt;
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: .5em;
 }
 
 h2 {
-    font-size: 14pt;
+    font-size: 1.3em;
     font-style: italic;
-    font-family: sans-serif;
-    font-weight: lighter;
-    color: #BBB;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 .dark h2 {
@@ -36,22 +38,20 @@ h2 {
 }
 
 .header {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: .75em;
+    padding-bottom: .75em;
 }
 
 h3.written-in-ink {
     font-size: 9pt;
     font-family: sans-serif;
     text-align: center;
-    font-weight: 700;
-    position: fixed;
+    font-style: italic;
     display: block;
-    width: 100%;
-    background: white;
+	width: 100%;
     margin: 0;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: .5em;
+    padding-bottom: .5em;
     top: 0;
 }
 
@@ -59,28 +59,43 @@ h3.written-in-ink {
     background: black;
 }
 
+h3.homepage {
+	display: block;
+	width: 100%;
+	margin: .2em;
+	text-align: center;
+}
 
+h3.homepage a {
+	color: #292529;
+}
+
+	
 /* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
+
 .outerContainer {
-    position: absolute;
+	position: absolute;
     display: block;
     margin: 0;
     padding: 0;
-    -webkit-overflow-scrolling: touch;
+/*	-webkit-overflow-scrolling: touch; */
     overflow: scroll;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0em;
+	right: 0em;
 }
 
 .container {
     display: block;
-    max-width: 600px;
+    max-width: 540px;
     margin: 0 auto;
-    padding: 20px;
-    padding-top: 4em;
-    background: white;
+    padding: 0em;
+    border-radius: 10px;
+    background: #F4DEC6;
+    background: #FEFCF9;
+    box-shadow: 5px 5px 10px #181719;
 }
 
 .dark .container {
@@ -88,15 +103,16 @@ h3.written-in-ink {
 }
 
 p {
-    font-size: 13pt;
-    color: #888;
-    line-height: 1.7em;
-    font-weight: lighter;
+    font-size: 1.1em;
+/*   font-size: 13pt; */
+    color: #181719; /* Eerie Black */
+    line-height: 1.2em;
+/*	font-weight: lighter;*/
+	margin: 0.5em;
 }
 
 a {
-    font-weight: 700;
-    color: #b97c2c;
+    color: #AFA589;
     font-family: sans-serif;
     transition: color 0.6s;
     text-decoration: none;
@@ -129,7 +145,7 @@ strong {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+	max-width: 98%;
 }
 
 .container .hide {
@@ -147,7 +163,7 @@ img {
 
 p.choice {
     text-align: center;
-    line-height: 1.7em;
+    line-height: 1.2em;
 }
 
 /* first choice */
@@ -157,7 +173,9 @@ p.choice {
 
 
 p.choice a {
-    font-size: 15pt;
+    font-size: 1.1 em;
+/*	font-size: 15pt;*/
+	font-weight: bold;
 }
 
 /* Built in class if you want to write:
