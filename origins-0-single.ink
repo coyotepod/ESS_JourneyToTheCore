@@ -1,9 +1,319 @@
 #title: Wandering in the Forest
 #author: Master Scoy
+-> O0StartMenu
+
+// ***************************************************************
+// PREFACE
+// ***************************************************************
+
+VAR WorldSetting =      "This story takes place in \"Regio Scientiae: A Land of Understanding.\" Its a world of magic and invention. The story is a Choose Your Own Adventure (CYOA) which means You are an reader and active Player in story. The narratives can be done solo, but they are best experienced the first time as playful interaction with the Master Scoy (game master and teacher) and other real life Players (your classmates). NOTE: I do my best to make it functional and interesting, but if you encounter dead ends or have story suggestions - let me know!"
+VAR CYOAPurpose =       ""
+CONST HabitsOfMind  =   "way of thinking"
+CONST HabitsOfMindEG =  "Curiosity, Openness to New Ideas, Critical Thinking, Perseverance, Creative Thinking, Adaptability, Self-direction, Integrity, and Growth Mindset."
+CONST Curiosity =       ""
+CONST Openness =        "" // Openness to New Ideas
+CONST CriticalThinking = ""
+CONST Perseverance =    ""
+CONST CreativeThinking = ""
+CONST Adaptability =    ""
+CONST SelfDirection =   ""
+CONST Integrity =       ""
+CONST GrowthMindset =   ""
+
+// ***************************************************************
+// 5 Room Dungeon
+// ***************************************************************
+VAR RoomOne =   "ROOM ONE: Gain Entrance" // or Guardian
+VAR RoomTwo =   "ROOM TWO: Puzzle or Role-play Challenge"
+VAR RoomThree = "ROOM THREE: Setback" // or Trick
+VAR RoomFour =  "ROOM FOUR: Big Battle" // or Climax or Conflict
+VAR RoomFive =  "ROOM FIVE: Revelation" // or Reward or Plot Twist
+
+// ***************************************************************
+// MAIN CHARACTERS
+// ***************************************************************
+VAR Your = "Your"
+VAR You = "You"
+VAR Cleric =        "CLERIC"
+    VAR TheCleric = "The cleric"
+    VAR theCleric = "the cleric"
+
+VAR Fighter =       "FIGHTER"
+    VAR TheFighter =    "The fighter"
+    VAR theFighter =    "the fighter"
+
+VAR Rogue =         "ROGUE"
+    VAR TheRogue =  "The rogue"
+    VAR theRogue =  "the rogue"
+
+VAR Wizard =        "WIZARD"
+    VAR TheWizard = "The wizard"
+    VAR theWizard = "the wizard"
+
+// ***************************************************************
+// NPCs
+// ***************************************************************
+VAR Innkeeper =         "Fin"
+VAR Maid =              "Jane"
+VAR MaidTwo =           "Suzie"
+VAR DwarfSmith =        "Cedalion" // Say-dale-yon // a mostly friendly blacksmithing dwarf in Canis Villa or KABEIROI
+VAR EvilMage  =         "Malum Magus" // Ma-loom
+VAR Queen =             "Queen Justina"
+VAR NobleFamily =       "Noord Vlakte"
+VAR Farmer1 =           "James"
+VAR Farmer2 =           "Robert"
+VAR Villager1 =         "Dan"
+VAR Boy1    =           "Timothy"
+VAR Girl1   =           "Becca"
+VAR Castellan =         "Mr. Hillenar"
+VAR Copernicus =        "astronomical model developed by Nicolaus Copernicus and published in 1543. This model positioned the Sun near the center of the Universe, motionless, with Earth and the other planets orbiting around it in circular paths, modified by epicycles, and at uniform speeds. The Copernican model displaced the geocentric model of Ptolemy that had prevailed for centuries, which had placed Earth at the center of the Universe. Copernican heliocentrism is often regarded as the launching point to modern astronomy and the Scientific Revolution."
+VAR Brahe =             "an astronomer and nobleman" // Tycho Brahe
+VAR BraheAbout =        "Tycho Brahe built an observatory from which he makes the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he has made detailed records of his findings. He thniks that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which (1) the planets orbit the Sun and (2) the Sun orbits the Earth."
+VAR Kepler =            "an astronomer and mathematician" //    Johannes Kepler
+VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, has often used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time which basically means as orbiting objects like planets get closer to the sun they speed up and when farther away they go slower. Later, the third law was developed: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+VAR Hutton =    "Mr. Hutton" //   James Hutton
+VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
+VAR Lyell =     "Mr. Lyell"  //  Charles Lyell
+VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
+VAR FarmBoy = "Timothy"
+// ***************************************************************
+// LOCATIONS
+// ***************************************************************
+VAR village1 = "Canis Villa"
+VAR village2 = ""
+VAR village3 = ""
+VAR village4 = ""
+VAR village5 = "Berwickshire"
+
+VAR CastleOne = "Clun Castle"
+VAR CastleTwo = "Muilder Slot"
+VAR CelestialTower = "Celestial Tower"
+VAR MoonTower = "Lunae Tower"
+VAR SunTower = "Helios Tower"
+VAR MarsTower = "Nergal Tower"
+VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
+
+
+// ***************************************************************
+// MONSTERS
+// ***************************************************************
+VAR BanditStats =       "BANDIT AC: 12 HP: 11"
+  VAR BanditAction1 =     "SCIMITAR +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+  VAR BanditAction2 =     "LIGHT CROSSBOW +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+VAR Drow =              ""
+  VAR DrowAction1 =              ""
+  VAR DrowAction2 =              ""
+VAR CaveBearStats = "AC: HP:"
+  VAR CaveBearAction1 = "BITE"
+  VAR CaveBearAction2 = "CLAW"
+VAR AirElementalStats = ""
+  VAR AirElementalAction1 = ""
+  VAR AirElementalAction2 = ""
+VAR FireElementalStats =""
+  VAR FireElementalAction1 = ""
+  VAR FireElementalAction2 = ""
+VAR EarthElementalStats = ""
+  VAR EarthElementalAction1 = ""
+  VAR EarthElementalAction2 = ""
+VAR WaterElementalStats = ""
+  VAR WaterElementalAction1 = ""
+  VAR WaterElementalAction2 = ""
+VAR SkeletonStats = ""
+  VAR SkeletonAction1 = ""
+  VAR SkeletonAction2 = ""
+VAR SpectreStats = ""
+  VAR SpectreAction1 = ""
+  VAR SpectreAction2 = ""
+
+// ***************************************************************
+// GAME MECHANICS
+// ***************************************************************
+CONST Initiative = "Everyone in combat or near combat, rolls a d20 to determine the order of each player's actions. For example, if PLAYER ONE rolls a 5 and PLAYER TWO rolls a 15, then PLAYER TWO performs his or her action before PLAYER TWO. Monsters also roll initiative."
+CONST SavingThrow = ""
+CONST DCcheck = "difficulty check"
+
+// ***************************************************************
+// MOVEMENT
+// ***************************************************************
+VAR MoveStealth =       "move along trying be undetected"
+VAR MoveWalk =          "walk"
+VAR MoveHustle =        "move briskly"
+VAR MoveRun =           "run"
+
+
+// ***************************************************************
+// DICE ROLLS
+// ***************************************************************
+//~ temp d4 = RANDOM (1,4)
+//~ temp d6 = RANDOM (1,6)
+//~ temp d8 = RANDOM (1,8)
+//~ temp d10 = RANDOM (1,10)
+//~ temp d12 = RANDOM (1,12)
+//~ temp d20 = RANDOM (1,20)
+//~ temp d100 = RANDOM (1,100)
+
+=== function d4() ===
+~ return RANDOM(1, 4)
+
+=== function d6() ===
+~ return RANDOM(1, 6)
+
+=== function d8() ===
+~ return RANDOM(1, 8)
+
+=== function d10() ===
+~ return RANDOM(1, 10)
+
+=== function d12() ===
+~ return RANDOM(1, 12)
+
+=== function d20() ===
+~ return RANDOM(1, 20)
+
+=== function d100() ===
+~ return RANDOM(1, 100)
+
+// ***************************************************************
+// INVENTORY VARIABLES
+// ***************************************************************
+
+LIST inventory = (none), flint_and_steel
+
+LIST kits = (zero), ClimbingKit, HerbalistKit
+
+LIST weapons = fists, dagger
+
+LIST armor = (none), leather, chain_mail, plate_armor
+
+LIST healing = (none), potion_of_minor_healing
+
+LIST food = (none)
+ 
+VAR items =             "no special items, not even flint and steel"
+
+// ***************************************************************
+// SPECIAL ITEMS
+// ***************************************************************
+VAR EpicWeapon = "Sickle of Cronus"
+VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the Time Tombs. It can only be crafted at the forge of Hephaestus. The hearth must be crafted with special bricks. The hearth bricks are from a special type of rock only found deep in the planet's interior where players battle an earth elemental and fire elemental. The fire is started and maintained from the essence of a fire elemental. The bellows must be filled with the essence of an air elemental. The ore of the sickle comes from a meteorite. The sickle blade must be quenched in oil and water when complete though that water must come from the essence of a water elemental."
+
+// ***************************************************************
+// TEMPLATE variables for Start Menu
+// ***************************************************************
+VAR Seasont1 =          "SEASON TEMPLATE 1"
+VAR St1EpisodeOne =     "EPISODE 1"
+VAR St1EpisodeTwo =     "EPISODE 2"
+VAR St1EpisodeThree =   "EPISODE 3"
+VAR St1EpisodeFour =    "EPISODE 4"
+VAR St1EpisodeFive =    "EPISODE 5"
+
+
+// ***************************************************************
+// ORIGINS Outlines
+// ***************************************************************
+VAR RumorOne = "a very large fireball recently streaked through the sky. Its rumored that part of it fell to the ground nearby creating a crater and a patch of scorched land. The mages in the Celestial Tower collected the piece. I'd say its just rumor, but  the Queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower though. These mages are notoriously reclusive."
+VAR RumorTwo = "our mutual friend in the village contacted me yesterday. His contacts say the two highlander alchemists are back around home and they are very interested in meeting your party and the...item that you have recently...acquired."
+VAR RumorThree = ""
+VAR FourRumor = ""
+VAR FiveRumor = ""
+
+// ***************************************************************
+VAR SeasonO0 =          "WANDERING IN THE FOREST"
+// ***************************************************************
+VAR O0EpisodeOne =      "THE WOODS"
+VAR O0EpisodeTwo =      "THE CROSSROADS"
+VAR O0EpisodeThree =    "THE VILLAGE"
+VAR O0EpisodeFour =     "THE BLUE MUG"
+VAR O0EpisodeFive =     "THE HABITS OF MIND"
+
+// ***************************************************************
+VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
+// ***************************************************************
+VAR O1EpisodeOne =      "AT THE DOOR"
+VAR O1EpisodeTwo =      "UP THE STAIRS"
+VAR O1EpisodeThree =    "IN THE STUDY"
+VAR O1EpisodeFour =     "AFTER THE CUBE"
+VAR O1EpisodeFive =     "FOR A CODE"
+
+// ***************************************************************
+VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
+// ***************************************************************
+VAR O2EpisodeOne =      "THE HIGHLANDERS"
+VAR O2EpisodeTwo =      "DEEP TIME"
+VAR O2EpisodeThree =    "A RIVER"
+VAR O2EpisodeFour =     "THE AIR TEMPLE"
+VAR O2EpisodeFive =     "A FORGE MASTER"
+
+// ***************************************************************
+VAR SeasonO3 =          "JOURNEY TO THE CORE"
+// ***************************************************************
+VAR O3EpisodeOne =     "THE FORGE"
+VAR O3EpisodeTwo =     "THE IRON GATE"
+VAR O3EpisodeThree =   "THE DEPTHS"
+VAR O3EpisodeFour =    "THE ELEMENTALS"
+VAR O3EpisodeFive =    "THE EXIT"
+
+// ***************************************************************
+VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
+// ***************************************************************
+VAR O4EpisodeOne =     "THE MERFOLK"
+VAR O4EpisodeTwo =     "THE GNOMES"
+VAR O4EpisodeThree =   "THE DEPTHS"
+VAR O4EpisodeFour =    "THE ELEMENTAL"
+VAR O4EpisodeFive =    "THE KRAKEN"
+
+// ***************************************************************
+VAR SeasonO5 =          "ADVENTURE TO NEW HORIZONS"
+// ***************************************************************
+VAR O5EpisodeOne =      "EPISODE 1"
+VAR O5EpisodeTwo =      "EPISODE 2"
+VAR O5EpisodeThree =    "EPISODE 3"
+VAR O5EpisodeFour =     "EPISODE 4"
+VAR O5EpisodeFive =     ""
+
+// ***************************************************************
+VAR SeasonArrakis =     "HEROES OF ARRAKIS"
+// ***************************************************************
+VAR ArrakisEpisodeOne =     "A DISTURBANCE"
+VAR ArrakisEpisodeTwo =     "STUDYING THE NATIVES"
+VAR ArrakisEpisodeThree =   "CLEVERNESS"
+VAR ArrakisEpisodeFour =    "BATTLE OF ARRAKIS"
+VAR ArrakisEpisodeFive =    "A NICHE"
+
+// ***************************************************************
+VAR SeasonO6 =          "MINING THE CAVERNS OF TIME"
+// ***************************************************************
+VAR O6EpisodeOne =      "THE CHARTER"
+VAR O6EpisodeTwo =      "THE MINING"
+VAR O6EpisodeThree =    "THE FRACTURE"
+VAR O6EpisodeFour =     "THE EVIL MAGE"
+VAR O6EpisodeFive =     "THE TIME TOMBS"
+
+VAR KeplersLaws = "(1) The orbit of a planet is an ellipse with the Sun at one of the two foci. (2) A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. (3) The square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit."
+=== SomeKnot ===
+->DONE
+
+-> DONE
 
 
 
 
+
+
+=== O0StartMenu ===
+    + [PRESS START]
+        ->O0Prologue
+    + [{O0EpisodeOne}]
+        ->O0Ep1
+    + [{O0EpisodeTwo}]
+        ->O0Ep2
+    + [{O0EpisodeThree}]
+        ->O0Ep3
+    + [{O0EpisodeFour}]
+        ->O0Ep4
+    + [{O0EpisodeFive}]
+        ->O0Ep5
+    -> DONE
 
 
 === O0Prologue ===
