@@ -52,6 +52,7 @@ VAR Innkeeper =         "Fin"
 VAR Maid =              "Jane"
 VAR MaidTwo =           "Suzie"
 VAR DwarfSmith =        "Cedalion" // Say-dale-yon // a mostly friendly blacksmithing dwarf in Canis Villa or KABEIROI
+VAR ForgeMaster =   "Hephaestus"
 VAR EvilMage  =         "Malum Magus" // Ma-loom
 VAR Queen =             "Queen Justina"
 VAR NobleFamily =       "Noord Vlakte"
@@ -184,11 +185,12 @@ LIST healing = (none), potion_of_minor_healing
 
 LIST food = (none)
  
-VAR items =             "no special items, not even flint and steel"
+LIST specialItems = (none), MeteoriteOre, ThoriumOre, AirEssence, EarthEssence, FireEssence, WaterEssence
 
 // ***************************************************************
 // SPECIAL ITEMS
 // ***************************************************************
+
 VAR EpicWeapon = "Sickle of Cronus"
 VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the Time Tombs. It can only be crafted at the forge of Hephaestus. The hearth must be crafted with special bricks. The hearth bricks are from a special type of rock only found deep in the planet's interior where players battle an earth elemental and fire elemental. The fire is started and maintained from the essence of a fire elemental. The bellows must be filled with the essence of an air elemental. The ore of the sickle comes from a meteorite. The sickle blade must be quenched in oil and water when complete though that water must come from the essence of a water elemental."
 

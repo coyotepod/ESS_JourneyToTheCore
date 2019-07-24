@@ -19,7 +19,7 @@ Yellow rays of light shoot through the dense deciduous forest as the sun just pe
 === O0Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O0EpisodeOne}
-You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone.
+You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. #audio_woods
     + You stumble out into a path and start walking. <>
     + [Sit tight and wait for help]
         -- You opt to sit tight and wait for help, but after a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you.

@@ -208,11 +208,45 @@ abstract
 === O2Ep4 ===
 // Room 4: Climax
 {O2EpisodeFour}
-- Your party reaches the Air Temple.
-- You gather ore.
-- (enter_air_temple) You enter the Air Temple.
-- You battle an Air Elemental.
-- You gather the air essence that lingers afterwards so it can be used later at the forge.
+- Your party reaches the Air Temple without further troubles. #audio_mountain_top
+    + You: Let's look for the thorium ore.
+- It only takes a moment before {~{theCleric}|{theWizard}|{theFighter}|you} says:
+    + I think I see the ore to the west side of the temple (and points).
+- You all walk over to the spot pointed out.
+- You: Yep this is the stuff.
+    + Everyone starts gathering ore.
+    + (on_watch_during_ore)\ {TheWizard} keeps watch while the rest of you gather ore.
+- Fortunately each of you has a BAG OF HOLDING.
+~ specialItems = ThoriumOre
+- You add {specialItems} to your "special Items."
+    + [next]
+- 
+    + { not on_watch_during_ore } The wind suddenly picks up knocking everyone down.
+        -- Each fallen player must roll a CONSTITUTION check
+        ++ [next]
+        -- Anyone that failed the check is stunned for {d4()} rounds of combat.
+    + { on_watch_during_ore } The wind suddenly picks up knocking everyone down except {theWizard}.
+        -- \ {TheWizard} quickly casts the spell FEATHER FALL on the party so you all land softly.
+- A battle has started with a large AIR ELEMENTAL! #audio_battle
+    + [next]
+- The battle rages on with the AIR ELEMENTAL
+    + Failure
+        -- You have been blown off the peak of the mountain. You die. 
+        -> O2Ep4
+    + Victory!
+- The AIR ELEMENTAL dissipates; elementals are never truly killed. {~{TheCleric}|{TheFighter}|{TheWizard}} is the first to notice a lingering wisp of shimmering air. 
++ \ {TheWizard} quickly pulls out a large vial and scoops the wisp in before it disappears as well.
+
+- {TheWizard} reminds you that Air Essence will be needed later in the quest.
+- You: (to {theWizard}) Quick thinking!
+- {TheFighter}: Now what?
+    + (enter_air_temple) You enter the Air Temple. #audio_temple
+        --
+        ++ You look around briefly.
+        -- There doesn't seem to be anything of interest.
+            ->leave_mountain_for_home
+    + (leave_mountain_for_home) You leave the mountain. #audio_mountain_top
+- The party makes its way back to Canis Villa without further incident. #audio_none
 
    +[Ω]
        ->O2StartMenu
@@ -224,17 +258,20 @@ abstract
 === O2Ep5 ===
 // Room 5: Reward, Revelation, or Twist
 {O2EpisodeFive}
-- Talking with a forge master, players learn that another ore or earth material is needed to forge the talisman. The special resource is only available deep in the planet's interior.
-
+- You talk with {DwarfSmith} at the smithy in Canis Villa. #audio_canis_villa
+- {DwarfSmith}: Hutton & Lyell gave you good advice. The dwarves in Iron Forge will definitely be interested in the Thorium Ore! I can give my clan seal which should grant you passage into the dwarves' great city.
+- You: Thank you sir.
+- {DwarfSmith}: (nods in acknowledgement) Once you arrive in Iron Forge, head to my old district of Lemnos and talk with forge master {ForgeMaster}. He will know what to do. Perhaps he will craft you an epic weapon if you impress him enough.
+- MORE IN THE NEXT SEASON!
    +[Ω]
        ->O2StartMenu
-    +[NEXT EPISODE]
-        ->O2Epilogue
+//    +[NEXT EPISODE]
+//        ->O2Epilogue
 
 ->DONE
 
 === O2Epilogue ===
-    EPILOGUE
+EPILOGUE
 +[Ω]
 ->O2StartMenu
 
