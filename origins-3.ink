@@ -1,7 +1,6 @@
 #title: Journey to the Core
 #author: Master Scoy
 
-
 ->O3StartMenu
 
 INCLUDE global-variables.ink

@@ -181,6 +181,8 @@ LIST weapons = fists, dagger
 LIST armor = (none), leather, chain_mail, plate_armor
 
 LIST healing = (none), potion_of_minor_healing
+
+LIST food = (none)
  
 VAR items =             "no special items, not even flint and steel"
 

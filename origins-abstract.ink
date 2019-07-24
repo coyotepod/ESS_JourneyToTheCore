@@ -1,4 +1,6 @@
 #title: ORIGINS ABSTRACT
+#author: Master Scoy
+
 ->AboutStartMenu
 
 INCLUDE global-variables.ink
