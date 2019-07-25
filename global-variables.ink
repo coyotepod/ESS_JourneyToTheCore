@@ -183,7 +183,69 @@ LIST armor = (none), leather, chain_mail, plate_armor
 
 LIST healing = (none), potion_of_minor_healing
 
-LIST specialItems = (none), MeteoriteOre, ThoriumOre, AirEssence, EarthEssence, FireEssence, WaterEssence
+LIST specialItems = (none), AirEssence, EarthEssence, FireEssence, WaterEssence
+
+LIST ore = (none), CopperOre, IronOre, MeteoriteOre, ThoriumOre, PalladiumOre
+
+VAR ore1 = "copper ore"
+VAR ore2 = "iron ore"
+VAR ore3 = ""
+VAR ore1 = "meteorite ore"
+VAR ore2 = "Thorium Ore"
+VAR ore3 = ""
+
+/*
+ Copper Ore
+ Tin Ore
+ Iron Ore
+ Mithril Ore
+ Thorium Ore
+ Fel Iron Ore
+ Adamantite Ore
+ Cobalt Ore
+ Saronite Ore
+ Obsidium Ore
+ Elementium Ore
+ Ghost Iron Ore
+ Blackrock Ore
+ True Iron Ore
+ Felslate
+ Leystone Ore
+ Empyrium Ore
+ Monelite Ore
+ Storm Silver Ore
+*/
+
+/*
+Acanthite (cooled polymorph of Argentite): Ag2S for production of silver
+Barite: BaSO4
+Bauxite Al(OH)3 and AlOOH, dried to Al2O3 for production of aluminium
+Beryl: Be3Al2(SiO3)6
+Bornite: Cu5FeS4
+Cassiterite: SnO2
+Chalcocite: Cu2S for production of copper
+Chalcopyrite: asdCuFeS2
+Chromite: (Fe, Mg)Cr2O4 for production of chromium
+Cinnabar: HgS for production of mercury
+Cobaltite: (Co, Fe)AsS
+Columbite-Tantalite or Coltan: (Fe, Mn)(Nb, Ta)2O6
+Dolomite: CaMg(CO3)2
+Galena: PbS
+Native gold: Au, typically associated with quartz or as placer deposits
+Hematite: Fe2O3
+Ilmenite: FeTiO3
+Magnetite: Fe3O4
+Malachite: Cu2CO3(OH)2
+Molybdenite: MoS2
+Pentlandite: (Fe, Ni)9S8
+Pyrolusite: MnO2
+Scheelite: CaWO4
+Sperrylite: PtAs2 for production of platinum
+Sphalerite: ZnS
+Uraninite (pitchblende): UO2 for production of metallic uranium
+Wolframite: (Fe, Mn)WO4
+*/
+
 
 // ***************************************************************
 // SPECIAL ITEMS
@@ -191,6 +253,7 @@ LIST specialItems = (none), MeteoriteOre, ThoriumOre, AirEssence, EarthEssence, 
 
 VAR EpicWeapon = "Sickle of Cronus"
 VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the Time Tombs. It can only be crafted at the forge of Hephaestus. The hearth must be crafted with special bricks. The hearth bricks are from a special type of rock only found deep in the planet's interior where players battle an earth elemental and fire elemental. The fire is started and maintained from the essence of a fire elemental. The bellows must be filled with the essence of an air elemental. The ore of the sickle comes from a meteorite. The sickle blade must be quenched in oil and water when complete though that water must come from the essence of a water elemental."
+
 
 // ***************************************************************
 // TEMPLATE variables for Start Menu

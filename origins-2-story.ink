@@ -210,10 +210,10 @@ abstract
 {O2EpisodeFour}
 - Your party reaches the Air Temple without further troubles. #audio_mountain_top
     + You: Let's look for the thorium ore.
-- It only takes a moment before {~{theCleric}|{theWizard}|{theFighter}|you} says:
-    + I think I see the ore to the west side of the temple (and points).
-- You all walk over to the spot pointed out.
-- You: Yep this is the stuff.
+- It only takes a moment before {~{theCleric}|{theWizard}|{theFighter}} says:
+    + \(points) I think that's {ore2} to the west side of the temple.
+- You all walk over to the spot.
+- You: Yep, this seems to match the description Lyell gave me.
     + Everyone starts gathering ore.
     + (on_watch_during_ore)\ {TheWizard} keeps watch while the rest of you gather ore.
 - Fortunately each of you has a BAG OF HOLDING.
