@@ -3,12 +3,11 @@
 
 
 
-
-
-
 === O0Prologue ===
 PROLOGUE
-Yellow rays of light shoot through the dense deciduous forest as the sun just peaks over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business. You are unconscious in some bushes along the side of a dirt path in the forest.
+- Yellow rays of light shoot through the dense deciduous forest as the sun just peaks over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business.
++ [next]
+- You are unconscious in some bushes along the side of a dirt path in the forest. You start to stir.
 
     +[Ω]
       ->O0StartMenu
@@ -20,12 +19,12 @@ Yellow rays of light shoot through the dense deciduous forest as the sun just pe
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O0EpisodeOne}
 You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. #audio_woods
-    + You stumble out into a path and start walking. <>
-    + [Sit tight and wait for help]
-        -- You opt to sit tight and wait for help, but after a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you.
-        ++ You decide to get up and start walking.
-        ++ You decide to get up and start walking.
-- Once you get your footing on the path its an easy walk. You travel less than {~a quarter-mile|a half mile|a mile} before coming to a crossroads.
+You get up and stumble out onto a nearby path.
+    + You decide to start walking. <>
+    + You decide to wait for help. <>
+        -- After a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you to take initiative.
+        ++ You decide to start walking. <>
+- The path makes for an easy walk once you get your footing. You travel less than a mile, perhaps a {~quarter-mile|half mile}, before coming to a crossroads.
     +[Ω]
         ->O0StartMenu
     + [NEXT EPISODE]
@@ -35,37 +34,46 @@ You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sor
 == O0Ep2 ==
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O0EpisodeTwo}
-An overgrown single-track trail snakes westwards towards a dark foreboding tower. Probably less than a day's march. To the east, a well worn path cuts through the forest.
-    + {not Clun_Castle} [Trek west to the dark tower]
+An overgrown single-track trail snakes westwards towards a dark foreboding tower. Probably less than a day's march. To the east, a well worn path cuts through the forest toward an unknown destination.
+    + { not Clun_Castle } [Trek west to the dark tower]
         -- (Clun_Castle)
-        -- Besides the occasional bushwhacking the walk isn't too difficult and soon you approach the dark tower’s main gate.
-        -- Stones have fallen around it. You proceed into the shadows of the gate.
-            ++ The place is clearly abandoned.
-        -- At least you thought it was abandoned. As you proceed into the gate's shadows a wraith appears next to you. // The Drow warrior slips from a shadowy side entrance.
-            ++ [Fight]
-            ++ [Flee]
-        // -- Blades move so fast they are a blur. You have no time to react. This quickly ends your otherwise pleasant walk.
-        -- Its attacks with LIFE DRAIN dealing necrotic damage (-32 pts).
-            ++ [next]
+        -- You occasionally have to push through brush and branches, but otherwise the walk isn't too difficult.
+        -- You arrive at the dark tower’s main gate near dusk. Stones have fallen around the gate. The place is clearly abandoned.
+        ++ You proceed to the main gate
+        ++ You go around to the north side of the tower[.]
+            -- (tower_wraith) <> into the lengthening shadows. As you proceed into the dark, a wraith appears next to you.
+            +++ You fight[!]
+            +++ You flee[!]
+            --- <> unsuccessfully. The wraith attacks with LIFE DRAIN.
+            --- You take necrotic damage (-{d8()*3+12} to your Health Points).
+            +++ [next]
             ->Death
-    + {not Forest_Path} [Head east on the forest path]
+/*
+            -- (tower_drow) <> into the lengthening shadows. As you proceed into the dark, a drow appears next to you.
+            +++ You fight[!]
+            +++ You flee[!]
+            --- <> unsuccessfully. The drow attacks with DAGGERS.
+            --- You take piercing damage (-{d8()*3+12} to your Health Points).
+            +++ [next]
+            ->Death
+*/
+
+    + { not Forest_Path } [Head east on the forest path]
         -- (Forest_Path)
         -- You walk down the forest path for a few minutes enjoying the sunshine and chatter of wildlife.
-            ++ [next]
-        -- A group of {~five|six|seven|eight} bandits wearing red bandanas and loose gray clothing rush out onto to the path. Two of them are dual weilding daggers with the remainder carrying short swords.
-            ++ [Fight]
-                --- You attempt hand-to-hand combat, but you're no match for them. You would have stood a much better chance with proper tools, weapons, or specialized training. Unfortunately you have none of those things.
+        ++ [next]
+        -- A group of {d6()+3} bandits rush out onto the path. They are dressed in loose gray clothing with red bandanas covering most of their faces. Two of them are dual wielding daggers. The others are carrying short swords.
+        ++ You fight[!]
+        ++ You flee[!]
+            -- <> unsuccessfully. Your bare fists and poor conditioning leaves you ill prepared and no match for the challenge. You would have stood a much better chance with proper tools, weapons, or specialized training.
+            +++ [next]
                 --- You are quickly slashed and stabbed numerous times.
-                    +++ [next]
-                    ->Death
-            ++ [Flee]
-                --- You attempt to flee, but you're caught. You would have stood a much better chance with proper tools, weapons, or specialized training. Unfortunately you have none of those things.
-                --- You are quickly slashed and stabbed numerous times.
-                    +++ [next]
+                --- You take piercing damage (-{d8()*3+12} to your Health Points).
+            ++++ [next]
                     ->Death
     + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind and consider your choices.
-    -- You notice a small deer path going east running mostly parallel to the main path.
-    ++ [next] ->Village_Path
+      -- You notice a small deer path going east running mostly parallel to the main path.
+      ++ [next] ->Village_Path
 
 ->DONE
 
@@ -223,43 +231,22 @@ You have nothing.
         ->O0Ep1
 
 === Death ===
--
-    + {Death < 2} You have died.
-        -- Do not fear death weary adventurer. It is possible to have your life renewed by one of the kind paladins or clerics that wander these lands. They have a way of knowing if you are worthy of a second chance.
-        ++ Tennessee Williams quote:
-        --- "I have always depended on the kindness of strangers."
-        +++[next]
-        ---...
-        +++[next]
-        ---...
-        +++ Your bones have been found
-        ---...
-        +++[next]
-        ---...
-        +++ Do or do not, there is no try. Commit yourself to making new and hopefully better choices
-        ---
-        +++ [next]
-            ->O0Ep1
-    + {Death > 1} You have died. Again.
-        -- Do not fear death weary adventurer. The kindness of strangers has already saved you at least once. Sometimes life's quests knock you down.
-        ++ Winston Churchill:
-            --- Never give up.
-            +++ [next]
-            --- Never give up.
-            ++++ [next]
-            ---- Never give up.
-            +++++ [next]
-                ->O0Ep1
-        ++ Chumbawamba:
-            --- I get knocked down,<>
-            +++ [next]
-            --- but I get up again.
-            +++ [next]
-            --- I get knocked down,<>
-            +++ [next]
-            --- but I get up again.
-            +++ [next]
-                ->O0Ep1
+- (death)
+    + { death < 2 } You have died.
+    + { death > 1 } You have died. Again.
+- Do not fear death weary adventurer. It is possible to have your life renewed by one of the kind paladins or clerics that wander these lands. They have a way of knowing if you are worthy of a second chance.
+    + [next]
+- {~ {DeathQuote1}|{DeathQuote2}|{DeathQuote3} }
+    +[next]
+-...
+    +[next]
+-...
++ Your bones have been found.
+-...
++ [next]
+-...
++ [next]
+    ->O0Ep1
 -
 
 // You are demonstrating PERSISTENCE and GRIT. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.

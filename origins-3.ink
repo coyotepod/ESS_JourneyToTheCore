@@ -3,8 +3,8 @@
 
 ->O3StartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-3-story.ink
+INCLUDE global-variables.ink
+INCLUDE origins-3-story.ink
 
 // ***************************************************************
 VAR SeasonO3 =          "JOURNEY TO THE CORE"

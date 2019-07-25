@@ -3,8 +3,8 @@
 
 ->O4StartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-4-story.ink
+INCLUDE global-variables.ink
+INCLUDE origins-4-story.ink
 
 // ***************************************************************
 VAR SeasonO4 =         "VOYOGE UNDER THE SEA"

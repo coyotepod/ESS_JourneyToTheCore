@@ -324,6 +324,12 @@ VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the T
 
 VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
 
+LIST DeathQuotes = (none)
+
+VAR DeathQuote1 = "I have always depended on the kindness of strangers. ~ Tennessee Williams"
+VAR DeathQuote2 = "Do or do not, there is no try. ~ Master Yoda"
+
+VAR DeathQuote3 = "I get knocked down, but I get up again. I get knocked down, but I get up again. ~ Chumbawamba"
 
 // END OF GLOBAL VARIABLES
 === GlobalVariables ===

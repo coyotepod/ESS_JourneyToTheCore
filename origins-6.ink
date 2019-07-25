@@ -3,8 +3,8 @@
 
 ->O6StartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-6-story.ink
+INCLUDE global-variables.ink
+INCLUDE origins-6-story.ink
 
 // ***************************************************************
 VAR SeasonO6 =          "MINING THE CAVERNS OF TIME"

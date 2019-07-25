@@ -3,8 +3,8 @@
 
 ->O2StartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-2-story.ink
+INCLUDE global-variables.ink
+INCLUDE origins-2-story.ink
 
 // ***************************************************************
 VAR SeasonO2 =          "EXPEDITION OF ORIGINS"

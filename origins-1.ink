@@ -3,8 +3,8 @@
 
 ->O1StartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-1-story.ink
+INCLUDE global-variables.ink
+INCLUDE origins-1-story.ink
 
 // ***************************************************************
 VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"

@@ -3,8 +3,8 @@
 
 ->O5StartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-5-story.ink
+INCLUDE global-variables.ink
+INCLUDE origins-5-story.ink
 
 // ***************************************************************
 VAR SeasonO5 =          "ADVENTURE TO NEW HORIZONS"
