@@ -15,7 +15,7 @@ PROLOGUE
     + [Turn to {Maid}]
 - You: <>
     + Do you have any news? We grow tired of town life.
-- {Maid}: So <>{RumorTwo}
+- {Maid}: So <>{SeasonO2Hook}
 - {TheCleric}: This is promising news. Thank you {Maid}!
 - You: Sounds like we'll be venturing off to {village5}?
 - The whole party agrees.

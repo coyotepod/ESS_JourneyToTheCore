@@ -28,19 +28,18 @@ PROLOGUE
     + [Turn to {Maid}]
 - You: <>
     + "Do you have any news? We grow tired of town life."
-        // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
-        // + "We are interested in another meal," as your stomach gurgles. -> meal
-        // -- {servingMaid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
     +[Ω]
         ->O4StartMenu
     +[NEXT EPISODE]
         ->O4Ep1
-
+-
 ->DONE
 
 === O4Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle /Role-play Challenge
 {O4EpisodeOne}
++ Do you have any news? We grow tired of town life.
+- {Maid}: So <>{SeasonO4Hook}
     +[Ω]
         ->O4StartMenu
     +[NEXT EPISODE]

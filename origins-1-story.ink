@@ -2,7 +2,7 @@
 #author: Master Scoy
 
 
-VAR Season1Hook = "a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit. They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself. She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
+VAR SeasonO1Hook = "a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit. They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself. She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
 
 
 
@@ -19,7 +19,7 @@ PROLOGUE
         // + "We are interested in another meal," as your stomach gurgles. -> meal
         // -- {Maid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
 - {Maid}: <>
-- Well, {RumorOne}.
+- {Maid}: Well <>{SeasonO1Hook}
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."
 //    + {TheCleric}: "I could check with other priests to find out their interpretation of the omen."
 //    +

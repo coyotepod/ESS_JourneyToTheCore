@@ -90,13 +90,6 @@ PURPOSE
      +[Ω]
          ->O6StartMenu
 
-=== O6Prologue ===
-PROLOGUE
-     +[Ω]
-         ->O6StartMenu
-    +[NEXT EPISODE]
-        ->O6Ep1
-
 ->DONE
 ->END
 <b>Chapter 2: AN INVITATION</b> // An Invitation to The Arrakis Sandworms Raid”</b>

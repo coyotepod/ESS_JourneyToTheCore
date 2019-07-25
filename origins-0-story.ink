@@ -218,10 +218,7 @@ The coming weeks are going to be a challenge. Growth in mind and muscle will be 
 -
 -> END
 === Inventory ===
-You have {food}.
-You have {weapons}.
-You have {armor}.
-You have {items}.
+You have nothing.
     + [BACK]
         ->O0Ep1
 
