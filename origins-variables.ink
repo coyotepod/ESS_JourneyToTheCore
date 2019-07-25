@@ -1,11 +1,6 @@
 // ***************************************************************
 // ORIGINS Outlines
 // ***************************************************************
-VAR RumorOne = "a very large fireball recently streaked through the sky. Its rumored that part of it fell to the ground nearby creating a crater and a patch of scorched land. The mages in the Celestial Tower collected the piece. I'd say its just rumor, but  the Queen is very interested to know what the mages are up to and will pay handsomely for valuable information. You must figure out a way to enter the Celestial Tower though. These mages are notoriously reclusive."
-VAR RumorTwo = "our mutual friend in the village contacted me yesterday. His contacts say the two highlander alchemists are back around home and they are very interested in meeting your party and the...item that you have recently...acquired."
-VAR RumorThree = ""
-VAR FourRumor = ""
-VAR FiveRumor = ""
 
 // ***************************************************************
 VAR SeasonO0 =          "WANDERING IN THE FOREST"
@@ -79,5 +74,4 @@ VAR O6EpisodeThree =    "THE FRACTURE"
 VAR O6EpisodeFour =     "THE EVIL MAGE"
 VAR O6EpisodeFive =     "THE TIME TOMBS"
 
-VAR KeplersLaws = "(1) The orbit of a planet is an ellipse with the Sun at one of the two foci. (2) A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. (3) The square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit."
 -> DONE

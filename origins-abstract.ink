@@ -3,9 +3,9 @@
 
 ->AboutStartMenu
 
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-INCLUDE origins-abstract-story.ink
+INCLUDE C:/git/INKS/global-variables.ink
+INCLUDE C:/git/INKS/origins-variables.ink
+INCLUDE C:/git/INKS/origins-abstract-story.ink
 
 === AboutStartMenu ===
     + [{SeasonO0}]

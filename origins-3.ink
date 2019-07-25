@@ -3,9 +3,21 @@
 
 ->O3StartMenu
 
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-INCLUDE origins-3-story.ink
+INCLUDE C:/git/INKS/global-variables.ink
+INCLUDE C:/git/INKS/origins-3-story.ink
+
+// ***************************************************************
+VAR SeasonO3 =          "JOURNEY TO THE CORE"
+// ***************************************************************
+VAR O3EpisodeOne =     "THE FORGE"
+VAR O3EpisodeTwo =     "THE IRON GATE"
+VAR O3EpisodeThree =   "THE DEPTHS"
+VAR O3EpisodeFour =    "THE ELEMENTALS"
+VAR O3EpisodeFive =    "THE EXIT"
+
+
+
+VAR SeasonO3Hook = ""
 
 === O3StartMenu ===
     + [PRESS START]

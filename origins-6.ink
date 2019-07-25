@@ -3,9 +3,19 @@
 
 ->O6StartMenu
 
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-INCLUDE origins-6-story.ink
+INCLUDE C:/git/INKS/global-variables.ink
+INCLUDE C:/git/INKS/origins-6-story.ink
+
+// ***************************************************************
+VAR SeasonO6 =          "MINING THE CAVERNS OF TIME"
+// ***************************************************************
+VAR O6EpisodeOne =      "THE CHARTER"
+VAR O6EpisodeTwo =      "THE MINING"
+VAR O6EpisodeThree =    "THE FRACTURE"
+VAR O6EpisodeFour =     "THE EVIL MAGE"
+VAR O6EpisodeFive =     "THE TIME TOMBS"
+
+VAR SeasonO6Hook = ""
 
 === O1StartMenu ===
     + [PRESS START]

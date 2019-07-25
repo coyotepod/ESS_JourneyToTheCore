@@ -3,9 +3,21 @@
 
 ->O4StartMenu
 
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-INCLUDE origins-4-story.ink
+INCLUDE C:/git/INKS/global-variables.ink
+INCLUDE C:/git/INKS/origins-4-story.ink
+
+// ***************************************************************
+VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
+// ***************************************************************
+VAR O4EpisodeOne =     "THE MERFOLK"
+VAR O4EpisodeTwo =     "THE GNOMES"
+VAR O4EpisodeThree =   "THE DEPTHS"
+VAR O4EpisodeFour =    "THE ELEMENTAL"
+VAR O4EpisodeFive =    "THE KRAKEN"
+
+
+
+VAR SeasonO4Hook = ""
 
 === O4StartMenu ===
     + [PRESS START]

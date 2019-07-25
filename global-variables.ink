@@ -32,15 +32,12 @@ VAR You = "You"
 VAR Cleric =        "CLERIC"
     VAR TheCleric = "The cleric"
     VAR theCleric = "the cleric"
-
 VAR Fighter =       "FIGHTER"
     VAR TheFighter =    "The fighter"
     VAR theFighter =    "the fighter"
-
 VAR Rogue =         "ROGUE"
     VAR TheRogue =  "The rogue"
     VAR theRogue =  "the rogue"
-
 VAR Wizard =        "WIZARD"
     VAR TheWizard = "The wizard"
     VAR theWizard = "the wizard"
@@ -52,7 +49,7 @@ VAR Innkeeper =         "Fin"
 VAR Maid =              "Jane"
 VAR MaidTwo =           "Suzie"
 VAR DwarfSmith =        "Cedalion" // Say-dale-yon // a mostly friendly blacksmithing dwarf in Canis Villa or KABEIROI
-VAR ForgeMaster =   "Hephaestus"
+VAR ForgeMaster =    "Hephaestus"
 VAR EvilMage  =         "Malum Magus" // Ma-loom
 VAR Queen =             "Queen Justina"
 VAR NobleFamily =       "Noord Vlakte"
@@ -62,21 +59,21 @@ VAR Villager1 =         "Dan"
 VAR Boy1    =           "Timothy"
 VAR Girl1   =           "Becca"
 VAR Castellan =         "Mr. Hillenar"
-VAR Copernicus =        "astronomical model developed by Nicolaus Copernicus and published in 1543. This model positioned the Sun near the center of the Universe, motionless, with Earth and the other planets orbiting around it in circular paths, modified by epicycles, and at uniform speeds. The Copernican model displaced the geocentric model of Ptolemy that had prevailed for centuries, which had placed Earth at the center of the Universe. Copernican heliocentrism is often regarded as the launching point to modern astronomy and the Scientific Revolution."
-VAR Brahe =             "an astronomer and nobleman" // Tycho Brahe
-VAR BraheAbout =        "Tycho Brahe built an observatory from which he makes the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he has made detailed records of his findings. He thniks that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which (1) the planets orbit the Sun and (2) the Sun orbits the Earth."
-VAR Kepler =            "an astronomer and mathematician" //    Johannes Kepler
-VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, has often used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time which basically means as orbiting objects like planets get closer to the sun they speed up and when farther away they go slower. Later, the third law was developed: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
-VAR Hutton =    "Mr. Hutton" //   James Hutton
-VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
-VAR Lyell =     "Mr. Lyell"  //  Charles Lyell
-VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
 VAR FarmBoy = "Timothy"
 
-// ***************************************************************
-// LOCATIONS
-// ***************************************************************
+VAR Brahe =             "an astronomer and nobleman" // Tycho Brahe
+  VAR BraheAbout =        "Tycho Brahe built an observatory from which he makes the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he has made detailed records of his findings. He thniks that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which (1) the planets orbit the Sun and (2) the Sun orbits the Earth."
+VAR Copernicus = ""
+  VAR CopernicusAbout =        "astronomical model developed by Nicolaus Copernicus and published in 1543. This model positioned the Sun near the center of the Universe, motionless, with Earth and the other planets orbiting around it in circular paths, modified by epicycles, and at uniform speeds. The Copernican model displaced the geocentric model of Ptolemy that had prevailed for centuries, which had placed Earth at the center of the Universe. Copernican heliocentrism is often regarded as the launching point to modern astronomy and the Scientific Revolution."
+VAR Hutton =    "Mr. Hutton" //   James Hutton
+  VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
+VAR Kepler =            "an astronomer and mathematician" //    Johannes Kepler
+  VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, has often used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time which basically means as orbiting objects like planets get closer to the sun they speed up and when farther away they go slower. Later, the third law was developed: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
+  VAR KeplersLaws = "(1) The orbit of a planet is an ellipse with the Sun at one of the two foci. (2) A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. (3) The square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit."
+VAR Lyell =     "Mr. Lyell"  //  Charles Lyell
+    VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
 
+// ***************************************************************
 // VILLAGES & CITIES
 VAR village1 = "Canis Villa"
 VAR village2 = ""
@@ -84,6 +81,7 @@ VAR village3 = ""
 VAR village4 = ""
 VAR village5 = "Berwickshire"
 
+// ***************************************************************
 // CASTLES & TOWERS
 VAR CastleOne = "Clun Castle"
 VAR CastleTwo = "Muilder Slot"
@@ -92,8 +90,7 @@ VAR MoonTower = "Lunae Tower"
 VAR SunTower = "Helios Tower"
 VAR MarsTower = "Nergal Tower"
 
-// ISLANDS
-
+// ***************************************************************
 // REGIONS
 VAR region1 = "Calda Vale"
 VAR region2 = "Noord Vlaktes" // North Plains
@@ -105,7 +102,9 @@ VAR region7 = ""
 VAR region8 = "8"
 VAR region9 = ""
 VAR region10 = ""
+VAR BearIslands = "Bear Islands"
 
+// ***************************************************************
 // MOUNTAINS
 VAR mountains1 = "Misty Mountain"
 VAR mountains2 = "Mountain 2"
@@ -113,6 +112,7 @@ VAR mountains3 = "Mountain 3"
 VAR mountains4 = "Mountain 4"
 VAR mountains5 = "Mountain 5"
 
+// ***************************************************************
 // DESERT
 VAR desert1 = "Arrakis"
 VAR desert2 = "Sonoran"
@@ -123,16 +123,19 @@ VAR forest1 = ""
 VAR forest2 = ""
 VAR forest3 = ""
 
+// ***************************************************************
 // GRASSLANDS
 VAR grassland1 = ""
 VAR grassland2 = ""
 VAR grassland3 = ""
 
+// ***************************************************************
 // TUNDRA
 VAR tundra1 = ""
 VAR tundra2 = ""
 VAR tundra3 = ""
 
+// ***************************************************************
 // WATER: RIVERS & LAKES
 VAR river1 = "River 1"
 VAR river2 = "River 2"
@@ -140,21 +143,20 @@ VAR river3 = "River 3"
 VAR river4 = "River 4"
 VAR river5 = "River 5"
 
+// ***************************************************************
 VAR lake1 = "Hicks Lake"
 VAR lake2 = "Big Lake"
 VAR lake3 = "Lake 3"
 VAR lake4 = "Lake 4"
 VAR lake5 = "Lake 5"
 
+// ***************************************************************
 // WATER: Sea
 VAR NorthSea = "N Sea"
 VAR SouthSea = "S Sea"
 VAR WestSea = "W Sea"
 VAR EastSea = "E Sea"
 VAR Sea5 = "Sea 5"
-
-VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
-
 
 // ***************************************************************
 // MONSTERS
@@ -320,16 +322,7 @@ VAR ore32 = "thorium ore"
 VAR EpicWeapon = "Sickle of Cronus"
 VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the Time Tombs. It can only be crafted at the forge of Hephaestus. The hearth must be crafted with special bricks. The hearth bricks are from a special type of rock only found deep in the planet's interior where players battle an earth elemental and fire elemental. The fire is started and maintained from the essence of a fire elemental. The bellows must be filled with the essence of an air elemental. The ore of the sickle comes from a meteorite. The sickle blade must be quenched in oil and water when complete though that water must come from the essence of a water elemental."
 
-
-// ***************************************************************
-// TEMPLATE variables for Start Menu
-// ***************************************************************
-VAR Seasont1 =          "SEASON TEMPLATE 1"
-VAR St1EpisodeOne =     "EPISODE 1"
-VAR St1EpisodeTwo =     "EPISODE 2"
-VAR St1EpisodeThree =   "EPISODE 3"
-VAR St1EpisodeFour =    "EPISODE 4"
-VAR St1EpisodeFive =    "EPISODE 5"
+VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
 
 
 // END OF GLOBAL VARIABLES
