@@ -25,6 +25,7 @@ You get up and stumble out onto a nearby path.
         -- After a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you to take initiative.
         ++ You decide to start walking. <>
 - The path makes for an easy walk once you get your footing. You travel less than a mile, perhaps a {~quarter-mile|half mile}, before coming to a crossroads.
+-(end_episode1)
     +[Ω]
         ->O0StartMenu
     + [NEXT EPISODE]
@@ -104,11 +105,22 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 ->DONE
 
 = Village_Path
-- Not long after midday a friendly farmer comes down the main path. You step out onto the main path and talk. He offers you a ride in his {~turnip|carrot|potato} cart towards the nearest village.
-The forest comes to a clearing and opens to the village.
-// + [Go towards the village] -> Ep4
-// + [Go back west] -> CanisVilla.leave_early
-
+- Not long after midday a friendly looking farmer comes down the main path with a cart and horse. 
+    + You step out onto the main path.
+        ++ You: Could you tell me which way to the nearest village?
+        --- Farmer: I can do better
+        ++ You: Are you going to kill me?
+        --- Farmer: Not unless you try to rob me.
+    -- He smiles and offers you a ride in his {~turnip|carrot|potato} cart.
+        ++ [next]
+        -- You ride for awhile not really talking much. Eventually the farmer stops the cart.
+        ++ [next]
+        --Farmer: "The village is just up ahead. My farm is up this way (gestures to the north). Good luck to ya!"
+    + You keep following the deer path.
+        -- You walk for a few hours. Your feet are killing you and starting to blister. At least no one or no monster is trying to kill.
+- You walk a bit more. The forest comes to a clearing with a small village just ahead.
+    + You walk into the village.
+- (end_episode2)
 +[Ω]
 ->O0StartMenu
     +[NEXT EPISODE]
@@ -117,29 +129,27 @@ The forest comes to a clearing and opens to the village.
 
 == O0Ep3 ==
 {O0EpisodeThree}
-- A small village lies before you. You are greeted by a weathered signpost "Canis Villa". The farmer stops at the edge of the village and lets you out of the cart.
-- Farmer: "Good luck to ya"
-    + [Walk into the village]
-- You walk the main path into the village center. It opens to a grassy courtyard. The village center is loosely surrounded by a variety of stout timbered buildings. You walk into the courtyard and look around.
+- You are greeted by a weathered signpost "Canis Villa".
+- You walk towards the village center. Its an opens grassy courtyard loosely surrounded by a variety of stout timbered buildings. You look around.
 - (courtyard_views)
     + (north_canis) Looking to the northern side, <>
         -- you see a blacksmith workshop with a dwarf hammering away on a set of horseshoes.
         ++ [You don't need to go there (at least not yet).] ->courtyard_views
         ++ {north_canis > 1} [Walk toward the blackmith]
-        --- A sword, warhammer, or even a simple knife would be nice, but you really don't need to go there yet. You have no money either. ->courtyard_views
+        --- A sword, warhammer, or even a simple knife would be nice, but you really don't need to go there yet. You have no money either. You walk back to the courtyard. ->courtyard_views
     + (south_canis) Looking to the southern side, <>
         -- you see a hanging sign with a dark blue mug that catches your eye. An inscription along the bottom reads "Drink from the cup of knowledge." This looks like a place to find some answers.
         ++ Look around the courtyard more. ->courtyard_views
-        ++ [Enter the Blue Mug]
+        ++ [Enter the Blue Mug] ->end_episode3
     + (east_canis) Looking to the eastern side, <>
-        -- you see the main path exit the village. Next to the path is a general store. ->courtyard_views
+        -- you see the main path exit the village. Next to the path is a general store. No need to leave yet or visit that store. You look around some more. ->courtyard_views
     + (west_canis) Looking to the western side, <>
-        -- you see an apothecary shop and main path entering {village1} (the one you followed in). ->courtyard_views
-    + {(north_canis && west_canis && east_canis)} [next]
-- Nothing much going on around Canis Villa. Most people are either coming or going from a large inn & tavern on the southern side. At least there you could sit in the shade.
-    + [Enter the Blue Mug]
-
-    -
+        -- you see an apothecary shop and main path entering {village1} (the one you followed in). No need to leave yet or visit that shop. You look around some more. ->courtyard_views
+    + {(north_canis && west_canis && east_canis)} [You observe...]
+- Most people are either justing passing through Canis Villa or visiting the large inn & tavern on the southern side. At least there you could sit in the shade. 
+    + [next]->south_canis
+    
+- (end_episode3) You enter The Blue Mug.
     +[Ω]
         ->O0StartMenu
     +[NEXT EPISODE]
@@ -156,29 +166,33 @@ The forest comes to a clearing and opens to the village.
     + Reflecting on "the kindness of strangers". <>
 - Occasionally strangers and not-so-good friends have done you wrong. Yet, strangers and friends have also helped you out in a pinch more than once. There are times when life tests your individual abilities, but having a kind, helpful community is definitely preferable.
     + [next]
-- One day a stranger may be a hero for you. Yet, on another day you might be the hero that someone needs.
+- One day a stranger may be a hero for you. Another day you might be the hero that someone needs.
     + A serving maid comes over and interrupts your thoughts.
 - Serving maid: "Welcome weary adventurer! I'm {Maid}. What can I get you?" she says with a {~ kind | warm | big} smile.
-    + Who owns this establishment?
-        -- {Maid}: That'd be {Innkeeper}. She's a fine lady with good food, honest prices and never waters down the ale. ->prepare
+    + You: Who owns this establishment?
+        -- {Maid}: That'd be {Innkeeper}. She's a fine lady with good food, honest prices and never waters down the ale.
     + You: "What good food and drink do you have?"
-        -- {Maid}: "Today we're cooking up{~ roasted boar| chicken| vegetables}"
-        ++ You: "That sounds good"
-        ++ You: Not what you were hoping for, but reply "OK, I'll have some."
-        -- The meal is good and quickly finish eating. Your thoughts go back to earlier encounters. You were not well prepared. {Maid} comes back to the table.
-        ++ [next] -> prepare
-    + (prepare) You: "How or where might I prepare for future adventures?"
-        -- {Maid}: "I reckon you want to seek a Master trainer just east of town. The King's army rarely makes it to small villages like ours, so we've had to learn to protect ourselves." she says with pride.
-        ++ You: "What can a Master do?"
-        -- {Maid}: "Most villages have at least one Master though some have two or more. Often other trainees can help you in the Training grounds if the Masters are busy."
+        -- {Maid}: Today we're cooking up{~ roasted boar| chicken| vegetables}
+        ++ You: That sounds good, but I just remembered I have no coin.
+        // ++ You: Not what you were hoping for, but reply "OK, I'll have some."
+        -- {Maid}: You're always welcome to work off the debt by helping in the stables. 
+        // -- The meal is good and quickly finish eating. Your thoughts go back to earlier encounters. You were not well prepared. {Maid} comes back to the table.
         ++ [next]
-        -- {Maid}: "Masters can give you activities and tools to better prepare you for life and adventures beyond the village. However, its up to you do the training"
-        ++ You: "Thank you {Maid}! You've been extremely helpful."
-        -- {Maid} smiles.
-        ++ You: "I'm thinking of staying in the area for awhile. I'm sure we'll see each other again."
+- You: Wow, thanks! I've had a rough go of it latetly.
+- You: I need to be better prepared for future adventures.
+- {Maid}: I suggest you to seek a Master trainer. The royal army rarely makes it to small villages like ours, so we've had to learn to protect ourselves. (she finishes with obvious pride) 
+    + You: What's a Master do?
+- {Maid}: Most villages have at least one Master though occasionaly there are two.
+    + [next]
+- <> They can give you activities and tools to better prepare you for life and adventures beyond the village. Other trainees can also assist you at times. However, its always up to you put in the work & training. 
+    + You: Thank you {Maid}!
+    - <> You've been extremely helpful!
+- {Maid} smiles.
+    + You: I'm thinking of staying in the area for a bit.
+    - <> I'm sure we'll see each other again.
 
 //-- "You must hone your skills if you plan on traveling in this area of the realm. Training and practicing one's skills before taking part in Adventures or attacking Bosses is always a good idea" she says.
--
+- (end_episode4)
 +[Ω]
 ->O0StartMenu
     +[NEXT EPISODE]
@@ -231,20 +245,23 @@ You have nothing.
         ->O0Ep1
 
 === Death ===
-- (death)
-    + { death < 2 } You have died.
-    + { death > 1 } You have died. Again.
-- Do not fear death weary adventurer. It is possible to have your life renewed by one of the kind paladins or clerics that wander these lands. They have a way of knowing if you are worthy of a second chance.
-    + [next]
+-
+    + { Death < 2 } You have died.
+    -- Do not fear death weary adventurer. It is possible to have your life renewed by one of the kind paladins or clerics that wander these lands. They have a way of knowing if you are worthy of a second chance.
+    + { Death > 1 } You have died. Again.
+    -- Do not fear death weary adventurer.
+-
++ [next]
 - {~ {DeathQuote1}|{DeathQuote2}|{DeathQuote3} }
     +[next]
 -...
     +[next]
 -...
-+ Your bones have been found.
++ Your {~ ||broken|crusty|moldy|dusty} bones have been found.
 -...
 + [next]
--...
+- You are worthy of another chance.
+- (end_death)...
 + [next]
     ->O0Ep1
 -
