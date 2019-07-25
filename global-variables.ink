@@ -183,8 +183,6 @@ LIST armor = (none), leather, chain_mail, plate_armor
 
 LIST healing = (none), potion_of_minor_healing
 
-LIST food = (none)
- 
 LIST specialItems = (none), MeteoriteOre, ThoriumOre, AirEssence, EarthEssence, FireEssence, WaterEssence
 
 // ***************************************************************
