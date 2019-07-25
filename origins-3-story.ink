@@ -34,7 +34,7 @@ PROLOGUE
         // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
         // + "We are interested in another meal," as your stomach gurgles. -> meal
         // -- {servingMaid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
-You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
+/* You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
 when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall.
 
 [PROFESSOR]
@@ -61,6 +61,9 @@ OLD MAN: "Absolutely not."
 YOUNG MAN: This denial gives the young man more forwardness, "Hello, I am Axel and this my uncle, Alfred Wegner, a professor of geology.
 
 YOU: "Greeting Axel and Professor Wegner"
+
+**/
+
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
@@ -71,6 +74,14 @@ YOU: "Greeting Axel and Professor Wegner"
 === O3Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
+- You make your way to Iron Forge in the {mountains1}. The party travels many days which gets progressively more difficult which is to be expected; you are entering a mountainous region. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
++ [next]
+- You enter into a mountain valley a little hesitantly, but are comforted knowing you're nearing such a formidable city. Surely the surrounding countryside is safe. 
++ [next]
+- At this point {d6()+3} GOBLINS starting shooting at you from the brush. A {~ hobgoblin|bugbear} steps out
++ [next]
+- You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. You're actually starting to feel a little anxious as you approach the main gate with seal in hand.
+
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]

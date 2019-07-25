@@ -128,7 +128,7 @@ PROLOGUE
 - They take a minute to look through the notebook.
 Lyell: We think large quantities of smelted ore (purified) when combined with ELEMENTAL ESSENCE and powerful magic would likely lead to a cataclysmic event. Perhaps even a second Big Bang which seems to be the goal of this evil mage.
 + [next]
-- Hutton: I'm sure the dwarves of Iron Forge could tell you more. We recommend traveling to the Air Temple on the highest peak of this mountain chain. Gather rock from near the peak. Even small samples of the thorium ore are highly prized by the dwarves. The thorium would give you something to barter for information.
+- Hutton: I'm sure the dwarves of Iron Forge could tell you more. We recommend traveling to the Air Temple on the highest peak of this mountain chain. Gather rock from near the peak. Even small samples of the {ore32} are highly prized by the dwarves. The {ore32} would give you something to barter for information.
 + [next]
 - You: We greatly appreciate your help. We shall tell every bard we meet about the genius of James Hutton and Charles Lyell!
   + { kits == zero } You: One more thing[...]
@@ -209,18 +209,18 @@ abstract
 // Room 4: Climax
 {O2EpisodeFour}
 - Your party reaches the Air Temple without further troubles. #audio_mountain_top
-    + You: Let's look for the thorium ore.
+    + You: Let's look for the {ore32}.
 - It only takes a moment before {~{theCleric}|{theWizard}|{theFighter}} says:
-    + \(points) I think that's {ore2} to the west side of the temple.
+    + \(points) I think that's {ore32} to the west side of the temple.
 - You all walk over to the spot.
 - You: Yep, this seems to match the description Lyell gave me.
     + Everyone starts gathering ore.
     + (on_watch_during_ore)\ {TheWizard} keeps watch while the rest of you gather ore.
 - Fortunately each of you has a BAG OF HOLDING.
-~ specialItems = ThoriumOre
-- You add {specialItems} to your "special Items."
+~ ore = ThoriumOre // ore32
+- You add {ore32} to your inventory of ore.
     + [next]
-- 
+-
     + { not on_watch_during_ore } The wind suddenly picks up knocking everyone down.
         -- Each fallen player must roll a CONSTITUTION check
         ++ [next]
@@ -231,10 +231,10 @@ abstract
     + [next]
 - The battle rages on with the AIR ELEMENTAL
     + Failure
-        -- You have been blown off the peak of the mountain. You die. 
+        -- You have been blown off the peak of the mountain. You die.
         -> O2Ep4
     + Victory!
-- The AIR ELEMENTAL dissipates; elementals are never truly killed. {~{TheCleric}|{TheFighter}|{TheWizard}} is the first to notice a lingering wisp of shimmering air. 
+- The AIR ELEMENTAL dissipates; elementals are never truly killed. {~{TheCleric}|{TheFighter}|{TheWizard}} is the first to notice a lingering wisp of shimmering air.
 + \ {TheWizard} quickly pulls out a large vial and scoops the wisp in before it disappears as well.
 
 - {TheWizard} reminds you that Air Essence will be needed later in the quest.
@@ -259,9 +259,9 @@ abstract
 // Room 5: Reward, Revelation, or Twist
 {O2EpisodeFive}
 - You talk with {DwarfSmith} at the smithy in Canis Villa. #audio_canis_villa
-- {DwarfSmith}: Hutton & Lyell gave you good advice. The dwarves in Iron Forge will definitely be interested in the Thorium Ore! I can give my clan seal which should grant you passage into the dwarves' great city.
+- {DwarfSmith}: Hutton & Lyell gave you good advice. The dwarves in Iron Forge will definitely be interested in the {ore32}! I can give my clan seal which should grant you passage into the dwarves' great city.
 - You: Thank you sir.
-- {DwarfSmith}: (nods in acknowledgement) Once you arrive in Iron Forge, head to my old district of Lemnos and talk with forge master {ForgeMaster}. He will know what to do. Perhaps he will craft you an epic weapon if you impress him enough.
+- {DwarfSmith}: (nods in acknowledgement) Once you arrive in Iron Forge, head to my old district of Lemnos and talk with forge master {ForgeMaster}. He will know what to do. Perhaps he will craft you something epic if you impress him.
 - MORE IN THE NEXT SEASON!
    +[Ω]
        ->O2StartMenu

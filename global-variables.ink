@@ -72,21 +72,87 @@ VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniform
 VAR Lyell =     "Mr. Lyell"  //  Charles Lyell
 VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
 VAR FarmBoy = "Timothy"
+
 // ***************************************************************
 // LOCATIONS
 // ***************************************************************
+
+// VILLAGES & CITIES
 VAR village1 = "Canis Villa"
 VAR village2 = ""
 VAR village3 = ""
 VAR village4 = ""
 VAR village5 = "Berwickshire"
 
+// CASTLES & TOWERS
 VAR CastleOne = "Clun Castle"
 VAR CastleTwo = "Muilder Slot"
 VAR CelestialTower = "Celestial Tower"
 VAR MoonTower = "Lunae Tower"
 VAR SunTower = "Helios Tower"
 VAR MarsTower = "Nergal Tower"
+
+// ISLANDS
+
+// REGIONS
+VAR region1 = "Calda Vale"
+VAR region2 = "Noord Vlaktes" // North Plains
+VAR region3 = ""
+VAR region4 = ""
+VAR region5 = ""
+VAR region6 = ""
+VAR region7 = ""
+VAR region8 = "8"
+VAR region9 = ""
+VAR region10 = ""
+
+// MOUNTAINS
+VAR mountains1 = "Misty Mountain"
+VAR mountains2 = "Mountain 2"
+VAR mountains3 = "Mountain 3"
+VAR mountains4 = "Mountain 4"
+VAR mountains5 = "Mountain 5"
+
+// DESERT
+VAR desert1 = "Arrakis"
+VAR desert2 = "Sonoran"
+VAR desert3 = ""
+
+// FORESTS
+VAR forest1 = ""
+VAR forest2 = ""
+VAR forest3 = ""
+
+// GRASSLANDS
+VAR grassland1 = ""
+VAR grassland2 = ""
+VAR grassland3 = ""
+
+// TUNDRA
+VAR tundra1 = ""
+VAR tundra2 = ""
+VAR tundra3 = ""
+
+// WATER: RIVERS & LAKES
+VAR river1 = "River 1"
+VAR river2 = "River 2"
+VAR river3 = "River 3"
+VAR river4 = "River 4"
+VAR river5 = "River 5"
+
+VAR lake1 = "Hicks Lake"
+VAR lake2 = "Big Lake"
+VAR lake3 = "Lake 3"
+VAR lake4 = "Lake 4"
+VAR lake5 = "Lake 5"
+
+// WATER: Sea
+VAR NorthSea = "N Sea"
+VAR SouthSea = "S Sea"
+VAR WestSea = "W Sea"
+VAR EastSea = "E Sea"
+VAR Sea5 = "Sea 5"
+
 VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
 
 
@@ -187,12 +253,7 @@ LIST specialItems = (none), AirEssence, EarthEssence, FireEssence, WaterEssence
 
 LIST ore = (none), CopperOre, IronOre, MeteoriteOre, ThoriumOre, PalladiumOre
 
-VAR ore1 = "copper ore"
-VAR ore2 = "iron ore"
-VAR ore3 = ""
-VAR ore1 = "meteorite ore"
-VAR ore2 = "Thorium Ore"
-VAR ore3 = ""
+
 
 /*
  Copper Ore
@@ -216,34 +277,39 @@ VAR ore3 = ""
  Storm Silver Ore
 */
 
+
+VAR ore30 = "meteorite ore"
+VAR ore31 = "palladium ore"
+VAR ore32 = "thorium ore"
+
 /*
-Acanthite (cooled polymorph of Argentite): Ag2S for production of silver
-Barite: BaSO4
-Bauxite Al(OH)3 and AlOOH, dried to Al2O3 for production of aluminium
-Beryl: Be3Al2(SiO3)6
-Bornite: Cu5FeS4
-Cassiterite: SnO2
-Chalcocite: Cu2S for production of copper
-Chalcopyrite: asdCuFeS2
-Chromite: (Fe, Mg)Cr2O4 for production of chromium
-Cinnabar: HgS for production of mercury
-Cobaltite: (Co, Fe)AsS
-Columbite-Tantalite or Coltan: (Fe, Mn)(Nb, Ta)2O6
-Dolomite: CaMg(CO3)2
-Galena: PbS
-Native gold: Au, typically associated with quartz or as placer deposits
-Hematite: Fe2O3
-Ilmenite: FeTiO3
-Magnetite: Fe3O4
-Malachite: Cu2CO3(OH)2
-Molybdenite: MoS2
-Pentlandite: (Fe, Ni)9S8
-Pyrolusite: MnO2
-Scheelite: CaWO4
-Sperrylite: PtAs2 for production of platinum
-Sphalerite: ZnS
-Uraninite (pitchblende): UO2 for production of metallic uranium
-Wolframite: (Fe, Mn)WO4
+01 Acanthite (cooled polymorph of Argentite): Ag2S for production of silver
+02 Barite: BaSO4
+03 Bauxite Al(OH)3 and AlOOH, dried to Al2O3 for production of aluminum
+04 Beryl: Be3Al2(SiO3)6
+05 Bornite: Cu5FeS4
+06 Cassiterite: SnO2
+07 Chalcocite: Cu2S for production of copper
+08 Chalcopyrite: asdCuFeS2
+09 Chromite: (Fe, Mg)Cr2O4 for production of chromium
+10 Cinnabar: HgS for production of mercury
+11 Cobaltite: (Co, Fe)AsS
+12 Columbite-Tantalite or Coltan: (Fe, Mn)(Nb, Ta)2O6
+13 Dolomite: CaMg(CO3)2
+14 Galena: PbS
+15 Native gold: Au, typically associated with quartz or as placer deposits
+16 Hematite: Fe2O3
+17 Ilmenite: FeTiO3
+18 Magnetite: Fe3O4
+20 Malachite: Cu2CO3(OH)2
+21 Molybdenite: MoS2
+22 Pentlandite: (Fe, Ni)9S8
+23 Pyrolusite: MnO2
+24 Scheelite: CaWO4
+25 Sperrylite: PtAs2 for production of platinum
+26 Sphalerite: ZnS
+27 Uraninite (pitchblende): UO2 for production of metallic uranium
+28 Wolframite: (Fe, Mn)WO4
 */
 
 
