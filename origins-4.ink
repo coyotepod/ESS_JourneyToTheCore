@@ -17,8 +17,6 @@ VAR O4EpisodeFive =    "THE KRAKEN"
 
 
 
-VAR SeasonO4Hook = ""
-
 === O4StartMenu ===
     + [PRESS START]
         ->O4Prologue

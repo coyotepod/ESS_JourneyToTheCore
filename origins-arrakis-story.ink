@@ -4,6 +4,7 @@
 
 // INCLUDE global-variables.ink
 // INCLUDE origins-variables.ink
+VAR ArrakisHook         =     "something"
 
 
 === ArrakisPrologue ===

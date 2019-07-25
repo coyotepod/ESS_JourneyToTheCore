@@ -15,6 +15,7 @@
 - EPISODE 5. {O5EpisodeFive}
 
 
+VAR SeasonO5Hook = ""
 
 
 === O5Prologue ===

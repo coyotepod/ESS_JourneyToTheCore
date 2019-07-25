@@ -17,6 +17,7 @@ SEASON 4: {SeasonO4}
 
 
 
+VAR SeasonO4Hook = ""
 
 === O4Prologue ===
 PROLOGUE

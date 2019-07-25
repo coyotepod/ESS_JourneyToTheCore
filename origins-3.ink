@@ -17,8 +17,6 @@ VAR O3EpisodeFive =    "THE EXIT"
 
 
 
-VAR SeasonO3Hook = ""
-
 === O3StartMenu ===
     + [PRESS START]
         ->O3Prologue

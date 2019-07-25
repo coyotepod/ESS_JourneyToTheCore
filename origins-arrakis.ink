@@ -17,7 +17,6 @@ VAR ArrakisEpisodeFive  =    "A NICHE"
 
 
 
-VAR ArrakisHook         =     "something"
 
 === ArrakisStartMenu ===
     + [PRESS START]

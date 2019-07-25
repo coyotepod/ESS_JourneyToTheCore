@@ -15,7 +15,6 @@ VAR O5EpisodeThree =    "EPISODE 3"
 VAR O5EpisodeFour =     "EPISODE 4"
 VAR O5EpisodeFive =     ""
 
-VAR SeasonO5Hook = ""
 
 === O5StartMenu ===
     + [PRESS START]

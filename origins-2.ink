@@ -17,9 +17,6 @@ VAR O2EpisodeFive =     "A FORGE MASTER"
 
 
 
-VAR SeasonO2Hook = "our mutual friend in the village contacted me yesterday. His contacts say the two highlander alchemists are back around home and they are very interested in meeting your party and the...item that you have recently...acquired."
-
-
 === O2StartMenu ===
     + [PRESS START]
         ->O2Prologue

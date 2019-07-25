@@ -15,7 +15,6 @@ VAR O6EpisodeThree =    "THE FRACTURE"
 VAR O6EpisodeFour =     "THE EVIL MAGE"
 VAR O6EpisodeFive =     "THE TIME TOMBS"
 
-VAR SeasonO6Hook = ""
 
 === O1StartMenu ===
     + [PRESS START]

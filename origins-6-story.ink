@@ -3,6 +3,7 @@
 
 
 
+VAR SeasonO6Hook = ""
 
 
 

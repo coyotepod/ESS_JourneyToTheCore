@@ -19,6 +19,7 @@ SEASON 3: {SeasonO3}
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
+  VAR SeasonO3Hook = ""
 
 
 
@@ -76,7 +77,7 @@ YOU: "Greeting Axel and Professor Wegner"
 {O3EpisodeOne}
 - You make your way to Iron Forge in the {mountains1}. The party travels many days which gets progressively more difficult which is to be expected; you are entering a mountainous region. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
 + [next]
-- You enter into a mountain valley a little hesitantly, but are comforted knowing you're nearing such a formidable city. Surely the surrounding countryside is safe. 
+- You enter into a mountain valley a little hesitantly, but are comforted knowing you're nearing such a formidable city. Surely the surrounding countryside is safe.
 + [next]
 - At this point {d6()+3} GOBLINS starting shooting at you from the brush. A {~ hobgoblin|bugbear} steps out
 + [next]
