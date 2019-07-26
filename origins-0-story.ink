@@ -184,7 +184,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
     + You: What's a Master do?
 - {Maid}: Most villages have at least one Master though occasionaly there are two.
     + [next]
-- <> They can give you activities and tools to better prepare you for life and adventures beyond the village. Other trainees can also assist you at times. However, its always up to you put in the work & training. 
+- <> They can give you activities and tools to better prepare you for life and adventures beyond the village. Other trainees can also assist you at times. However, its always up to you to put in the work & training. 
     + You: Thank you {Maid}!
     - <> You've been extremely helpful!
 - {Maid} smiles.
@@ -245,11 +245,13 @@ You have nothing.
         ->O0Ep1
 
 === Death ===
--
+- (death)
     + { Death < 2 } You have died.
     -- Do not fear death weary adventurer. It is possible to have your life renewed by one of the kind paladins or clerics that wander these lands. They have a way of knowing if you are worthy of a second chance.
     + { Death > 1 } You have died. Again.
     -- Do not fear death weary adventurer.
+    -
+    + [next]
 -
 + [next]
 - {~ {DeathQuote1}|{DeathQuote2}|{DeathQuote3} }
@@ -264,10 +266,6 @@ You have nothing.
 - (end_death)...
 + [next]
     ->O0Ep1
--
-
-// You are demonstrating PERSISTENCE and GRIT. Kind paladins and clerics wander these lands. Soon enough your bones will be found and your life renewed.
-        ->O0Ep1
 ->DONE
 
 === O0Preface ===
