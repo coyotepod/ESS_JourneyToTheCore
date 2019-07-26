@@ -19,49 +19,12 @@ SEASON 3: {SeasonO3}
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
-  VAR SeasonO3Hook = ""
-
-
-
+  VAR SeasonO3Hook = "The heavy wooden door of The Blue Mug bangs open. A fiery elderly comes dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He looks eccentric and very professor-like. He also appears to be quite riled up about something."
+  
 === O3Prologue ===
 PROLOGUE
-- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
-- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
-    + [Look at your companions]
-      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {Maid}]
-    + Do you have any news? We grow tired of town life.
-- {Maid}: So <>{SeasonO3Hook}
-/* You are sitting at the Blue Mug enjoying a dinner - not fine dining by any criteria, but good enough - retelling nearby patrons about your latest adventure with only a few minor embellishments.
-when an eccentric elderly man comes rushing in, door banging open. He rushes over to a young man seated a couple tables over towards the west wall.
 
-[PROFESSOR]
-OLD MAN: "We must solve this cryptograph Axel! The older man says to the younger.
-
-[AXEL]
-YOUNG MAN: "I've told you uncle, it is not possible what is suggested in the early part of the letter. Why waste our time on this puzzle?"
-
-OLD SCHOLAR: "Why? Why?! He says getting louder and louder. For one, nothing is impossible my boy. Secondly, how can you call yourself a learned man with such an unknown before and NOT be tempted to solve it?!"
-
-While you don't move any closer, you definitely pay a little more attention to the conversation happening between the two.
-
-At that moment another group comes in accompanied by a gust of wind. The paper the old man had many waving around is blow from his waving hands is blown under your table. You lean down and pick it up. You take a quick glance before the old man comes over and snatches it away.
-[Present students with brief look at the cryptographic image from Journey to the Center of the Earth]
-
-YOU: I happen to be quite good at solving puzzles if you need a hand.
-
-OLD MAN: No thank you. He bows and turns back toward the young man.
-
-YOUNG MAN: A light in the young man's eyes sparks, "If you are as serious as you say uncle and then we may need a lot of help."
-
-OLD MAN: "Absolutely not."
-
-YOUNG MAN: This denial gives the young man more forwardness, "Hello, I am Axel and this my uncle, Alfred Wegner, a professor of geology.
-
-YOU: "Greeting Axel and Professor Wegner"
-
-**/
-
+- (end_episode)
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
@@ -72,6 +35,44 @@ YOU: "Greeting Axel and Professor Wegner"
 === O3Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
+- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
+- {Maid}: "Welcome weary adventurers! Anything I can get the you?"
+    + You: Do you have any news? We grow tired of town life.
+- {Maid}: Well...
+- {SeasonO3Hook}
+    + You: Who are those gentleman {Maid}?
+- {Maid}: Ah, that would be {ProfessorL} and his young nephew, {Axel}. They've been in the last couple nights arguing, but they haven't caused any trouble with the other customers.
+    + You start listening to them again.
+- {ProfessorL}: It is paramount that we solve this cryptograph {Axel}!
+- {Axel}: That letter cannot be correct! Its speaks of impossible things. Why waste time on this puzzle?
+    + [next]
+- {ProfessorL}: Why? Why?! (getting louder and louder). Nothing is impossible my boy. How can you call yourself a learned man with such a mindset! Accept nothing - not even the "impossible." Whats impossible today maybe in fact be possible tomorrow or given new information turns out to be true!
+    + [next]
+- At that moment another group comes in accompanied by a gust of wind. The paper {ProfessorL} was holding and waving blows out of his hand toward your table.
+    + (you_pick_up_letter) You lean down and pick it up.
+    -- You take a quick glance before the old man comes over
+    -- You notice a collection of runes and sketches of what appear to be cave tunnels
+    -- \(Ask the Game Master for a copy of the paper)
+    + You leave the paper alone.
+-
+    + {you_pick_up_letter } \ {ProfessorL} snatches it away from you.
+    -- {ProfessorL}: (gruffly) Beg your pardon sir; that belongs to me!
++ { not you_pick_up_letter } \ {ProfessorL}: Ah, my letter!
+    -- {ProfessorL} quickly comes over and snatches the paper off the floor
+- You: I mean no intrusion, but I couldn't help but over hear. My friends and I happen to be quite good at solving puzzles if you need a hand.
+    + \ {ProfessorL}: No thank you.
+- He nods his head and turns back toward the young man.
+- {Axel}: (with a twinkle in his eyes) If you are as serious as you say uncle, we may need assistance.
+    + \ {ProfessorL}: Absolutely not.
+- {Axel}: Uncle, you are the most brilliant man I know, but even the most intelligent cannot know all things and may in fact need help from time to time.
+    + [next]
+- {Axel}: (turns to your party) Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant and professor of geology. Please excuse his lack of social graces.
+- {ProfessorL} (humphs)
+    + You: No worries!
+    + You: {Axel}, you really should rein him in more.
+- {TheCleric}: Any who, perhaps we can help with that cryptograph now?
+- {ProfessorL}: {~reluctantly|grumpily} agrees and places it in the center of the table.
++ [next]
 - You make your way to Iron Forge in the {mountains1}. The party travels many days which gets progressively more difficult which is to be expected; you are entering a mountainous region. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
 + [next]
 - You enter into a mountain valley a little hesitantly, but are comforted knowing you're nearing such a formidable city. Surely the surrounding countryside is safe.
