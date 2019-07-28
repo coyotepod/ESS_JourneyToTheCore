@@ -8,9 +8,9 @@ VAR SeasonO2Hook = "our mutual friend in the village contacted me yesterday. His
 
 === O2Prologue ===
 PROLOGUE
-- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
-- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
-    + [Look at your companions]
+- {Maid}: Welcome weary adventurers!
+- Your party is at {BlueMug} inn. {Maid} stands at your table with a {~ warm| big| kind} smile.
+//    + [Look at your companions]
       -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
     + [Turn to {Maid}]
 - You: <>
@@ -259,7 +259,9 @@ abstract
 // Room 5: Reward, Revelation, or Twist
 {O2EpisodeFive}
 - You talk with {DwarfSmith} at the smithy in Canis Villa. #audio_canis_villa
-- {DwarfSmith}: Hutton & Lyell gave you good advice. The dwarves in Iron Forge will definitely be interested in the {ore32}! I can give my clan seal which should grant you passage into the dwarves' great city.
+- {DwarfSmith}: Hutton & Lyell gave you good advice. The dwarves in Iron Forge will definitely be interested in the {ore32}!
+- He takes out a small metal seal on a small chain.
+- {DwarfSmith}: I'm giving my clan seal to you. It should grant you passage into the dwarves' great city.
 - You: Thank you sir.
 - {DwarfSmith}: (nods in acknowledgement) Once you arrive in Iron Forge, head to my old district of Lemnos and talk with forge master {ForgeMaster}. He will know what to do. Perhaps he will craft you something epic if you impress him.
 - MORE IN THE NEXT SEASON!
