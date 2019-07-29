@@ -77,12 +77,15 @@ VAR ProfessorW = "Professor Wegener" // Alfred Wegener
 VAR Axel = "Axel"
 
 // ***************************************************************
+// LOCATIONS
+// ***************************************************************
 // VILLAGES & CITIES
 VAR village1 = "Canis Villa"
 VAR village2 = ""
 VAR village3 = ""
 VAR village4 = ""
 VAR village5 = "Berwickshire"
+VAR DwarfCity = "Iron Forge"
 
 
 VAR BlueMug = "The Blue Mug"

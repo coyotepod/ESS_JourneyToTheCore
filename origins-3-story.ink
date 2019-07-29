@@ -2,7 +2,7 @@
 #author: Master Scoy
 
 
-VAR DwarfCity = "Iron Forge"
+
 \ ***************************************
 SEASON 3: {SeasonO3}
 \ ***************************************
@@ -22,7 +22,7 @@ SEASON 3: {SeasonO3}
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
-  VAR SeasonO3Hook = "The heavy wooden door of The Blue Mug bangs open. A fiery elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He looks eccentric and very professor-like. He also appears to be quite excited about something."
+  VAR SeasonO3Hook = "The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
   
 === O3Prologue ===
 PROLOGUE
@@ -89,19 +89,32 @@ PROLOGUE
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 // The cryptograph mentions an entrance into the center of planet. 
 // The entrance to the center is in {DwarfCity} in the hall of the forge master.
+VAR COMBAT = "Each party member rolls INITIATIVE. The monster takes an ACTION and each party member takes an ACTION on his or her turn in the COMBAT ROUND."
 {O3EpisodeTwo}
 - You: "Interesting. We can go with you to {DwarfCity}."
 - {ProfessorL}: "Why would you do that?"
     + You do not share your plans to visit {DwarfCity}.
     -- You: "It just seems like you might need some help"
     + You share your plans to visit {DwarfCity}.
-    -- You: "We were actually going to head there ourselves. We are going to see forge master {ForgeMaster}. We have a quest of our own to complete."
-- You make your way to {DwarfCity} in the {mountains1}. The party travels many days which gets progressively more difficult which is to be expected; you are entering a mountainous region. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
+    -- You: "We were actually going there ourselves.
+    ++ \ {ProfessorL}: "Ah. May I ask your business there?"
+    -- You: "We are going to see forge master {ForgeMaster}."
+    ++ \ {ProfessorL}: "Interesting."
+- You make your way towards {DwarfCity} in the {mountains1}. As you enter the mountainous region, the travel gets progressively more difficult. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
 + [next]
-- You enter into a mountain valley a little hesitantly, but are comforted knowing you're nearing such a formidable city. Surely the surrounding countryside is safe.
+- You enter into a mountain valley a little hesitantly. Surely the surrounding countryside of such a formidable city is safe.
 + [next]
-- At this point {d6()+3} GOBLINS starting shooting at you from the brush. A {~ hobgoblin|bugbear} steps out
-+ [next]
+- \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
++ FIGHT[!]
++ FLEE[!]
+- <>.
+- The battle has started.
+- {COMBAT}
++[next]
+- The battle is over.
++ SUCCESS
++ FAILURE
+- <>.
 - You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. You're actually starting to feel a little anxious as you approach the main gate with seal in hand.
 
 - (end_episode)
