@@ -91,6 +91,9 @@ PROLOGUE
 // The entrance to the center is in {DwarfCity} in the hall of the forge master.
 VAR COMBAT = "Each party member rolls INITIATIVE. The monster takes an ACTION and each party member takes an ACTION on his or her turn in the COMBAT ROUND."
 {O3EpisodeTwo}
+VAR CombatStart = "The battle has started!"
+VAR CombatEnd = "Congratulations!"
+
 - You: "Interesting. We can go with you to {DwarfCity}."
 - {ProfessorL}: "Why would you do that?"
     + You do not share your plans to visit {DwarfCity}.
@@ -105,15 +108,24 @@ VAR COMBAT = "Each party member rolls INITIATIVE. The monster takes an ACTION an
 - You enter into a mountain valley a little hesitantly. Surely the surrounding countryside of such a formidable city is safe.
 + [next]
 - \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
-+ FIGHT[!]
-+ FLEE[!]
+
+// Combat NON-Descriptive
+    + FIGHT[!]
+    + FLEE[!]
 - <>.
-- The battle has started.
-+ \ {Combat}
-+[next]
-- The battle is over.
-+ SUCCESS
-+ FAILURE
+- {CombatStart}
+    + General Description of Combat: 
+    -- {Combat}
+    ++ Combat Step by Step:
+    --- {CombatTurns}
+    +++ [next]
+    ++ [next]
+    +[next]
+- The fight is over.
++ SUCCESS!
++ FAILURE!
+- {CombatEnd}
+// END OF COMBAT
 - <>.
 - You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. You're actually starting to feel a little anxious as you approach the main gate with seal in hand.
 
