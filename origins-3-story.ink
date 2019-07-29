@@ -126,11 +126,41 @@ VAR CombatEnd = "Congratulations!"
 + FAILURE!
 - {CombatEnd}
 // END OF COMBAT
-- <>.
-- You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. You're actually starting to feel a little anxious as you approach the main gate with seal in hand.
 
+- <> The rest of the trip to the Iron Gate is uneventful.
+- Gate guard: gruffly "What's your business?"
+- You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal life. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. 
++ You're actually starting to feel a little anxious.
+- The first guard gate looks at his partner with {~surprise|astronishment|distrust} and back at your party. He hands the seal back to you and waves you through without a word.
+- {TheWizard}: "Well {DwarfSmith} and the {ProfessorL}'s note say to see forge master {ForgeMaster}. He's in the Lemnos district. Shall we make our way there?"
+- (CityShops)
+    + Potion shop
+        -- {~Shop clerk: "I'm sorry, our inventory is being restocked." | It appears to be closed.}
+        ++ [next] -> CityShops
+    + Weapons shop
+        -- {~Shop clerk: "I'm sorry, the Goblin War has emptied our inventory." | It appears to be closed.}
+         ++ [next] -> CityShops
+    + Armor shop
+        -- {~Shop clerk: "I'm sorry, our inventory is being restocked." | It appears to be closed.}
+         ++ [next] -> CityShops
+    + Explorers' League headquarter
+        -- {~Note on door: "Gone to lunch." | Note: "Out exploring"}
+         ++ [next] -> CityShops
+    + Go directly to Lemnos
+- You go to the tunnel that leads to Lemnos and walk the high ceiling tunnel through to another cavern. A signpost says "Welcome to Lemnos"
+    + You look for the workshop. <>
+- It isn't hard to find. It is the most impressive smithy known. Indeed, even the royal family does not have such impressive smithy.
+- You enter the workshop of {ForgeMaster}.
+    + [next]
+- There is no pretense here. You walk immediately into a working smithy. In the middle is the largest dwarf you've ever seen. He's tall enough to pass as human, but the proportions of thick muscles, large nose, braided red beard and fiery hair give away his dwarf heritage.
+- {ForgeMaster}: gruffly and without looking up, "I'm not taking any commissions. I'm too busy as it is."
++ You show him the seal of {DwarfSmith}.
+- {ForgeMaster} eyes you closely. Ever so slightly he raises his large hammer and grips it even tighter as his arms tense.
+- {ForgeMaster}: "How did you get this?"
+    + You: It was given by Master {DwarfCity} freely. <>
+- We are from his village of {village1}.
+- {ForgeMaster}'s eyes haven't left you. "What can I do for you?"
 - (end_episode)
-
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
