@@ -8,10 +8,10 @@ SEASON 3: {SeasonO3}
 \ ***************************************
 
 - EPISODE 1. {O3EpisodeOne}
-  Take meteorite to village and find out that need to go to {DwarfCity}.
+- You meet an uncle and his nephew at The Blue Mug with a cryptograph. You help them solve the cryptograph. They and your party both need to go to {DwarfCity} and meet the forge master.
 + [next]
 - EPISODE 2. {O3EpisodeTwo}
-  Fight Duergar to enter the Iron Gate. perhaps a key to enter the gates?
+  You fight goblins just before entering {DwarfCity}. The gate guards and later the forge master give you curious looks when seeing {DwarfSmith}'s seal, but no further explanation is given. {DwarfSmith}'s seal does convince {ForgeMaster} to help you. He gives you access to special tunnel that takes you to {volcano1}. 
 + [next]
 - EPISODE 3. {O3EpisodeThree}
   Journey deeper into the earth
@@ -146,20 +146,40 @@ VAR CombatEnd = "Congratulations!"
     + Explorers' League headquarter
         -- {~Note on door: "Gone to lunch." | Note: "Out exploring"}
          ++ [next] -> CityShops
-    + Go directly to Lemnos
+    + Go to Lemnos
 - You go to the tunnel that leads to Lemnos and walk the high ceiling tunnel through to another cavern. A signpost says "Welcome to Lemnos"
     + You look for the workshop. <>
-- It isn't hard to find. It is the most impressive smithy known. Indeed, even the royal family does not have such impressive smithy.
-- You enter the workshop of {ForgeMaster}.
-    + [next]
-- There is no pretense here. You walk immediately into a working smithy. In the middle is the largest dwarf you've ever seen. He's tall enough to pass as human, but the proportions of thick muscles, large nose, braided red beard and fiery hair give away his dwarf heritage.
+- It isn't hard to find. Its size truimphs even the royal smithy in {CapitalCity}. Likewise, the exterior craftsmenship makes it stand out in this working class district of the city.
++ You enter the workshop of {ForgeMaster}.
+- For all of its beauty on outside, there is no pretense on the inside. You walk immediately into a working smithy. The largest dwarf you've ever seen hammers away in the middle of it all. He's tall enough to pass as human, but the proportions of thick muscles, large nose, braided red beard and fiery hair give away his dwarf heritage.
 - {ForgeMaster}: gruffly and without looking up, "I'm not taking any commissions. I'm too busy as it is."
 + You show him the seal of {DwarfSmith}.
-- {ForgeMaster} eyes you closely. Ever so slightly he raises his large hammer and grips it even tighter as his arms tense.
-- {ForgeMaster}: "How did you get this?"
-    + You: It was given by Master {DwarfCity} freely. <>
-- We are from his village of {village1}.
-- {ForgeMaster}'s eyes haven't left you. "What can I do for you?"
+- {ForgeMaster} eyes you closely. He tightens his grip and tenses his arms even more.
+- {ForgeMaster}: "Why would {DwarfSmith} give you his clan seal? Did he owe you gamlbing money?"
+    + You: "Master {DwarfSmith} is helping us with a quest." <>
+    -- {ForgeMaster}: "Okay. Tell me more"
+    -- You: "We are from his village of {village1}. We recently acquired some {ore30}." 
+    ++ You tell him about the {CelestialTower}[...]<>
+    -- , Kepler's notebook, the conversation with Hutton & Lyell, and the Air Temple.
+    -- You: "We also have some {ore32} for you."
+    + You: "Yes Master {DwarfSmith} owed us money from a game of chance."
+    -- {ForgeMaster} shakes his head disapprovingly. Wether at your lie or {DwarfSmith} you cannot say for certain.
+    -- You: "He said we could deliver this {ore32} and receive payment from you."
+    -- You take some {ore32} out to show him.
+    -- {ForgeMaster}: "I see."
+    ++ [next]
+    -- {ForgeMaster}: "{DwarfSmith} has never been one to gamble at games of chance. Even if he did, his integrity would compel him to pay any and all debts immediately."
+    +++ You open your mouth to explain.
+    --- Forge Master {ForgeMaster} rapidly bashes your skull in with his mighty hammer. He continues to fracture the ribs and other various body parts of your friends. Your apparent lack of integrity has earned you and the party a just reward from {ForgeMaster}.
+    --- {ForgeMaster} didn't even break a sweat. You've experienced a crushing death.
+    ++++ [Death] -> O3StartMenu
+    
+- {ForgeMaster}'s intense blue eyes haven't left you. 
+- {ForgeMaster}: "I am grateful for the {ore32} and your integrity. Our only chance of winning at this dark game is to counter attack with {EpicWeapon}."
+- You: "Where would we find {EpicWeapon}?"
+- {ForgeMaster}: "You won't find it anywhere."
+- {TheFighter}: "Um, I'm confused"
+- {ForgeMaster}: "You won't find it anywhere because we are going to craft it!"
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -171,7 +191,28 @@ VAR CombatEnd = "Congratulations!"
 === O3Ep3 ===
 // Room 3: Trick or Setback
 {O3EpisodeThree}
-
+- {TheCleric}: "Great! How long will it take you to craft {EpicWeapon}?"
+- {ForgeMaster}: "That depends how long it takes you to retreive the materials."
+- {TheWizard}: "What are the materials?"
+- {ForgeMaster}: "The {ore30} is the largest material, but it also requires Air Essence for the billows..."
+- {TheFighter}: interrupts "Great we already got those!"
+- {ForgeMaster}: stares at him and continues "Earth Essence, and Fire Essence to smelt the ore and Earth. Finally, {EpicWeapon} must be quenched in oil and Water Essence."
+- You: "Where would we find those?"
+- {ForgeMaster}: "You can find Fire and Earth Essence through that tunnel." as he slides a false wall loaded with armor to the side.
+- {ForgeMaster}: "You will need to travel to the core of the planet."
+- The party is slack jawed.
+- {ProfessorL}: "I knew it was possible! {Axel} and I shall also accompany you on this epic journey. We'll shall study the interior of the planet like no has before!"
+- {Axel} turns pale.
+- {ForgeMaster}: "After you travel 6,000 km  you will battle the Earth Elementals and Fire Elementals that dwell there and collect their essence before returning."
+- {TheFighter}: sarcastically "Is that all? Why don't you do it then?"
+- {ForgeMaster}: "I've not been to the depths in so many decades, I'd surely loose my way."
+- {ProfessorL}: "Axel my boy! We have the map of these tunnels from our discovered manuscript!"
+- {ForgeMaster}: Gives you a big grin. "Right then"
+- You gather supplies and comeback to the forge of {ForgeMaster}. 
+- {ForgeMaster}: "I must stay behind. I need to continue my work on a golden shield. and guard the entrance."
+- The party looks a little disappointed at this news.
+- {ForgeMaster}: "Be on the lookout for Duegrar, fire beetles, driders, and other fire and Underdark creatures, too. Good luck!"
+- With that farewell, you set off into the tunnel.
 - (end_episode)
 
     +[Ω]

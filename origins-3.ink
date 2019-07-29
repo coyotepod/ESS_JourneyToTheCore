@@ -9,11 +9,11 @@ INCLUDE origins-3-story.ink
 // ***************************************************************
 VAR SeasonO3 =          "JOURNEY TO THE CORE"
 // ***************************************************************
-VAR O3EpisodeOne =     "THE FORGE"
-VAR O3EpisodeTwo =     "THE IRON GATE"
+VAR O3EpisodeOne =     "THE TRAVELERS"
+VAR O3EpisodeTwo =     "THE FORGE MASTER"
 VAR O3EpisodeThree =   "THE DEPTHS"
 VAR O3EpisodeFour =    "THE ELEMENTALS"
-VAR O3EpisodeFive =    "THE EXIT"
+VAR O3EpisodeFive =    "THE WAY BACK"
 
 
 
@@ -30,4 +30,7 @@ VAR O3EpisodeFive =    "THE EXIT"
         ->O3Ep4
     + [{O3EpisodeFive}]
        ->O3Ep5
+    + [EPILOGUE]
+       ->O3Epilogue
+       
 -> DONE

@@ -86,7 +86,7 @@ VAR village3 = ""
 VAR village4 = ""
 VAR village5 = "Berwickshire"
 VAR DwarfCity = "Iron Forge"
-
+VAR CapitalCity = "Storm Crown"
 
 VAR BlueMug = "The Blue Mug"
 VAR inn1 = "Inn 1"
@@ -123,6 +123,7 @@ VAR mountains2 = "Mountain 2"
 VAR mountains3 = "Mountain 3"
 VAR mountains4 = "Mountain 4"
 VAR mountains5 = "Mountain 5"
+VAR volcano1 = "Snarfell"
 
 // ***************************************************************
 // DESERT
@@ -334,7 +335,7 @@ VAR ore32 = "thorium ore"
 // SPECIAL ITEMS
 // ***************************************************************
 
-VAR EpicWeapon = "Sickle of Cronus"
+VAR EpicWeapon = "the Sickle of Cronus"
 VAR EpicWeaponAbout = "The Sickle of Cronus is used to battle the beast in the Time Tombs. It can only be crafted at the forge of Hephaestus. The hearth must be crafted with special bricks. The hearth bricks are from a special type of rock only found deep in the planet's interior where players battle an earth elemental and fire elemental. The fire is started and maintained from the essence of a fire elemental. The bellows must be filled with the essence of an air elemental. The ore of the sickle comes from a meteorite. The sickle blade must be quenched in oil and water when complete though that water must come from the essence of a water elemental."
 
 VAR GlacialRiverMelt = "It would stand to reason that glacial melt will be running lowest in the morning and highest in afternoon and early evening"
