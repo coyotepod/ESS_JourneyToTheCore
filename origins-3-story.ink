@@ -109,7 +109,7 @@ VAR COMBAT = "Each party member rolls INITIATIVE. The monster takes an ACTION an
 + FLEE[!]
 - <>.
 - The battle has started.
-- {COMBAT}
++ \ {Combat}
 +[next]
 - The battle is over.
 + SUCCESS
