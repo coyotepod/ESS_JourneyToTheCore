@@ -8,6 +8,11 @@ VAR SeasonO1Hook = "a very large fireball recently streaked through the sky and 
 
 === O1Prologue ===
 PROLOGUE
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+
+/*
 - Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
 - {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
     + [Look at your companions]
@@ -18,6 +23,8 @@ PROLOGUE
         // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
         // + "We are interested in another meal," as your stomach gurgles. -> meal
         // -- {Maid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
+*/    
+
 - {Maid}: <>
 - {Maid}: Well <>{SeasonO1Hook}
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."

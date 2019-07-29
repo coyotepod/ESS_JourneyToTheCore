@@ -21,13 +21,11 @@ VAR SeasonO4Hook = ""
 
 === O4Prologue ===
 PROLOGUE
-- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
-- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
-    + [Look at your companions]
-      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {Maid}]
-- You: <>
-    + "Do you have any news? We grow tired of town life."
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+- (end_episode)
+
     +[Ω]
         ->O4StartMenu
     +[NEXT EPISODE]

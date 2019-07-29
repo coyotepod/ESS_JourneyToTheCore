@@ -67,8 +67,7 @@ A boy yells in gasps, "My sister! ... My sister!"
 === TT1Ep1 ===
 // Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
 {TT1EpisodeOne}
-// Entrance And Guardian
-{TT1EpisodeOne}
+...Previous night at the Blue Mug...
 {TheWizard} says, "I think its best the townsfolk stay outside."
 Some of them start to grumble, "Who are you to tell us to stay outside?"
     + '{TheFighter} steps up and flexes his massive arms.

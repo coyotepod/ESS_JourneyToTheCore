@@ -22,11 +22,10 @@ SEASON 3: {SeasonO3}
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
-  VAR SeasonO3Hook = "The heavy wooden door of The Blue Mug bangs open. A fiery elderly man comes dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He looks eccentric and very professor-like. He also appears to be quite excited about something."
+  VAR SeasonO3Hook = "The heavy wooden door of The Blue Mug bangs open. A fiery elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He looks eccentric and very professor-like. He also appears to be quite excited about something."
   
 === O3Prologue ===
 PROLOGUE
-
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -38,9 +37,9 @@ PROLOGUE
 === O3Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
-- {Maid}: Welcome weary adventurers!"
-- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
-    + You: Do you have any news? We grow tired of town life.
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
 - {Maid}: Well...
 - {SeasonO3Hook}
     + You: Who are those gentleman {Maid}?

@@ -47,6 +47,10 @@ PROLOGUE
 === TT4Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {TT4EpisodeOne}
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+- (end_episode)
     +[Ω]
         ->TT4StartMenu
     +[NEXT EPISODE]

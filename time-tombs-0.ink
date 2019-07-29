@@ -38,7 +38,13 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 === TT0Ep1 ===
 // Puzzle Or Roleplaying Challenge
 {TT0EpisodeOne} #audio: BlueMug
-...Previous night at the Blue Mug...
+- \...Previous night
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+- (end_episode)
+
+
 A distraught woman comes in.
 Distraught woman: pleads "Someone help please! "My husband has gone missing in the salt mine."
 Distraught woman: Starts to tear up. "I don't have much money, but I need him back!"

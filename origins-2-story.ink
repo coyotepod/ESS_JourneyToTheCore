@@ -8,13 +8,9 @@ VAR SeasonO2Hook = "our mutual friend in the village contacted me yesterday. His
 
 === O2Prologue ===
 PROLOGUE
-- {Maid}: Welcome weary adventurers!
-- Your party is at {BlueMug} inn. {Maid} stands at your table with a {~ warm| big| kind} smile.
-//    + [Look at your companions]
-      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {Maid}]
-- You: <>
-    + Do you have any news? We grow tired of town life.
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
 - {Maid}: So <>{SeasonO2Hook}
 - {TheCleric}: This is promising news. Thank you {Maid}!
 - You: Sounds like we'll be venturing off to {village5}?

@@ -9,16 +9,7 @@ VAR ArrakisHook         =     "something"
 
 === ArrakisPrologue ===
 PROLOGUE
-//    +[Ω]
-//        ->ArrakisStartMenu
-    +[NEXT EPISODE]
-        ->ArrakisEp1
-
-->DONE
-
-=== ArrakisEp1 ===
-// Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
-{ArrakisEpisodeOne} AT INSULAR MARSUPIALIA
+PENNISULA OF MARSUPIALIA
 Your party ventures from the cabin onto the ship's deck. A band of eight pirates, err crewman, have offered to join you ashore for your protection against indigenous animals.
 + This strikes you as odd. <>
 - It seems the captain suspects you are not searching for animals, and instead looking for previously hidden treasure. You shrug your shoulders with indifference and the party heads to shore
@@ -56,6 +47,21 @@ Your party ventures from the cabin onto the ship's deck. A band of eight pirates
 - He continues even more seriously, “This is not a fight we can win. It must a battle complete with heroes and siege engines.”
 + [next]
 - The captain hastily writes a note and attaches it to a crow and sends it off toward Storm Crown.
+    +[Ω]
+        ->ArrakisStartMenu
+    +[NEXT EPISODE]
+        ->ArrakisEp1
+
+->DONE
+
+=== ArrakisEp1 ===
+// Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
+{ArrakisEpisodeOne} 
+- {Maid}: "Welcome weary adventurers!"
+- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+- (end_episode)
+
 
 
  //   +[Ω]
