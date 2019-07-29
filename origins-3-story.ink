@@ -89,6 +89,7 @@ PROLOGUE
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 // The cryptograph mentions an entrance into the center of planet. 
 // The entrance to the center is in {DwarfCity} in the hall of the forge master.
+{O3EpisodeTwo}
 - You: "Interesting. We can go with you to {DwarfCity}."
 - {ProfessorL}: "Why would you do that?"
     + You do not share your plans to visit {DwarfCity}.
@@ -102,7 +103,9 @@ PROLOGUE
 - At this point {d6()+3} GOBLINS starting shooting at you from the brush. A {~ hobgoblin|bugbear} steps out
 + [next]
 - You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. You're actually starting to feel a little anxious as you approach the main gate with seal in hand.
-{O3EpisodeTwo}
+
+- (end_episode)
+
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
@@ -113,6 +116,9 @@ PROLOGUE
 === O3Ep3 ===
 // Room 3: Trick or Setback
 {O3EpisodeThree}
+
+- (end_episode)
+
     +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
@@ -120,6 +126,9 @@ PROLOGUE
 === O3Ep4 ===
 // Room 4
 {O3EpisodeFour}
+
+- (end_episode)
+    +[Ω]
         ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Ep5
@@ -127,6 +136,9 @@ PROLOGUE
 === O3Ep5 ===
 // Room 5
 {O3EpisodeFive}
+- (end_episode)
+    +[Ω]
+        ->O3StartMenu
     +[NEXT EPISODE]
         ->O3Epilogue
 ->DONE
