@@ -126,6 +126,7 @@ VAR CombatEnd = "Congratulations!"
 - <>; {CombatEnd}
     + [next]
 // END OF COMBAT
+
 - The rest of the trip is uneventful.
     + [next]
 - You approach the Iron Gate guards.
