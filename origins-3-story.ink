@@ -122,16 +122,19 @@ VAR CombatEnd = "Congratulations!"
     ++ [next]
     +[next]
 - The fight is over.
-+ SUCCESS!
-+ FAILURE!
-- {CombatEnd}
+    + SUCCESS[!]
+    + FAILURE!
+- <>; {CombatEnd}
+    + [next]
 // END OF COMBAT
-
-- <> The rest of the trip to the Iron Gate is uneventful.
+- The rest of the trip is uneventful.
+    + [next]
+- You approach the Iron Gate guards.
 - Gate guard: gruffly "What's your business?"
 - You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal life. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions. 
 + You're actually starting to feel a little anxious.
 - The first guard gate looks at his partner with {~surprise|astronishment|distrust} and back at your party. He hands the seal back to you and waves you through without a word.
++ [next]
 - {TheWizard}: "Well {DwarfSmith} and the {ProfessorL}'s note say to see forge master {ForgeMaster}. He's in the Lemnos district. Shall we make our way there?"
 - (CityShops)
     + Potion shop
@@ -146,8 +149,8 @@ VAR CombatEnd = "Congratulations!"
     + Explorers' League headquarter
         -- {~Note on door: "Gone to lunch." | Note: "Out exploring"}
          ++ [next] -> CityShops
-    + Go to Lemnos
-- You go to the tunnel that leads to Lemnos and walk the high ceiling tunnel through to another cavern. A signpost says "Welcome to Lemnos"
+    + Go to Lemnos. <>
+- You go to the tunnel that leads to Lemnos and walk the high ceiling tunnel through to another cavern. A signpost says "Lemnos District"
     + You look for the workshop. <>
 - It isn't hard to find. Its size truimphs even the royal smithy in {CapitalCity}. Likewise, the exterior craftsmenship makes it stand out in this working class district of the city.
 + You enter the workshop of {ForgeMaster}.
@@ -156,12 +159,9 @@ VAR CombatEnd = "Congratulations!"
 + You show him the seal of {DwarfSmith}.
 - {ForgeMaster} eyes you closely. He tightens his grip and tenses his arms even more.
 - {ForgeMaster}: "Why would {DwarfSmith} give you his clan seal? Did he owe you gamlbing money?"
-    + You: "Master {DwarfSmith} is helping us with a quest." <>
-    -- {ForgeMaster}: "Okay. Tell me more"
-    -- You: "We are from his village of {village1}. We recently acquired some {ore30}." 
-    ++ You tell him about the {CelestialTower}[...]<>
-    -- , Kepler's notebook, the conversation with Hutton & Lyell, and the Air Temple.
-    -- You: "We also have some {ore32} for you."
+    + You: "Master {DwarfSmith} is helping us with a quest."
+  
+    
     + You: "Yes Master {DwarfSmith} owed us money from a game of chance."
     -- {ForgeMaster} shakes his head disapprovingly. Wether at your lie or {DwarfSmith} you cannot say for certain.
     -- You: "He said we could deliver this {ore32} and receive payment from you."
@@ -173,13 +173,20 @@ VAR CombatEnd = "Congratulations!"
     --- Forge Master {ForgeMaster} rapidly bashes your skull in with his mighty hammer. He continues to fracture the ribs and other various body parts of your friends. Your apparent lack of integrity has earned you and the party a just reward from {ForgeMaster}.
     --- {ForgeMaster} didn't even break a sweat. You've experienced a crushing death.
     ++++ [Death] -> O3StartMenu
-    
+- {ForgeMaster}: "Okay. Tell me more"
+- You: "We are from his village of {village1}. When we recently acquired some {ore30} we talked with him about it." 
+    + You tell him about the {CelestialTower}[...]<>
+- , Kepler's notebook, the conversation with Hutton & Lyell, and the Air Temple.
 - {ForgeMaster}'s intense blue eyes haven't left you. 
-- {ForgeMaster}: "I am grateful for the {ore32} and your integrity. Our only chance of winning at this dark game is to counter attack with {EpicWeapon}."
-- You: "Where would we find {EpicWeapon}?"
+- You: "We also have some {ore32} for you."
+- {ForgeMaster}: "I am grateful for the {ore32}, but more importantly I'm impressed by your integrity.
+    + You nod your head acknowledging the compliment. 
+- {ForgeMaster}:  "If the mage is successful at triggering another Big Bang or a Cosmic Crunch event, our only option for countering is with the {EpicWeapon}."
+    + You: "Where would we find {EpicWeapon}?"
 - {ForgeMaster}: "You won't find it anywhere."
-- {TheFighter}: "Um, I'm confused"
-- {ForgeMaster}: "You won't find it anywhere because we are going to craft it!"
+    + \ {TheFighter}: "Um, I'm confused if we can't it anywhere..."
+    + \ {TheWizard}: "I thought it was a legend and no one ever found it."
+- {ForgeMaster}: "You won't find it anywhere because it hasn't been created yet. We are going to craft it!"
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -193,11 +200,11 @@ VAR CombatEnd = "Congratulations!"
 {O3EpisodeThree}
 - {TheCleric}: "Great! How long will it take you to craft {EpicWeapon}?"
 - {ForgeMaster}: "That depends how long it takes you to retreive the materials."
-- {TheWizard}: "What are the materials?"
++ \ {TheWizard}: "What are the materials?"
 - {ForgeMaster}: "The {ore30} is the largest material, but it also requires Air Essence for the billows..."
-- {TheFighter}: interrupts "Great we already got those!"
++ \ {TheFighter}: interrupts "Great we already got those!"
 - {ForgeMaster}: stares at him and continues "Earth Essence, and Fire Essence to smelt the ore and Earth. Finally, {EpicWeapon} must be quenched in oil and Water Essence."
-- You: "Where would we find those?"
++ You: "Where would we find those?"
 - {ForgeMaster}: "You can find Fire and Earth Essence through that tunnel." as he slides a false wall loaded with armor to the side.
 - {ForgeMaster}: "You will need to travel to the core of the planet."
 - The party is slack jawed.
