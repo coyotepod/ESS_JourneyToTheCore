@@ -155,21 +155,23 @@ VAR CombatEnd = "Congratulations!"
     + You look for the workshop. <>
 - It isn't hard to find. Its size triumphs even the royal smithy in {CapitalCity}. Likewise, the exterior craftsmanship makes it stand out in this working class district of the city.
 + You enter the workshop of {ForgeMaster}.
-- For all of its beauty on outside, there is no pretense on the inside. You walk immediately into a working smithy. The largest dwarf you've ever seen hammers away in the middle of it all. He's tall enough to pass as human, but the proportions of thick muscles, large nose, braided red beard and fiery hair give away his dwarf heritage.
+- For all of its beauty on outside, there is no pretense on the inside. You walk immediately into a working smithy.
+  + [next]
+- A large dwarf hammers away in the middle of it all. He's tall enough to pass as human, but the proportions of thick muscles, large nose, braided red beard and fiery hair give away his dwarf heritage. The breastplate he's working on clearly isn't the average. It is exceptional in quality and for the owner's obviously impressive physique. A large golden chariot sits in the back of the shop. An exceptional looking spear is propped in one corner. A silver bow and quiver of arrows is attached to the wall behind him.
 - {ForgeMaster}: gruffly and without looking up, "I'm not taking any commissions. I'm too busy as it is."
 + You show him the seal of {DwarfSmith}.
 - {ForgeMaster} eyes you closely. He tightens his grip and tenses his arms even more.
 - {ForgeMaster}: "Why would {DwarfSmith} give you his clan seal? Did he owe you gambling money?"
     + You: "Master {DwarfSmith} is helping us with a quest."
     + You: "Yes Master {DwarfSmith} owed us money from a game of chance."
-    -- {ForgeMaster} shakes his head disapprovingly. Wether at your lie or {DwarfSmith} you cannot say for certain.
+    -- {ForgeMaster} shakes his head disapprovingly. Whether at your lie or {DwarfSmith} you cannot say for certain.
     -- You: "He said we could deliver this {ore32} and receive payment from you."
     -- You take some {ore32} out to show him.
     -- {ForgeMaster}: "I see."
     ++ [next]
-    -- {ForgeMaster}: "{DwarfSmith} has never been one to gamble at games of chance. Even if he did, his integrity would compel him to pay any and all debts immediately."
+    -- {ForgeMaster}: "{DwarfSmith} does not play at games of chance. Even if he did, his integrity would compel him to pay any and all debts immediately."
       +++ You open your mouth to explain.
-      --- Forge Master {ForgeMaster} rapidly bashes your skull in with his mighty hammer. He continues to fracture the ribs and other various body parts of your friends. Your apparent lack of integrity has earned you and the party a just reward from {ForgeMaster}.
+      --- Forge Master {ForgeMaster} bashes your skull with single blow of his mighty hammer. He continues to crush ribs and other various body parts of your friends. Your apparent lack of integrity has earned you and the party a just reward from {ForgeMaster}.
       --- {ForgeMaster} didn't even break a sweat. You've experienced a crushing death.
         ++++ [Death] -> O3StartMenu
 - {ForgeMaster}: "Okay. Tell me more"
@@ -198,28 +200,42 @@ VAR CombatEnd = "Congratulations!"
 {O3EpisodeThree}
 - {TheCleric}: "Great! How long will it take you to craft {EpicWeapon}?"
 - {ForgeMaster}: "That depends how long it takes you to retrieve the materials."
-+ \ {TheWizard}: "What are the materials?"
+  + \ {TheWizard}: "What are the materials?"
 - {ForgeMaster}: "The {ore30} is the main material. Until now no one has had enough or if they did, they didn't have the knowledge I possess. You've brought me plenty. It also requires Air Essence for the billows..."
-+ \ {TheFighter}: interrupts "Great we already got those!"
+  + \ {TheFighter}: interrupts "Great we already got those!"
 - {ForgeMaster}: stares at him and continues "Earth Essence and Fire Essence to smelt the ore. Finally, {EpicWeapon} must be quenched in oil and Water Essence."
-+ You: "Where would we find those?"
+  + You: "Where would we find those?"
 - {ForgeMaster}: "You can find Fire and Earth Essence through that tunnel."
-- He moves his massive anvil aside and slides a false wall loaded with armor to the side.
+- He moves his massive anvil aside and slides a false wall to the side.
 - {ForgeMaster}: "You will need to travel to the core of the planet."
-+ The party is slack-jawed.
+  + The party is slack-jawed.
 - {ProfessorL}: "I knew it was possible! {Axel} and I shall also accompany you on this epic journey. We shall study the interior of the planet like no has before!"
 - {Axel} turns pale.
 - {ForgeMaster}: "After you travel 6,000 km you will battle the Earth Elementals and Fire Elementals that dwell there and collect their essence before returning."
-+ {TheFighter}: sarcastically "Is that all? Why don't you do it then?"
+  + {TheFighter}: sarcastically "Is that all? Why don't you do it then?"
 - {ForgeMaster}: "I've not been to those depths in many decades. I'm not...welcome in those parts. There is also the risk of getting lost and I've not had a compelling reason to risk it."
-+ {ProfessorL}: "Axel my boy! We have the map of these tunnels from our discovered manuscript!"
+  + {ProfessorL}: "Axel my boy! We have the map of these tunnels from our discovered manuscript!"
 - {ForgeMaster}: Gives him a big grin. "Right then. Sounds like you need only prepare supplies and then be on your way."
-+ You: "Aren't you coming?"
+  + You: "Aren't you coming?"
 - {ForgeMaster}: "I must stay behind. I need to continue my work on a golden shield and guard the entrance."
 - The party looks a little disappointed at this news.
-+ You gather supplies and comeback to the forge of {ForgeMaster} and walk through the previously hidden tunnel.
-- {ForgeMaster}: "Be on the lookout for duergar, fire beetles, driders - well basically any fire creatures and the Underdark creatures. Good luck!"
-- With that farewell, you set off into the tunnel.
+  + You gather supplies and comeback to the forge of {ForgeMaster} and walk through the previously hidden tunnel.
+- {ForgeMaster}: "Be on the lookout for duergar, fire beetles, driders - well basically any fire creatures and the Underdark creatures."
+  + [next]
+- {ForgeMaster}: "Take tunnel going down, not the one going up. What you would find going up would seem more beautiful and handsome, but it is even more deadly. Good luck!"
+- With that strange farewell,
+  + <> you set off into the up-sloping tunnel.
+    -- Only a few meters into the tunnel you feel a shimmering of your entire body. It would seem you've gone through a hidden portal.
+    -- Looking around, your surroundings can only be described as heavenly-like.
+    -- A muscular man approaches. He is handsome[...]
+    ++ [next]
+    -- <> and apparently deadly.
+    -- The god: "You don't belong here mortal."
+    ++ [next]
+    -- With that he smites you all with a lightening bolt. You die shocking death.
+    ++ [next] -> O3Ep3
+
+  + <> you set off into the down-sloping tunnel.
 - (end_episode)
     +[Ω]
         ->O3StartMenu
