@@ -212,9 +212,9 @@ VAR CombatEnd = "Congratulations!"
 - {ProfessorL}: "I knew it was possible! {Axel} and I shall also accompany you on this epic journey. We shall study the interior of the planet like no has before!"
 - {Axel} turns pale.
 - {ForgeMaster}: "After you travel 6,000 km you will battle the Earth Elementals and Fire Elementals that dwell there and collect their essence before returning."
-  + {TheFighter}: sarcastically "Is that all? Why don't you do it then?"
+  + \ {TheFighter}: sarcastically "Is that all? Why don't you do it then?"
 - {ForgeMaster}: "I've not been to those depths in many decades. I'm not...welcome in those parts. There is also the risk of getting lost and I've not had a compelling reason to risk it."
-  + {ProfessorL}: "Axel my boy! We have the map of these tunnels from our discovered manuscript!"
+  + \ {ProfessorL}: "Axel my boy! We have the map of these tunnels from our discovered manuscript!"
 - {ForgeMaster}: Gives him a big grin. "Right then. Sounds like you need only prepare supplies and then be on your way."
   + You: "Aren't you coming?"
 - {ForgeMaster}: "I must stay behind. I need to continue my work on a golden shield and guard the entrance."
@@ -248,11 +248,18 @@ VAR CombatEnd = "Congratulations!"
 - You come to a turn.
 - At one point you need to climb down.
 - You come to a cavern with bioluminescent mushrooms.
-- You continue deeper and deeper. Initially you felt it cool off by a X degrees every Y feet. After the first Z feet however the temperature has been increasing by TT degrees.
-+ Take a potion of heat resistance.
-- Without the potion, you'd surely have succumbed to the heat by now.
+- Initially the air felt got cooler and more dank as you descended.
+- You continue deeper and deeper. After some time (several kilometers?) it seems to be getting hotter and hotter
+  + \ {ProfessorL}: "By my calculations[..."]<>
+- , the temperature is increasing approximately 30 °C (54 °F) for every 1 kilometer (.67 mile) that we continue to descend."
+  + Take a potion of heat resistance.
+  + Don't take a potion - suck it up
+  -- Sweat pours off you and you are starting to become dizzy as you descend farther
+  ++ The party members force to take the potion and forced to listen to your complaining.
+- Without the potion, you'd surely have died from the heat by now.
 - {TheWizard}: "Take caution with any fire or fire creatures we encounter. This potion is designed to give some relief from heat in the atmosphere environment and some heat resistance advantages. It will not protect from you falling in lava or taking a fireball in the face.""
-+ {TheCleric}: "Yes, and burn injuries are also extremely difficult to heal - even for someone with my skill."
++ \ {TheCleric}: "Yes<>
+- , burn injuries are also extremely difficult to heal - even for someone with my skill."
 - You encounter Earth Elementals
 - You encounter Fire Elementals
 
