@@ -45,15 +45,15 @@ PROLOGUE
     + You: Who are those gentleman {Maid}?
 - {Maid}: Ah, that would be {ProfessorL} and his young nephew, {Axel}. They've been in the last couple nights arguing, but they haven't caused any trouble with the other customers.
     + You start listening to them again.
-- {ProfessorL}: It is paramount that we solve this cryptograph {Axel}!
+- {ProfessorL}: It is paramount (important) that we solve the cryptograph (code) {Axel}!
 - {Axel}: That letter cannot be correct! Its speaks of impossible things. Why waste time on this puzzle?
     + [next]
 - {ProfessorL}: Why? Why?! (getting louder and louder). Nothing is impossible my boy. How can you call yourself a learned man with such a mindset! Accept nothing - not even the "impossible." Whats impossible today maybe in fact be possible tomorrow or given new information turns out to be true!
     + [next]
-- At that moment another group comes in accompanied by a gust of wind. The paper {ProfessorL} was holding and waving blows out of his hand toward your table.
+- At that moment another group comes in accompanied by a gust of wind. The paper {ProfessorL} was holding and waving is blown out of his hand toward your table.
     + (you_pick_up_letter) You lean down and pick it up.
-    -- You take a quick glance before the old man comes over
-    -- You notice a collection of runes and sketches of what appear to be cave tunnels
+    -- You take a quick glance before the old man comes over.
+    -- You notice a collection of runes. There are also sketches of tunnels.
     -- \(Ask the Game Master for a copy of the paper)
     + You leave the paper alone.
 -
@@ -68,7 +68,7 @@ PROLOGUE
     + \ {ProfessorL}: Absolutely not.
 - {Axel}: Uncle, you are the most brilliant man I know, but even the most intelligent cannot know all things and may in fact need help from time to time.
     + [next]
-- {Axel}: (turns to your party) Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant and professor of geology. Please excuse his lack of social graces.
+- {Axel}: (turns to your party) Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant (genius) and professor of geology. Please excuse his lack of social graces.
 - {ProfessorL} (humphs)
     + You: No worries!
     + You: {Axel}, you really should rein him in more.
@@ -104,13 +104,14 @@ VAR CombatEnd = "Congratulations!"
     ++ \ {ProfessorL}: "Interesting."
 - You make your way towards {DwarfCity} in the {mountains1}. As you enter the mountainous region, the travel gets progressively more difficult. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
 + [next]
-- You enter into a mountain valley a little hesitantly. Surely the surrounding countryside of such a formidable city is safe.
+- You enter into a mountain valley a little hesitantly. Surely it is safe being so close to such a formidable city like {DwarfCity}.
 + [next]
 - \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
 
 // Combat NON-Descriptive
-    + FIGHT[!]
-    + FLEE[!]
+You:
+    + "FIGHT!"
+    + "FLEE!"
 - <>.
 - {CombatStart}
     + General Description of Combat:
@@ -129,33 +130,33 @@ VAR CombatEnd = "Congratulations!"
 
 - The rest of the trip is uneventful.
     + [next]
-- You approach the Iron Gate guards.
-- Gate guard: gruffly "What's your business?"
+- You approach the guards of the Iron Gate.
+- Guard: gruffly "What's your business?"
 - You pull out the parchment with {DwarfSmith}'s clan seal. You don't know a lot of details about his personal life. Really the only thing you know is that he is an extremely talented smith from the dwarves' greatest city. Your not sure why he left or under what conditions.
 + You're actually starting to feel a little anxious.
 - The first guard gate looks at his partner with {~surprise|astonishment|distrust} and back at your party. He hands the seal back to you and waves you through without a word.
 + [next]
-- The party enters into the dwarves greatest city.
-- {TheWizard}: "Well {DwarfSmith} and the {ProfessorL}'s note say to see forge master {ForgeMaster}. He's in the Lemnos district. Shall we make our way there?"
+- The party enters into the great city.
+- {TheWizard}: "Well {DwarfSmith} and {ProfessorL}'s note say to see forge master {ForgeMaster}. He's in the Lemnos district."
 - (CityShops)
-    + Potion shop
+    + Go to Potion shop.
         -- {~Shop clerk: "I'm sorry, our inventory is being restocked." | It appears to be closed.}
         ++ [next] -> CityShops
-    + Weapons shop
+    + Go to Weapons shop.
         -- {~Shop clerk: "I'm sorry, the Goblin War has emptied our inventory." | It appears to be closed.}
          ++ [next] -> CityShops
-    + Armor shop
+    + Go to Armor shop.
         -- {~Shop clerk: "I'm sorry, our inventory is being restocked." | It appears to be closed.}
          ++ [next] -> CityShops
-    + Explorers' League headquarter
+    + Go to Explorers' League headquarters.
         -- {~Note on door: "Gone to lunch." | Note: "Out exploring"}
          ++ [next] -> CityShops
-    + Go to Lemnos. <>
+    + [Go to the Lemnos District.] <>
 - You go to the tunnel that leads to Lemnos and walk the high ceiling tunnel through to another cavern. A signpost says "Lemnos District"
     + You look for the workshop. <>
 - It isn't hard to find. Its size triumphs even the royal smithy in {CapitalCity}. Likewise, the exterior craftsmanship makes it stand out in this working class district of the city.
 + You enter the workshop of {ForgeMaster}.
-- For all of its beauty on outside, there is no pretense on the inside. You walk immediately into a working smithy.
+- For all of its beauty on the outside there is no pretense on the inside. You walk immediately into a working smithy.
   + [next]
 - A large dwarf hammers away in the middle of it all. He's tall enough to pass as human, but the proportions of thick muscles, large nose, braided red beard and fiery hair give away his dwarf heritage. The breastplate he's working on clearly isn't the average. It is exceptional in quality and for the owner's obviously impressive physique. A large golden chariot sits in the back of the shop. An exceptional looking spear is propped in one corner. A silver bow and quiver of arrows is attached to the wall behind him.
 - {ForgeMaster}: gruffly and without looking up, "I'm not taking any commissions. I'm too busy as it is."
@@ -222,7 +223,7 @@ VAR CombatEnd = "Congratulations!"
   + You gather supplies and comeback to the forge of {ForgeMaster} and walk through the previously hidden tunnel.
 - {ForgeMaster}: "Be on the lookout for duergar, fire beetles, driders - well basically any fire creatures and the Underdark creatures."
   + [next]
-- {ForgeMaster}: "Take tunnel going down, not the one going up. What you would find going up would seem more beautiful and handsome, but it is even more deadly. Good luck!"
+- {ForgeMaster}: "Take the tunnel going down, not the one going up. What you would find going up would seem more beautiful and handsome, but it is even more deadly. Good luck!"
 - With that strange farewell,
   + <> you set off into the up-sloping tunnel.
     -- Only a few meters into the tunnel you feel a shimmering of your entire body. It would seem you've gone through a hidden portal.
@@ -244,23 +245,104 @@ VAR CombatEnd = "Congratulations!"
 === O3Ep4 ===
 // Room 4
 {O3EpisodeFour}
-- You follow the path as described in Journey to the Center of Earth.
-- You come to a turn.
-- At one point you need to climb down.
-- You come to a cavern with bioluminescent mushrooms.
-- Initially the air felt got cooler and more dank as you descended.
+- Initially the air feels cooler and more dank as you descend.
 - You continue deeper and deeper. After some time (several kilometers?) it seems to be getting hotter and hotter
   + \ {ProfessorL}: "By my calculations[..."]<>
-- , the temperature is increasing approximately 30 °C (54 °F) for every 1 kilometer (.67 mile) that we continue to descend."
+- , the temperature is increasing approximately 30 °C for every 1 kilometer (54 °F for every .67 mile) that we continue to descend."
   + Take a potion of heat resistance.
-  + Don't take a potion - suck it up
-  -- Sweat pours off you and you are starting to become dizzy as you descend farther
-  ++ The party members force to take the potion and forced to listen to your complaining.
-- Without the potion, you'd surely have died from the heat by now.
-- {TheWizard}: "Take caution with any fire or fire creatures we encounter. This potion is designed to give some relief from heat in the atmosphere environment and some heat resistance advantages. It will not protect from you falling in lava or taking a fireball in the face.""
-+ \ {TheCleric}: "Yes<>
-- , burn injuries are also extremely difficult to heal - even for someone with my skill."
-- You encounter Earth Elementals
+  + [You're tough, don't take a potion]
+    -- Sweat pours off you. You're starting to become dizzy and nauseous with dehydration as you descend farther.
+    ++ The party members force you to take the potion.
+    -- They're also forced to listen your complaining.
+- Without the potion, you'd surely would have died from the heat by now.
+- {TheWizard}: "Take caution with any direct fire and remain hydrated. This potion will not protect you from falling into lava or other stupid behaviors."
+- \ {TheCleric}: "Burn injuries are also extremely difficult to heal even with my skills."
+- Most of the party nods in understanding.
+- {TheWizard}: To {theFighter} "Are you paying attention?!"
++ \ {TheFighter}: "What? Oh right.["]
+- <> Fireball to the face \= bad. I won't let that happen. Again."
+- After a couple of days your water supply starts running low.
+- {TheFighter}: "I'm so thirsty. I'm starting to imagine the sound of slowly moving water all around us."
+- {TheCleric}: "Seems {theFighter} is getting dehydrated."
+- You: <>
++ "Actually large quantities of water are stored in the ground"
++ "Crazy talk. Delirium is a side effect of dehydration"
+- The party walks a few miles more. Its clear you underestimated the amount of water you'd need.
++ Without warning...
+- {TheFighter}: Pulls out a war hammer and bashes it against the tunnel wall.
+- Everyone jumps with surprise.
+- {Axel}: "What in the gods are you doing?!"
+- {TheFighter}: "I'm so thirsty and it just seemed like I could hear the sound of moving water in that direction. I guess I let my frustration get the better of me."
+- You point:
+  + "There's water trickling from the wall."
+- Everyone turns to look where {theFighter} had crushed a portion of the rock. Sure enough water is seeping from the wall. Everyone starts filling up their water skins.
+    + [next]
+- A few more miles down the tunnel the party is still giddy from the water find in this assumed realm of earth and fire. Water stored or moving through rocks was interesting discovery.
++ Then things got even more interesting.
+- Part of the stone on the side of the tunnel and floor start to come alive. In a split second, an animated mound of rock and dirt stands before you. Its an Earth Elemental.
+You:
+  + "FIGHT!"
+  + "FLEE!"
+  -- {TheCleric}: "Coward! We have no where to flee. We're thousands of miles underground by this point. Surely the elemental would catch us or reform ahead of us."
+  -- The party looses initiative.
+  ++ You: "Fight?"
+// Combat NON-Descriptive
+- {CombatStart}
+  + General Description of Combat:
+    -- {Combat}
+    ++ Combat Step by Step:
+    --- {CombatTurns}
+    +++ [next]
+    ++ [next]
+  +[next]
+- The party battles the Earth Elemental for some minutes.
+- Finally, the fight is over.
+      + SUCCESS[!]
+      + FAILURE[!]
+  - <>; {CombatEnd}
+      + [next]
+  // END OF COMBAT
+- As the elemental starts to fall into hunks of rock and sediments, you notice an especially fine mound of sediments that appears somewhat iridescent.
+- {ProfessorL}: "Get the empty bottle and scoop that up!"
+- {TheCleric} gets out the bottle and brushes in the sediments which everyone now realizes is the Earth Essence.
+- {Axel}: "Well I guess that wasn't so bad. Could have been worse right?"
++ [next]
+- A low rumble is coming from up the tunnel.
+- {TheFighter}: "Is it just me or does everyone else hear a rush of moving water now?!"
+- You:
+  + "Run down the tunnel!"
+    -- Everyone sprints down the tunnel as the sound of torrential water reaches you.
+  + "Grab something tight!"
+    -- Everyone grabs as tightly as they to little cracks and crevices.
+- Soon thereafter the water reaches you. The water just keeps coming and coming. Eventually everyone is swept down the tunnel.
+  + [next]
+- You are all carried away for what seems like an eternity. The water lessens just enough for you to get your head above water and breathe. You see everyone else has done the same.
+- Many hundreds of miles later the impromptu river starts to lose speed and power. The load the river has been carrying starts sinking to the tunnel floor.
+- The first thing to be dropped are the large boulders which until now, had been rolling along the bottom.
+- As the river continues to lose more force, the medium size rock and larger sediments start to settle to the bottom. The party is actively swimming to stay afloat now - taking the free ride!
+- Finally the river loses enough force along its edges that even the finer sediments and silts are deposited.
+- At this point, you're all walking along a new created shoreline on one side of the tunnel.
+- The tunnel starts to widen out until eventually it opens to a cavern of scale you've never seen before. The river too widens out and small deltas form as it empties into an underground sea in the cavern.
+- The sea is large enough that you cannot see the far side.
+// Combat NON-Descriptive
+You:
+    + "FIGHT!"
+    + "FLEE!"
+- <>.
+- {CombatStart}
+    + General Description of Combat:
+    -- {Combat}
+    ++ Combat Step by Step:
+    --- {CombatTurns}
+    +++ [next]
+    ++ [next]
+    +[next]
+- The fight is over.
+    + SUCCESS[!]
+    + FAILURE!
+- <>; {CombatEnd}
+    + [next]
+// END OF COMBAT
 - You encounter Fire Elementals
 
 - You come to a great lake.
