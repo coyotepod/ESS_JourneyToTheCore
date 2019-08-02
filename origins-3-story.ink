@@ -140,7 +140,8 @@ You:
 - {TheWizard}: "Well {DwarfSmith} and {ProfessorL}'s note say to see forge master {ForgeMaster}. He's in the Lemnos district."
 - (CityShops)
     + Go to Potion shop.
-        -- {~Shop clerk: "I'm sorry, our inventory is being restocked." | It appears to be closed.}
+        -- (potion_shop) You enter the potion shop and look around. 
+        -- {TheWizard}: "Let's purchase a POTION OF HEAT RESISTANCE for everyone. A POTION OF FIRE RESISTANCE has greater potency or effectiveness against heat, but it only last an hour. This potion will minimize the effects of intense heat but for many days." 
         ++ [next] -> CityShops
     + Go to Weapons shop.
         -- {~Shop clerk: "I'm sorry, the Goblin War has emptied our inventory." | It appears to be closed.}
@@ -176,7 +177,7 @@ You:
       --- {ForgeMaster} didn't even break a sweat. You've experienced a crushing death.
         ++++ [Death] -> O3StartMenu
 - {ForgeMaster}: "Okay. Tell me more"
-- You: "We are from his village of {village1}. When we recently acquired some {ore30} we talked with him about it."
+- You: "We are from {village1}, same as him, so when we recently acquired some {ore30} we went to him to talk about it."
     + You tell him about the {CelestialTower}[...]<>
 - , Kepler's notebook, the conversation with Hutton & Lyell, and the Air Temple.
 - {ForgeMaster}'s intense blue eyes haven't left you.
@@ -206,13 +207,13 @@ You:
   + \ {TheFighter}: interrupts "Great we already got those!"
 - {ForgeMaster}: stares at him and continues "Earth Essence and Fire Essence to smelt the ore. Finally, {EpicWeapon} must be quenched in oil and Water Essence."
   + You: "Where would we find those?"
-- {ForgeMaster}: "You can find Fire and Earth Essence through that tunnel."
+- {ForgeMaster}: "You can find Earth Essence through that tunnel."
 - He moves his massive anvil aside and slides a false wall to the side.
 - {ForgeMaster}: "You will need to travel to the core of the planet."
-  + The party is slack-jawed.
-- {ProfessorL}: "I knew it was possible! {Axel} and I shall also accompany you on this epic journey. We shall study the interior of the planet like no has before!"
+  + Jaws drop in the party except for {ProfessorL}.
+- {ProfessorL}: "I knew it was possible! {Axel} and I shall also accompany you on this journey. We shall study the interior of the planet like no before!"
 - {Axel} turns pale.
-- {ForgeMaster}: "After you travel 6,000 km you will battle the Earth Elementals and Fire Elementals that dwell there and collect their essence before returning."
+- {ForgeMaster}: "After you travel about 6,000 km (3,700 miles) you will battle the Earth Elementals that dwell there and collect their essence before returning."
   + \ {TheFighter}: sarcastically "Is that all? Why don't you do it then?"
 - {ForgeMaster}: "I've not been to those depths in many decades. I'm not...welcome in those parts. There is also the risk of getting lost and I've not had a compelling reason to risk it."
   + \ {ProfessorL}: "Axel my boy! We have the map of these tunnels from our discovered manuscript!"
@@ -249,7 +250,7 @@ You:
 - You continue deeper and deeper. After some time (several kilometers?) it seems to be getting hotter and hotter
   + \ {ProfessorL}: "By my calculations[..."]<>
 - , the temperature is increasing approximately 30 °C for every 1 kilometer (54 °F for every .67 mile) that we continue to descend."
-  + Take a potion of heat resistance.
+  + Take a POTION OF HEAT RESISTANCE.
   + [You're tough, don't take a potion]
     -- Sweat pours off you. You're starting to become dizzy and nauseous with dehydration as you descend farther.
     ++ The party members force you to take the potion.
@@ -258,77 +259,110 @@ You:
 - {TheWizard}: "Take caution with any direct fire and remain hydrated. This potion will not protect you from falling into lava or other stupid behaviors."
 - \ {TheCleric}: "Burn injuries are also extremely difficult to heal even with my skills."
 - Most of the party nods in understanding.
-- {TheWizard}: To {theFighter} "Are you paying attention?!"
-+ \ {TheFighter}: "What? Oh right.["]
+    + \ {TheWizard}: To {theFighter} "Are you paying attention?!"
+- {TheFighter}: "What? Oh right.
 - <> Fireball to the face \= bad. I won't let that happen. Again."
+    + [next]
 - After a couple of days your water supply starts running low.
-- {TheFighter}: "I'm so thirsty. I'm starting to imagine the sound of slowly moving water all around us."
+- {TheFighter}: "I'm so thirsty. I'm can practically hear the sound a creak bubbling through pebbles..." Trails off as he imagines the cool, refreshing water.
 - {TheCleric}: "Seems {theFighter} is getting dehydrated."
-- You: <>
-+ "Actually large quantities of water are stored in the ground"
-+ "Crazy talk. Delirium is a side effect of dehydration"
+    + \ {TheWizard}: "Did you know ground water [..."] <>
+        -- is stored in large quantities in between the rocks of the ground?"
+        
+    + \ {TheWizard}: "Did you know dehydration [..."] <>
+        -- side effects include poor judgement, delirium, and stomach distress?"
+- You: "Um...cool?"
 - The party walks a few miles more. Its clear you underestimated the amount of water you'd need.
-+ Without warning...
-- {TheFighter}: Pulls out a war hammer and bashes it against the tunnel wall.
+    + Without warning[...] <>
+- {theFighter} pulls out a war hammer and bashes it against the tunnel wall.
 - Everyone jumps with surprise.
-- {Axel}: "What in the gods are you doing?!"
-- {TheFighter}: "I'm so thirsty and it just seemed like I could hear the sound of moving water in that direction. I guess I let my frustration get the better of me."
-- You point:
-  + "There's water trickling from the wall."
+    + \ {Axel}: "What in the gods are you doing?!"
+- {TheFighter}: "I'm just so thirsty. I guess I let my frustration get the better of me."
+- You point.
+    + You: "There's water trickling from the wall."
 - Everyone turns to look where {theFighter} had crushed a portion of the rock. Sure enough water is seeping from the wall. Everyone starts filling up their water skins.
     + [next]
 - A few more miles down the tunnel the party is still giddy from the water find in this assumed realm of earth and fire. Water stored or moving through rocks was interesting discovery.
 + Then things got even more interesting.
-- Part of the stone on the side of the tunnel and floor start to come alive. In a split second, an animated mound of rock and dirt stands before you. Its an Earth Elemental.
+- An area of stone on the side of the tunnel starts to coalesce (come together) and bud outward. In a split second, an animated mound of rock and dirt stands before you. Its an Earth Elemental.
 You:
   + "FIGHT!"
   + "FLEE!"
-  -- {TheCleric}: "Coward! We have no where to flee. We're thousands of miles underground by this point. Surely the elemental would catch us or reform ahead of us."
-  -- The party looses initiative.
-  ++ You: "Fight?"
+    -- You and the geologists turn to run.
+    -- {TheCleric}: "Fools! We have no where to flee. We're thousands of miles underground by this point. Surely the elemental would catch us or reform ahead of us."
+    -- The party turns and faces the creature. The party loses initiative.
+    ++ You: "Fight?"
 // Combat NON-Descriptive
 - {CombatStart}
-  + General Description of Combat:
-    -- {Combat}
-    ++ Combat Step by Step:
-    --- {CombatTurns}
-    +++ [next]
-    ++ [next]
-  +[next]
+    + General Description of Combat:
+        -- {Combat}
+        ++ Combat Step by Step:
+            --- {CombatTurns}
+            +++ [next]
+        ++ [next]
+    +[next]
 - The party battles the Earth Elemental for some minutes.
+    + [next]
 - Finally, the fight is over.
       + SUCCESS[!]
       + FAILURE[!]
-  - <>; {CombatEnd}
+      -- You are smothered and die.
+      -- There is the risk of being buried for millennia.
+      ++ [next]
+      -- Fortunately you aren't buried that long.
+      +++ [next]
+        -> O3StartMenu
+  - <> - {CombatEnd}
       + [next]
   // END OF COMBAT
-- As the elemental starts to fall into hunks of rock and sediments, you notice an especially fine mound of sediments that appears somewhat iridescent.
+- As the elemental starts to fall into hunks of rock and sediments, you notice an especially fine mound of sediments that appears somewhat iridescent (shiny).
 - {ProfessorL}: "Get the empty bottle and scoop that up!"
 - {TheCleric} gets out the bottle and brushes in the sediments which everyone now realizes is the Earth Essence.
 - {Axel}: "Well I guess that wasn't so bad. Could have been worse right?"
-+ [next]
+    + [next]
 - A low rumble is coming from up the tunnel.
 - {TheFighter}: "Is it just me or does everyone else hear a rush of moving water now?!"
+    + You listen carefully. <>
+        -- Apparently the crack {theFighter} created in the wall has turned into a large hole letting out a lot more water.
+    + [Pay no attention to {theFighter}.]
+        -- You: "I'm sure its nothing."
+- The party hears a large boom. It sounds like a large chunk of the wall up the tunnel has been shot across to the far side.
 - You:
-  + "Run down the tunnel!"
-    -- Everyone sprints down the tunnel as the sound of torrential water reaches you.
-  + "Grab something tight!"
-    -- Everyone grabs as tightly as they to little cracks and crevices.
-- Soon thereafter the water reaches you. The water just keeps coming and coming. Eventually everyone is swept down the tunnel.
-  + [next]
-- You are all carried away for what seems like an eternity. The water lessens just enough for you to get your head above water and breathe. You see everyone else has done the same.
-- Many hundreds of miles later the impromptu river starts to lose speed and power. The load the river has been carrying starts sinking to the tunnel floor.
-- The first thing to be dropped are the large boulders which until now, had been rolling along the bottom.
-- As the river continues to lose more force, the medium size rock and larger sediments start to settle to the bottom. The party is actively swimming to stay afloat now - taking the free ride!
-- Finally the river loses enough force along its edges that even the finer sediments and silts are deposited.
+    + "Run down the tunnel!"
+        -- Everyone sprints down the tunnel as the sound of torrential water reaches you.
+    + (grab_tight) "Grab something tight!"
+        -- Everyone grabs little cracks and crevices.
+- A moment later the rushing water reaches you.
+    + {grab_tight} You try to hold on, but the current is too strong. <>
+    + {not grab_tight} You're not fast enough. <>
+- Everyone is swept down the tunnel and carried away.
+    + [next]
+- After the intial rush, the water lessens just enough for you to get your head above water and breathe. You see everyone else has done the same.
+- Many hundreds of miles later the impromptu river starts to lose speed and power. The river's load starts sinking to the tunnel floor.
+    + [next]
+- The first thing to be deposited are the large boulders which until now, had been rolling along the bottom.
+- As the river continues to lose force the medium size rocks and larger sediments settle to the bottom.
+- The party is still floating and taking the free ride.
+    + [next]
+- Finally the river loses enough force - first along its edges - that even the finer sediments and silts are deposited.
 - At this point, you're all walking along a new created shoreline on one side of the tunnel.
-- The tunnel starts to widen out until eventually it opens to a cavern of scale you've never seen before. The river too widens out and small deltas form as it empties into an underground sea in the cavern.
-- The sea is large enough that you cannot see the far side.
+    + [next]
+- The tunnel starts to widen out until eventually it opens to a cavern on a scale not seen in the lower depths of the planet. The river widens out. Small deltas form in the mouth of the river as it empties into an underground sea.
+- The sea is large enough that you cannot view the far side.
+    + \ {Axel}: "Look at the glow coming from the horizon to our right."
+- {ProfessorL}: "Probably exposed lava."
+    + \ {TheFighter}: "Might a good place to dry off."
+    -- You: "I agree. Lets dry off our clothes."
+    -- The party makes its way towards the glow {Axel} observed. {ProfessorL}'s inference was correct. It is an exposed lava pool. You're able to quickly dry out your clothes and gear.
+    -- Everyone is dry and sleepy from the warmth of the lava.
+    ++ You: "Let's turn in"
+- Some time in the night you notice the heat getting more and more intense. You all awaken with a start.
++ [next]
+- A large FIRE ELEMENTAL, about 9 feet tall and 4 feet wide, stands before you.
 // Combat NON-Descriptive
 You:
     + "FIGHT!"
     + "FLEE!"
-- <>.
 - {CombatStart}
     + General Description of Combat:
     -- {Combat}
@@ -339,17 +373,18 @@ You:
     +[next]
 - The fight is over.
     + SUCCESS[!]
-    + FAILURE!
-- <>; {CombatEnd}
+    + FAILURE[!]
+          -- You are first fried extra crispy then completely into ash.
+          -- There is the very real danger of being buried ash for millennia.
+          ++ [next]
+          -- Fortunately you aren't buried that long.
+          +++ [next]
+            -> O3StartMenu
+- <> - {CombatEnd}
     + [next]
 // END OF COMBAT
-- You encounter Fire Elementals
 
-- You come to a great lake.
-  + Look for driftwood to build a raft
-  + Look around the lake for an alternate tunnel.
-    -- You spend precious house looking for another tunnel out.
-- You find enough drift wood to build a raft.
+
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -359,6 +394,53 @@ You:
 === O3Ep5 ===
 // Room 5
 {O3EpisodeFive}
+- You go to edges of the great lake and cool off.
+- {TheCleric}: "Look at the amount of steam where the lava meets the lake!"
+- {ProfessorL}: "I bet there are some amazing updraft thermal currents are generated at that location!"
+- {TheFighter}: Eyes glaze over in confusion.
+- {Axel}: translates "There's a strong wind moving updwards."
+- {TheWizard}: "Strong winds would make for good sailing."
+- {TheCleric}: "I've seen gnomes craft hot air baloons that ride these - what did you call it, thermal currents?"
+- {ProfessorL}: "It would seem we have a couple options for crossing the great lake."
+  + You: "Let's make a raft"
+    ->raft
+  + You: "Let's make a hot air baloon."
+    ->air_baloon
+ == raft 
+ - Everyone agrees. You start looking for driftwood. It takes a considerable amount of time however as there aren't many trees thousands of miles below the surface that haven't become petrified. Eventually you get enough wood to craft a medium sized raft. You have enough rope and cloak material to fashion a makeshift sail.
+    + [next]
+- After a short rest and meal, you set out. Its a crude but functional vessel. You make good progress for {1+d4()} days.
+- {ProfessorL}: "Look at the dark opening up above. That's either a storm or darkened tunnel leading up."
+- {Axel}: "Perhaps we should head back and craft a baloon afterall."
++ [next]
+- You have no time to consider the baloon option though. A pair of gigantic tentacles with suckers shoots out of the water and around the raft. {Axel} is knocked overboard immediately. Another pair of tentacles shoots out of the water and around the raft. The raft is easily crushed and pulled into the inky depths.
+    + [next]
+- The last thing you see is an open gigantic beak coming at you. The kraken has easily accomplish a total party kill (TPK). ->death3
+ 
+ -> DONE
+ 
+ == air_baloon
+- You build an air baloon and ride the air currents. You are the mercy of the wind but at least you seem to be making progress.
+- After a few days you notice a dark shaft leading up through the ceiling of the cavern.
+    + [next]
+- Gigantic suckered tentacles shoot up from the water towards you. They fall just short, but way too close for comfort.
+- Everyone starts throwing over any extra weight to gain altitude. The kraken has now surfaced and throws its tentacles at you again and again. 
+    + [next]
+- You continue to chuck heavy and sometimes valuable materials overboard. The baloon slowly makes its way up the shaft. 
+    + [next]
+- More than once the sides of the baloon scrape sharp edges, but the structure holds.
+- {ProfessorL}: I think we are in an old volcanic throat and that cavern was its lava chamber.
+    + [next]
+- You eventually make your way to the surface after many hours. You come out on the slopes of an extinct volcano named {volcano1} in the {mountains1}.
+    + [next]
+- You make your way back down the snowy slopes to the gates of Iron Forge.
+    + [next]
+- You meet with {ForgeMaster}.
+- {ForgeMaster}: "I was excited about the possibility of crafting {EpicWeapon}, but I must say I never expected you to actually accomplish it!" He laughs loudly. 
+- No one from your party is laughing.
+- {ForgeMaster}: "How are you at holding your breathe? The final material is water essence!" He laughs loudly again.
+- Again, no one from your party is laughing.
+-> DONE
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -368,6 +450,12 @@ You:
 == O3Epilogue ==
 EPILOGUE
   ->END
+  
+ == death3 ==
+ You have died
+ + [next] ->O3StartMenu
+ 
+    -> DONE
 
 // ***************************************************************
 ////

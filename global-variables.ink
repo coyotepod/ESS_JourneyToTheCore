@@ -347,6 +347,15 @@ VAR DeathQuote2 = "Do or do not, there is no try. ~ Master Yoda"
 
 VAR DeathQuote3 = "I get knocked down, but I get up again. I get knocked down, but I get up again. ~ Chumbawamba"
 
+// ***************************************************************
+// SPELLS
+// ***************************************************************
+VAR ContinualFlame = "Continual Flame: LEVEL 2nd; CASTING TIME: 1 Action RANGE/AREA Touch COMPONENTS V, S, M * DURATION Until Dispelled SCHOOL Evocation ATTACK/SAVE None DAMAGE/EFFECT Creation A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched. * - (ruby dust worth 50 gp, which the spell consumes)"
+
+// ***************************************************************
+// WEAPONS
+// ***************************************************************
+
 // END OF GLOBAL VARIABLES
 === GlobalVariables ===
 -> DONE
