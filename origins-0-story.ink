@@ -72,13 +72,13 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
                 --- You take piercing damage (-{d8()*3+12} to your Health Points).
             ++++ [next]
                     ->Death
-    + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind and consider your choices.
-      -- You notice a small deer path going east running mostly parallel to the main path.
+    + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind [...] <> 
+        -- and consider your choices. You notice a small deer path going east running mostly parallel to the main path.
       ++ [next] ->Village_Path
 
 ->DONE
 
-= Clun_Castle
+= Clun_Castle2
 - Stones have fallen and the place is clearly abandoned.
 - Besides the occasional bushwhacking the walk isn't too difficult and soon you approach the dark tower’s main gate.
 - Stones have fallen around it.

@@ -17,13 +17,16 @@ SEASON 4: {SeasonO4}
 
 
 
-VAR SeasonO4Hook = ""
+VAR SeasonO4Hook = "The gnomes have been testing a new underwater vessel! Some say it can stay underwater for days. They speculate is could be used to reach the underwater city of the merfolk. From what I hear, this might be valuable in your recent adventures."
 
 === O4Prologue ===
 PROLOGUE
+\***** This story is still in active development *****
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+- {SeasonO4Hook}.
+- {TheWizard}:
 - (end_episode)
 
     +[Ω]
