@@ -221,7 +221,7 @@ VAR CombatTurns = "Combat Step by Step:  (1) Determine Surprise. The GM determin
     -- You attempt to run. The party realizes it is not fast enough.
     + "Can we talk about this?"
     -- You attempt to talk. Diplomacy doesn't seem to be the best option in this situation.
-- {CombatStart}
+//- {CombatStart}
     + General Description of Combat:
     -- {Combat}
     ++ Combat Step by Step:
