@@ -159,7 +159,7 @@ VAR river5 = "River 5"
 // ***************************************************************
 VAR lake1 = "Hicks Lake"
 VAR lake2 = "Big Lake"
-VAR lake3 = "Lake 3"
+VAR lake3 = "Lake Mishigami"
 VAR lake4 = "Lake 4"
 VAR lake5 = "Lake 5"
 
@@ -209,9 +209,39 @@ CONST Initiative = "Everyone in combat or near combat, rolls a d20 to determine 
 CONST SavingThrow = ""
 CONST DCcheck = "difficulty check"
 
-VAR Combat = "A combat encounter is a fight between two sides, a flurry of weapon swings, blocks (parries), punches, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A round represents about 6 seconds in the game world. During a round, each player in a battle takes a turn or action. The order of turns is determined at the beginning of a combat encounter when everyone rolls Initiative on a d20. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other."
+VAR Combat = "A combat encounter is a fight between two sides. It might involve a flurry of weapon swings, punches, kicks, blocks (parries), spellcasting, or other actions. Combat is organized into a series of rounds and turns. During a round, each player takes a turn deciding what action(s) to take. The order of turns is determined when everyone rolls initiative (d20) at the very beginning of the combat encounter. Once everyone has taken a turn the round is over. Combat continues to the next round if neither side wins, flees, or ends the combat in some way."
 VAR CombatTurns = "Combat Step by Step:  (1) Determine Surprise. The GM determines whether anyone involved in the combat encounter is surprised. (2) Establish positions: The GM decides where all the characters and Monsters are located. Given the adventurers’ Marching Order or their stated positions in the room or other location, the GM figures out where the adversaries are̶how far away and in what direction. (3) Roll Initiative: Everyone involved in the combat encounter rolls Initiative, determining the order of combatants’ turns. (4) Take turns. Each participant in the battle takes a turn in Initiative order. (5) Begin the next round. When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops."
 
+===CombatScene===
+// Copy and paste "CombatScene" into story as needed. 
+- (combat)
+- You:
+    + "Fight!"
+    + "Flee!"
+    -- You attempt to run. The party realizes it is not fast enough.
+    + "Can we talk about this?"
+    -- You attempt to talk. Diplomacy doesn't seem to be the best option in this situation.
+- {CombatStart}
+    + General Description of Combat:
+    -- {Combat}
+    ++ Combat Step by Step:
+    --- {CombatTurns}
+    +++ [next]
+    ++ [next]
+    +[next]
+- The fight is over.
+    + SUCCESS[!]
+        ->postcombat
+    + FAILURE!
+        ->death
+-(postcombat)
+- Congratulations on your victory!
+    + [next]
+- (death)
+-You have died.
+    + [next]
+
+-> DONE
 // ***************************************************************
 // MOVEMENT
 // ***************************************************************

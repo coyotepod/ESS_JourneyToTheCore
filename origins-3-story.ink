@@ -105,10 +105,14 @@ VAR CombatEnd = "Congratulations!"
 - You make your way towards {DwarfCity} in the {mountains1}. As you enter the mountainous region, the travel gets progressively more difficult. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
 + [next]
 - You enter into a mountain valley a little hesitantly. Surely it is safe being so close to such a formidable city like {DwarfCity}.
-+ [next]
-- \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
++ [next] ->Combat3_1
 
-// Combat NON-Descriptive
+=== Combat3_1=== 
+- \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
+-> CombatScene
+
+- 
+// COMBAT OUTLINE NON-Descriptive
 You:
     + "FIGHT!"
     + "FLEE!"
@@ -125,9 +129,10 @@ You:
     + SUCCESS[!]
     + FAILURE!
 - <>; {CombatEnd}
-    + [next]
+    + [next] -> postcombat
 // END OF COMBAT
 
+- (postcombat)
 - The rest of the trip is uneventful.
     + [next]
 - You approach the guards of the Iron Gate.
