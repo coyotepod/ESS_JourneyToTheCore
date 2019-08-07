@@ -88,10 +88,7 @@ PROLOGUE
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 // The cryptograph mentions an entrance into the center of planet.
 // The entrance to the center is in {DwarfCity} in the hall of the forge master.
-VAR COMBAT = "Each party member rolls INITIATIVE. The monster takes an ACTION and each party member takes an ACTION on his or her turn in the COMBAT ROUND."
 {O3EpisodeTwo}
-VAR CombatStart = "The battle has started!"
-VAR CombatEnd = "Congratulations!"
 
 - You: "Interesting. We can go with you to {DwarfCity}."
 - {ProfessorL}: "Why would you do that?"

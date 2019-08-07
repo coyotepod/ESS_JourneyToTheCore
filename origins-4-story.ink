@@ -108,7 +108,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ->death
             -- (death) You have died.
         ++ [next]
-            --> O4StartMenu
+            ->O4StartMenu
 - (postcombat)
 - Congratulations on your victory!
     + [next]

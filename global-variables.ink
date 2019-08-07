@@ -210,9 +210,9 @@ CONST SavingThrow = ""
 CONST DCcheck = "difficulty check"
 
 VAR CombatStart = "An encounter has started. What do you do?"
-VAR start1 = "hello"
 VAR Combat = "A combat encounter is a fight between two sides. It might involve a flurry of weapon swings, punches, kicks, blocks (parries), spellcasting, or other actions. Combat is organized into a series of rounds and turns. During a round, each player takes a turn deciding what action(s) to take. The order of turns is determined when everyone rolls initiative (d20) at the very beginning of the combat encounter. Once everyone has taken a turn the round is over. Combat continues to the next round if neither side wins, flees, or ends the combat in some way."
 VAR CombatTurns = "Combat Step by Step:  (1) Determine Surprise. The GM determines whether anyone involved in the combat encounter is surprised. (2) Establish positions: The GM decides where all the characters and Monsters are located. Given the adventurers’ Marching Order or their stated positions in the room or other location, the GM figures out where the adversaries are̶how far away and in what direction. (3) Roll Initiative: Everyone involved in the combat encounter rolls Initiative, determining the order of combatants’ turns. (4) Take turns. Each participant in the battle takes a turn in Initiative order. (5) Begin the next round. When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops."
+VAR CombatEnd = "The encounter is complete."
 
 ===CombatScene===
 // Copy and paste "CombatScene" into story as needed. 
@@ -248,7 +248,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ->death
         -- (death) You have died.
         ++ [next]
-            --> O4StartMenu
+//            --> O4StartMenu
 - (postcombat)
 - Congratulations on your victory!
     + [next]
