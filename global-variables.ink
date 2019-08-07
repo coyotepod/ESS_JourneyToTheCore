@@ -209,37 +209,50 @@ CONST Initiative = "Everyone in combat or near combat, rolls a d20 to determine 
 CONST SavingThrow = ""
 CONST DCcheck = "difficulty check"
 
+VAR CombatStart = "An encounter has started. What do you do?"
+VAR start1 = "hello"
 VAR Combat = "A combat encounter is a fight between two sides. It might involve a flurry of weapon swings, punches, kicks, blocks (parries), spellcasting, or other actions. Combat is organized into a series of rounds and turns. During a round, each player takes a turn deciding what action(s) to take. The order of turns is determined when everyone rolls initiative (d20) at the very beginning of the combat encounter. Once everyone has taken a turn the round is over. Combat continues to the next round if neither side wins, flees, or ends the combat in some way."
 VAR CombatTurns = "Combat Step by Step:  (1) Determine Surprise. The GM determines whether anyone involved in the combat encounter is surprised. (2) Establish positions: The GM decides where all the characters and Monsters are located. Given the adventurers’ Marching Order or their stated positions in the room or other location, the GM figures out where the adversaries are̶how far away and in what direction. (3) Roll Initiative: Everyone involved in the combat encounter rolls Initiative, determining the order of combatants’ turns. (4) Take turns. Each participant in the battle takes a turn in Initiative order. (5) Begin the next round. When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops."
 
 ===CombatScene===
 // Copy and paste "CombatScene" into story as needed. 
-- (combat)
+- (combat1)
+- {d4()+1} MONSTERS come at you. 
+    // https://www.dndbeyond.com/
+    // https://www.dndbeyond.com/
+
+- {CombatStart}
 - You:
     + "Fight!"
     + "Flee!"
-    -- You attempt to run. The party realizes it is not fast enough.
+        -- You attempt to run, but the the party isn't fast enough.
     + "Can we talk about this?"
-    -- You attempt to talk. Diplomacy doesn't seem to be the best option in this situation.
-//- {CombatStart}
-    + General Description of Combat:
-    -- {Combat}
-    ++ Combat Step by Step:
-    --- {CombatTurns}
-    +++ [next]
-    ++ [next]
-    +[next]
+        -- You attempt to talk.
+        -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
+- Roll Initiative.
+    + Proceed to fight.
+    + Combat Encounter HOW-TO:
+        -- {Combat}
+            ++ [next]
+        -- {CombatTurns}
+            ++ Proceed to fight.
+
+- \************************** 
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+\**************************
+    + [next]
 - The fight is over.
     + SUCCESS[!]
         ->postcombat
-    + FAILURE!
+    + FAILURE[!]
         ->death
--(postcombat)
+        -- (death) You have died.
+        ++ [next]
+            --> O4StartMenu
+- (postcombat)
 - Congratulations on your victory!
     + [next]
-- (death)
--You have died.
-    + [next]
+- Next part of story...
 
 -> DONE
 // ***************************************************************

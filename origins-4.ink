@@ -9,9 +9,9 @@ INCLUDE origins-4-story.ink
 // ***************************************************************
 VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
 // ***************************************************************
-VAR O4EpisodeOne =     "THE MERFOLK"
-VAR O4EpisodeTwo =     "THE GNOMES"
-VAR O4EpisodeThree =   "THE DEPTHS"
+VAR O4EpisodeOne =     "THE STRANGE WEATHER"
+VAR O4EpisodeTwo =     "THE REEDS"
+VAR O4EpisodeThree =   "THE WATER"
 VAR O4EpisodeFour =    "THE ELEMENTAL"
 VAR O4EpisodeFive =    "THE KRAKEN"
 
