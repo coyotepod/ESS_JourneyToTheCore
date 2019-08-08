@@ -2,7 +2,7 @@
 #author: Master Scoy
 
 \ ***************************************
-SEASON 4: {SeasonO4}
+SEASON 4: {Season04}
 \ ***************************************
 - EPISODE 1. {O4EpisodeOne}
   Get an underwater vessel from the gnomes to enter an underwater kingdom. Players need to kill a certain MOB to gain the favor of Gnomes, Dwarves, or Hephaestus.
