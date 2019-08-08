@@ -215,9 +215,9 @@ VAR CombatTurns = "Combat Step by Step:  (1) Determine Surprise. The GM determin
 VAR CombatEnd = "The encounter is complete."
 
 ===CombatScene===
-// Copy and paste "CombatScene" into story as needed. 
+// Copy and paste "CombatScene" into story as needed.
 - (combat1)
-- {d4()+1} MONSTERS come at you. 
+- {d4()+1} MONSTERS come at you.
     // https://www.dndbeyond.com/
     // https://www.dndbeyond.com/
 
@@ -237,7 +237,7 @@ VAR CombatEnd = "The encounter is complete."
         -- {CombatTurns}
             ++ Proceed to fight.
 
-- \************************** 
+- \**************************
 Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
 \**************************
     + [next]

@@ -3,19 +3,9 @@
 
 ->ArrakisStartMenu
 
-INCLUDE C:/git/INKS/global-variables.ink
-INCLUDE C:/git/INKS/origins-arrakis-story.ink
-
-// ***************************************************************
-VAR SeasonArrakis =     "HEROES OF ARRAKIS"
-// ***************************************************************
-VAR ArrakisEpisodeOne   =     "A DISTURBANCE"
-VAR ArrakisEpisodeTwo   =     "STUDYING THE NATIVES"
-VAR ArrakisEpisodeThree =   "CLEVERNESS"
-VAR ArrakisEpisodeFour  =    "BATTLE OF ARRAKIS"
-VAR ArrakisEpisodeFive  =    "A NICHE"
-
-
+INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
+INCLUDE origins-arrakis-story.ink
 
 
 === ArrakisStartMenu ===
@@ -30,5 +20,5 @@ VAR ArrakisEpisodeFive  =    "A NICHE"
     + [{ArrakisEpisodeFour}]
         ->ArrakisEp4
     + [{ArrakisEpisodeFive}]
-    ->ArrakisEp5
+      ->ArrakisEp5
 -> DONE

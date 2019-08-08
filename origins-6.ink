@@ -4,19 +4,10 @@
 ->O6StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
 INCLUDE origins-6-story.ink
 
-// ***************************************************************
-VAR SeasonO6 =          "MINING THE CAVERNS OF TIME"
-// ***************************************************************
-VAR O6EpisodeOne =      "THE CHARTER"
-VAR O6EpisodeTwo =      "THE MINING"
-VAR O6EpisodeThree =    "THE FRACTURE"
-VAR O6EpisodeFour =     "THE EVIL MAGE"
-VAR O6EpisodeFive =     "THE TIME TOMBS"
-
-
-=== O1StartMenu ===
+=== O6StartMenu ===
     + [PRESS START]
         ->O6Prologue
     + [{O6EpisodeOne}]

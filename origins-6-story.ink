@@ -44,11 +44,11 @@ PROLOGUE
      +[Ω]
          ->O6StartMenu
     +[NEXT EPISODE]
-        ->S0Ep4
+        ->O6Ep4
 
 ->DONE
 
-=== S0Ep4 ===
+=== O6Ep4 ===
 // Room 4: Climax
 {O6EpisodeFour}
      +[Ω]
@@ -76,7 +76,6 @@ PROLOGUE
 ->DONE
 
 === O6Preface ===
-{Seasont1}
 SETTING
 {WorldSetting}
 PURPOSE

@@ -4,18 +4,8 @@
 ->O1StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
 INCLUDE origins-1-story.ink
-
-// ***************************************************************
-VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
-// ***************************************************************
-VAR O1EpisodeOne =      "AT THE DOOR"
-VAR O1EpisodeTwo =      "UP THE STAIRS"
-VAR O1EpisodeThree =    "IN THE STUDY"
-VAR O1EpisodeFour =     "AFTER THE CUBE"
-VAR O1EpisodeFive =     "FOR A CODE"
-
-
 
 === O1StartMenu ===
     + [PRESS START]

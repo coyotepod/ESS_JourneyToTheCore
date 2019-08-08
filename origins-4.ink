@@ -4,18 +4,8 @@
 ->O4StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
 INCLUDE origins-4-story.ink
-
-// ***************************************************************
-VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
-// ***************************************************************
-VAR O4EpisodeOne =     "THE STRANGE WEATHER"
-VAR O4EpisodeTwo =     "THE REEDS"
-VAR O4EpisodeThree =   "THE WATER"
-VAR O4EpisodeFour =    "THE ELEMENTAL"
-VAR O4EpisodeFive =    "THE KRAKEN"
-
-
 
 === O4StartMenu ===
     + [PRESS START]

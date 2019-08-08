@@ -4,18 +4,8 @@
 ->O3StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
 INCLUDE origins-3-story.ink
-
-// ***************************************************************
-VAR SeasonO3 =          "JOURNEY TO THE CORE"
-// ***************************************************************
-VAR O3EpisodeOne =     "THE TRAVELERS"
-VAR O3EpisodeTwo =     "THE FORGE MASTER"
-VAR O3EpisodeThree =   "THE DEPTHS"
-VAR O3EpisodeFour =    "THE ELEMENTALS"
-VAR O3EpisodeFive =    "THE WAY BACK"
-
-
 
 === O3StartMenu ===
     + [PRESS START]
@@ -29,8 +19,5 @@ VAR O3EpisodeFive =    "THE WAY BACK"
     + [{O3EpisodeFour}]
         ->O3Ep4
     + [{O3EpisodeFive}]
-       ->O3Ep5
-    + [EPILOGUE]
-       ->O3Epilogue
-       
+        ->O3Ep5
 -> DONE

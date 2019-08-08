@@ -4,18 +4,8 @@
 ->O2StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
 INCLUDE origins-2-story.ink
-
-// ***************************************************************
-VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
-// ***************************************************************
-VAR O2EpisodeOne =      "THE HIGHLANDERS"
-VAR O2EpisodeTwo =      "DEEP TIME"
-VAR O2EpisodeThree =    "A RIVER"
-VAR O2EpisodeFour =     "THE AIR TEMPLE"
-VAR O2EpisodeFive =     "A FORGE MASTER"
-
-
 
 === O2StartMenu ===
     + [PRESS START]

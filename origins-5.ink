@@ -4,17 +4,8 @@
 ->O5StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE ess-storylines.ink
 INCLUDE origins-5-story.ink
-
-// ***************************************************************
-VAR SeasonO5 =          "ADVENTURE TO NEW HORIZONS"
-// ***************************************************************
-VAR O5EpisodeOne =      "EPISODE 1"
-VAR O5EpisodeTwo =      "EPISODE 2"
-VAR O5EpisodeThree =    "EPISODE 3"
-VAR O5EpisodeFour =     "EPISODE 4"
-VAR O5EpisodeFive =     ""
-
 
 === O5StartMenu ===
     + [PRESS START]
