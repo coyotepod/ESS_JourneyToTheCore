@@ -1,10 +1,13 @@
 #title: The Complete ORIGINS Series
 #author: Master Scoy
 
-
 ->OriginsStartMenu
 
-INCLUDE origins-about.ink
+INCLUDE global-variables.ink
+INCLUDE ess-storyline.ink
+INCLUDE origins-variables.ink
+
+//INCLUDE origins-about.ink
 INCLUDE origins-0.ink
 INCLUDE origins-1.ink
 INCLUDE origins-2.ink
@@ -14,15 +17,7 @@ INCLUDE origins-5.ink
 INCLUDE origins-6.ink
 INCLUDE origins-arrakis.ink
 
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-
-
-
-
-
 ==OriginsStartMenu==
- 
     + PROLOGUE: {SeasonO0}
         ->O0Prologue
     + SEASON 1: {SeasonO1}
@@ -35,9 +30,8 @@ INCLUDE origins-variables.ink
        ->O4Prologue
     + SEASON 5: {SeasonO5}
        ->O5Prologue
-    + Summaries
-        ->AboutMenu
-
+//    + Summaries
+//        ->AboutMenu
 ->DONE
 
 ->END
@@ -51,21 +45,21 @@ INCLUDE origins-about.ink
 
 === AboutStartMenu ===
     + [{SeasonO0}]
-        ->Season0
+        ->O0StartMenu
     + [{SeasonO1}]
-        ->Season1
+        ->O1StartMenu
     + [{SeasonO2}]
-        ->Season2
+        ->O2StartMenu
     + [{SeasonO3}]
-        ->Season3
+        ->O3StartMenu
     + [{SeasonO4}]
-        ->Season4
+        ->O4StartMenu
     + [{SeasonO5}]
-        ->Season5
+        ->O5StartMenu
     + [{SeasonArrakis}]
-        ->SeasonARRAKIS
+        ->ArrakisStartMenu
     + [{SeasonO6}]
-        ->SeasonEpilogue
+        ->O6StartMenu
 //    + {OriginsStartMenu} [ALPHA]
 //        ->OriginsStartMenu
     
