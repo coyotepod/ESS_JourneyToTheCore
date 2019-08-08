@@ -1,54 +1,56 @@
 #title: The Complete ORIGINS Series
 #author: Master Scoy
 
-
 ->OriginsStartMenu
 
-INCLUDE origins-about.ink
+INCLUDE global-variables.ink
+INCLUDE origins-variables.ink
+INCLUDE ess-storylines.ink
+
+//INCLUDE origins-about.ink
 INCLUDE origins-0.ink
 INCLUDE origins-1.ink
 INCLUDE origins-2.ink
 INCLUDE origins-3.ink
 INCLUDE origins-4.ink
 INCLUDE origins-5.ink
-INCLUDE origins-6.ink
-INCLUDE origins-arrakis.ink
-
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-
-
-
-
+INCLUDE origins-06.ink
+INCLUDE origins-07.ink
 
 ==OriginsStartMenu==
- 
-    + PROLOGUE: {SeasonO0}
-        ->O0Prologue
-    + SEASON 1: {SeasonO1}
-        ->O1Prologue
-    + SEASON 2: {SeasonO2}
-        ->O2Prologue
-    + SEASON 3: {SeasonO3}
-       ->O3Prologue
-    + SEASON 4: {SeasonO4}
-       ->O4Prologue
-    + SEASON 5: {SeasonO5}
-       ->O5Prologue
-    + Summaries
-        ->AboutMenu
+    + PROLOGUE: {Season00}
+        ->00StartMenu
+    + SEASON 1: {Season01}
+        ->01StartMenu
+    + SEASON 2: {Season02}
+        ->02StartMenu
+    + SEASON 3: {Season03}
+       ->03StartMenu
+    + SEASON 4: {Season04}
+       ->04StartMenu
+    + SEASON 5: {Season05}
+       ->05StartMenu
+
+    + PROLOGUE
+        ->00StartMenu
+    + SEASON 1
+        ->01StartMenu
+    + SEASON 2
+        ->02StartMenu
+    + SEASON 3
+       ->03StartMenu
+    + SEASON 4
+       ->04StartMenu
+    + SEASON 5
+       ->05StartMenu
+
+
 
 ->DONE
 
 ->END
 
-#title: ORIGINS SUMMARY
-->AboutStartMenu
-
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
-INCLUDE origins-about.ink
-
+/*********************
 === AboutStartMenu ===
     + [{SeasonO0}]
         ->Season0
@@ -68,5 +70,7 @@ INCLUDE origins-about.ink
         ->SeasonEpilogue
 //    + {OriginsStartMenu} [ALPHA]
 //        ->OriginsStartMenu
-    
+
+*/
+
 -> DONE

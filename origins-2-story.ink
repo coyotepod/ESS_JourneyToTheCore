@@ -6,7 +6,7 @@ VAR Season02Hook = "our mutual friend in the village contacted me yesterday. His
 
 
 
-=== O2Prologue ===
+=== 02Prologue ===
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
@@ -19,14 +19,14 @@ PROLOGUE
 - The whole party agrees.
 - You gather supplies and decide to set out the next morning.
    +[Ω]
-       ->O2StartMenu
+       ->02StartMenu
     +[NEXT EPISODE]
-        ->O2Ep1
+        ->02Ep1
 ->DONE
 
-=== O2Ep1 ===
+=== 02Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle
-{O2EpisodeOne}
+{02EpisodeOne}
 - You travel to the highlands in search of {Hutton} and {Lyell}. You arrive without any significant events along the way.  A villager in {village5} tells you the pair spends a lot of time near the local exposed cliffs.
 + [next]
 - You leave the village on a path that comes out at the top of the cliffs. Paths run along the cliff tops with numerous ragged ravines in between cliff tops. The mountain paths seem to be a more direct, but more dangerous route. There is also a switchback trail heading down to a beach along the base of the cliffs. The switchback looks like a longer and more difficult trip.
@@ -40,7 +40,7 @@ PROLOGUE
             ++ We should take the longer switchback. A little walking never killed anyone right? ->switchback
         --- You cross {2+d4()} ravines. Then {~{theWizard}|{theFighter}|{theRogue}} slips and falls into you. The remaining party members try to grab you, but you partially pull and knock the rest of them off their feet in the process.
         --- You have just enough time to shout expletives and wish you had climbing gear or a FEATHER FALL spell. You and the party are greeted by hard rock two hundred feet below.
-        --- If it  isn't obvious, you have died a painful splattering death. -> O2Ep1
+        --- If it  isn't obvious, you have died a painful splattering death. -> 02Ep1
     + [along the beach at the cliff base]
 - (switchback) You make your way down the switchback from the cliff tops. Its a long, difficult route but you make your way safely to the beach.
 + [next]
@@ -56,14 +56,14 @@ PROLOGUE
 + [next]
 - You go a short distance when Hutton & Lyell walk from behind an outcrop.
     +[Ω]
-        ->O2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
-        ->O2Ep2
+        ->02Ep2
 ->DONE
 
-=== O2Ep2 ===
+=== 02Ep2 ===
 // Room 2: Puzzle OR Room 1: Guardian
-{O2EpisodeTwo}
+{02EpisodeTwo}
 - Hutton: Hello there. We heard a commotion and came to see what it was about.
 - Sure enough, James Hutton and Charles Lyell are there studying the stratigraphy (layers).
 - Lyell: The beach is not the best approach. Ascending or descending a crevasse is less hazardous because SAND BEETLES cannot climb. Assuming you have a CLIMBING KIT.
@@ -121,7 +121,7 @@ PROLOGUE
     ++ You still don't trust them.
     -- Hutton: OK well if that's all you have...Right. Well, we wish you luck!
         ++ [next]
-    -- You take the ore and travel back towards home. A few miles before Canis Villa you are ambushed by {5+d12()} ACOLYTES of the evil mage. You manage to kill a few of them, but they overrun your party. Its a TPK (Total Party Kill). The ore is taken back for nefarious purposes. ->O2StartMenu
+    -- You take the ore and travel back towards home. A few miles before Canis Villa you are ambushed by {5+d12()} ACOLYTES of the evil mage. You manage to kill a few of them, but they overrun your party. Its a TPK (Total Party Kill). The ore is taken back for nefarious purposes. ->02StartMenu
     -- ->END
 - They take a minute to look through the notebook.
 Lyell: We think large quantities of smelted ore (purified) when combined with ELEMENTAL ESSENCE and powerful magic would likely lead to a cataclysmic event. Perhaps even a second Big Bang which seems to be the goal of this evil mage.
@@ -143,14 +143,14 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
 - The party sets out for the peaks of the Air Temple.
 
     +[Ω]
-->O2StartMenu
+->02StartMenu
 +[NEXT EPISODE]
-        ->O2Ep3
+        ->02Ep3
 ->DONE
 
-=== O2Ep3 ===
+=== 02Ep3 ===
 // Room 3: Trick or Setback
-{O2EpisodeThree}
+{02EpisodeThree}
 - You travel for a few hours into the heat of the afternoon. You come to a deep channeled mountain river.
 + [next]
 - The water practically tumbles and crashes from glacial melt above and down the side of the mountain. It cuts through canyons and sprays outward in other areas.
@@ -193,19 +193,19 @@ Lyell: We think large quantities of smelted ore (purified) when combined with EL
     ++ [next]
     --- (downriver) You are swept downriver and off the 30-foot waterfall that was around the bend.
     --- (river_death) In a torrent of water, whitecaps, and rocks - you die.
-        ->O2Ep3
+        ->02Ep3
 // Ditch Your Duds - If the water will reach your knees, strip down to your skivvies - your pride isn’t worth getting hypothermia from wet clothes. Even if the river is shallow, remove your socks and put on a second pair of shoes if you have them. If you’re backpacking, unbuckle your front straps so you can quickly slip out of your pack if you fall. 4. Shuffle Up - Face upstream, lean into the current, and move across the river with shuffling sidesteps. You’re less likely to fall while sidestepping since you don’t lift your feet as high. If you’re with a group, link arms. The technique creates more contact points with the stream bed and gives everyone a more solid footing. <a href="http://mentalfloss.com/article/53005/how-cross-river-without-bridge">link</a>
 - (end_episode)
    +[Ω]
-       ->O2StartMenu
+       ->02StartMenu
     +[NEXT EPISODE]
-        ->O2Ep4
+        ->02Ep4
 abstract
 ->DONE
 
-=== O2Ep4 ===
+=== 02Ep4 ===
 // Room 4: Climax
-{O2EpisodeFour}
+{02EpisodeFour}
 - Your party reaches the Air Temple without further troubles. #audio_mountain_top
     + You: Let's look for the {ore32}.
 - It only takes a moment before {~{theCleric}|{theWizard}|{theFighter}} says:
@@ -230,7 +230,7 @@ abstract
 - The battle rages on with the AIR ELEMENTAL
     + Failure
         -- You have been blown off the peak of the mountain. You die.
-        -> O2Ep4
+        -> 02Ep4
     + Victory!
 - The AIR ELEMENTAL dissipates; elementals are never truly killed. {~{TheCleric}|{TheFighter}|{TheWizard}} is the first to notice a lingering wisp of shimmering air.
 + \ {TheWizard} quickly pulls out a large vial and scoops the wisp in before it disappears as well.
@@ -247,15 +247,15 @@ abstract
 - The party makes its way back to Canis Villa without further incident. #audio_none
 
    +[Ω]
-       ->O2StartMenu
+       ->02StartMenu
     +[NEXT EPISODE]
-        ->O2Ep5
+        ->02Ep5
 
 ->DONE
 
-=== O2Ep5 ===
+=== 02Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{O2EpisodeFive}
+{02EpisodeFive}
 - You talk with {DwarfSmith} at the smithy in Canis Villa. #audio_canis_villa
 - {DwarfSmith}: Hutton & Lyell gave you good advice. The dwarves in Iron Forge will definitely be interested in the {ore32}!
 - He takes out a small metal seal on a small chain.
@@ -264,20 +264,20 @@ abstract
 - {DwarfSmith}: (nods in acknowledgement) Once you arrive in Iron Forge, head to my old district of Lemnos and talk with forge master {ForgeMaster}. He will know what to do. Perhaps he will craft you something epic if you impress him.
 - MORE IN THE NEXT SEASON!
    +[Ω]
-       ->O2StartMenu
+       ->02StartMenu
 //    +[NEXT EPISODE]
-//        ->O2Epilogue
+//        ->02Epilogue
 
 ->DONE
 
-=== O2Epilogue ===
+=== 02Epilogue ===
 EPILOGUE
 +[Ω]
-->O2StartMenu
+->02StartMenu
 
 -> DONE
 
-=== O2Preface ===
+=== 02Preface ===
 {Season02}
 SETTING
 {WorldSetting}

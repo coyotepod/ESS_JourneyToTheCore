@@ -3,86 +3,86 @@
 
 
 
-VAR SeasonO6Hook = ""
+VAR Season06Hook = ""
 
 
 
-===O6Prologue ===
+===06Prologue ===
 PROLOGUE
 
     +[NEXT EPISODE]
-            ->O6Ep2
+            ->06Ep2
 
     ->DONE
-=== O6Ep1 ===
+=== 06Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Roleplay Challenge
-{O6EpisodeOne}
+{06EpisodeOne}
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
 - (end_episode)
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
     +[NEXT EPISODE]
-        ->O6Ep2
+        ->06Ep2
 
 ->DONE
 
-=== O6Ep2 ===
+=== 06Ep2 ===
 // Room 2: Puzzle / Roleplay Challenge OR Room 1: Guardian
-{O6EpisodeTwo}
+{06EpisodeTwo}
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
     +[NEXT EPISODE]
-        ->O6Ep3
+        ->06Ep3
 
 ->DONE
 
-=== O6Ep3 ===
+=== 06Ep3 ===
 // Room 3: Trick or Setback
-{O6EpisodeThree}
+{06EpisodeThree}
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
     +[NEXT EPISODE]
-        ->O6Ep4
+        ->06Ep4
 
 ->DONE
 
-=== O6Ep4 ===
+=== 06Ep4 ===
 // Room 4: Climax
-{O6EpisodeFour}
+{06EpisodeFour}
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
     +[NEXT EPISODE]
-        ->O6Ep5
+        ->06Ep5
 
 ->DONE
 
-=== O6Ep5 ===
+=== 06Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{O6EpisodeFive}
+{06EpisodeFive}
 
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
     +[NEXT EPISODE]
-        ->O6Epilogue
+        ->06Epilogue
 
 ->DONE
 
-=== O6Epilogue ===
+=== 06Epilogue ===
     EPILOGUE
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
 ->DONE
 
-=== O6Preface ===
+=== 06Preface ===
 SETTING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
 ->DONE
      +[Ω]
-         ->O6StartMenu
+         ->06StartMenu
 
 ->DONE
 ->END

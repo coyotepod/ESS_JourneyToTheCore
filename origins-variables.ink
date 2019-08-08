@@ -3,75 +3,75 @@
 // ***************************************************************
 
 // ***************************************************************
-VAR SeasonO0 =          "WANDERING IN THE FOREST"
+VAR Season00 =          "WANDERING IN THE FOREST"
 // ***************************************************************
-VAR O0EpisodeOne =      "THE WOODS"
-VAR O0EpisodeTwo =      "THE CROSSROADS"
-VAR O0EpisodeThree =    "THE VILLAGE"
-VAR O0EpisodeFour =     "THE BLUE MUG"
-VAR O0EpisodeFive =     "THE HABITS OF MIND"
+VAR 00EpisodeOne =      "THE WOODS"
+VAR 00EpisodeTwo =      "THE CROSSROADS"
+VAR 00EpisodeThree =    "THE VILLAGE"
+VAR 00EpisodeFour =     "THE BLUE MUG"
+VAR 00EpisodeFive =     "THE HABITS OF MIND"
 
 // ***************************************************************
-VAR SeasonO1 =          "DISCOVERY AT CELESTIAL TOWERS"
+VAR Season01 =          "DISCOVERY AT CELESTIAL TOWERS"
 // ***************************************************************
-VAR O1EpisodeOne =      "AT THE DOOR"
-VAR O1EpisodeTwo =      "UP THE STAIRS"
-VAR O1EpisodeThree =    "IN THE STUDY"
-VAR O1EpisodeFour =     "AFTER THE CUBE"
-VAR O1EpisodeFive =     "FOR A CODE"
+VAR 01EpisodeOne =      "AT THE DOOR"
+VAR 01EpisodeTwo =      "UP THE STAIRS"
+VAR 01EpisodeThree =    "IN THE STUDY"
+VAR 01EpisodeFour =     "AFTER THE CUBE"
+VAR 01EpisodeFive =     "FOR A CODE"
 
 // ***************************************************************
-VAR SeasonO2 =          "EXPEDITION OF ORIGINS"
+VAR Season02 =          "EXPEDITION OF ORIGINS"
 // ***************************************************************
-VAR O2EpisodeOne =      "THE HIGHLANDERS"
-VAR O2EpisodeTwo =      "DEEP TIME"
-VAR O2EpisodeThree =    "A RIVER"
-VAR O2EpisodeFour =     "THE AIR TEMPLE"
-VAR O2EpisodeFive =     "A FORGE MASTER"
+VAR 02EpisodeOne =      "THE HIGHLANDERS"
+VAR 02EpisodeTwo =      "DEEP TIME"
+VAR 02EpisodeThree =    "A RIVER"
+VAR 02EpisodeFour =     "THE AIR TEMPLE"
+VAR 02EpisodeFive =     "A FORGE MASTER"
 
 // ***************************************************************
-VAR SeasonO3 =          "JOURNEY TO THE CORE"
+VAR Season03 =          "JOURNEY TO THE CORE"
 // ***************************************************************
-VAR O3EpisodeOne =     "THE FORGE"
-VAR O3EpisodeTwo =     "THE IRON GATE"
-VAR O3EpisodeThree =   "THE DEPTHS"
-VAR O3EpisodeFour =    "THE ELEMENTALS"
-VAR O3EpisodeFive =    "THE EXIT"
+VAR 03EpisodeOne =     "THE FORGE"
+VAR 03EpisodeTwo =     "THE IRON GATE"
+VAR 03EpisodeThree =   "THE DEPTHS"
+VAR 03EpisodeFour =    "THE ELEMENTALS"
+VAR 03EpisodeFive =    "THE EXIT"
 
 // ***************************************************************
-VAR SeasonO4 =         "VOYOGE UNDER THE SEA"
+VAR Season04 =         "VOYOGE UNDER THE SEA"
 // ***************************************************************
-VAR O4EpisodeOne =     "THE MERFOLK"
-VAR O4EpisodeTwo =     "THE GNOMES"
-VAR O4EpisodeThree =   "THE DEPTHS"
-VAR O4EpisodeFour =    "THE ELEMENTAL"
-VAR O4EpisodeFive =    "THE KRAKEN"
+VAR 04EpisodeOne =     "THE MERFOLK"
+VAR 04EpisodeTwo =     "THE GNOMES"
+VAR 04EpisodeThree =   "THE DEPTHS"
+VAR 04EpisodeFour =    "THE ELEMENTAL"
+VAR 04EpisodeFive =    "THE KRAKEN"
 
 // ***************************************************************
-VAR SeasonO5 =          "ADVENTURE TO NEW HORIZONS"
+VAR Season05 =          "ADVENTURE TO NEW HORIZONS"
 // ***************************************************************
-VAR O5EpisodeOne =      "EPISODE 1"
-VAR O5EpisodeTwo =      "EPISODE 2"
-VAR O5EpisodeThree =    "EPISODE 3"
-VAR O5EpisodeFour =     "EPISODE 4"
-VAR O5EpisodeFive =     ""
+VAR 05EpisodeOne =      "EPISODE 1"
+VAR 05EpisodeTwo =      "EPISODE 2"
+VAR 05EpisodeThree =    "EPISODE 3"
+VAR 05EpisodeFour =     "EPISODE 4"
+VAR 05EpisodeFive =     ""
 
 // ***************************************************************
-VAR SeasonArrakis =     "HEROES OF ARRAKIS"
+VAR Season07 =     "HEROES OF ARRAKIS"
 // ***************************************************************
-VAR ArrakisEpisodeOne =     "A DISTURBANCE"
-VAR ArrakisEpisodeTwo =     "STUDYING THE NATIVES"
-VAR ArrakisEpisodeThree =   "CLEVERNESS"
-VAR ArrakisEpisodeFour =    "BATTLE OF ARRAKIS"
-VAR ArrakisEpisodeFive =    "A NICHE"
+VAR 07EpisodeOne =     "A DISTURBANCE"
+VAR 07EpisodeTwo =     "STUDYING THE NATIVES"
+VAR 07EpisodeThree =   "CLEVERNESS"
+VAR 07EpisodeFour =    "BATTLE OF ARRAKIS"
+VAR 07EpisodeFive =    "A NICHE"
 
 // ***************************************************************
-VAR SeasonO6 =          "MINING THE CAVERNS OF TIME"
+VAR Season06 =          "MINING THE CAVERNS OF TIME"
 // ***************************************************************
-VAR O6EpisodeOne =      "THE CHARTER"
-VAR O6EpisodeTwo =      "THE MINING"
-VAR O6EpisodeThree =    "THE FRACTURE"
-VAR O6EpisodeFour =     "THE EVIL MAGE"
-VAR O6EpisodeFive =     "THE TIME TOMBS"
+VAR 06EpisodeOne =      "THE CHARTER"
+VAR 06EpisodeTwo =      "THE MINING"
+VAR 06EpisodeThree =    "THE FRACTURE"
+VAR 06EpisodeFour =     "THE EVIL MAGE"
+VAR 06EpisodeFive =     "THE TIME TOMBS"
 
 -> DONE

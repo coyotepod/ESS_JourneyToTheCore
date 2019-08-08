@@ -4,28 +4,28 @@
 \ ***************************************
 SEASON 4: {Season04}
 \ ***************************************
-- EPISODE 1. {O4EpisodeOne}
+- EPISODE 1. {04EpisodeOne}
   Get an underwater vessel from the gnomes to enter an underwater kingdom. Players need to kill a certain MOB to gain the favor of Gnomes, Dwarves, or Hephaestus.
   Enter a labyrinth at the bottom of an ocean kingdom to rescue a daughter of Hephaestus.
-- EPISODE 2. {O4EpisodeTwo}
+- EPISODE 2. {04EpisodeTwo}
 
-- EPISODE 3. {O4EpisodeThree}
+- EPISODE 3. {04EpisodeThree}
 
-- EPISODE 4. {O4EpisodeFour}
+- EPISODE 4. {04EpisodeFour}
   Negotiate OR Battle a Water Elemental
-- EPISODE 5. {O4EpisodeFive}
+- EPISODE 5. {04EpisodeFive}
 
-VAR SeasonO4Hook = "Merfolk in the Sea of Fallen Stars are said to be causing problems. There are also reoccurring water spouts in Lake Mishigami that some say aren't natural.  Lastly, I've heard farmers and rangers complain more than usual about the weather."
+VAR Season04Hook = "Merfolk in the Sea of Fallen Stars are said to be causing problems. There are also reoccurring water spouts in Lake Mishigami that some say aren't natural.  Lastly, I've heard farmers and rangers complain more than usual about the weather."
 
 The gnomes have been testing a new underwater vessel! Some say it can stay underwater for days. They speculate is could be used to reach the underwater city of the merfolk."
 
-=== O4Prologue ===
+=== 04Prologue ===
 PROLOGUE
 \***** This story is still in active development *****
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- "{SeasonO4Hook}"
+- "{Season04Hook}"
     + [next]
 - You:
     + "Can you tell us more about the merfolk?"
@@ -54,15 +54,15 @@ You battle
 - (end_episode)
 
     +[Ω]
-        ->O4StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
-        ->O4Ep1
+        ->04Ep1
 -
 ->DONE
 
-=== O4Ep1 ===
+=== 04Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle /Role-play Challenge
-{O4EpisodeOne}
+{04EpisodeOne}
 - The pary makes its way to {lake3} without incident.
 - (lake_shorelines) You:
     + "Let's explore the northern shoreline"
@@ -101,7 +101,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ->death
             -- (death) You have died.
         ++ [next]
-            ->O4StartMenu
+            ->04StartMenu
 - (postcombat)
 - Congratulations on your victory!
     + [next]
@@ -109,15 +109,15 @@ Combat actions by individuals and each party are determined LIVE in class and no
     + Follow the single track path through the tall reeds.
 -
 +[Ω]
-        ->O4StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
-        ->O4Ep2
+        ->04Ep2
 
 ->DONE
 
-=== O4Ep2 ===
+=== 04Ep2 ===
 // Room 2: Puzzle /Role-play Challenge OR Room 1: Guardian
-{O4EpisodeTwo}
+{04EpisodeTwo}
 - The path takes you along the western shore. You come to a clearing.
     + [next]
 - There is a very small village. The buildings are more hut-like than anything. The roofs are covered in reeds and the walls are made of bark from the encroaching forest.
@@ -136,44 +136,44 @@ Combat actions by individuals and each party are determined LIVE in class and no
     + [next]
 - Old man: "Aye, they have."
     +[Ω]
-        ->O4StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
-        ->O4Ep3
+        ->04Ep3
 
 ->DONE
 
-=== O4Ep3 ===
+=== 04Ep3 ===
 // Room 3: Trick or Setback
-{O4EpisodeThree}
+{04EpisodeThree}
     +[Ω]
-        ->O4StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
-        ->O4Ep4
+        ->04Ep4
 
 ->DONE
 
-=== O4Ep4 ===
+=== 04Ep4 ===
 // Room 4: Climax
-{O4EpisodeFour}
+{04EpisodeFour}
     +[Ω]
-        ->O4StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
-        ->O4Ep5
+        ->04Ep5
 
 ->DONE
 
-=== O4Ep5 ===
+=== 04Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{O4EpisodeFive}
+{04EpisodeFive}
 
     +[Ω]
-        ->O4StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
-        ->O4Epilogue
+        ->04Epilogue
 
 ->DONE
 
-=== O4Epilogue ===
+=== 04Epilogue ===
     EPILOGUE
 
 ->END

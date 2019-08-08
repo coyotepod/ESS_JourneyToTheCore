@@ -3,21 +3,21 @@
 
 
 
-=== O0Prologue ===
+=== 00Prologue ===
 PROLOGUE
 - Yellow rays of light shoot through the dense deciduous forest as the sun just peaks over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business.
 + [next]
 - You are unconscious in some bushes along the side of a dirt path in the forest. You start to stir.
 
     +[Ω]
-      ->O0StartMenu
+      ->00StartMenu
     +[NEXT EPISODE]
-        ->O0Ep1
+        ->00Ep1
 ->DONE
 
-=== O0Ep1 ===
+=== 00Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{O0EpisodeOne}
+{00EpisodeOne}
 You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. #audio_woods
 You get up and stumble out onto a nearby path.
     + You decide to start walking. <>
@@ -27,14 +27,14 @@ You get up and stumble out onto a nearby path.
 - The path makes for an easy walk once you get your footing. You travel less than a mile, perhaps a {~quarter-mile|half mile}, before coming to a crossroads.
 -(end_episode1)
     +[Ω]
-        ->O0StartMenu
+        ->00StartMenu
     + [NEXT EPISODE]
-        ->O0Ep2
+        ->00Ep2
 ->DONE
 
-== O0Ep2 ==
+== 00Ep2 ==
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{O0EpisodeTwo}
+{00EpisodeTwo}
 An overgrown single-track trail snakes westwards towards a dark foreboding tower. Probably less than a day's march. To the east, a well worn path cuts through the forest toward an unknown destination.
     + { not Clun_Castle } [Trek west to the dark tower]
         -- (Clun_Castle)
@@ -72,7 +72,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
                 --- You take piercing damage (-{d8()*3+12} to your Health Points).
             ++++ [next]
                     ->Death
-    + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind [...] <> 
+    + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind [...] <>
         -- and consider your choices. You notice a small deer path going east running mostly parallel to the main path.
       ++ [next] ->Village_Path
 
@@ -105,7 +105,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 ->DONE
 
 = Village_Path
-- Not long after midday a friendly looking farmer comes down the main path with a cart and horse. 
+- Not long after midday a friendly looking farmer comes down the main path with a cart and horse.
     + You step out onto the main path.
         ++ You: Could you tell me which way to the nearest village?
         --- Farmer: I can do better
@@ -122,13 +122,13 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
     + You walk into the village.
 - (end_episode2)
 +[Ω]
-->O0StartMenu
+->00StartMenu
     +[NEXT EPISODE]
-        ->O0Ep3
+        ->00Ep3
 ->DONE
 
-== O0Ep3 ==
-{O0EpisodeThree}
+== 00Ep3 ==
+{00EpisodeThree}
 - You are greeted by a weathered signpost "Canis Villa".
 - You walk towards the village center. Its an opens grassy courtyard loosely surrounded by a variety of stout timbered buildings. You look around.
 - (courtyard_views)
@@ -146,17 +146,17 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
     + (west_canis) Looking to the western side, <>
         -- you see an apothecary shop and main path entering {village1} (the one you followed in). No need to leave yet or visit that shop. You look around some more. ->courtyard_views
     + {(north_canis && west_canis && east_canis)} [You observe...]
-- Most people are either justing passing through Canis Villa or visiting the large inn & tavern on the southern side. At least there you could sit in the shade. 
+- Most people are either justing passing through Canis Villa or visiting the large inn & tavern on the southern side. At least there you could sit in the shade.
     + [next]->south_canis
-    
+
 - (end_episode3) You enter The Blue Mug.
     +[Ω]
-        ->O0StartMenu
+        ->00StartMenu
     +[NEXT EPISODE]
-        ->O0Ep4
+        ->00Ep4
 
-== O0Ep4 ==
-{O0EpisodeFour}
+== 00Ep4 ==
+{00EpisodeFour}
 - You enter and look around "The Blue Mug." Its a two-story wooden inn & tavern with a heavy wooden door and wooden tables and chairs reinforced with iron. Worn stairs lead above (probably to the rooms). The furnishings are simple and slightly dingy, but of stout timber material.
     + [Observe the occupants.]
 -  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and made from a stout frame.
@@ -175,16 +175,16 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
         -- {Maid}: Today we're cooking up{~ roasted boar| chicken| vegetables}
         ++ You: That sounds good, but I just remembered I have no coin.
         // ++ You: Not what you were hoping for, but reply "OK, I'll have some."
-        -- {Maid}: You're always welcome to work off the debt by helping in the stables. 
+        -- {Maid}: You're always welcome to work off the debt by helping in the stables.
         // -- The meal is good and quickly finish eating. Your thoughts go back to earlier encounters. You were not well prepared. {Maid} comes back to the table.
         ++ [next]
 - You: Wow, thanks! I've had a rough go of it latetly.
 - You: I need to be better prepared for future adventures.
-- {Maid}: I suggest you to seek a Master trainer. The royal army rarely makes it to small villages like ours, so we've had to learn to protect ourselves. (she finishes with obvious pride) 
+- {Maid}: I suggest you to seek a Master trainer. The royal army rarely makes it to small villages like ours, so we've had to learn to protect ourselves. (she finishes with obvious pride)
     + You: What's a Master do?
 - {Maid}: Most villages have at least one Master though occasionaly there are two.
     + [next]
-- <> They can give you activities and tools to better prepare you for life and adventures beyond the village. Other trainees can also assist you at times. However, its always up to you to put in the work & training. 
+- <> They can give you activities and tools to better prepare you for life and adventures beyond the village. Other trainees can also assist you at times. However, its always up to you to put in the work & training.
     + You: Thank you {Maid}!
     - <> You've been extremely helpful!
 - {Maid} smiles.
@@ -194,13 +194,13 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 //-- "You must hone your skills if you plan on traveling in this area of the realm. Training and practicing one's skills before taking part in Adventures or attacking Bosses is always a good idea" she says.
 - (end_episode4)
 +[Ω]
-->O0StartMenu
+->00StartMenu
     +[NEXT EPISODE]
-        ->O0Ep5
+        ->00Ep5
 ->DONE
 
-== O0Ep5 ==
-{O0EpisodeFive}
+== 00Ep5 ==
+{00EpisodeFive}
 - Habits of Mind are a way of looking at life and the decision making process. When you are faced with learning challenges, you have to make a lot of decisions and your perspective or thought processes are critical in helping you make decisions.
     + [next]
 - Being prepared for class and life's adventures takes planning and work on your part. No one wants to die five minutes into the adventure. Practice and success at smaller challenges are critical for building your base understanding. You'll be expected to master class challenges before moving on to the next.
@@ -242,7 +242,7 @@ The coming weeks are going to be a challenge. Growth in mind and muscle will be 
 === Inventory ===
 You have nothing.
     + [BACK]
-        ->O0Ep1
+        ->00Ep1
 
 === Death ===
 - (death)
@@ -265,17 +265,17 @@ You have nothing.
 - You are worthy of another chance.
 - (end_death)...
 + [next]
-    ->O0Ep1
+    ->00Ep1
 ->DONE
 
-=== O0Preface ===
+=== 00Preface ===
 #audio: fx-valleys
-{SeasonO0}
+{Season00}
 SETTING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
-- Objectives of {SeasonO0}
+- Objectives of {Season00}
   \* Content
   \* Content
   \* Content
@@ -285,9 +285,9 @@ PURPOSE
 - FIRST PUBLISHED: 2017
 - LAST UPDATED: Summer 2019
 +[Ω]
-->O0StartMenu
+->00StartMenu
 
     +[NEXT]
-        ->O0Ep1
+        ->00Ep1
 
 ->END

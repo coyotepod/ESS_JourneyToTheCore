@@ -4,10 +4,10 @@
 
 // INCLUDE global-variables.ink
 // INCLUDE origins-variables.ink
-VAR ArrakisHook         =     "something"
+VAR 07Hook         =     "something"
 
 
-=== ArrakisPrologue ===
+=== 07Prologue ===
 PROLOGUE
 PENNISULA OF MARSUPIALIA
 Your party ventures from the cabin onto the ship's deck. A band of eight pirates, err crewman, have offered to join you ashore for your protection against indigenous animals.
@@ -48,15 +48,15 @@ Your party ventures from the cabin onto the ship's deck. A band of eight pirates
 + [next]
 - The captain hastily writes a note and attaches it to a crow and sends it off toward Storm Crown.
     +[Ω]
-        ->ArrakisStartMenu
+        ->07StartMenu
     +[NEXT EPISODE]
-        ->ArrakisEp1
+        ->07Ep1
 
 ->DONE
 
-=== ArrakisEp1 ===
+=== 07Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Roleplay Challenge
-{ArrakisEpisodeOne} 
+{07EpisodeOne}
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
@@ -65,15 +65,15 @@ Your party ventures from the cabin onto the ship's deck. A band of eight pirates
 
 
  //   +[Ω]
- //       ->ArrakisStartMenu
+ //       ->07StartMenu
     +[NEXT EPISODE]
-        ->ArrakisEp1
+        ->07Ep1
 
 ->DONE
 
-=== ArrakisEp2 ===
+=== 07Ep2 ===
 // Room 2: Puzzle/Roleplay Challenge OR Room 1: Guardian
-Recently an expedition party in the southeast has disturbed a previously unknown colony of Arrakis Sand worms.
+Recently an expedition party in the southeast has disturbed a previously unknown colony of 07 Sand worms.
 + [next]
 - Naturalists have determined that these are not the same worms from the Arrakis Wasteland. They are in fact a new species resulting from an evolutionary process when this colony became physically separated. They are still plenty big and a potential threat to the entire region.
 + [next]
@@ -89,46 +89,46 @@ Recently an expedition party in the southeast has disturbed a previously unknown
 + [next]
 - Party members should help one another with preparations including studying notes together or playing Quizlet games. We're in this together!
 
-{ArrakisEpisodeTwo}
+{07EpisodeTwo}
 //    +[Ω]
-//        ->ArrakisStartMenu
+//        ->07StartMenu
     +[NEXT EPISODE]
-        ->ArrakisEp3
+        ->07Ep3
 
 ->DONE
 
-=== ArrakisEp3 ===
+=== 07Ep3 ===
 // Room 3: Trick or Setback
-{ArrakisEpisodeThree}
+{07EpisodeThree}
 //    +[Ω]
-//        ->ArrakisStartMenu
+//        ->07StartMenu
     +[NEXT EPISODE]
-        ->ArrakisEp4
+        ->07Ep4
 
 ->DONE
 
-=== ArrakisEp4 ===
+=== 07Ep4 ===
 // Room 4: Climax
-{ArrakisEpisodeFour}
+{07EpisodeFour}
 //    +[Ω]
-//        ->ArrakisStartMenu
+//        ->07StartMenu
     +[NEXT EPISODE]
-        ->ArrakisEp5
+        ->07Ep5
 
 ->DONE
 
-=== ArrakisEp5 ===
+=== 07Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{ArrakisEpisodeFive}
+{07EpisodeFive}
 
 //    +[Ω]
-//        ->ArrakisStartMenu
+//        ->07StartMenu
     +[NEXT EPISODE]
-        ->ArrakisEpilogue
+        ->07Epilogue
 
 ->DONE
 
-=== ArrakisEpilogue ===
+=== 07Epilogue ===
     EPILOGUE
 
 ->END

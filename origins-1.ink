@@ -1,23 +1,23 @@
 #title: Expedition of Origins
 #author: Master Scoy
 
-->O1StartMenu
+->01StartMenu
 
 INCLUDE global-variables.ink
 INCLUDE ess-storylines.ink
 INCLUDE origins-1-story.ink
 
-=== O1StartMenu ===
+=== 01StartMenu ===
     + [PRESS START]
-        ->O1Prologue
-    + [{O1EpisodeOne}]
-        ->O1Ep1
-    + [{O1EpisodeTwo}]
-        ->O1Ep2
-    + [{O1EpisodeThree}]
-        ->O1Ep3
-    + [{O1EpisodeFour}]
-        ->O1Ep4
-    + [{O1EpisodeFive}]
-        ->O1Ep5
+        ->01Prologue
+    + [{01EpisodeOne}]
+        ->01Ep1
+    + [{01EpisodeTwo}]
+        ->01Ep2
+    + [{01EpisodeThree}]
+        ->01Ep3
+    + [{01EpisodeFour}]
+        ->01Ep4
+    + [{01EpisodeFive}]
+        ->01Ep5
 -> DONE

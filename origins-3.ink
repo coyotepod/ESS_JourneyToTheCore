@@ -1,23 +1,23 @@
 #title: Journey to the Core
 #author: Master Scoy
 
-->O3StartMenu
+->03StartMenu
 
 INCLUDE global-variables.ink
 INCLUDE ess-storylines.ink
 INCLUDE origins-3-story.ink
 
-=== O3StartMenu ===
+=== 03StartMenu ===
     + [PRESS START]
-        ->O3Prologue
-    + [{O3EpisodeOne}]
-        ->O3Ep1
-    + [{O3EpisodeTwo}]
-        ->O3Ep2
-    + [{O3EpisodeThree}]
-        ->O3Ep3
-    + [{O3EpisodeFour}]
-        ->O3Ep4
-    + [{O3EpisodeFive}]
-        ->O3Ep5
+        ->03Prologue
+    + [{03EpisodeOne}]
+        ->03Ep1
+    + [{03EpisodeTwo}]
+        ->03Ep2
+    + [{03EpisodeThree}]
+        ->03Ep3
+    + [{03EpisodeFour}]
+        ->03Ep4
+    + [{03EpisodeFive}]
+        ->03Ep5
 -> DONE

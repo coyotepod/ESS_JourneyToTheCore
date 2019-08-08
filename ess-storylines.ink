@@ -3,7 +3,7 @@
 
 - (ESS_storylines)
 // ***************************************************************
-VAR SeasonO0 =          "WANDERING in THE FOREST"
+ "WANDERING in THE FOREST"
 // ***************************************************************
 VAR Topic0 = "Habits of Mind"
     VAR O0EpisodeOne =      "THE WOODS"
@@ -14,7 +14,7 @@ VAR Topic0 = "Habits of Mind"
 
 
 // ***************************************************************
-VAR Season01 =          "DISCOVERY at CELESTIAL TOWERS"
+"DISCOVERY at CELESTIAL TOWERS"
 // ***************************************************************
 VAR Topic1 = "SPACE SYSTEMS"
 VAR Q1_1 = "What is the universe?"
@@ -40,7 +40,7 @@ Question: {Q1_3}
 Phenomena: {P1_3}
 
 // ***************************************************************
-VAR Season02 =          "EXPEDITION OF ORIGINS"
+"EXPEDITION OF ORIGINS"
 // ***************************************************************
 VAR Topic2 = "HISTORY of EARTH"
 VAR Q2_1 = "How do people reconstruct and date events in Earth's planetary history?"
@@ -63,7 +63,7 @@ Phenomena: {P2_2}
 
 
 // ***************************************************************
-VAR Season03 =          "JOURNEY TO THE CORE"
+"JOURNEY TO THE CORE"
 // ***************************************************************
 VAR Topic3 = "EARTH'S SYSTEMS"
 VAR Q3_1 = "How do the major Earth systems interact?"
@@ -86,7 +86,7 @@ Phenomena: {P3_2}
 
 
 // ***************************************************************
-VAR Season04 = "VOYOGE UNDER THE SEA"
+"VOYOGE UNDER THE SEA"
 // ***************************************************************
 VAR Topic4 = "WEATHER AND CLIMATE"
 
@@ -108,7 +108,7 @@ Phenomena: {P4_1}
 
 
 // ***************************************************************
-VAR Season05 =          "ADVENTURE TO NEW HORIZONS"
+"ADVENTURE TO NEW HORIZONS"
 // ***************************************************************
 VAR Topic5 = "HUMAN SUSTAINABILITY"
 
@@ -132,7 +132,7 @@ Question: {ESS5_Q2}
 Phenomena: {ESS5_Ph2}
 
 // ***************************************************************
-VAR Season06 =          "MINING THE CAVERNS OF TIME"
+ "MINING THE CAVERNS OF TIME"
 // ***************************************************************
 VAR O6EpisodeOne =      "THE CHARTER"
 VAR O6EpisodeTwo =      "THE MINING"

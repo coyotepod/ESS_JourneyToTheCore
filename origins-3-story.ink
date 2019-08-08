@@ -6,29 +6,29 @@
 \ ***************************************
 SEASON 3: {Season03}
 \ ***************************************
-- EPISODE 1. {O3EpisodeOne}
+- EPISODE 1. {03EpisodeOne}
 - You meet an uncle and his nephew at The Blue Mug with a cryptograph. You help them solve the cryptograph. They and your party both need to go to {DwarfCity} and meet the forge master.
 + [next]
-- EPISODE 2. {O3EpisodeTwo}
+- EPISODE 2. {03EpisodeTwo}
   You fight goblins just before entering {DwarfCity}. The gate guards and later the forge master give you curious looks when seeing {DwarfSmith}'s seal, but no further explanation is given. {DwarfSmith}'s seal does convince {ForgeMaster} to help you. He gives you access to special tunnel that takes you to {volcano1}.
 + [next]
-- EPISODE 3. {O3EpisodeThree}
+- EPISODE 3. {03EpisodeThree}
   Journey deeper into the earth
 + [next]
-- EPISODE 4. {O3EpisodeFour}
+- EPISODE 4. {03EpisodeFour}
   Discover and Trick OR Battle an Earth Elemental
 + [next]
-- EPISODE 5. {O3EpisodeFive}
+- EPISODE 5. {03EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
-  VAR SeasonO3Hook = " \"Well ... \" The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
+  VAR Season03Hook = " \"Well ... \" The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
 
-=== O3Prologue ===
+=== 03Prologue ===
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- {Maid}: {SeasonO3Hook}
+- {Maid}: {Season03Hook}
     + [next]
 - You:
     + "Who are those gentleman {Maid}?"
@@ -61,15 +61,15 @@ PROLOGUE
     + [next]
 - (end_episode)
     +[Ω]
-        ->O3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->O3Ep1
+        ->03Ep1
 -
 ->DONE
 
-=== O3Ep1 ===
+=== 03Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{O3EpisodeOne}
+{03EpisodeOne}
 - {Axel}: turns to your party "Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant (genius) and professor of geology. Please excuse his lack of social graces."
 - {ProfessorL} humphs
 - You:
@@ -81,16 +81,16 @@ PROLOGUE
     + [next]
 - (end_episode)
     +[Ω]
-        ->O3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->O3Ep2
+        ->03Ep2
 ->DONE
 
-=== O3Ep2 ===
+=== 03Ep2 ===
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 // The cryptograph mentions an entrance into the center of planet.
 // The entrance to the center is in {DwarfCity} in the hall of the forge master.
-{O3EpisodeTwo}
+{03EpisodeTwo}
 
 - You: "Interesting. We can go with you to {DwarfCity}."
 - {ProfessorL}: "Why would you do that?"
@@ -105,7 +105,7 @@ PROLOGUE
     + [next]
 - You enter into a mountain valley a little hesitantly. Surely it is safe being so close to such a formidable city like {DwarfCity}.
     + [next]
-    
+
 - (combat1)
 - {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
     // https://www.dndbeyond.com/
@@ -142,7 +142,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ++[next]
         TODO: Change to a specific Start Menu
 
-//            --> StartMenu 
+//            --> StartMenu
 - (postcombat)
 - Congratulations on your victory!
     + [next]
@@ -193,7 +193,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
       +++ You open your mouth to explain.
       --- Forge Master {ForgeMaster} bashes your skull with single blow of his mighty hammer. He continues to crush ribs and other various body parts of your friends. Your apparent lack of integrity has earned you and the party a just reward from {ForgeMaster}.
       --- {ForgeMaster} didn't even break a sweat. You've experienced a crushing death.
-        ++++ [Death] -> O3StartMenu
+        ++++ [Death] -> 03StartMenu
 - {ForgeMaster}: "Okay. Tell me more"
 - You: "We are from {village1}, same as him, so when we recently acquired some {ore30} we went to him to talk about it."
     + You tell him about the {CelestialTower}[...]<>
@@ -210,14 +210,14 @@ Combat actions by individuals and each party are determined LIVE in class and no
 - {ForgeMaster}: "You won't find it anywhere because it hasn't been created yet. I know how. We are going to craft it!"
 - (end_episode)
     +[Ω]
-        ->O3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->O3Ep3
+        ->03Ep3
 ->DONE
 
-=== O3Ep3 ===
+=== 03Ep3 ===
 // Room 3: Trick or Setback
-{O3EpisodeThree}
+{03EpisodeThree}
 - {TheCleric}: "Great! How long will it take you to craft {EpicWeapon}?"
 - {ForgeMaster}: "That depends how long it takes you to retrieve the materials."
   + \ {TheWizard}: "What are the materials?"
@@ -253,17 +253,17 @@ Combat actions by individuals and each party are determined LIVE in class and no
     -- The god: "You don't belong here mortal."
     ++ [next]
     -- With that he smites you all with a lightening bolt. You die shocking death.
-    ++ [next] -> O3Ep3
+    ++ [next] -> 03Ep3
 
   + <> you set off into the down-sloping tunnel.
 - (end_episode)
     +[Ω]
-        ->O3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->O3Ep4
-=== O3Ep4 ===
+        ->03Ep4
+=== 03Ep4 ===
 // Room 4
-{O3EpisodeFour}
+{03EpisodeFour}
 - Initially the air feels cooler and more dank as you descend.
 - You continue deeper and deeper. After some time (several kilometers?) it seems to be getting hotter and hotter
   + \ {ProfessorL}: "By my calculations[..."]<>
@@ -341,7 +341,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ++ [next]
         -- Fortunately you aren't buried that long.
             +++ [next]
-                -> O3StartMenu
+                -> 03StartMenu
         ++[next]
 - (postcombat)
 - Congratulations on your victory!
@@ -429,7 +429,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
           ++ [next]
           -- Fortunately you aren't buried that long.
           +++ [next]
-            -> O3StartMenu
+            -> 03StartMenu
 - (postcombat2)
 - Congratulations on your victory!
     + [next]
@@ -439,13 +439,13 @@ TODO: Make this specific to the story
 
 - (end_episode)
     +[Ω]
-        ->O3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->O3Ep5
+        ->03Ep5
 ->DONE
-=== O3Ep5 ===
+=== 03Ep5 ===
 // Room 5
-{O3EpisodeFive}
+{03EpisodeFive}
 - You go to edges of the great lake and cool off.
 - {TheCleric}: "Look at the amount of steam where the lava meets the lake!"
 - {ProfessorL}: "I bet there are some amazing updraft thermal currents are generated at that location!"
@@ -473,8 +473,8 @@ TODO: Make this specific to the story
 - (death3)
 - You have died
     + [next]
-        ->O3StartMenu
-        
+        ->03StartMenu
+
  == air_baloon
 - You build an air baloon and ride the air currents. You are the mercy of the wind but at least you seem to be making progress.
 - After a few days you notice a dark shaft leading up through the ceiling of the cavern.
@@ -499,11 +499,11 @@ TODO: Make this specific to the story
 
 - (end_episode)
     +[Ω]
-        ->O3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->O3Epilogue
+        ->03Epilogue
 ->DONE
-== O3Epilogue ==
+== 03Epilogue ==
 EPILOGUE
   ->END
 // ***************************************************************

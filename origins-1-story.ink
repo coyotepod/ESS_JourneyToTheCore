@@ -1,21 +1,21 @@
 #title: Discovery in the Celestial Towers
 #author: Master Scoy
 
-VAR SeasonO1Hook = "a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit. They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself. She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
+VAR Season01Hook = "a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit. They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself. She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
 
 
 
 
 
-=== O1Prologue ===
+=== 01Prologue ===
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- "{SeasonO1Hook}"
+- "{Season01Hook}"
     + [next]
 - You:
-- {Maid}: Well <>{SeasonO1Hook}
+- {Maid}: Well <>{Season01Hook}
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."
 //    + {TheCleric}: "I could check with other priests to find out their interpretation of the omen."
 //    +
@@ -25,14 +25,14 @@ PROLOGUE
     + "Lets head to the {CelestialTower}."
 - (end_episode)
     +[Ω]
-        ->O1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->O1Ep1
+        ->01Ep1
 ->DONE
 
-=== O1Ep1 ===
+=== 01Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Role play Challenge
-{O1EpisodeOne}
+{01EpisodeOne}
 - You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick moss and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied.
 - {TheCleric}: Mr. Kepler, one of the mages, wrote a book that I just so happen to have in my BAG OF HOLDING. I think we should read "Astronomia nova" before going inside.
 - You: <>
@@ -100,19 +100,19 @@ The party walks down the path a little aways from the tower and stops to talk.
 - (enter_celestial_towers)
 - (end_episode)
     +[Ω]
-        ->O1StartMenu
+        ->01StartMenu
     + {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [next]
-        ->O1Ep2.Side_Door
+        ->01Ep2.Side_Door
     + {enter_front} [next]
-        ->O1Ep2.Front_Door
+        ->01Ep2.Front_Door
 
-=== O1Ep2 ===
+=== 01Ep2 ===
 + [Entered the Front Door]
 -- (Front_Door)
 + [Entered the Side door]
 -- (Side_Door)
 
--{O1EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
+-{01EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
 -The tower interior is a little nicer than the exterior. You are in a small vestibule. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
     + [next]->vestibule
 - (vestibule)
@@ -142,7 +142,7 @@ You head to the kitchen. No one is around except {~a couple rats chewing on mold
     + "Flee!"
         -- You attempt to run, but the the party isn't fast enough.
     + "Can we talk about this?"
-        -- The skeletons: with a hollow "aaaghh!" 
+        -- The skeletons: with a hollow "aaaghh!"
         -- <> Diplomacy doesn't seem to be the best option in this situation. The skeletons gain advantage on the first attack.
 - Roll Initiative.
     + Proceed to fight.
@@ -162,7 +162,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ->death
         -- (death) You die an inglorious death.
         ++ [next]
-            --> O1StartMenu
+            --> 01StartMenu
 - (postcombat)
 - Congratulations on your victory!
     + { not Side_Door} [next]
@@ -178,14 +178,14 @@ Combat actions by individuals and each party are determined LIVE in class and no
 - (landing) You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower.
 - (end_episode)
     +[Ω]
-       ->O1StartMenu
+       ->01StartMenu
     +[NEXT EPISODE]
-        ->O1Ep3
+        ->01Ep3
 ->DONE
 
-=== O1Ep3 ===
+=== 01Ep3 ===
 // Room 3: Trick or Setback
-{O1EpisodeThree}
+{01EpisodeThree}
 - You enter the mage's study and discover his notebook on the desk. It is magically locked.
 + [next]
 - A brief, magical message appears telling you to demonstrate your genius. You cannot open the notebook without first demonstrating an understanding of important principles of astronomy: (1) Kepler's Laws of Planetary Motion, (2) Nuclear Fusion and how elements are created by stars, (3) the life cycle of stars, and (4) the evidence for the big bang. Each correct concept grants you a key.
@@ -213,16 +213,16 @@ Unfortunately, the mage has also left a guardian as a trap and the trap has been
 
 - (enter_tower_study)
     +[Ω]
-        ->O1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->O1Ep4
+        ->01Ep4
 The room is filled with tombs of knowledge, thick stacks of parchment, and apparatus scattered throughout.
 
 ->DONE
 
-=== O1Ep4 ===
+=== 01Ep4 ===
 // Room 4: Climax
-{O1EpisodeFour}
+{01EpisodeFour}
 A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway that leads into and out of the study's.
 - Battle the GELATINOUS CUBE
 + VICTORY
@@ -237,15 +237,15 @@ A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway t
 The part goes back in and {theFighter} swishes the ooze around with his hand and takes acid damage in the process.
 - You notice an unusual ore left on the floor from the CUBE. You stuff the ore and mage's notebook into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
     +[Ω]
-        ->O1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->O1Ep5
+        ->01Ep5
 
 ->DONE
 
-=== O1Ep5 ===
+=== 01Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{O1EpisodeFive}
+{01EpisodeFive}
 - You leave the castle tower without incident the same way you entered.
 - You make your way back to the Blue Mug Inn & Tavern. You go through the notebook and find an encoded message code.
 + [next]
@@ -269,13 +269,13 @@ YOU:
 - {DwarfSmith}: Good luck weary adventurers!
 
     +[Ω]
-        ->O1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->O1Epilogue
+        ->01Epilogue
 
 ->DONE
 
-=== O1Epilogue ===
+=== 01Epilogue ===
     EPILOGUE
 
 ->END
@@ -286,19 +286,19 @@ DCI - Big Bang Theory, Cosmic Background Radiation, Redshift & galaxies moving a
 // Synopsis
 Players will travel to the wandering Wizard's Tower to look for him. Some of the locals suspect that the wandering wizard is the one who is causing changes and their weather. While at the tower players will learn some
 // +[Ω]
-//    ->O1StartMenu
+//    ->01StartMenu
 ->DONE
 
-=== O1Preface ===
-// {SeasonO1}
+=== 01Preface ===
+// {Season01}
 SETTING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
     +[Ω]
-        ->O1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->O1Epilogue
+        ->01Epilogue
 
 // ***************************************************************
 // ORGINS an Earth & Space Science story
@@ -313,7 +313,7 @@ PURPOSE
 ->END
 
 - You answer,
-+ "Lets go to {CastleTwo}, home of the noble family" ->O1Ep1
++ "Lets go to {CastleTwo}, home of the noble family" ->01Ep1
 + "Lets go to {MoonTower}" -> Moon_Tower
 + "Let's go to {SunTower}" -> Sun_Tower
 + "Let's go to {MarsTower}." -> Mars_Tower
@@ -369,14 +369,14 @@ You say, "We should learn something about these two advisors before we just go k
 === Moon_Tower ===
  {MoonTower}
 You arrive at {MoonTower}, but don't learn anything helpful. For now, it's best to go to {CastleTwo}.
-+ [next] ->O1Ep1
++ [next] ->01Ep1
 
 -> DONE
 
 === Sun_Tower ===
  {SunTower}
 You arrive at {SunTower}, but don't learn anything helpful. For now, it's best to go to {CastleTwo}.
-+ [next] ->O1Ep1
++ [next] ->01Ep1
 -> DONE
 
 === Mars_Tower ===
@@ -416,7 +416,7 @@ You arrive at {MarsTower}.
 
 = early
 You arrive at {MarsTower}, but don't learn anything helpful. For now, it's best to go to {CastleTwo}.
-+ [next] ->O1Ep1
++ [next] ->01Ep1
 
 
 === ChapterOne ===
@@ -433,13 +433,13 @@ Stones have fallen around it.
 Upon entering the tower room you see stacks of papers and books
 -> DONE
 
-=== O1Death ===
+=== 01Death ===
 You have died
 
 ->DONE
 
 +[NEXT]
-    ->O1Ep1
+    ->01Ep1
 
 ->DONE
 

@@ -1,23 +1,23 @@
 #title: Adventure to New Horizons
 #author: Master Scoy
 
-->O5StartMenu
+->05StartMenu
 
 INCLUDE global-variables.ink
 INCLUDE ess-storylines.ink
 INCLUDE origins-5-story.ink
 
-=== O5StartMenu ===
+=== 05StartMenu ===
     + [PRESS START]
-        ->O5Prologue
-    + [{O5EpisodeOne}]
-        ->O5Ep1
-    + [{O5EpisodeTwo}]
-        ->O5Ep2
-    + [{O5EpisodeThree}]
-        ->O5Ep3
-    + [{O5EpisodeFour}]
-        ->O5Ep4
-    + [{O5EpisodeFive}]
-        ->O5Ep5
+        ->05Prologue
+    + [{05EpisodeOne}]
+        ->05Ep1
+    + [{05EpisodeTwo}]
+        ->05Ep2
+    + [{05EpisodeThree}]
+        ->05Ep3
+    + [{05EpisodeFour}]
+        ->05Ep4
+    + [{05EpisodeFive}]
+        ->05Ep5
 -> DONE
