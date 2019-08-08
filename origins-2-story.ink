@@ -2,7 +2,7 @@
 #author: Master Scoy
 
 
-VAR SeasonO2Hook = "our mutual friend in the village contacted me yesterday. His contacts say the two highlander alchemists are back around home and they are very interested in meeting your party and the...item that you have recently...acquired."
+VAR Season02Hook = "our mutual friend in the village contacted me yesterday. His contacts say the two highlander alchemists are back around home and they are very interested in meeting your party and the...item that you have recently...acquired."
 
 
 
@@ -11,7 +11,7 @@ PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- {Maid}: "{SeasonO3Hook}"
+- {Maid}: "{Season02Hook}"
     + [next]
 - You:
 - {TheCleric}: This is promising news. Thank you {Maid}!
@@ -278,7 +278,7 @@ EPILOGUE
 -> DONE
 
 === O2Preface ===
-{SeasonO2}
+{Season02}
 SETTING
 {WorldSetting}
 PURPOSE

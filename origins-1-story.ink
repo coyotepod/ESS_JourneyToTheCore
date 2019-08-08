@@ -23,7 +23,7 @@ PROLOGUE
 - {TheFighter}: I just want to crack some skulls.
 - You:
     + "Lets head to the {CelestialTower}."
-  -
+- (end_episode)
     +[Ω]
         ->O1StartMenu
     +[NEXT EPISODE]
@@ -98,18 +98,20 @@ The party walks down the path a little aways from the tower and stops to talk.
     ++ [Success]
     ++ [Fail] ->open_the_door
 - (enter_celestial_towers)
+- (end_episode)
     +[Ω]
         ->O1StartMenu
-+ {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [NeXT]
-    ->O1Ep2.Side_Door
-+ {enter_front} [NEXT]
-    ->O1Ep2.Front_Door
+    + {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [next]
+        ->O1Ep2.Side_Door
+    + {enter_front} [next]
+        ->O1Ep2.Front_Door
 
 === O1Ep2 ===
-+ [Front Door]
++ [Entered the Front Door]
 -- (Front_Door)
-+ [Side door]
++ [Entered the Side door]
 -- (Side_Door)
+
 -{O1EpisodeTwo} // Room 2: Puzzle/Role play Challenge OR Room 1: Guardian
 -The tower interior is a little nicer than the exterior. You are in a small vestibule. Beyond the vestibule, there is a small dining room with a doorway on the back wall, probably to the kitchen. There are stairs up to your right.
     + [next]->vestibule
@@ -122,13 +124,10 @@ The party walks down the path a little aways from the tower and stops to talk.
 You head to the kitchen. No one is around except {~a couple rats chewing on moldy bread.|a few dozen spiders eating flies.}
 + You turn around and go back to the dining area. -> sit_in_dining
 
-- (sit_in_dining)
-You decide to have a seat. After ten creepy minutes alone,  nothing happens.
-+ Leave the castle -> leave_castle_early
-+ Go up the stairs -> up_the_stairs
-- (leave_castle_early)
-You walk back to the vestibule. A shadowy figure steps into the entrance front of you with a drawn dagger. You turn and bolt up the stairs .-> up_the_stairs
-
+- (sit_in_dining) You decide to have a seat. After ten creepy minutes alone,  nothing happens.
+    + Leave the castle -> leave_castle_early
+    + Go up the stairs -> up_the_stairs
+- (leave_castle_early)You walk back to the vestibule. A shadowy figure steps into the entrance front of you with a drawn dagger. You turn and bolt up the stairs .-> up_the_stairs
 - (up_the_stairs)
     + {Front_Door} You walk up the stairs for {2+d4()} floors. <>
     + {Side_Door} You run up the stairs for {2+d4()} floors. <>
@@ -177,6 +176,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         -- The party agrees.
         + {Front_Door} The party continues walking up the stairs.
 - (landing) You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower.
+- (end_episode)
     +[Ω]
        ->O1StartMenu
     +[NEXT EPISODE]

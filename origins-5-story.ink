@@ -2,7 +2,7 @@
 #author: Master Scoy
 
 \ ***************************************
-- SEASON 5: {SeasonO5}
+- SEASON 5: {Season05}
 \ ***************************************
 - EPISODE 1. {O5EpisodeOne}
 
@@ -15,7 +15,7 @@
 - EPISODE 5. {O5EpisodeFive}
 
 
-VAR SeasonO5Hook = ""
+VAR Season05Hook = ""
 
 
 === O5Prologue ===

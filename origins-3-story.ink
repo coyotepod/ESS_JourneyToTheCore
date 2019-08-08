@@ -4,7 +4,7 @@
 
 
 \ ***************************************
-SEASON 3: {SeasonO3}
+SEASON 3: {Season03}
 \ ***************************************
 - EPISODE 1. {O3EpisodeOne}
 - You meet an uncle and his nephew at The Blue Mug with a cryptograph. You help them solve the cryptograph. They and your party both need to go to {DwarfCity} and meet the forge master.
@@ -21,23 +21,23 @@ SEASON 3: {SeasonO3}
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
-  VAR SeasonO3Hook = " "\Well ... \" The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
+  VAR SeasonO3Hook = " \"Well ... \" The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
 
 === O3Prologue ===
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
-- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+- Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
 - {Maid}: {SeasonO3Hook}
     + [next]
 - You:
-    + You: Who are those gentleman {Maid}?
-- {Maid}: Ah, that would be {ProfessorL} and his young nephew, {Axel}. They've been in the last couple nights arguing, but they haven't caused any trouble with the other customers.
+    + "Who are those gentleman {Maid}?"
+- {Maid}: "Ah, that would be {ProfessorL} and his young nephew, {Axel}. They've been in the last couple nights arguing, but they haven't caused any trouble with the other customers."
     + You start listening to them again.
-- {ProfessorL}: It is paramount (important) that we solve the cryptograph (code) {Axel}!
-- {Axel}: That letter cannot be correct! Its speaks of impossible things. Why waste time on this puzzle?
+- {ProfessorL}: "It is paramount (important) that we solve the cryptograph (code) {Axel}!"
+- {Axel}: "That letter cannot be correct! Its speaks of impossible things. Why waste time on this puzzle?"
     + [next]
-- {ProfessorL}: Why? Why?! (getting louder and louder). Nothing is impossible my boy. How can you call yourself a learned man with such a mindset! Accept nothing - not even the "impossible." Whats impossible today maybe in fact be possible tomorrow or given new information turns out to be true!
+- {ProfessorL}: "Why? Why?! (getting louder and louder). Nothing is impossible my boy. How can you call yourself a learned man with such a mindset! Accept nothing - not even the "impossible." Whats impossible today maybe in fact be possible tomorrow or given new information turns out to be true!"
     + [next]
 - At that moment another group comes in accompanied by a gust of wind. The paper {ProfessorL} was holding and waving is blown out of his hand toward your table.
     + (you_pick_up_letter) You lean down and pick it up.
@@ -47,15 +47,17 @@ PROLOGUE
     + You leave the paper alone.
 -
     + {you_pick_up_letter } \ {ProfessorL} snatches it away from you.
-    -- {ProfessorL}: (gruffly) Beg your pardon sir; that belongs to me!
-+ { not you_pick_up_letter } \ {ProfessorL}: Ah, my letter!
+    -- {ProfessorL}: gruffly "Beg your pardon sir; that belongs to me!"
++ { not you_pick_up_letter } \ {ProfessorL}: "Ah, my letter!"
     -- {ProfessorL} quickly comes over and snatches the paper off the floor
-- You: I mean no intrusion, but I couldn't help but over hear. My friends and I happen to be quite good at solving puzzles if you need a hand.
-    + \ {ProfessorL}: No thank you.
+- You: "I mean no intrusion, but I couldn't help but over hear. My friends and I happen to be quite good at solving puzzles."
+    + "Would you like a hand?"
+- {ProfessorL}: "No thank you."
 - He nods his head and turns back toward the young man.
-- {Axel}: (with a twinkle in his eyes) If you are as serious as you say uncle, we may need assistance.
-    + \ {ProfessorL}: Absolutely not.
-- {Axel}: Uncle, you are the most brilliant man I know, but even the most intelligent cannot know all things and may in fact need help from time to time.
+- {Axel}: with a twinkle in his eyes "If you are as serious as you say uncle, we may need assistance."
+    + [next]
+- {ProfessorL}: "Absolutely not."
+- {Axel}: "Uncle, you are the most brilliant man I know, but even the most intelligent cannot know all things and may in fact need help from time to time."
     + [next]
 - (end_episode)
     +[Ω]
@@ -68,16 +70,15 @@ PROLOGUE
 === O3Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {O3EpisodeOne}
-
-- {Axel}: (turns to your party) Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant (genius) and professor of geology. Please excuse his lack of social graces.
-- {ProfessorL} (humphs)
-    + You: No worries!
-    + You: {Axel}, you really should rein him in more.
-- {TheCleric}: Any who, perhaps we can help with that cryptograph now?
+- {Axel}: turns to your party "Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant (genius) and professor of geology. Please excuse his lack of social graces."
+- {ProfessorL} humphs
+- You:
+    + "No worries!"
+    + "{Axel}, you really should put him in check more."
+- {TheCleric}: "Any who, perhaps we can help with that cryptograph now?"
 - {ProfessorL}: {~reluctantly|grumpily} agrees and places it in the center of the table.
 (See the Game Master for a copy of the cryptograph. Once is its solved, you may proceed to the next episode.)
-+ [next]
-
+    + [next]
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -101,36 +102,50 @@ PROLOGUE
     -- You: "We are going to see forge master {ForgeMaster}."
     ++ \ {ProfessorL}: "Interesting."
 - You make your way towards {DwarfCity} in the {mountains1}. As you enter the mountainous region, the travel gets progressively more difficult. You are now within {~ 10 km | 20 km | 30 km} of the main gates.
-+ [next]
+    + [next]
 - You enter into a mountain valley a little hesitantly. Surely it is safe being so close to such a formidable city like {DwarfCity}.
-+ [next] ->Combat3_1
-
-=== Combat3_1===
-- \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
--> CombatScene
-
--
-// COMBAT OUTLINE NON-Descriptive
-You:
-    + "FIGHT!"
-    + "FLEE!"
-- <>.
+    + [next]
+    
+- (combat1)
+- {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
+    // https://www.dndbeyond.com/
+    // https://www.dndbeyond.com/
 - {CombatStart}
-    + General Description of Combat:
-    -- {Combat}
-    ++ Combat Step by Step:
-    --- {CombatTurns}
-    +++ [next]
-    ++ [next]
-    +[next]
+- You:
+    + "Fight!"
+    + "Flee!"
+        -- You attempt to run, but the the party isn't fast enough.
+    + "Can we talk about this?"
+        -- You attempt to talk.
+        TODO: Add a custom response
+        -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
+- Roll Initiative.
+    + Proceed to fight.
+    + Combat Encounter HOW-TO:
+        -- {Combat}
+            ++ [next]
+        -- {CombatTurns}
+            ++ Proceed to fight.
+
+- \**************************
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+\**************************
+    + [next]
 - The fight is over.
     + SUCCESS[!]
-    + FAILURE!
-- <>; {CombatEnd}
-    + [next] -> postcombat
-// END OF COMBAT
+        ->postcombat
+    + FAILURE[!]
+        ->death
+        TODO: Add a specific death message
+        -- (death) <>
+        -- You have died.
+        ++[next]
+        TODO: Change to a specific Start Menu
 
+//            --> StartMenu 
 - (postcombat)
+- Congratulations on your victory!
+    + [next]
 - The rest of the trip is uneventful.
     + [next]
 - You approach the guards of the Iron Gate.
@@ -271,7 +286,6 @@ You:
 - {TheCleric}: "Seems {theFighter} is getting dehydrated."
     + \ {TheWizard}: "Did you know ground water [..."] <>
         -- is stored in large quantities in between the rocks of the ground?"
-
     + \ {TheWizard}: "Did you know dehydration [..."] <>
         -- side effects include poor judgement, delirium, and stomach distress?"
 - You: "Um...cool?"
@@ -288,34 +302,51 @@ You:
 - A few more miles down the tunnel the party is still giddy from the water find in this assumed realm of earth and fire. Water stored or moving through rocks was interesting discovery.
 + Then things got even more interesting.
 - An area of stone on the side of the tunnel starts to coalesce (come together) and bud outward. In a split second, an animated mound of rock and dirt stands before you. Its an Earth Elemental.
-You:
-  + "FIGHT!"
-  + "FLEE!"
-    -- You and the geologists turn to run.
-    -- {TheCleric}: "Fools! We have no where to flee. We're thousands of miles underground by this point. Surely the elemental would catch us or reform ahead of us."
-    -- The party turns and faces the creature. The party loses initiative.
-    ++ You: "Fight?"
-// Combat NON-Descriptive
+
+- (combat1)
+- An EARTH ELEMENTAL stands before you.
+    // https://www.dndbeyond.com/
+
 - {CombatStart}
-    + General Description of Combat:
+- You:
+    + "Fight!"
+    + "Flee!"
+        -- You and the geologists turn to run.
+        -- {TheCleric}: "Fools! We have no where to flee. We're thousands of miles underground by this point. Surely the elemental would catch us or reform ahead of us."
+        -- The party turns and faces the creature. The party loses initiative.
+    ++ You: "Fight?"    + "Can we talk about this?"
+        -- You attempt to talk.
+        TODO: Add a custom response
+        -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
+- Roll Initiative.
+    + Proceed to fight.
+    + Combat Encounter HOW-TO:
         -- {Combat}
-        ++ Combat Step by Step:
-            --- {CombatTurns}
-            +++ [next]
-        ++ [next]
-    +[next]
-- The party battles the Earth Elemental for some minutes.
+            ++ [next]
+        -- {CombatTurns}
+            ++ Proceed to fight.
+
+- \**************************
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+\**************************
     + [next]
-- Finally, the fight is over.
-      + SUCCESS[!]
-      + FAILURE[!]
-      -- You are smothered and die.
-      -- There is the risk of being buried for millennia.
-      ++ [next]
-      -- Fortunately you aren't buried that long.
-      +++ [next]
-        -> O3StartMenu
-  - <> - {CombatEnd}
+- The fight is over.
+    + SUCCESS[!]
+        ->postcombat
+    + FAILURE[!]
+        ->death
+        -- (death) <>
+        -- You are smothered and die.
+        --There is the risk of being buried for millennia.
+        ++ [next]
+        -- Fortunately you aren't buried that long.
+            +++ [next]
+                -> O3StartMenu
+        ++[next]
+- (postcombat)
+- Congratulations on your victory!
+    + [next]
+- <> - {CombatEnd}
       + [next]
   // END OF COMBAT
 - As the elemental starts to fall into hunks of rock and sediments, you notice an especially fine mound of sediments that appears somewhat iridescent (shiny).
@@ -354,39 +385,57 @@ You:
 - The sea is large enough that you cannot view the far side.
     + \ {Axel}: "Look at the glow coming from the horizon to our right."
 - {ProfessorL}: "Probably exposed lava."
-    + \ {TheFighter}: "Might a good place to dry off."
-    -- You: "I agree. Lets dry off our clothes."
-    -- The party makes its way towards the glow {Axel} observed. {ProfessorL}'s inference was correct. It is an exposed lava pool. You're able to quickly dry out your clothes and gear.
-    -- Everyone is dry and sleepy from the warmth of the lava.
-    ++ You: "Let's turn in"
+- {TheFighter}: "Might a good place to dry off."
+- You:
+    + "I agree. Lets dry off our clothes."
+        -- The party makes its way towards the glow {Axel} observed. {ProfessorL}'s inference was correct. It is an exposed lava pool. You're able to quickly dry out your clothes and gear.
+        -- Everyone is dry and sleepy from the warmth of the lava.
+        ++ You: "Let's turn in"
 - Some time in the night you notice the heat getting more and more intense. You all awaken with a start.
-+ [next]
+    + [next]
+
+- (combat2)
 - A large FIRE ELEMENTAL, about 9 feet tall and 4 feet wide, stands before you.
-// Combat NON-Descriptive
-You:
-    + "FIGHT!"
-    + "FLEE!"
+    // https://www.dndbeyond.com/
 - {CombatStart}
-    + General Description of Combat:
-    -- {Combat}
-    ++ Combat Step by Step:
-    --- {CombatTurns}
-    +++ [next]
-    ++ [next]
-    +[next]
+- You:
+    + "Fight!"
+    + "Flee!"
+        -- You attempt to run, but the the party isn't fast enough.
+    + "Can we talk about this?"
+        -- You attempt to talk.
+        TODO: Add a custom response
+        -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
+- Roll Initiative.
+    + Proceed to fight.
+    + Combat Encounter HOW-TO:
+        -- {Combat}
+            ++ [next]
+        -- {CombatTurns}
+            ++ Proceed to fight.
+
+- \**************************
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+\**************************
+    + [next]
 - The fight is over.
     + SUCCESS[!]
+        ->postcombat2
     + FAILURE[!]
-          -- You are first fried extra crispy then completely into ash.
+        -- (death2) <>
+        -- You have died.
+        -- You are first fried extra crispy then completely into ash.
           -- There is the very real danger of being buried ash for millennia.
           ++ [next]
           -- Fortunately you aren't buried that long.
           +++ [next]
             -> O3StartMenu
-- <> - {CombatEnd}
+- (postcombat2)
+- Congratulations on your victory!
     + [next]
-// END OF COMBAT
 
+TODO: Make this specific to the story
+- You carefully gather its lingering essence into a bottle.
 
 - (end_episode)
     +[Ω]
@@ -401,27 +450,31 @@ You:
 - {TheCleric}: "Look at the amount of steam where the lava meets the lake!"
 - {ProfessorL}: "I bet there are some amazing updraft thermal currents are generated at that location!"
 - {TheFighter}: Eyes glaze over in confusion.
+    + [next]
 - {Axel}: translates "There's a strong wind moving updwards."
 - {TheWizard}: "Strong winds would make for good sailing."
 - {TheCleric}: "I've seen gnomes craft hot air baloons that ride these - what did you call it, thermal currents?"
 - {ProfessorL}: "It would seem we have a couple options for crossing the great lake."
-  + You: "Let's make a raft"
-    ->raft
-  + You: "Let's make a hot air baloon."
-    ->air_baloon
+- You:
+  + "Let's make a raft"
+        ->raft
+    + "Let's make a hot air baloon."
+        ->air_baloon
  == raft
  - Everyone agrees. You start looking for driftwood. It takes a considerable amount of time however as there aren't many trees thousands of miles below the surface that haven't become petrified. Eventually you get enough wood to craft a medium sized raft. You have enough rope and cloak material to fashion a makeshift sail.
     + [next]
 - After a short rest and meal, you set out. Its a crude but functional vessel. You make good progress for {1+d4()} days.
 - {ProfessorL}: "Look at the dark opening up above. That's either a storm or darkened tunnel leading up."
 - {Axel}: "Perhaps we should head back and craft a baloon afterall."
-+ [next]
+    + [next]
 - You have no time to consider the baloon option though. A pair of gigantic tentacles with suckers shoots out of the water and around the raft. {Axel} is knocked overboard immediately. Another pair of tentacles shoots out of the water and around the raft. The raft is easily crushed and pulled into the inky depths.
     + [next]
 - The last thing you see is an open gigantic beak coming at you. The kraken has easily accomplish a total party kill (TPK). ->death3
-
- -> DONE
-
+- (death3)
+- You have died
+    + [next]
+        ->O3StartMenu
+        
  == air_baloon
 - You build an air baloon and ride the air currents. You are the mercy of the wind but at least you seem to be making progress.
 - After a few days you notice a dark shaft leading up through the ceiling of the cavern.
@@ -443,7 +496,7 @@ You:
 - No one from your party is laughing.
 - {ForgeMaster}: "How are you at holding your breathe? The final material is water essence!" He laughs loudly again.
 - Again, no one from your party is laughing.
--> DONE
+
 - (end_episode)
     +[Ω]
         ->O3StartMenu
@@ -453,13 +506,6 @@ You:
 == O3Epilogue ==
 EPILOGUE
   ->END
-
- == death3 ==
- You have died
- + [next] ->O3StartMenu
-
-    -> DONE
-
 // ***************************************************************
 ////
 // ENDURING QUESTIONS
