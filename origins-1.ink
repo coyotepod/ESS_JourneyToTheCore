@@ -4,6 +4,7 @@
 ->01StartMenu
 
 INCLUDE global-variables.ink
+INCLUDE origins-variables.ink
 INCLUDE ess-storylines.ink
 INCLUDE origins-1-story.ink
 

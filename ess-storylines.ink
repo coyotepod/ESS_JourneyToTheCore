@@ -6,11 +6,7 @@
  "WANDERING in THE FOREST"
 // ***************************************************************
 VAR Topic0 = "Habits of Mind"
-    VAR 00EpisodeOne =      "THE WOODS"
-    VAR 00EpisodeTwo =      "THE CROSSROADS"
-    VAR 00EpisodeThree =    "THE VILLAGE"
-    VAR 00EpisodeFour =     "THE BLUE MUG"
-    VAR 00EpisodeFive =     "THE HABITS OF MIND"
+
 
 
 // ***************************************************************
@@ -24,11 +20,6 @@ VAR P1_2 = ""
 VAR Q1_3 = "What are the predictable patterns caused by Earth's movement in the solar system?"
 VAR P1_3 = ""
 
-    VAR 01EpisodeOne =      "AT THE DOOR"
-    VAR 01EpisodeTwo =      "UP THE STAIRS"
-    VAR 01EpisodeThree =    "IN THE STUDY"
-    VAR 01EpisodeFour =     "AFTER THE CUBE"
-    VAR 01EpisodeFive =     "FOR A CODE"
 
 // Print Screen
 //{Topic1}: {Season01}
@@ -48,11 +39,6 @@ VAR P2_1 =""
 VAR Q2_2 = "Why do the continents move?"
 VAR P2_2 =""
 
-    VAR 02EpisodeOne =      "THE HIGHLANDERS"
-    VAR 02EpisodeTwo =      "DEEP TIME"
-    VAR 02EpisodeThree =    "A RIVER"
-    VAR 02EpisodeFour =     "THE AIR TEMPLE"
-    VAR 02EpisodeFive =     "A FORGE MASTER"
 
 // Print Screen
 //{Topic2}: {Season02}
@@ -71,11 +57,6 @@ VAR P3_1 =""
 VAR Q3_2 = "How do the properties and movements of water shape Earth's surface and affect its systems?"
 VAR P3_2 =""
 
-    VAR 03EpisodeOne =     "THE TRAVELERS"
-    VAR 03EpisodeTwo =     "THE FORGE MASTER"
-    VAR 03EpisodeThree =   "THE DEPTHS"
-    VAR 03EpisodeFour =    "THE ELEMENTALS"
-    VAR 03EpisodeFive =    "THE WAY BACK"
 
 // Print Screen
 //{Topic3}: {Season03}
@@ -95,11 +76,6 @@ VAR P4_1 = ""
 VAR Q4_2 = "What's causing the extreme snowfall on the Eastern shores Lake Mishigami?"
 VAR P4_2 = ""
 
-    VAR 04EpisodeOne =     "THE STRANGE WEATHER"
-    VAR 04EpisodeTwo =     "THE REEDS"
-    VAR 04EpisodeThree =   "THE WATER"
-    VAR 04EpisodeFour =    "THE ELEMENTAL"
-    VAR 04EpisodeFive =    "THE KRAKEN"
 
 // Print Screen
 {Topic4}
@@ -118,11 +94,6 @@ VAR ESS5_Ph1 =""
 VAR ESS5_Q2 = "How do people model and predict the effects of human activities on Earth's climate?"
 VAR ESS5_Ph2 =""
 
-    VAR 05EpisodeOne =      "EPISODE 1"
-    VAR 05EpisodeTwo =      "EPISODE 2"
-    VAR 05EpisodeThree =    "EPISODE 3"
-    VAR 05EpisodeFour =     "EPISODE 4"
-    VAR 05EpisodeFive =     ""
 
 // Print Screen
 {Topic5}
@@ -134,17 +105,7 @@ Phenomena: {ESS5_Ph2}
 // ***************************************************************
  "MINING THE CAVERNS OF TIME"
 // ***************************************************************
-VAR 06EpisodeOne =      "THE CHARTER"
-VAR 06EpisodeTwo =      "THE MINING"
-VAR 06EpisodeThree =    "THE FRACTURE"
-VAR 06EpisodeFour =     "THE EVIL MAGE"
-VAR 06EpisodeFive =     "THE TIME TOMBS"
 
 // ***************************************************************
-VAR Season07 =     "HEROES OF ARRAKIS"
+//VAR Season07 =     "HEROES OF ARRAKIS"
 // ***************************************************************
-VAR ArrakisEpisodeOne   =   "A DISTURBANCE"
-VAR ArrakisEpisodeTwo   =   "STUDYING THE NATIVES"
-VAR ArrakisEpisodeThree =   "CLEVERNESS"
-VAR ArrakisEpisodeFour  =   "BATTLE OF ARRAKIS"
-VAR ArrakisEpisodeFive  =   "A NICHE"
