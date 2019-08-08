@@ -215,8 +215,10 @@ VAR CombatTurns = "Combat Step by Step:  (1) Determine Surprise. The GM determin
 VAR CombatEnd = "The encounter is complete."
 
 ===CombatScene===
-// Copy and paste "CombatScene" into story as needed.
+TODO: copy and paste "CombatScene" template into a story as needed.
 - (combat1)
+
+TODO: Add a specific monster here
 - {d4()+1} MONSTERS come at you.
     // https://www.dndbeyond.com/
     // https://www.dndbeyond.com/
@@ -228,6 +230,7 @@ VAR CombatEnd = "The encounter is complete."
         -- You attempt to run, but the the party isn't fast enough.
     + "Can we talk about this?"
         -- You attempt to talk.
+        TODO: Add a custom response
         -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
 - Roll Initiative.
     + Proceed to fight.
@@ -246,12 +249,18 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ->postcombat
     + FAILURE[!]
         ->death
-        -- (death) You have died.
-        ++ [next]
-//            --> O4StartMenu
+        TODO: Add a specific death message
+        -- (death) <>
+        -- You have died.
+        ++[next]
+        TODO: Change to a specific Start Menu
+
+//            --> StartMenu 
 - (postcombat)
 - Congratulations on your victory!
     + [next]
+
+TODO: Make this specific to the story
 - Next part of story...
 
 -> DONE

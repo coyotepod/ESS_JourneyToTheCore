@@ -67,7 +67,7 @@ PROLOGUE
         ++ Brahe thinks the nearby planets orbit the sun but the sun orbits our planet.
         -> enter_front
 - (enter_front)
-- {Castellan}: Sorry for doubting you -
+- {Castellan}: Sorry for doubting you
 - {TheWizard}: We weren't finished. We have reason and evidence to support the idea that the planets orbit the sun as Brahe stated, BUT our planet also orbits the sun.
 + [next]
 - {Castellan}: Oh my, now that's an original! I'm sure Master Brahe and Kepler will have...thoughts on your idea. A word of caution; move cautiously up to the 13th floor to meet them and you are likely to encounter...less problems.
@@ -79,7 +79,7 @@ You glance at {theWizard} surprised by his additional idea. The entire party loo
 You need to leave. The castellan slams the door ending the conversation.
 The party walks down the path a little aways from the tower and stops to talk.
 - {TheFighter}: "Perhaps we could sneak in a side door?"
-- You: Its worth a shot.
+- You: "Its worth a shot."
 - You:
     + Walk around to the right of the tower.
     + Walk around to the left of the tower.
@@ -130,20 +130,52 @@ You decide to have a seat. After ten creepy minutes alone,  nothing happens.
 You walk back to the vestibule. A shadowy figure steps into the entrance front of you with a drawn dagger. You turn and bolt up the stairs .-> up_the_stairs
 
 - (up_the_stairs)
-    + {Front_Door} You walk up the stairs.
-    + {Side_Door} You run up the stairs.
-- After {2+d4()} floors, you encounter {d4()} skeletons.
-+ [next]
-- You engaged in combat with the SKELETONS.
-    + You defeat the SKELETONS ->landing
-    ++ {Side_Door} The party continues running up the stairs.
-    -- You face SKELETONS. Again.
-    +++ You defeat the SKELETONS.
-    --- {TheWizard}: I think we might try walking rather than running the rest of the way.
-    --- The party agrees.
-    ++ You die ->O1StartMenu
-    ++ {Front_Door} The party continues walking up the stairs.
-    + You die an unglorious death. ->O1StartMenu
+    + {Front_Door} You walk up the stairs for {2+d4()} floors. <>
+    + {Side_Door} You run up the stairs for {2+d4()} floors. <>
+-
+    + [next]
+- {d4()+1} SKELETONS come from the stairs above.
+        // https://www.dndbeyond.com/
+- (combat1)
+- {CombatStart}
+- You:
+    + "Fight!"
+    + "Flee!"
+        -- You attempt to run, but the the party isn't fast enough.
+    + "Can we talk about this?"
+        -- The skeletons: with a hollow "aaaghh!" 
+        -- <> Diplomacy doesn't seem to be the best option in this situation. The skeletons gain advantage on the first attack.
+- Roll Initiative.
+    + Proceed to fight.
+    + Combat Encounter HOW-TO:
+        -- {Combat}
+            ++ [next]
+            -- {CombatTurns}
+            +++ Proceed to fight.
+- \**************************
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+\**************************
+        + [next]
+- The fight is over.
+    + SUCCESS[!]
+        ->postcombat
+    + FAILURE[!]
+        ->death
+        -- (death) You die an inglorious death.
+        ++ [next]
+            --> O1StartMenu
+- (postcombat)
+- Congratulations on your victory!
+    + { not Side_Door} [next]
+        ->landing
+    + { Side_Door } The party continues running up the stairs.
+        -- You face SKELETONS. Again.
+        ++ SUCCESS[!]
+        ++ FAILURE[!]
+            ->death
+        -- {TheWizard}: "I think we might try walking rather than running the rest of the way."
+        -- The party agrees.
+        + {Front_Door} The party continues walking up the stairs.
 - (landing) You finally make it to the 13th floor landing. With a gentle nudge of the thick wooden door, you enter the top room of the tower.
     +[Ω]
        ->O1StartMenu
