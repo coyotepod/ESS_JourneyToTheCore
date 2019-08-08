@@ -53,21 +53,21 @@ INCLUDE origins-07.ink
 /*********************
 === AboutStartMenu ===
     + [{SeasonO0}]
-        ->Season0
+        ->O0StartMenu
     + [{SeasonO1}]
-        ->Season1
+        ->O1StartMenu
     + [{SeasonO2}]
-        ->Season2
+        ->O2StartMenu
     + [{SeasonO3}]
-        ->Season3
+        ->O3StartMenu
     + [{SeasonO4}]
-        ->Season4
+        ->O4StartMenu
     + [{SeasonO5}]
-        ->Season5
+        ->O5StartMenu
     + [{SeasonArrakis}]
-        ->SeasonARRAKIS
+        ->ArrakisStartMenu
     + [{SeasonO6}]
-        ->SeasonEpilogue
+        ->O6StartMenu
 //    + {OriginsStartMenu} [ALPHA]
 //        ->OriginsStartMenu
 
