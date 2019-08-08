@@ -4,8 +4,6 @@
 \ ***************************************
 SEASON 4: {SeasonO4}
 \ ***************************************
-
-
 - EPISODE 1. {O4EpisodeOne}
   Get an underwater vessel from the gnomes to enter an underwater kingdom. Players need to kill a certain MOB to gain the favor of Gnomes, Dwarves, or Hephaestus.
   Enter a labyrinth at the bottom of an ocean kingdom to rescue a daughter of Hephaestus.
@@ -17,12 +15,7 @@ SEASON 4: {SeasonO4}
   Negotiate OR Battle a Water Elemental
 - EPISODE 5. {O4EpisodeFive}
 
-VAR ESS_Q4 = "What regulates weather and climate?"
-VAR ESS_Ph4 = "Water spouts"
-
 VAR SeasonO4Hook = "Merfolk in the Sea of Fallen Stars are said to be causing problems. There are also reoccurring water spouts in Lake Mishigami that some say aren't natural.  Lastly, I've heard farmers and rangers complain more than usual about the weather."
-
-
 
 The gnomes have been testing a new underwater vessel! Some say it can stay underwater for days. They speculate is could be used to reach the underwater city of the merfolk."
 
@@ -46,7 +39,7 @@ PROLOGUE
         -- {TheFighter}: "Definitely want to avoid that place then."
         -- You: face palm
             ++ "We are actually looking for water-related adventures."
-    + "Do you have more to information about the weather complaints?" 
+    + "Do you have more to information about the weather complaints?"
         -- {Maid}: "Sorry, not really."
         -- {TheCleric}: "We are looking for a water adventure. Weather and water are DEFINITELY related to each other, but I think we should first focus on acquiring (getting) that item that our new 'friend' has requested." Rubs chin thinking.
         --You:
@@ -54,7 +47,7 @@ PROLOGUE
 
 - {TheFighter}: "Oh right."
 
-    
+
 - {TheWizard}: "Hmm. We might also try a Potion of Water Breathing"
 You go to {lake3}.
 You battle
@@ -76,9 +69,9 @@ You battle
     + "Let's explore the eastern shoreline"
     + "Let's explore the southern shoreline"
     + "Let's explore the western shoreline"
-    
+
 - (combat1)
-- {d4()+1} {~Crocodiles} come out of the water at you. 
+- {d4()+1} {~Crocodiles} come out of the water at you.
     // https://www.dndbeyond.com/monsters/crocodile
     // https://www.dndbeyond.com/monsters/giant-poisonous-snake
 
@@ -97,7 +90,7 @@ You battle
             ++ [next]
         -- {CombatTurns}
             ++ Proceed to fight.
-- \************************** 
+- \**************************
 Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
 \**************************
     + [next]

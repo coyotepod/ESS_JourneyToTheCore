@@ -6,7 +6,6 @@
 \ ***************************************
 SEASON 3: {SeasonO3}
 \ ***************************************
-
 - EPISODE 1. {O3EpisodeOne}
 - You meet an uncle and his nephew at The Blue Mug with a cryptograph. You help them solve the cryptograph. They and your party both need to go to {DwarfCity} and meet the forge master.
 + [next]
@@ -22,26 +21,16 @@ SEASON 3: {SeasonO3}
 - EPISODE 5. {O3EpisodeFive}
   trapped deep in the earth but ride a spring of water upwards
 
-  VAR SeasonO3Hook = "The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
+  VAR SeasonO3Hook = " "\Well ... \" The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite."
 
 === O3Prologue ===
 PROLOGUE
-- (end_episode)
-    +[Ω]
-        ->O3StartMenu
-    +[NEXT EPISODE]
-        ->O3Ep1
--
-->DONE
-
-=== O3Ep1 ===
-// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{O3EpisodeOne}
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
-    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
-- {Maid}: Well...
-- {SeasonO3Hook}
+    + You: "We grow {~bored|tired} of town life. What news do you have?"
+- {Maid}: {SeasonO3Hook}
+    + [next]
+- You:
     + You: Who are those gentleman {Maid}?
 - {Maid}: Ah, that would be {ProfessorL} and his young nephew, {Axel}. They've been in the last couple nights arguing, but they haven't caused any trouble with the other customers.
     + You start listening to them again.
@@ -68,6 +57,18 @@ PROLOGUE
     + \ {ProfessorL}: Absolutely not.
 - {Axel}: Uncle, you are the most brilliant man I know, but even the most intelligent cannot know all things and may in fact need help from time to time.
     + [next]
+- (end_episode)
+    +[Ω]
+        ->O3StartMenu
+    +[NEXT EPISODE]
+        ->O3Ep1
+-
+->DONE
+
+=== O3Ep1 ===
+// Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
+{O3EpisodeOne}
+
 - {Axel}: (turns to your party) Hello, I am {Axel} and this my uncle, {ProfessorL}. He is a savant (genius) and professor of geology. Please excuse his lack of social graces.
 - {ProfessorL} (humphs)
     + You: No worries!
@@ -104,11 +105,11 @@ PROLOGUE
 - You enter into a mountain valley a little hesitantly. Surely it is safe being so close to such a formidable city like {DwarfCity}.
 + [next] ->Combat3_1
 
-=== Combat3_1=== 
+=== Combat3_1===
 - \ {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
 -> CombatScene
 
-- 
+-
 // COMBAT OUTLINE NON-Descriptive
 You:
     + "FIGHT!"
@@ -142,8 +143,8 @@ You:
 - {TheWizard}: "Well {DwarfSmith} and {ProfessorL}'s note say to see forge master {ForgeMaster}. He's in the Lemnos district."
 - (CityShops)
     + Go to Potion shop.
-        -- (potion_shop) You enter the potion shop and look around. 
-        -- {TheWizard}: "Let's purchase a POTION OF HEAT RESISTANCE for everyone. A POTION OF FIRE RESISTANCE has greater potency or effectiveness against heat, but it only last an hour. This potion will minimize the effects of intense heat but for many days." 
+        -- (potion_shop) You enter the potion shop and look around.
+        -- {TheWizard}: "Let's purchase a POTION OF HEAT RESISTANCE for everyone. A POTION OF FIRE RESISTANCE has greater potency or effectiveness against heat, but it only last an hour. This potion will minimize the effects of intense heat but for many days."
         ++ [next] -> CityShops
     + Go to Weapons shop.
         -- {~Shop clerk: "I'm sorry, the Goblin War has emptied our inventory." | It appears to be closed.}
@@ -270,7 +271,7 @@ You:
 - {TheCleric}: "Seems {theFighter} is getting dehydrated."
     + \ {TheWizard}: "Did you know ground water [..."] <>
         -- is stored in large quantities in between the rocks of the ground?"
-        
+
     + \ {TheWizard}: "Did you know dehydration [..."] <>
         -- side effects include poor judgement, delirium, and stomach distress?"
 - You: "Um...cool?"
@@ -408,7 +409,7 @@ You:
     ->raft
   + You: "Let's make a hot air baloon."
     ->air_baloon
- == raft 
+ == raft
  - Everyone agrees. You start looking for driftwood. It takes a considerable amount of time however as there aren't many trees thousands of miles below the surface that haven't become petrified. Eventually you get enough wood to craft a medium sized raft. You have enough rope and cloak material to fashion a makeshift sail.
     + [next]
 - After a short rest and meal, you set out. Its a crude but functional vessel. You make good progress for {1+d4()} days.
@@ -418,17 +419,17 @@ You:
 - You have no time to consider the baloon option though. A pair of gigantic tentacles with suckers shoots out of the water and around the raft. {Axel} is knocked overboard immediately. Another pair of tentacles shoots out of the water and around the raft. The raft is easily crushed and pulled into the inky depths.
     + [next]
 - The last thing you see is an open gigantic beak coming at you. The kraken has easily accomplish a total party kill (TPK). ->death3
- 
+
  -> DONE
- 
+
  == air_baloon
 - You build an air baloon and ride the air currents. You are the mercy of the wind but at least you seem to be making progress.
 - After a few days you notice a dark shaft leading up through the ceiling of the cavern.
     + [next]
 - Gigantic suckered tentacles shoot up from the water towards you. They fall just short, but way too close for comfort.
-- Everyone starts throwing over any extra weight to gain altitude. The kraken has now surfaced and throws its tentacles at you again and again. 
+- Everyone starts throwing over any extra weight to gain altitude. The kraken has now surfaced and throws its tentacles at you again and again.
     + [next]
-- You continue to chuck heavy and sometimes valuable materials overboard. The baloon slowly makes its way up the shaft. 
+- You continue to chuck heavy and sometimes valuable materials overboard. The baloon slowly makes its way up the shaft.
     + [next]
 - More than once the sides of the baloon scrape sharp edges, but the structure holds.
 - {ProfessorL}: I think we are in an old volcanic throat and that cavern was its lava chamber.
@@ -438,7 +439,7 @@ You:
 - You make your way back down the snowy slopes to the gates of Iron Forge.
     + [next]
 - You meet with {ForgeMaster}.
-- {ForgeMaster}: "I was excited about the possibility of crafting {EpicWeapon}, but I must say I never expected you to actually accomplish it!" He laughs loudly. 
+- {ForgeMaster}: "I was excited about the possibility of crafting {EpicWeapon}, but I must say I never expected you to actually accomplish it!" He laughs loudly.
 - No one from your party is laughing.
 - {ForgeMaster}: "How are you at holding your breathe? The final material is water essence!" He laughs loudly again.
 - Again, no one from your party is laughing.
@@ -452,11 +453,11 @@ You:
 == O3Epilogue ==
 EPILOGUE
   ->END
-  
+
  == death3 ==
  You have died
  + [next] ->O3StartMenu
- 
+
     -> DONE
 
 // ***************************************************************

@@ -10,8 +10,10 @@ VAR SeasonO2Hook = "our mutual friend in the village contacted me yesterday. His
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
-    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
-- {Maid}: So <>{SeasonO2Hook}
+    + You: "We grow {~bored|tired} of town life. What news do you have?"
+- {Maid}: "{SeasonO3Hook}"
+    + [next]
+- You:
 - {TheCleric}: This is promising news. Thank you {Maid}!
 - You: Sounds like we'll be venturing off to {village5}?
 - The whole party agrees.

@@ -1,8 +1,9 @@
 #title: Discovery in the Celestial Towers
 #author: Master Scoy
 
-
 VAR SeasonO1Hook = "a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit. They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself. She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
+
+
 
 
 
@@ -10,22 +11,10 @@ VAR SeasonO1Hook = "a very large fireball recently streaked through the sky and 
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
-    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
-
-/*
-- Your party is at The Blue Mug inn & tavern when {Maid} comes up to the table with a {~ warm| big| kind} smile.
-- {Maid}: "Welcome weary adventurers! Anything else I can get the you?"
-    + [Look at your companions]
-      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
-    + [Turn to {Maid}]
-- You: <>
-    + We grow tired of town life. Do you have any news?
-        // - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
-        // + "We are interested in another meal," as your stomach gurgles. -> meal
-        // -- {Maid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
-*/    
-
-- {Maid}: <>
+    + You: "We grow {~bored|tired} of town life. What news do you have?"
+- "{SeasonO1Hook}"
+    + [next]
+- You:
 - {Maid}: Well <>{SeasonO1Hook}
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."
 //    + {TheCleric}: "I could check with other priests to find out their interpretation of the omen."
@@ -34,8 +23,7 @@ PROLOGUE
 - {TheFighter}: I just want to crack some skulls.
 - You:
     + "Lets head to the {CelestialTower}."
-
--
+  -
     +[Ω]
         ->O1StartMenu
     +[NEXT EPISODE]
@@ -422,3 +410,12 @@ You have died
     ->O1Ep1
 
 ->DONE
+
+/*
+    + [Look at your companions]
+      -- You take a second to glance around, too. Sitting to your right is a male wizard more powerful than his young age would imply. The equally lovely and strong willed female healer sits across from him. The brawny fighter sits next to her. You are a green, but enthusiastic party of adventurers.
+    + [Turn to {Maid}]
+        - You respond, "On second thought, I think we'll pass on the extra meal. Any news of new quests?"
+          + "We are interested in another meal," as your stomach gurgles. -> meal
+            -- {Maid}  says, "I think we have some {~old mutton| brisket that has only slightly turned|muskrat stew} in the back."
+*/
