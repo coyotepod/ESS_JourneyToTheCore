@@ -17,7 +17,7 @@ This story is still in active development
     + You: "We grow {~bored|tired} of town life. What news do you have?"
 - (season_hook) // SEASON HOOK
     + [next]
-    
+
 - (episode_end)
 TODO: Change "07" to specific Season
 OBJECTIVES for {Season07}
@@ -247,7 +247,7 @@ TODO: Make this specific to the story
 ->DONE
 
 === 07Epilogue ===
-    EPILOGUE
+EPILOGUE
 
 ->END
 
