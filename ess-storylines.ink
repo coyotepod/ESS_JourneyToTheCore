@@ -6,82 +6,73 @@
  "WANDERING in THE FOREST"
 // ***************************************************************
 VAR Topic0 = "Habits of Mind"
-
-
+VAR Q0 = "What habits of mind make a person successful?"
 
 // ***************************************************************
 "DISCOVERY at CELESTIAL TOWERS"
 // ***************************************************************
 VAR Topic1 = "SPACE SYSTEMS"
-VAR Q1_1 = "What is the universe?"
-VAR P1_1 = ""
-VAR Q1_2 = "What goes on it stars?"
-VAR P1_2 = ""
-VAR Q1_3 = "What are the predictable patterns caused by Earth's movement in the solar system?"
-VAR P1_3 = ""
+VAR Q1a = "What is the universe?"
+VAR Q1b = "What goes on it stars?"
+VAR Q1c = "What are the predictable patterns caused by Earth's movement in the solar system?"
+VAR Ph1 = ""
 
 
 // Print Screen
 //{Topic1}: {Season01}
-Question: {Q1_1}
-Phenomena: {P1_1}
-Question: {Q1_2}
-Phenomena: {P1_2}
-Question: {Q1_3}
-Phenomena: {P1_3}
+Questions {Q1a} {Q1b} {Q1c}
+Phenomena: {Ph1}
 
 // ***************************************************************
 "EXPEDITION OF ORIGINS"
 // ***************************************************************
 VAR Topic2 = "HISTORY of EARTH"
-VAR Q2_1 = "How do people reconstruct and date events in Earth's planetary history?"
-VAR P2_1 =""
-VAR Q2_2 = "Why do the continents move?"
-VAR P2_2 =""
-
+VAR Q2a = "How do people reconstruct and date events in Earth's planetary history?"
+VAR Q2b= "Why do the continents move?"
+VAR Ph2 =""
 
 // Print Screen
 //{Topic2}: {Season02}
-Question: {Q2_1}
-Phenomena: {P2_1}
-Question: {Q2_2}
-Phenomena: {P2_2}
-
+Question: {Q2a} {Q2b}
+Phenomena: {Ph2}
 
 // ***************************************************************
 "JOURNEY TO THE CORE"
 // ***************************************************************
 VAR Topic3 = "EARTH'S SYSTEMS"
-VAR Q3_1 = "How do the major Earth systems interact?"
-VAR P3_1 =""
-VAR Q3_2 = "How do the properties and movements of water shape Earth's surface and affect its systems?"
-VAR P3_2 =""
+VAR Q3a = "How do the major Earth systems interact?"
+VAR Q3b = "How do the properties and movements of water shape Earth's surface and affect its systems?"
+VAR Ph3 =""
 
 
 // Print Screen
 //{Topic3}: {Season03}
-Question: {Q3_1}
-Phenomena: {P3_1}
-Question: {Q3_2}
-Phenomena: {P3_2}
+Question: {Q3a} {Q3b}
+Phenomena: {Ph3}
 
 
 // ***************************************************************
-"VOYOGE UNDER THE SEA"
+{Season04}
 // ***************************************************************
 VAR Topic4 = "WEATHER AND CLIMATE"
 
-VAR Q4_1 = "What regulates weather and climate?"
-VAR P4_1 = ""
-VAR Q4_2 = "What's causing the extreme snowfall on the Eastern shores Lake Mishigami?"
-VAR P4_2 = ""
+VAR Q4 = "What regulates weather and climate?"
+VAR Ph4= "extreme snowfall on the Eastern shores Lake Mishigami"
 
 
 // Print Screen
-{Topic4}
-Question: {Q4_1}
-Phenomena: {P4_1}
+== Season04_Objectives ==
+- OBJECTIVES for {Season04}
+// Learning Objectives
+\* Answer the Enduring Question: {Q4}
+// Phenomena
+\* Explain the phenomena of {Ph4}.
+// Game Objectives
+\* Collect water essence from the water elementals.
 
+-> 04EpisodeOne_End
+
+-> DONE
 
 // ***************************************************************
 "ADVENTURE TO NEW HORIZONS"

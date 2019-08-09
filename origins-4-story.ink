@@ -5,57 +5,62 @@
 SEASON 4: {Season04}
 \ ***************************************
 - EPISODE 1. {04EpisodeOne}
-  Get an underwater vessel from the gnomes to enter an underwater kingdom. Players need to kill a certain MOB to gain the favor of Gnomes, Dwarves, or Hephaestus.
-  Enter a labyrinth at the bottom of an ocean kingdom to rescue a daughter of Hephaestus.
 - EPISODE 2. {04EpisodeTwo}
-
 - EPISODE 3. {04EpisodeThree}
-
 - EPISODE 4. {04EpisodeFour}
-  Negotiate OR Battle a Water Elemental
 - EPISODE 5. {04EpisodeFive}
 
-VAR Season04Hook = "Merfolk in the Sea of Fallen Stars are said to be causing problems. There are also reoccurring water spouts in Lake Mishigami that some say aren't natural.  Lastly, I've heard farmers and rangers complain more than usual about the weather."
+VAR Season04Hook = ""
 
 The gnomes have been testing a new underwater vessel! Some say it can stay underwater for days. They speculate is could be used to reach the underwater city of the merfolk."
 
 === 04Prologue ===
 PROLOGUE
-\*****
+\***********************
 This story is still in active development
-\*****
-
+\***********************
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
-    + You: "We grow {~bored|tired} of town life. What news do you have?"
+- You: "We grow {~bored|tired} of town life."
+    + "What news do you have?"
 - (season_hook) // SEASON HOOK
-- {Maid}: "Merfolk in the Sea of Fallen Stars are said to be causing problems. There are also reoccurring water spouts in Lake Mishigami that some say aren't natural.  Lastly, I've heard farmers and rangers complain more than usual about the weather.""
+- {Maid}: "If I recall, you wanted your next quest to be on or near water?"
+- You: 
+    + "Yes."
+- {Maid}: 
+- <> "The merfolk are causing problems on the Sea of Falling Stars for passing ships. 
+- <> "The weather around {lake3} has been highly unusual and erratic."
 - You:
     + "Can you tell us more about the merfolk?"
         -- {Maid}: "I think it might have involved politics amongst the merfolk. Perhaps there are outside forces at play? You'd have to travel to Watersdeep to get more details."
         -- {TheWizard}: "This sounds like an interesting quest to explore. However, I don't think its inline with the objectives of our new 'friend' we're helping.
          --You:
-            ++ "Agreed."
-    + "Do you know anything else about the Lake Mishigami water spouts?"
-        -- {Maid}: "Sages have said {lake3} has powerful water elementals. Its possible they have something to do with these water spouts."
-        -- {TheWizard}: “What regulates weather and climate?”
-        -- {TheFighter}: "Definitely want to avoid that place then."
-        -- You: face palm
-            ++ "We are actually looking for water-related adventures."
-    + "Do you have more to information about the weather complaints?"
-        -- {Maid}: "Sorry, not really."
-        -- {TheCleric}: "We are looking for a water adventure. Weather and water are DEFINITELY related to each other, but I think we should first focus on acquiring (getting) that item that our new 'friend' has requested." Rubs chin thinking.
-        --You:
-            ++ "Agreed."
+            ++ "Agreed. ->quest4
+    + (quest4) Do you know anything else about the unusual weather around {lake3}?"
+        -- {TheWizard}: “For that matter, do we even know what regulates 'normal' weather and climate?”
+        -- {TheCleric}: "I admit I don't know much about weather and climate. Farmers usually make good predictions because of their years of previous experience. If things are changing though that's going to cause all sorts of problems."
+- You:
+    + "{~Hmm|Interesting|Indeed}."
+- {Maid}: "The weather in previous seasons have been more extreme in general. Some attribute the stranger things at {lake3} to powerful water elementals that've been called forth. "
+- You:
+    + "I think this is the quest to pursue."
+        
+        //-- {TheFighter}: "Definitely want to avoid that place then."
+        //-- You: face palm
+          //  ++ "We are actually looking for water-related adventures."
+    //+ "Do you have more to information about the weather complaints?"
+    //    -- {Maid}: "Sorry, not really."
+    //    -- {TheCleric}: "We are looking for a water adventure. Weather and water are DEFINITELY related to each other, but I think we should first focus on acquiring (getting) that item that our new 'friend' has requested." Rubs chin thinking.
+    //    --You:
+    //        ++ "Agreed."
 
-- {TheFighter}: "Oh right."
+// - {TheFighter}: "Oh right."
 
-
-- {TheWizard}: "Hmm. We might also try a Potion of Water Breathing"
-You go to {lake3}.
-You battle
-- (end_episode)
-
+// - {TheWizard}: "Hmm. We might also try a Potion of Water Breathing"
+- You leave for {lake3}.
+    + [next] ->Season04_Objectives
+    
+== 04EpisodeOne_End ==
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
@@ -66,7 +71,7 @@ You battle
 === 04Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle /Role-play Challenge
 {04EpisodeOne}
-- The pary makes its way to {lake3} without incident.
+- The party makes its way to {lake3} without incident.
 - (lake_shorelines) You:
     + "Let's explore the northern shoreline"
     + "Let's explore the eastern shoreline"

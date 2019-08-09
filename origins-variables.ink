@@ -3,7 +3,7 @@
 // ***************************************************************
 
 // ***************************************************************
-VAR Season00 =          "WANDERING IN THE FOREST"
+VAR Season00 =          "WANDERING in THE FOREST"
 // ***************************************************************
 VAR 00EpisodeOne =      "THE WOODS"
 VAR 00EpisodeTwo =      "THE CROSSROADS"
@@ -12,7 +12,7 @@ VAR 00EpisodeFour =     "THE BLUE MUG"
 VAR 00EpisodeFive =     "THE HABITS OF MIND"
 
 // ***************************************************************
-VAR Season01 =          "DISCOVERY AT CELESTIAL TOWERS"
+VAR Season01 =          "DISCOVERY at CELESTIAL TOWERS"
 // ***************************************************************
 VAR 01EpisodeOne =      "AT THE DOOR"
 VAR 01EpisodeTwo =      "UP THE STAIRS"
@@ -21,7 +21,7 @@ VAR 01EpisodeFour =     "AFTER THE CUBE"
 VAR 01EpisodeFive =     "FOR A CODE"
 
 // ***************************************************************
-VAR Season02 =          "EXPEDITION OF ORIGINS"
+VAR Season02 =          "EXPEDITION of ORIGINS"
 // ***************************************************************
 VAR 02EpisodeOne =      "THE HIGHLANDERS"
 VAR 02EpisodeTwo =      "DEEP TIME"
@@ -30,7 +30,7 @@ VAR 02EpisodeFour =     "THE AIR TEMPLE"
 VAR 02EpisodeFive =     "A FORGE MASTER"
 
 // ***************************************************************
-VAR Season03 =          "JOURNEY TO THE CORE"
+VAR Season03 =          "JOURNEY to THE CORE"
 // ***************************************************************
 VAR 03EpisodeOne =     "THE FORGE"
 VAR 03EpisodeTwo =     "THE IRON GATE"
@@ -39,16 +39,16 @@ VAR 03EpisodeFour =    "THE ELEMENTALS"
 VAR 03EpisodeFive =    "THE EXIT"
 
 // ***************************************************************
-VAR Season04 =         "VOYOGE UNDER THE SEA"
+VAR Season04 =         "VOYAGE on THE WATER"
 // ***************************************************************
-VAR 04EpisodeOne =     "THE MERFOLK"
-VAR 04EpisodeTwo =     "THE GNOMES"
+VAR 04EpisodeOne =     "STRANGER THINGS"
+VAR 04EpisodeTwo =     "THE SHORE"
 VAR 04EpisodeThree =   "THE DEPTHS"
 VAR 04EpisodeFour =    "THE ELEMENTAL"
-VAR 04EpisodeFive =    "THE KRAKEN"
+VAR 04EpisodeFive =    "THE WEATHER"
 
 // ***************************************************************
-VAR Season05 =          "ADVENTURE TO NEW HORIZONS"
+VAR Season05 =          "ADVENTURE to NEW HORIZONS"
 // ***************************************************************
 VAR 05EpisodeOne =      "EPISODE 1"
 VAR 05EpisodeTwo =      "EPISODE 2"
