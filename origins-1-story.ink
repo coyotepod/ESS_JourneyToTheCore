@@ -10,12 +10,16 @@ VAR Season01Hook = "a very large fireball recently streaked through the sky and 
 === 01Prologue ===
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
-- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+- Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- "{Season01Hook}"
-    + [next]
-- You:
-- {Maid}: Well <>{Season01Hook}
+- (season_hook) // SEASON HOOK
+- {Maid}: "Well, a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit."
+  + [next]
+- <> "They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself."
+  + [next]
+- <> "She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
+  + [next]
+
 //    + {TheWizard}: "Heading directly to the Celestial Tower makes the most sense."
 //    + {TheCleric}: "I could check with other priests to find out their interpretation of the omen."
 //    +

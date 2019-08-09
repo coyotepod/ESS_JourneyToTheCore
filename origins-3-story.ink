@@ -28,7 +28,10 @@ PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- {Maid}: {Season03Hook}
+- (season_hook) // SEASON HOOK
+- {Maid}:  "Well..."
+  + [next]
+- The heavy wooden door of The Blue Mug bangs open. An elderly man dashes in and over to a young man seated a couple tables over. The old man is wearing a dusty old tweed jacket and round glasses. He appears to be quite excite.
     + [next]
 - You:
     + "Who are those gentleman {Maid}?"

@@ -9,6 +9,11 @@ VAR 07Hook         =     "something"
 
 === 07Prologue ===
 PROLOGUE
+- {Maid}: "Welcome weary adventurers!"
+- Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news do you have?"
+- (season_hook) // SEASON HOOK
+
 PENNISULA OF MARSUPIALIA
 Your party ventures from the cabin onto the ship's deck. A band of eight pirates, err crewman, have offered to join you ashore for your protection against indigenous animals.
 + This strikes you as odd. <>

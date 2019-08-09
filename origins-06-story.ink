@@ -9,7 +9,10 @@ VAR Season06Hook = ""
 
 ===06Prologue ===
 PROLOGUE
-
+- {Maid}: "Welcome weary adventurers!"
+- Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
+    + You: "We grow {~bored|tired} of town life. What news do you have?"
+- (season_hook) // SEASON HOOK
     +[NEXT EPISODE]
             ->06Ep2
 
@@ -17,9 +20,7 @@ PROLOGUE
 === 06Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Roleplay Challenge
 {06EpisodeOne}
-- {Maid}: "Welcome weary adventurers!"
-- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
-    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+
 - (end_episode)
      +[Ω]
          ->06StartMenu

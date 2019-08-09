@@ -21,12 +21,15 @@ The gnomes have been testing a new underwater vessel! Some say it can stay under
 
 === 04Prologue ===
 PROLOGUE
-\***** This story is still in active development *****
+\*****
+This story is still in active development
+\*****
+
 - {Maid}: "Welcome weary adventurers!"
-- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+- Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-- "{Season04Hook}"
-    + [next]
+- (season_hook) // SEASON HOOK
+- {Maid}: "Merfolk in the Sea of Fallen Stars are said to be causing problems. There are also reoccurring water spouts in Lake Mishigami that some say aren't natural.  Lastly, I've heard farmers and rangers complain more than usual about the weather.""
 - You:
     + "Can you tell us more about the merfolk?"
         -- {Maid}: "I think it might have involved politics amongst the merfolk. Perhaps there are outside forces at play? You'd have to travel to Watersdeep to get more details."

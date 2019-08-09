@@ -9,8 +9,9 @@ VAR Season02Hook = "our mutual friend in the village contacted me yesterday. His
 === 02Prologue ===
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
-- {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
+- Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
+- (season_hook) // SEASON HOOK
 - {Maid}: "{Season02Hook}"
     + [next]
 - You:
