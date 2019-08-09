@@ -34,9 +34,9 @@ This story is still in active development
     + "Can you tell us more about the merfolk?"
         -- {Maid}: "I think it might have involved politics amongst the merfolk. Perhaps there are outside forces at play? You'd have to travel to Watersdeep to get more details."
         -- {TheWizard}: "This sounds like an interesting quest to explore. However, I don't think its inline with the objectives of our new 'friend' we're helping.
-         --You:
-            ++ "Agreed. ->quest4
-    + (quest4) Do you know anything else about the unusual weather around {lake3}?"
+        -- You:
+            ++ "Agreed." ->quest4
+    + (quest4)"Do you know anything else about the unusual weather?"
         -- {TheWizard}: “For that matter, do we even know what regulates 'normal' weather and climate?”
         -- {TheCleric}: "I admit I don't know much about weather and climate. Farmers usually make good predictions because of their years of previous experience. If things are changing though that's going to cause all sorts of problems."
 - You:
@@ -44,7 +44,7 @@ This story is still in active development
 - {Maid}: "The weather in previous seasons have been more extreme in general. Some attribute the stranger things at {lake3} to powerful water elementals that've been called forth. "
 - You:
     + "I think this is the quest to pursue."
-
+- The party agrees.
         //-- {TheFighter}: "Definitely want to avoid that place then."
         //-- You: face palm
           //  ++ "We are actually looking for water-related adventures."
@@ -53,29 +53,22 @@ This story is still in active development
     //    -- {TheCleric}: "We are looking for a water adventure. Weather and water are DEFINITELY related to each other, but I think we should first focus on acquiring (getting) that item that our new 'friend' has requested." Rubs chin thinking.
     //    --You:
     //        ++ "Agreed."
-
 // - {TheFighter}: "Oh right."
-
 // - {TheWizard}: "Hmm. We might also try a Potion of Water Breathing"
-- You:
-    + "Let's leave for {lake3}."
-
+- You: "Let's leave for {lake3}."
+    + [next]
 - (episode_end)
 OBJECTIVES for {Season04}
 // Learning Objectives
 \* Answer the Enduring Question: {Q04}
-
 // Phenomena
 \* Explain the phenomena of {Ph04}.
-
 // Game Objectives
 \* Collect water essence from the water elementals.
-
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
         ->04Ep1
--
 ->DONE
 
 === 04Ep1 ===
@@ -123,8 +116,8 @@ Combat actions by individuals and each party are determined LIVE in class and no
 - (postcombat)
 - Congratulations on your victory!
     + [next]
-- Only now do you notice the traces of a path through reeds.
-    + Follow the single track path through the tall reeds.
+- Only now do you notice the traces of a path through the tall reeds.
+    + Follow the single track path.
 -
 +[Ω]
         ->04StartMenu
@@ -136,7 +129,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
 === 04Ep2 ===
 // Room 2: Puzzle /Role-play Challenge OR Room 1: Guardian
 {04EpisodeTwo}
-- The path takes you along the western shore. You come to a clearing.
+- The path takes you along the eastern shore. You come to a clearing.
     + [next]
 - There is a very small village. The buildings are more hut-like than anything. The roofs are covered in reeds and the walls are made of bark from the encroaching forest.
     + You go to the center market.
@@ -150,7 +143,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
     + "Not right now, thank you."
     + "Sure!"
     -- You hand over two copper and put the smoked fish in your pack.
-- "We are actually more interested in information. We've are heard strange things are happening both in and on the water."
+- You: "We are actually more interested in information. We've are heard strange things are happening around these waters."
     + [next]
 - Old man: "Aye, they have."
     +[Ω]
@@ -173,6 +166,51 @@ Combat actions by individuals and each party are determined LIVE in class and no
 === 04Ep4 ===
 // Room 4: Climax
 {04EpisodeFour}
+TODO: copy and paste "CombatScene" template into a story as needed.
+- (combat1)
+
+TODO: Add a specific monster here
+- A large Water Elemental comes at you.
+    // https://www.dndbeyond.com/
+    // https://www.dndbeyond.com/
+
+- {CombatStart}
+- You:
+    + "Fight!"
+    + "Flee!"
+        -- You attempt to run, but the the party isn't fast enough.
+    + "Can we talk about this?"
+        -- You attempt to talk.
+        TODO: Add a custom response
+        -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
+- Roll Initiative.
+    + Proceed to fight.
+    + Combat Encounter HOW-TO:
+        -- {Combat}
+            ++ [next]
+        -- {CombatTurns}
+            ++ Proceed to fight.
+
+- \**************************
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+\**************************
+    + [next]
+- The fight is over.
+    + SUCCESS[!]
+        ->postcombat
+    + FAILURE[!]
+        ->death
+        TODO: Add a specific death message
+        -- (death) <>
+        -- You have died.
+        ++[next]
+            --> 04StartMenu
+- (postcombat)
+- Congratulations on your victory!
+    + [next]
+
+TODO: Make this specific to the story
+- Next part of story...
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
@@ -191,10 +229,15 @@ Combat actions by individuals and each party are determined LIVE in class and no
 
 ->DONE
 
-=== 04Epilogue ===
-    EPILOGUE
+== 04Epilogue ==
+EPILOGUE
+Code for Season 5:
+CBfTn33B
 
-->END
+    +[Ω]
+      ->04StartMenu
+
+-> END
 // ***************************************************************
 //
 // ORGINS an Earth & Space Science story

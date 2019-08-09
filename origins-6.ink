@@ -6,7 +6,7 @@
 INCLUDE variables-global.ink
 INCLUDE variables-origins.ink
 INCLUDE ess-storylines.ink
-INCLUDE origins-06-story.ink
+INCLUDE origins-6-story.ink
 
 === 06StartMenu ===
     + [PRESS START]

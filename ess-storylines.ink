@@ -8,10 +8,12 @@
 + [next]
 //  -> 00EpisodeOne_End
 
-// ***************************************************************
-"DISCOVERY at CELESTIAL TOWERS"
-// ***************************************************************
+->DONE
+
 == Season01_Objectives ==
+// ***************************************************************
+{Season01}
+// ***************************************************************
 - OBJECTIVES for {Season01}
 // Learning Objectives
 + [next]
@@ -19,11 +21,12 @@
 //{Topic01}: {Season01}
 Questions {Q01a} {Q01b} {Q01c}
 Phenomena: {Ph01}
+->DONE
 
+== Season02_Objectives ==
 // ***************************************************************
 "EXPEDITION OF ORIGINS"
 // ***************************************************************
-== Season02_Objectives ==
 - OBJECTIVES for {Season02}
 // Learning Objectives
 + [next]
@@ -31,7 +34,7 @@ Phenomena: {Ph01}
 //{Topic02}: {Season02}
 Question: {Q02a} {Q02b}
 Phenomena: {Ph02}
-
+->DONE
 // ***************************************************************
 "JOURNEY TO THE CORE"
 // ***************************************************************
@@ -44,7 +47,7 @@ Phenomena: {Ph02}
 Question: {Q03a} {Q03b}
 Phenomena: {Ph03}
 
-
+->DONE
 // ***************************************************************
 {Season04}
 // ***************************************************************
@@ -72,6 +75,7 @@ OBJECTIVES for {Season04}
 // Learning Objectives
 + [next]
  // -> 05EpisodeOne_End
+->DONE
 
 // ***************************************************************
  "MINING THE CAVERNS OF TIME"
@@ -84,8 +88,10 @@ OBJECTIVES for {Season04}
 // ***************************************************************
 //VAR Season07 =     "HEROES OF ARRAKIS"
 // ***************************************************************
+->DONE
 == Season07_Objectives ==
 - OBJECTIVES for {Season07}
 // Learning Objectives
 + [next]
 //  -> 07EpisodeOne_End
+->DONE

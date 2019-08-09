@@ -287,8 +287,11 @@ abstract
 
 === 02Epilogue ===
 EPILOGUE
-+[Ω]
-->02StartMenu
+Code for Season 3:
+L4pZP56C
+
+    +[Ω]
+      ->02StartMenu
 
 -> DONE
 

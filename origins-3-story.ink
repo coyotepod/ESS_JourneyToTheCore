@@ -520,6 +520,12 @@ TODO: Make this specific to the story
 ->DONE
 == 03Epilogue ==
 EPILOGUE
+Code for Season 4:
+Z62kaepM
+
+    +[Ω]
+      ->03StartMenu
+
   ->END
 // ***************************************************************
 ////

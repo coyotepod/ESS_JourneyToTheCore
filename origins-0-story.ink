@@ -33,10 +33,11 @@ OBJECTIVES for {Season00}
 \* Answer the Enduring Question: {Q00}
 
 // Phenomena
-\* Explain the phenomena of {Ph00}.
+//\* Explain the phenomena of {Ph00}.
 
 // Game Objectives
-\* Collect water essence from the water elementals.
+\* Figure out your location
+
     +[Ω]
         ->00StartMenu
     + [NEXT EPISODE]
@@ -249,6 +250,12 @@ The coming weeks are going to be a challenge. Growth in mind and muscle will be 
 **********************************/
 
 -
+=== 00Epilogue ===
+EPILOGUE
+Code for NEXT episode:
+2gZD87GG
+
+
 -> END
 === Inventory ===
 You have nothing.

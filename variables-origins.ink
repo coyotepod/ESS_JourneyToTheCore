@@ -8,6 +8,7 @@ VAR Season00 =  "WANDERING in the FOREST"
 // ***************************************************************
 VAR Q00 = "What habits of mind make a person successful?"
 VAR Ph00 =""
+
 VAR 00EpisodeOne =      "THE WOODS"
 VAR 00EpisodeTwo =      "THE CROSSROADS"
 VAR 00EpisodeThree =    "THE VILLAGE"
@@ -85,21 +86,29 @@ VAR 05EpisodeFour =     "EPISODE 4"
 VAR 05EpisodeFive =     "EPISODE 5"
 
 // ***************************************************************
+VAR Season06 =          "MINING the CAVERNS of TIME"
+// ***************************************************************
+VAR Q06 =   ""
+VAR Ph06 =  ""
+
+VAR 06EpisodeOne =      "THE CHARTER"
+VAR 06EpisodeTwo =      "THE MINING"
+VAR 06EpisodeThree =    "THE FRACTURE"
+VAR 06EpisodeFour =     "THE EVIL MAGE"
+VAR 06EpisodeFive =     "THE TIME TOMBS"
+
+// ***************************************************************
 VAR Season07 =     "HEROES of ARRAKIS"
 // ***************************************************************
+VAR Q07 =   ""
+VAR Ph07 =  ""
+
 VAR 07EpisodeOne =     "A DISTURBANCE"
 VAR 07EpisodeTwo =     "STUDYING THE NATIVES"
 VAR 07EpisodeThree =   "CLEVERNESS"
 VAR 07EpisodeFour =    "BATTLE OF ARRAKIS"
 VAR 07EpisodeFive =    "A NICHE"
 
-// ***************************************************************
-VAR Season06 =          "MINING the CAVERNS of TIME"
-// ***************************************************************
-VAR 06EpisodeOne =      "THE CHARTER"
-VAR 06EpisodeTwo =      "THE MINING"
-VAR 06EpisodeThree =    "THE FRACTURE"
-VAR 06EpisodeFour =     "THE EVIL MAGE"
-VAR 06EpisodeFive =     "THE TIME TOMBS"
+
 
 -> DONE
