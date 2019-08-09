@@ -25,7 +25,18 @@ You get up and stumble out onto a nearby path.
         -- After a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you to take initiative.
         ++ You decide to start walking. <>
 - The path makes for an easy walk once you get your footing. You travel less than a mile, perhaps a {~quarter-mile|half mile}, before coming to a crossroads.
--(end_episode1)
+    + [next]
+- (episode_end)
+TODO: Change "00" to specific Season
+OBJECTIVES for {Season00}
+// Learning Objectives
+\* Answer the Enduring Question: {Q00}
+
+// Phenomena
+\* Explain the phenomena of {Ph00}.
+
+// Game Objectives
+\* Collect water essence from the water elementals.
     +[Ω]
         ->00StartMenu
     + [NEXT EPISODE]

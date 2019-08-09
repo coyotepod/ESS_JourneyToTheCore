@@ -9,10 +9,26 @@ VAR Season06Hook = ""
 
 ===06Prologue ===
 PROLOGUE
+\*****************************************
+This story is still in active development
+\*****************************************
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
 - (season_hook) // SEASON HOOK
+    + [next]
+- (episode_end)
+TODO: Change "06" to specific Season
+OBJECTIVES for {Season06}
+// Learning Objectives
+\* Answer the Enduring Question: {Q06}
+
+// Phenomena
+\* Explain the phenomena of {Ph06}.
+
+// Game Objectives
+\* Collect water essence from the water elementals.
+
     +[NEXT EPISODE]
             ->06Ep2
 

@@ -18,7 +18,21 @@ PROLOGUE
 - {TheCleric}: This is promising news. Thank you {Maid}!
 - You: Sounds like we'll be venturing off to {village5}?
 - The whole party agrees.
-- You gather supplies and decide to set out the next morning.
+- You:
+    + "We'll gather supplies and head out tomorrow morning.""
+
+- (episode_end)
+OBJECTIVES for {Season02}
+// Learning Objectives
+\* Answer the Enduring Question: {Q02a} {Q02b}
+
+// Phenomena
+\* Explain the phenomena of {Ph02}.
+
+// Game Objectives
+\* Meet with the scientists
+\* Collect air essence from the air elementals.
+
    +[Ω]
        ->02StartMenu
     +[NEXT EPISODE]

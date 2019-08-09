@@ -3,8 +3,8 @@
 
 ->00StartMenu
 
-INCLUDE global-variables.ink
-INCLUDE origins-variables.ink
+INCLUDE variables-global.ink
+INCLUDE variables-origins.ink
 INCLUDE ess-storylines.ink
 INCLUDE origins-0-story.ink
 

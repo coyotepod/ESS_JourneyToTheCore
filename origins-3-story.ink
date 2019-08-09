@@ -62,7 +62,19 @@ PROLOGUE
 - {ProfessorL}: "Absolutely not."
 - {Axel}: "Uncle, you are the most brilliant man I know, but even the most intelligent cannot know all things and may in fact need help from time to time."
     + [next]
-- (end_episode)
+
+- (episode_end)
+TODO: Change "03" to specific Season
+OBJECTIVES for {Season03}
+// Learning Objectives
+\* Answer the Enduring Question: {Q03a} {Q03b}
+
+// Phenomena
+\* Explain the phenomena of {Ph03}.
+
+// Game Objectives
+\* Collect water essence from the water elementals.
+
     +[Ω]
         ->03StartMenu
     +[NEXT EPISODE]

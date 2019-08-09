@@ -255,7 +255,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
         ++[next]
         TODO: Change to a specific Start Menu
 
-//            --> StartMenu 
+//            --> StartMenu
 - (postcombat)
 - Congratulations on your victory!
     + [next]

@@ -16,19 +16,19 @@ The gnomes have been testing a new underwater vessel! Some say it can stay under
 
 === 04Prologue ===
 PROLOGUE
-\***********************
+\*****************************************
 This story is still in active development
-\***********************
+\*****************************************
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
 - You: "We grow {~bored|tired} of town life."
     + "What news do you have?"
 - (season_hook) // SEASON HOOK
 - {Maid}: "If I recall, you wanted your next quest to be on or near water?"
-- You: 
+- You:
     + "Yes."
-- {Maid}: 
-- <> "The merfolk are causing problems on the Sea of Falling Stars for passing ships. 
+- {Maid}:
+- <> "The merfolk are causing problems on the Sea of Falling Stars for passing ships.
 - <> "The weather around {lake3} has been highly unusual and erratic."
 - You:
     + "Can you tell us more about the merfolk?"
@@ -44,7 +44,7 @@ This story is still in active development
 - {Maid}: "The weather in previous seasons have been more extreme in general. Some attribute the stranger things at {lake3} to powerful water elementals that've been called forth. "
 - You:
     + "I think this is the quest to pursue."
-        
+
         //-- {TheFighter}: "Definitely want to avoid that place then."
         //-- You: face palm
           //  ++ "We are actually looking for water-related adventures."
@@ -57,10 +57,20 @@ This story is still in active development
 // - {TheFighter}: "Oh right."
 
 // - {TheWizard}: "Hmm. We might also try a Potion of Water Breathing"
-- You leave for {lake3}.
-    + [next] ->Season04_Objectives
-    
-== 04EpisodeOne_End ==
+- You:
+    + "Let's leave for {lake3}."
+
+- (episode_end)
+OBJECTIVES for {Season04}
+// Learning Objectives
+\* Answer the Enduring Question: {Q04}
+
+// Phenomena
+\* Explain the phenomena of {Ph04}.
+
+// Game Objectives
+\* Collect water essence from the water elementals.
+
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]

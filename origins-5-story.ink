@@ -20,12 +20,27 @@ VAR Season05Hook = ""
 
 === 05Prologue ===
 PROLOGUE
+\*****************************************
+This story is still in active development
+\*****************************************
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
 - (season_hook) // SEASON HOOK
 
-- (end_episode)
+    + [next]
+
+- (episode_end)
+TODO: Change "05" to specific Season
+OBJECTIVES for {Season05}
+// Learning Objectives
+\* Answer the Enduring Question: {Q05a} {Q05b}
+
+// Phenomena
+\* Explain the phenomena of {Ph05}.
+
+// Game Objectives
+\* Collect water essence from the water elementals.
     +[NEXT EPISODE]
         ->05Ep1
 -
