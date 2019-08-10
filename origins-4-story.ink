@@ -83,6 +83,9 @@ OBJECTIVES for {Season04}
 
 - (combat1)
 - {d4()+1} {~Crocodiles} come out of the water at you.
+    # IMAGE: monster-crocodile.jpg
+    // Image credit - https://forgottenrealms.fandom.com/wiki/Crocodile
+    // Source - Mike Mearls, Kate Welch (May 2019). Ghosts of Saltmarsh. Edited by Kim Mohan. (Wizards of the Coast), p. 85. ISBN 978-0-7869-6686-8. Artist/photographer(s) Leesha Hannigan
     // https://www.dndbeyond.com/monsters/crocodile
     // https://www.dndbeyond.com/monsters/giant-poisonous-snake
 
