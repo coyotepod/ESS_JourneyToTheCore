@@ -171,8 +171,9 @@ TODO: copy and paste "CombatScene" template into a story as needed.
 
 TODO: Add a specific monster here
 - A large Water Elemental comes at you.
-    // https://www.dndbeyond.com/
-    // https://www.dndbeyond.com/
+# IMAGE: monster-water-elemental.jpeg
+    // https://www.dndbeyond.com/monsters/water-elemental 
+    // https://www.dndbeyond.com/encounters/23de5781-db2b-4767-88fd-947da3d28b41
 
 - {CombatStart}
 - You:
@@ -192,7 +193,7 @@ TODO: Add a specific monster here
             ++ Proceed to fight.
 
 - \**************************
-Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story. # IMAGE https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/84/1000/1000/636252736680781387.jpeg
 \**************************
     + [next]
 - The fight is over.
