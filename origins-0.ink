@@ -1,4 +1,5 @@
-#title: Wandering in the Forest
+#theme: dark
+#title: WANDERING in the FOREST
 #author: Master Scoy
 
 ->00StartMenu

@@ -40,7 +40,7 @@ PROLOGUE
 === 00Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {00EpisodeOne}
-# IMAGE: Origins-Builds/crown-shyness.jpg
+# IMAGE: crown-shyness.jpg
 // https://upload.wikimedia.org/wikipedia/commons/3/36/FRIM_canopy.JPG
 
 You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. # AUDIO: woods.mp3
