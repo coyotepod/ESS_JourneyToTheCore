@@ -1,4 +1,4 @@
-#title: Voyage under the Sea
+#title: VOYAGE on the WATER
 #author: Master Scoy
 
 ->04StartMenu

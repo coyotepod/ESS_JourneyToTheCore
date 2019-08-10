@@ -1,4 +1,4 @@
-#title: Voyage under the Sea
+#title: VOYAGE on the WATER
 #author: Master Scoy
 
 \ ***************************************
@@ -193,7 +193,7 @@ TODO: Add a specific monster here
             ++ Proceed to fight.
 
 - \**************************
-Combat actions by individuals and each party are determined LIVE in class and not scripted into the story. # IMAGE https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/84/1000/1000/636252736680781387.jpeg
+Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
 \**************************
     + [next]
 - The fight is over.
