@@ -6,8 +6,7 @@
 VAR Topic00 =   "Habits of Mind"
 VAR Season00 =  "WANDERING in the FOREST"
 // ***************************************************************
-VAR Q00 = "What are Habits of Mind (HoM)?"
-VAR Q00b = "What habits of mind make a person successful?"
+VAR Q00 = "What habits of mind make a person successful?"
 VAR Ph00 =""
 
 VAR 00EpisodeOne =      "THE WOODS"

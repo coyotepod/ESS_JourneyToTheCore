@@ -1,11 +1,11 @@
-#title: Expedition of Origins
+#theme: dark
+#title: DISCOVERY at CELESTIAL TOWERS
 #author: Master Scoy
 
 ->01StartMenu
 
 INCLUDE variables-global.ink
 INCLUDE variables-origins.ink
-INCLUDE ess-storylines.ink
 INCLUDE origins-1-story.ink
 
 === 01StartMenu ===

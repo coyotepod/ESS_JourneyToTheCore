@@ -1,11 +1,11 @@
-#title: Journey to the Core
+#theme: dark
+#title: JOURNEY to the CORE
 #author: Master Scoy
 
 ->03StartMenu
 
 INCLUDE variables-global.ink
 INCLUDE variables-origins.ink
-INCLUDE ess-storylines.ink
 INCLUDE origins-3-story.ink
 
 === 03StartMenu ===

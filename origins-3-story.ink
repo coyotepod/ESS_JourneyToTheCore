@@ -1,4 +1,5 @@
-#title: Journey to the Core
+#theme: dark
+#title: JOURNEY to the CORE
 #author: Master Scoy
 
 

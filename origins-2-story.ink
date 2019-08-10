@@ -1,4 +1,5 @@
-#title: Expedition of Origins
+#theme: dark
+#title: EXPEDITION of ORIGINS
 #author: Master Scoy
 
 

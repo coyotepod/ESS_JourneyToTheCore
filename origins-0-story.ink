@@ -1,4 +1,4 @@
-#dark
+#theme: dark
 #title: WANDERING in the FOREST
 #author: Master Scoy
 

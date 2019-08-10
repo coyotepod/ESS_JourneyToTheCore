@@ -1,3 +1,4 @@
+#theme: dark
 #title: VOYAGE on the WATER
 #author: Master Scoy
 
