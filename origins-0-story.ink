@@ -1,13 +1,35 @@
-#title: Wandering in the Forest
+#dark
+#title: WANDERING in the FOREST
 #author: Master Scoy
+
+
+
+
 
 
 
 === 00Prologue ===
 PROLOGUE
 - Yellow rays of light shoot through the dense deciduous forest as the sun just peaks over the horizon. Morning birds call out. Squirrels and other little critters scurry about their business.
-+ [next]
-- You are unconscious in some bushes along the side of a dirt path in the forest. You start to stir.
+
+    + [next]
+- You are unconscious in some bushes along the side of a dirt path in the forest. You start to stir...
+    + [next]
+- (episode_end)
+- \ (Each "Season" story will have a summary of objectives. Objectives may include learning science ideas and game-only goals. The summary will usually be in the PROLOGUE of the story)
+    + [next]
+- OBJECTIVES for {Season00}
+// Learning Objectives
+\* Answer the Enduring Questions:
+\-- {Q00}
+\ -- {Q00b}
+
+// Phenomena
+//\* Explain the phenomena of {Ph00}.
+
+// Game Objectives
+\* Observe if your choices impact the results of the story
+\* Find civilization
 
     +[Ω]
       ->00StartMenu
@@ -18,25 +40,18 @@ PROLOGUE
 === 00Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {00EpisodeOne}
-You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. #audio_woods
+# IMAGE: Origins-Builds/crown-shyness.jpg
+// https://upload.wikimedia.org/wikipedia/commons/3/36/FRIM_canopy.JPG
+
+You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. # AUDIO: woods.mp3
 You get up and stumble out onto a nearby path.
-    + You decide to start walking. <>
-    + You decide to wait for help. <>
-        -- After a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you to take initiative.
+    + [Start walking] <>
+    + [Wait for help] <>
+        -- You decide to wait for help. After a few hours no one comes along. You're getting more hungry and unconformable. It would seem no hero will be rescuing you; it's up to you to take initiative.
         ++ You decide to start walking. <>
-- The path makes for an easy walk once you get your footing. You travel less than a mile, perhaps a {~quarter-mile|half mile}, before coming to a crossroads.
+- You decide to start walking. The path makes for an easy walk once you get your footing. You travel less than a mile, perhaps a {~quarter-mile|half mile}, before coming to a crossroads.
     + [next]
 - (episode_end)
-TODO: Change "00" to specific Season
-OBJECTIVES for {Season00}
-// Learning Objectives
-\* Answer the Enduring Question: {Q00}
-
-// Phenomena
-//\* Explain the phenomena of {Ph00}.
-
-// Game Objectives
-\* Figure out your location
 
     +[Ω]
         ->00StartMenu
@@ -48,17 +63,18 @@ OBJECTIVES for {Season00}
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {00EpisodeTwo}
 An overgrown single-track trail snakes westwards towards a dark foreboding tower. Probably less than a day's march. To the east, a well worn path cuts through the forest toward an unknown destination.
-    + { not Clun_Castle } [Trek west to the dark tower]
+    + { not Clun_Castle } [Go west to the dark tower]
         -- (Clun_Castle)
-        -- You occasionally have to push through brush and branches, but otherwise the walk isn't too difficult.
+        -- You trek west to the dark tower. You occasionally have to push through brush and branches, but otherwise the walk isn't too difficult.
         -- You arrive at the dark tower’s main gate near dusk. Stones have fallen around the gate. The place is clearly abandoned.
-        ++ You proceed to the main gate
+        ++ You proceed to the main gate [.]
         ++ You go around to the north side of the tower[.]
-            -- (tower_wraith) <> into the lengthening shadows. As you proceed into the dark, a wraith appears next to you.
+        -- (tower_wraith) <> into the lengthening shadows. As you proceed into the dark, a wraith appears next to you.
             +++ You fight[!]
             +++ You flee[!]
             --- <> unsuccessfully. The wraith attacks with LIFE DRAIN.
-            --- You take necrotic damage (-{d8()*3+12} to your Health Points).
+            --- You take necrotic damage. 
+            --- (-{d8()*3+12} to your Health Points)
             +++ [next]
             ->Death
 /*
@@ -71,9 +87,9 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
             ->Death
 */
 
-    + { not Forest_Path } [Head east on the forest path]
+    + { not Forest_Path } [Go east on the forest path]
         -- (Forest_Path)
-        -- You walk down the forest path for a few minutes enjoying the sunshine and chatter of wildlife.
+        -- You walk east down the forest path for a few minutes enjoying the sunshine and chatter of wildlife.
         ++ [next]
         -- A group of {d6()+3} bandits rush out onto the path. They are dressed in loose gray clothing with red bandanas covering most of their faces. Two of them are dual wielding daggers. The others are carrying short swords.
         ++ You fight[!]
@@ -220,7 +236,6 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 - You may not understand something YET but you'll get there eventually. Some players understand a concept after one time, but most of us need to attack complex concepts more than once - sometimes MANY, MANY times.
     + [next]
 - Mindsets of enthusiasm, maximum effort, focus, and growth mindsets are a few of the mindsets you'll need to be successful.
-    + [next]
 /**********************************
 CONST {HabitsOfMindEG} = "Curiosity, Openness to New Ideas, Critical Thinking, Perseverance, Creative Thinking, Adaptability, Self-direction, Integrity, and Growth Mindset."
 CONST Curiosity =""
@@ -248,8 +263,8 @@ CURIOSITY, OPENNESS TO NEW IDEAS
 You are not the most talented of adventurers YET, but you are PERSISTENT. A positive, can-do attitude could make the difference.
 The coming weeks are going to be a challenge. Growth in mind and muscle will be needed.
 **********************************/
++ [next] -> 00Epilogue
 
--
 === 00Epilogue ===
 EPILOGUE
 Code for NEXT episode:
