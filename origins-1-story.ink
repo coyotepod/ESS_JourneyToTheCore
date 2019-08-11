@@ -35,8 +35,8 @@ OBJECTIVES for {Season04}
 \* Explain the phenomena of {Ph04}.
 
 // Game Objectives
-\* Enter the {CelestialTower}
-\* Figure out what the mages are up to
+\* Enter the {CelestialTower}.
+\* Figure out what the mages are up to.
 
     +[Ω]
         ->01StartMenu
@@ -49,6 +49,7 @@ OBJECTIVES for {Season04}
 {01EpisodeOne}
 - You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick moss and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied.
 - {TheCleric}: Mr. Kepler, one of the mages, wrote a book that I just so happen to have in my BAG OF HOLDING. I think we should read "Astronomia nova" before going inside.
+# IMAGE: images/astronomia-nova.jpg
 - You: <>
     + Great idea! Its best to be prepared.
     -- (Astronomia_Nova) {TheCleric} opens the book and reads.
