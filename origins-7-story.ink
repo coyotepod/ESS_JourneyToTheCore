@@ -1,4 +1,5 @@
-#title: Heroes of Arrakis
+#theme: dark
+#title: HEROES of ARRAKIS
 #author: Master Scoy
 
 

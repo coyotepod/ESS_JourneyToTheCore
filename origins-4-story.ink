@@ -17,6 +17,9 @@ The gnomes have been testing a new underwater vessel! Some say it can stay under
 
 === 04Prologue ===
 PROLOGUE
+# IMAGE: images/blue-mug.jpg
+# AUDIO: valleys.mp3
+
 \*****************************************
 This story is still in active development
 \*****************************************
@@ -26,22 +29,21 @@ This story is still in active development
     + "What news do you have?"
 - (season_hook) // SEASON HOOK
 - {Maid}: "If I recall, you wanted your next quest to be on or near water?"
-- You:
-    + "Yes."
+    + You: "Yes."
 - {Maid}:
-- <> "The merfolk are causing problems on the Sea of Falling Stars for passing ships.
-- <> "The weather around {lake3} has been highly unusual and erratic."
-- You:
-    + "Can you tell us more about the merfolk?"
+- <> "The merfolk are causing problems on the Sea of Falling Stars for passing ships. I've also heard that
+- <> the weather around {lake3} has been highly unusual and erratic."
+    + [More about the merfolk]
+        -- You: "Can you tell us more about the merfolk?"
         -- {Maid}: "I think it might have involved politics amongst the merfolk. Perhaps there are outside forces at play? You'd have to travel to Watersdeep to get more details."
         -- {TheWizard}: "This sounds like an interesting quest to explore. However, I don't think its inline with the objectives of our new 'friend' we're helping.
-        -- You:
-            ++ "Agreed." ->quest4
-    + (quest4)"Do you know anything else about the unusual weather?"
+            ++ You: "Agreed." ->quest4
+    + (quest4)[More about the lake weather]
+        -- You: "Do you know anything else about the unusual weather?"
         -- {TheWizard}: “For that matter, do we even know what regulates 'normal' weather and climate?”
         -- {TheCleric}: "I admit I don't know much about weather and climate. Farmers usually make good predictions because of their years of previous experience. If things are changing though that's going to cause all sorts of problems."
-- You:
-    + "{~Hmm|Interesting|Indeed}."
+-
+    + You: "{~Hmm|Interesting|Indeed}."
 - {Maid}: "The weather in previous seasons have been more extreme in general. Some attribute the stranger things at {lake3} to powerful water elementals that've been called forth. "
 - You:
     + "I think this is the quest to pursue."
@@ -75,6 +77,8 @@ OBJECTIVES for {Season04}
 === 04Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle /Role-play Challenge
 {04EpisodeOne}
+# IMAGE: images/lake-mishigami.jpg
+
 - The party makes its way to {lake3} without incident.
 - (lake_shorelines) You:
     + "Let's explore the northern shoreline"
@@ -84,7 +88,7 @@ OBJECTIVES for {Season04}
 
 - (combat1)
 - {d4()+1} {~Crocodiles} come out of the water at you.
-    # IMAGE: monster-crocodile.jpg
+# IMAGE: images/monster-crocodile.jpg
     // Image credit - https://forgottenrealms.fandom.com/wiki/Crocodile
     // Source - Mike Mearls, Kate Welch (May 2019). Ghosts of Saltmarsh. Edited by Kim Mohan. (Wizards of the Coast), p. 85. ISBN 978-0-7869-6686-8. Artist/photographer(s) Leesha Hannigan
     // https://www.dndbeyond.com/monsters/crocodile
@@ -133,6 +137,8 @@ Combat actions by individuals and each party are determined LIVE in class and no
 === 04Ep2 ===
 // Room 2: Puzzle /Role-play Challenge OR Room 1: Guardian
 {04EpisodeTwo}
+# IMAGE: images/lake-mishigami.jpg
+
 - The path takes you along the eastern shore. You come to a clearing.
     + [next]
 - There is a very small village. The buildings are more hut-like than anything. The roofs are covered in reeds and the walls are made of bark from the encroaching forest.
@@ -175,7 +181,7 @@ TODO: copy and paste "CombatScene" template into a story as needed.
 
 TODO: Add a specific monster here
 - A large Water Elemental comes at you.
-# IMAGE: monster-water-elemental.jpeg
+# IMAGE: images/monster-water-elemental.jpeg
     // https://www.dndbeyond.com/monsters/water-elemental 
     // https://www.dndbeyond.com/encounters/23de5781-db2b-4767-88fd-947da3d28b41
 

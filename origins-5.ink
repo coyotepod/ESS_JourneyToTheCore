@@ -1,4 +1,5 @@
-#title: Adventure to New Horizons
+#theme: dark
+#title: ADVENTURE to NEW HORIZONS
 #author: Master Scoy
 
 ->05StartMenu

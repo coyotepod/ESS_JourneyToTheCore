@@ -40,7 +40,7 @@ PROLOGUE
 === 00Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {00EpisodeOne}
-# IMAGE: crown-shyness.jpg
+# IMAGE: images/crown-shyness.jpg
 // https://upload.wikimedia.org/wikipedia/commons/3/36/FRIM_canopy.JPG
 
 You awake in the woods. You feel {~chilled|sweaty} and have {~an aching head|sore ribs|an aching neck}. It appears you're completely alone. # AUDIO: woods.mp3
@@ -63,18 +63,23 @@ You get up and stumble out onto a nearby path.
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {00EpisodeTwo}
 An overgrown single-track trail snakes westwards towards a dark foreboding tower. Probably less than a day's march. To the east, a well worn path cuts through the forest toward an unknown destination.
+# IMAGE: images/crossroad-paths.jpg
+
     + { not Clun_Castle } [Go west to the dark tower]
         -- (Clun_Castle)
         -- You trek west to the dark tower. You occasionally have to push through brush and branches, but otherwise the walk isn't too difficult.
         -- You arrive at the dark tower’s main gate near dusk. Stones have fallen around the gate. The place is clearly abandoned.
         ++ You proceed to the main gate [.]
         ++ You go around to the north side of the tower[.]
-        -- (tower_wraith) <> into the lengthening shadows. As you proceed into the dark, a wraith appears next to you.
+        -- (tower_monster) <> into the lengthening shadows. As you proceed into the dark, a ghost appears next to you.
+# IMAGE: images/monster-ghost.jpeg
+// dndbeyond.com 
+        
             +++ You fight[!]
             +++ You flee[!]
-            --- <> unsuccessfully. The wraith attacks with LIFE DRAIN.
+            --- <> unsuccessfully. The ghost attacks with Withering Touch.
             --- You take necrotic damage. 
-            --- (-{d8()*3+12} to your Health Points)
+            --- (-{4*d6()+3} to your Health Points)
             +++ [next]
             ->Death
 /*
@@ -91,45 +96,23 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
         -- (Forest_Path)
         -- You walk east down the forest path for a few minutes enjoying the sunshine and chatter of wildlife.
         ++ [next]
-        -- A group of {d6()+3} bandits rush out onto the path. They are dressed in loose gray clothing with red bandanas covering most of their faces. Two of them are dual wielding daggers. The others are carrying short swords.
+        -- A group of {d6()+3} bandits and a bandit captain rush out onto the path. They are dressed in loose gray clothing with red bandanas covering most of their faces. Two of them are dual wielding daggers. The others are carrying short swords.
+# IMAGE: images/monster-bandit-captain.jpeg
+// https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/181/1000/1000/636252761965117015.jpeg
+
         ++ You fight[!]
         ++ You flee[!]
             -- <> unsuccessfully. Your bare fists and poor conditioning leaves you ill prepared and no match for the challenge. You would have stood a much better chance with proper tools, weapons, or specialized training.
             +++ [next]
                 --- You are quickly slashed and stabbed numerous times.
-                --- You take piercing damage (-{d8()*3+12} to your Health Points).
+                --- You take piercing damage.
+                --- (-{d8()*3+12} to your Health Points).
             ++++ [next]
                     ->Death
     + {Clun_Castle} {Forest_Path} You take a few moments to calm your mind [...] <>
         -- and consider your choices. You notice a small deer path going east running mostly parallel to the main path.
       ++ [next] ->Village_Path
 
-->DONE
-
-= Clun_Castle2
-- Stones have fallen and the place is clearly abandoned.
-- Besides the occasional bushwhacking the walk isn't too difficult and soon you approach the dark tower’s main gate.
-- Stones have fallen around it.
-    + [The place is clearly abandoned.]
-- At least you thought it was abandoned. The Drow warrior slips from a shadowy side entrance.
-        + [Fight]
-        + [Flee]
-- Blades move so fast they are a blur. You have no time to react. This quickly ends your otherwise pleasant walk.
-        + [next]
-            ->Death
-->DONE
-
-= Forest_Path
-- You walk down the forest path for a few minutes. A short while later a group of bandits rushes out onto the path.
-- The {~five|six|seven|eight} bandits are wearing red bandanas and loose gray clothing. Two of them are dual wielding daggers with the remainder carrying short swords.
-    + [Fight]
-    -- You attempt hand-to-hand combat, but you're no match for them. Perhaps if you had a weapon, tool, or had been training you might stand a chance. Unfortunately you don't.
-        ++ [next]
-            ->Death
-    + [Flee]
-    -- You attempt to flee, but you're caught. Perhaps if you had a weapon, tool, or had been training you might stand a chance. Unfortunately you don't. You're no match for them.
-    ++ [next]
-            ->Death
 ->DONE
 
 = Village_Path
@@ -157,6 +140,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 
 == 00Ep3 ==
 {00EpisodeThree}
+# IMAGE: images/village-hut.jpg
 - You are greeted by a weathered signpost "Canis Villa".
 - You walk towards the village center. Its an opens grassy courtyard loosely surrounded by a variety of stout timbered buildings. You look around.
 - (courtyard_views)
@@ -185,7 +169,9 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 
 == 00Ep4 ==
 {00EpisodeFour}
+# IMAGE: images/blue-mug-inn.jpg
 - You enter and look around "The Blue Mug." Its a two-story wooden inn & tavern with a heavy wooden door and wooden tables and chairs reinforced with iron. Worn stairs lead above (probably to the rooms). The furnishings are simple and slightly dingy, but of stout timber material.
+
     + [Observe the occupants.]
 -  The inn and tavern could be a metaphor for most of the patrons: simple, slightly dingy, and made from a stout frame.
 - A few mercenaries and traveling merchants are also sitting around the dining area, but keeping to themselves

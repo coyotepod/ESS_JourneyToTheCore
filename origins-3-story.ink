@@ -26,6 +26,8 @@ SEASON 3: {Season03}
 
 === 03Prologue ===
 PROLOGUE
+# IMAGE: images/blue-mug.jpg
+
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
@@ -124,8 +126,11 @@ OBJECTIVES for {Season03}
 
 - (combat1)
 - {d6()+3} GOBLINS starting shooting at you from the brush on both sides. A {~ hobgoblin|bugbear} also steps out in front of you.
+# IMAGE: images/monster-goblin.jpeg
     // https://www.dndbeyond.com/
     // https://www.dndbeyond.com/
+
+
 - {CombatStart}
 - You:
     + "Fight!"
@@ -321,6 +326,8 @@ Combat actions by individuals and each party are determined LIVE in class and no
 
 - (combat1)
 - An EARTH ELEMENTAL stands before you.
+# IMAGE: images/monster-earth-elemental.jpeg
+
     // https://www.dndbeyond.com/
 
 - {CombatStart}
@@ -412,6 +419,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
 
 - (combat2)
 - A large FIRE ELEMENTAL, about 9 feet tall and 4 feet wide, stands before you.
+# IMAGE: images/monster-fire-elemental.jpeg
     // https://www.dndbeyond.com/
 - {CombatStart}
 - You:

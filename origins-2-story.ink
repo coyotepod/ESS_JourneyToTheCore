@@ -9,6 +9,8 @@ VAR Season02Hook = "our mutual friend in the village contacted me yesterday. His
 
 === 02Prologue ===
 PROLOGUE
+#IMAGE: images/blue-mug.jpg
+
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
@@ -242,6 +244,7 @@ abstract
     + { on_watch_during_ore } The wind suddenly picks up knocking everyone down except {theWizard}.
         -- \ {TheWizard} quickly casts the spell FEATHER FALL on the party so you all land softly.
 - A battle has started with a large AIR ELEMENTAL! #audio_battle
+# IMAGE: images/monster-air-elemental.jpeg
     + [next]
 - The battle rages on with the AIR ELEMENTAL
     + Failure

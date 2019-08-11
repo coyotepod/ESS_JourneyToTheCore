@@ -1,4 +1,5 @@
-#title: Mining the Caverns of Time
+#theme: dark
+#title: MINING the CAVERNS of TIME
 #author: Master Scoy
 
 
