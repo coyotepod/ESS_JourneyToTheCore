@@ -143,7 +143,11 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 # IMAGE: images/village-hut.jpg
 - You are greeted by a weathered signpost "Canis Villa".
 - You walk towards the village center. Its an opens grassy courtyard loosely surrounded by a variety of stout timbered buildings. You look around.
+    + [next]
+# IMAGE: images/CanisVilla.png
 - (courtyard_views)
+
+
     + (north_canis) Looking to the northern side, <>
         -- you see a blacksmith workshop with a dwarf hammering away on a set of horseshoes.
         ++ [You don't need to go there (at least not yet).] ->courtyard_views
