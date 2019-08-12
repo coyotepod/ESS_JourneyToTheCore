@@ -42,39 +42,7 @@ VAR Wizard =        "WIZARD"
     VAR TheWizard = "The wizard"
     VAR theWizard = "the wizard"
 
-// ***************************************************************
-// NPCs
-// ***************************************************************
-VAR Innkeeper =         "Fin"
-VAR Maid =              "Jane"
-VAR MaidTwo =           "Suzie"
-VAR DwarfSmith =        "Cedalion" // Say-dale-yon // a mostly friendly blacksmithing dwarf in Canis Villa or KABEIROI
-VAR ForgeMaster =    "Hephaestus"
-VAR EvilMage  =         "Malum Magus" // Ma-loom
-VAR Queen =             "Queen Justina"
-VAR NobleFamily =       "Noord Vlakte"
-VAR Farmer1 =           "James"
-VAR Farmer2 =           "Robert"
-VAR Villager1 =         "Dan"
-VAR Boy1    =           "Timothy"
-VAR Girl1   =           "Becca"
-VAR Castellan =         "Mr. Hillenar"
-VAR FarmBoy =           "Timothy"
 
-VAR Brahe =             "an astronomer and nobleman" // Tycho Brahe
-  VAR BraheAbout =        "Tycho Brahe built an observatory from which he makes the most accurate astronomical observations of the time. His observatory contains sophisticated equipment for mapping star positions, and for more than 20 years he has made detailed records of his findings. He thniks that the universe is a blend of the Ptolemaic and Copernican models. He created his own model in which (1) the planets orbit the Sun and (2) the Sun orbits the Earth."
-VAR Copernicus = ""
-  VAR CopernicusAbout =        "astronomical model developed by Nicolaus Copernicus and published in 1543. This model positioned the Sun near the center of the Universe, motionless, with Earth and the other planets orbiting around it in circular paths, modified by epicycles, and at uniform speeds. The Copernican model displaced the geocentric model of Ptolemy that had prevailed for centuries, which had placed Earth at the center of the Universe. Copernican heliocentrism is often regarded as the launching point to modern astronomy and the Scientific Revolution."
-VAR Hutton =    "Mr. Hutton" //   James Hutton
-  VAR HuttonAbout = "Father of Modern Geology, contributed to principle of uniformitarianism which stated that planet's processes today are similar to those of the past. The understanding the present is the key to understanding the past. Thus, in order for many of the landforms to exist in their current state it must have taken an incredible amount of time i.e. Deep Time "
-VAR Kepler =            "an astronomer and mathematician" //    Johannes Kepler
-  VAR KeplerAbout =       "Johannes Kepler, an assistant and student of Tycho Brahe, has often used his teacher's extensive collection of astronomical records to develop three laws of planetary motion. He believes in the Copernican model of the universe, although he found it difficult to fit Tycho's observations of Mars into the model with a circular orbit. He used the idea of elliptical orbits to describe the motions of the planets, which became known as Kepler's first law. His second law states that a line from the Sun to a planet sweeps out equal areas in equal amounts of time which basically means as orbiting objects like planets get closer to the sun they speed up and when farther away they go slower. Later, the third law was developed: the square of the number of years of a planet's orbital period is equal to the cube of that planet's average distance from the Sun."
-  VAR KeplersLaws = "(1) The orbit of a planet is an ellipse with the Sun at one of the two foci. (2) A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. (3) The square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit."
-VAR ProfessorL = "Professor Leyder" //Leidenbrock
-VAR Lyell =     "Mr. Lyell"  //  Charles Lyell
-    VAR LyellAbout = "Author of Principles of Geology, like Hutton, stated that planet's processes today are similar to those of the past. Thus, small changes to the planet would result in significant - even grand - changes over the course of deep time. Many of the landforms today to exist in their current state it must have taken an incredible amount of time i.e. Deep Time."
-VAR ProfessorW = "Professor Wegener" // Alfred Wegener
-VAR Axel = "Axel"
 
 // ***************************************************************
 // LOCATIONS
@@ -89,7 +57,7 @@ VAR DwarfCity = "Iron Forge"
 VAR CapitalCity = "Storm Crown"
 
 VAR BlueMug = "The Blue Mug"
-VAR inn1 = "Inn 1"
+VAR SeaTavern = "Salty Carp"
 VAR inn2 = "Inn 2"
 
 
@@ -165,11 +133,11 @@ VAR lake5 = "Lake 5"
 
 // ***************************************************************
 // WATER: Sea
-VAR NorthSea = "N Sea"
-VAR SouthSea = "S Sea"
-VAR WestSea = "W Sea"
-VAR EastSea = "E Sea"
-VAR Sea5 = "Sea 5"
+VAR NorthSea = "North Sea"
+VAR SouthSea = "South Sea"
+VAR WestSea = "West Sea"
+VAR EastSea = "East Sea"
+VAR Sea5 = "Sea of Falling Stars"
 
 // ***************************************************************
 // MONSTERS

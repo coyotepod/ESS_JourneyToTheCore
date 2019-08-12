@@ -139,7 +139,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
 === 04Ep2 ===
 // Room 2: Puzzle /Role-play Challenge OR Room 1: Guardian
 {04EpisodeTwo}
-# IMAGE: images/lake-mishigami.png 
+# IMAGE: images/lake-mishigami.png
 - The path takes you along the western shore. You come to a clearing.
     + [next]
 - There is a very small village. The buildings are more hut-like than anything. The roofs are covered in reeds and the walls are made of bark from the encroaching forest.
@@ -150,44 +150,70 @@ Combat actions by individuals and each party are determined LIVE in class and no
     -- Young boy: "Get away from me creeps!"
     ++ Right. You talk with the old man.
 - Old man: "Hello there strangers. Would you be interested in some smoked fish?"
-- 
     + You: "Not right now, thank you."
+        -- {TheFighter}: "We've heard of strange things happening around these waters. We were hoping you might have some information."
+        ++ { not buy_fish } Old man: "That'll be 5 copper pieces if you please."
     + (buy_fish) You: "Sure!"
-    -- You hand over two copper and put the smoked fish in your pack.
-- You: "We were wondering if you had some information." 
-    + { not buy_fish } Old man: "That'll be 5 copper pieces if you please."
-    + { buy_fish } Old man: "You seem like the friendly sort."
-- You: "We've heard off strange things happening around these waters."
-    + [next]
-- Old man: "Aye, they have. I've lived around this lake my entire life and I've never seen anything like it. Year after year it seems to be getting warmer and warmer, but we get more snow now on the west shore than ever before."
-    + You: "Hmm. That seems counter-intuitive. Anything else going on?"
+        -- You hand over two copper and put the smoked fish in your pack.
+        -- You: ""We've heard off strange things happening around these waters. We were hoping you might have some information."
+        ++ { buy_fish } Old man: "You seem like the friendly sort..."
+- Old man: "Aye, strange things for sure. I've lived around this lake my entire life and I've never seen anything like it. Year after year it seems to be getting warmer and warmer, but we get more snow now on the west shore than ever before."
+    + You: "Hmm. That seems counter-intuitive (not what you'd expect). Anything else going on?"
 - Old man: "Captains are saying winds are coming out of no where and from unusual directions. Then just as suddenly they die out. Others been seeing water spouts spring up out of the water, too."
     + You: "Wow!"
 - Old man: "Well its a big lake; big as some seas! Men sometimes go out for days. They tend to get imbibe (drink) a bit too much when not manning the ship if ya gather my meaning"
     + You: "I see"
 - Old Man: "Do you want to explore the shallows or depths for answers"
     + You: "The shallows"
-    -- Old man: "Ok. Well I can take ya a few miles out and around the coast if ya like."
+        -- Old man: "Ok. Well I can take ya a few miles out and around the coast if ya like."
         ++ [Have the old man take you]
-        --- (old_man_boat) Great! We'll set out first thing tomorrow morning.
+        --- (old_man_boat) {TheWizard}: "It'd be nice if you could take us"
+        --- Old man: "Great! We'll set out first thing tomorrow morning."
         ++ [Rent your own boat]
-        --- (rent_boat) Not a good idea
+        --- (rent_boat)
+        --- Old man: "I'd advise against that unless you are experienced sailors. This not some pond you splashing about.
+        +++ [Rent your own boat anyway]
+        --- You find a boat set out the next morning. You make your way along the coast to the north for a couple miles. The wind and water suddenly come up. The boat is swamped and your party swept away.
+          ++++ [next]
+          ---- None of you are strong enough swimmers. Down to Davey Jones locker
+              +++++ [next]
+                  -> death
+        +++ [Have the old man take you] -> old_man_boat
+-
     + You: "The depths"
-// - This is good for some species of fish, bad for other species. 
+
+// - This is good for some species of fish, bad for other species.
 // - Do you have any idea what might be causing this?
-// - Unfortunately I do not. We could take some more water samples and explore shoreline or the deepwater. 
-- If you want to find out what's going on in deeper waters, I highly recommend Captain Hess. You can usually find Captain Hess at the docks around dusk.
-- You wait until the end of the day. You go down to the docks.
+// - Unfortunately I do not. We could take some more water samples and explore shoreline or the deepwater.
+
+- If you want to find out what's going on in deeper waters, I highly recommend {Hess}. You can usually find {Hess} at the docks around dusk.
+- You wait until the end of the day and then go down to the docks.
+    + [next]
 // There is a 25% chance you will encounter the rough ends on your way to the docks.
-- You can't find the man described to you. A man at the docks says he's gone to the Salty Carp, the tavern up the hill.
-// Walking to the salty carp there is a 33% chance of encountering ruffians. Your party will be able to dispatch them easily if you do.
-- You walk up a few streets the Salty Carp.
-- You enter the salty carp and ask the barkeep where you might find Captain Hess.
-- You find Captain Hess sitting in a booth. Hermanas price of 10 gold pieces He offers to take you out onto the lake tomorrow provided the weather is fair.
-- There is a 20% chance the next day that the weather will not be favorable. If you have to wait another day there is a 10% chance though second day that the weather is unfavorable. 
-- Once out on the lake he suggest heading to deeper water but staying away certain part of the lake. 
-- You sail around out on the waters {d4()+2} days without finding anything. 
-- At this point you tell him you are curious and heading north towards the bear islands where the strangest occurrences have been happening on the lake. 
+
+- You can't find the man described to you and ask a man at the docks.
+- Fisherman: "{Hess} is gone to the {SeaTavern}, the tavern up the hill."
+- You walk up a few streets the {SeaTavern}.
+// Walking to the sea tavern there is a 33% chance of encountering ruffians. Your party will be able to dispatch them easily if you do.
+
+- You enter the {SeaTavern} and ask the barkeep where you might find {Hess}.
+- You find {Hess} sitting in a booth. You introduce yourselves and you intentions.
+- {Hess}: "I'll take ya to deep waters and up the lake for 10 gold pieces"
+- {TheFighter}: "That's not too bad"
+- {Hess}: "Per person, per day"
+- {TheFighter}: "What?! We'll get our own ship!"
+- {Hess}: "Sailing a {lake3} is dangerous in the best of conditions. These are troublesome times."
+    + You: "Never mind my hasty friend.["]
+    + You: "I think we'll go it alone"
+-  We agree to your conditions {Hess}."
+- {Hess}: I'll take you out onto the lake tomorrow provided the weather is fair."
+// There is a 20% chance the next day that the weather will not be favorable. If you have to wait another day there is a 10% chance though second day that the weather is unfavorable.
+
+- {Hess}'s crew and your party set sail on the mighty {lake3}.
+- Once out on the lake he suggest heading to deeper water.
+- {Hess} "We're staying away from the north central part of the lake."
+- You sail around out on the waters {d4()+2} days without finding anything.
+- At this point you tell him you are curious and heading north towards the bear islands where the strangest occurrences have been happening on the lake.
 - During all of your time on the water you are taking soundings of the deep, water temperature at in the surface, collecting samples of light at Dept in the surface. You are also making observations about when patterns and water current patterns.
 - A waterspout suddenly occurs off the starboard side of the bow. It is clear from the start that it does not an ordinary water spout and search for vaguely humanoid shape. Players attempt to attack they will be unsuccessful. If they do manage to kill the quickly if the water kill a reform and
 - The water spout tells the players about the science of lake effect snow and how less ice and warmer water leads to more snow over the colder land. The water elemental cannot say why the water and air temperatures are increasing It also points out that the water is more alkaline than it previously was. The water spout also tells that the warmer waters are Cozumel the kraken to reawaken and accelerate its growth. The water spout offers itself as sacrifice it's water essence due to players. This actually creates a more powerful water essence.
@@ -217,7 +243,7 @@ TODO: copy and paste "CombatScene" template into a story as needed.
 TODO: Add a specific monster here
 - A large Water Elemental comes at you.
 # IMAGE: images/monster-water-elemental.jpeg
-    // https://www.dndbeyond.com/monsters/water-elemental 
+    // https://www.dndbeyond.com/monsters/water-elemental
     // https://www.dndbeyond.com/encounters/23de5781-db2b-4767-88fd-947da3d28b41
 
 - {CombatStart}
@@ -284,6 +310,12 @@ CBfTn33B
       ->04StartMenu
 
 -> END
+
+=== death ===
+- You die.
+    + [next]
+        -> 04StartMenu
+
 // ***************************************************************
 //
 // ORGINS an Earth & Space Science story
