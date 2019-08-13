@@ -383,11 +383,15 @@ COLORS
 Grass:
   COPIC Grass Green YG17
   RGB (114,193,86)
+  HEX #72c156
 
+  HEX #a9c79f
+  
 // Good for map overview
 Forest:
+  COPIC
   RGB (39,78,19, 255)
-  HEX #27E13
+  HEX #274e13
 
   SYMBOL SCALES
   25% for World Scale
