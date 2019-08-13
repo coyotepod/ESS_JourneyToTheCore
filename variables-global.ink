@@ -370,13 +370,11 @@ VAR DeathQuote3 = "I get knocked down, but I get up again. I get knocked down, b
 // ***************************************************************
 // MAP COLORS and SETTINGS
 // ***************************************************************
-WONDERDRAFT SETTINGS
+WONDER DRAFT SETTINGS
 - Water Texture: Worn
 - Ground Texture: Worn
 - FX Blends: slider to the 'h'
-- Coastline Style: Dash
-
-
+- Coastline Style: Irregular Blend
 
 COLORS
 // Good for local green grass
