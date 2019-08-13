@@ -368,9 +368,37 @@ VAR DeathQuote2 = "Do or do not, there is no try. ~ Master Yoda"
 VAR DeathQuote3 = "I get knocked down, but I get up again. I get knocked down, but I get up again. ~ Chumbawamba"
 
 // ***************************************************************
-// COLORS
+// MAP COLORS and SETTINGS
 // ***************************************************************
-// COPIC Grass Green YG17  RGB (114,193,86)
+WONDERDRAFT SETTINGS
+- Water Texture: Worn
+- Ground Texture: Worn
+- FX Blends: slider to the 'h'
+- Coastline Style: Dash
+
+
+
+COLORS
+// Good for local green grass
+Grass:
+  COPIC Grass Green YG17
+  RGB (114,193,86)
+
+// Good for map overview
+Forest:
+  RGB (39,78,19, 255)
+  HEX #27E13
+
+  SYMBOL SCALES
+  25% for World Scale
+  50% for Regional Scale
+  100% for Local Scale
+
+GROUND LIGHT BROWN
+  HEX #d8b48f
+
+HUT
+#43 for round huts (25% for regional)
 
 // ***************************************************************
 // SPELLS
