@@ -376,6 +376,10 @@ WONDER DRAFT SETTINGS
 - FX Blends: slider to the 'h'
 - Coastline Style: Irregular Blend
 
+OVERLAY
+- Regional & World SIZE 32 (1 hex = 5 miles)
+- Local & Interior SIZE (1 square = 5 feet)
+
 COLORS
 // Good for local green grass
 Grass:
@@ -384,7 +388,7 @@ Grass:
   HEX #72c156
 
   HEX #a9c79f
-  
+
 // Good for map overview
 Forest:
   COPIC
@@ -392,7 +396,7 @@ Forest:
   HEX #274e13
 
   SYMBOL SCALES
-  25% for World Scale
+  20% for Regional & World Scale
   50% for Regional Scale
   100% for Local Scale
 
