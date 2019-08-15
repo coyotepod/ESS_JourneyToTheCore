@@ -177,7 +177,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
           ++++ [next]
           ---- None of you are strong enough swimmers. Down to Davey Jones locker
               +++++ [next]
-                  -> death
+                  -> Death
         +++ [Have the old man take you] -> old_man_boat
 -
     + You: "The depths"
@@ -271,7 +271,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
     + SUCCESS[!]
         ->postcombat
     + FAILURE[!]
-        ->death
+        ->Death
         TODO: Add a specific death message
         -- (death) <>
         -- You have died.
@@ -311,7 +311,7 @@ CBfTn33B
 
 -> END
 
-=== death ===
+=== Death ===
 - You die.
     + [next]
         -> 04StartMenu
