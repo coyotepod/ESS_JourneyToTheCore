@@ -167,24 +167,24 @@ Combat actions by individuals and each party are determined LIVE in class and no
     + You: "The shallows"
         -- Old man: "Ok. Well I can take ya a few miles out and around the coast if ya like."
         ++ [Have the old man take you]
-        --- (old_man_boat) {TheWizard}: "It'd be nice if you could take us"
-        --- Old man: "Great! We'll set out first thing tomorrow morning."
+            --- (old_man_boat) {TheWizard}: "It would be nice if you could take us"
+            --- Old man: "Great! We'll set out first thing tomorrow morning."
         ++ [Rent your own boat]
-        --- (rent_boat)
-        --- Old man: "I'd advise against that unless you are experienced sailors. This not some pond you splashing about.
+            --- (rent_boat)
+            --- Old man: "I'd advise against that unless you are experienced sailors. This not some pond you splashing about.
         +++ [Rent your own boat anyway]
-        --- You find a boat set out the next morning. You make your way along the coast to the north for a couple miles. The wind and water suddenly come up. The boat is swamped and your party swept away.
-          ++++ [next]
-          ---- None of you are strong enough swimmers. Down to Davey Jones locker
-              +++++ [next]
-                  -> Death
-        +++ [Have the old man take you] -> old_man_boat
+            --- You find a boat set out the next morning. You make your way along the coast to the north for a couple miles. The wind and water suddenly come up. The boat is swamped and your party swept away.
+                ++++ [next]
+                ---- None of you are strong enough swimmers. Down to Davey Jones locker
+                    +++++ [next]
+                        -> Death
+          +++ [Have the old man take you] -> old_man_boat
 -
     + You: "The depths"
 
 // - This is good for some species of fish, bad for other species.
 // - Do you have any idea what might be causing this?
-// - Unfortunately I do not. We could take some more water samples and explore shoreline or the deepwater.
+// - Unfortunately I do not. We could take some more water samples and explore shoreline or the deep water.
 
 - If you want to find out what's going on in deeper waters, I highly recommend {Hess}. You can usually find {Hess} at the docks around dusk.
 - You wait until the end of the day and then go down to the docks.
