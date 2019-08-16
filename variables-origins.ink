@@ -68,8 +68,8 @@ VAR Ph04= "extreme snowfall on the Eastern shores of Lake Mishigami"
 
 VAR 04EpisodeOne =      "STRANGER THINGS"
 VAR 04EpisodeTwo =      "THE SHORE"
-VAR 04EpisodeThree =    "THE DEPTHS"
-VAR 04EpisodeFour =     "THE ELEMENTAL"
+VAR 04EpisodeThree =    "A NAVIGATOR"
+VAR 04EpisodeFour =     "ON THE WATER"
 VAR 04EpisodeFive =     "THE WEATHER"
 
 // ***************************************************************
