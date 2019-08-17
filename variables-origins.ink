@@ -66,9 +66,9 @@ VAR Season04 =          "VOYAGE on the WATER"
 VAR Q04 = "What regulates weather and climate?"
 VAR Ph04= "extreme snowfall on the Eastern shores of Lake Mishigami"
 
-VAR 04EpisodeOne =      "STRANGER THINGS"
-VAR 04EpisodeTwo =      "THE SHORE"
-VAR 04EpisodeThree =    "A NAVIGATOR"
+VAR 04EpisodeOne =      "THE SHORE"
+VAR 04EpisodeTwo =      "STRANGER THINGS"
+VAR 04EpisodeThree =    "A CAPTAIN"
 VAR 04EpisodeFour =     "ON THE WATER"
 VAR 04EpisodeFive =     "THE WEATHER"
 

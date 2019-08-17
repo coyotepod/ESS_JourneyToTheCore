@@ -48,10 +48,10 @@ VAR Wizard =        "WIZARD"
 // LOCATIONS
 // ***************************************************************
 // VILLAGES & CITIES
-VAR village1 = "Canis Villa"
-VAR village2 = ""
-VAR village3 = ""
-VAR village4 = ""
+VAR village00 = "Canis Villa"
+VAR village40 = "Yellow Wharf"
+VAR village41 = "Dagger Town"
+VAR village42 = "Verdant Bay"
 VAR village5 = "Berwickshire"
 VAR DwarfCity = "Iron Forge"
 VAR CapitalCity = "Storm Crown"

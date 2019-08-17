@@ -16,6 +16,7 @@ VAR Season04Hook = ""
 The gnomes have been testing a new underwater vessel! Some say it can stay underwater for days. They speculate is could be used to reach the underwater city of the merfolk."
 
 === 04Prologue ===
+# CLEAR
 PROLOGUE
 # IMAGE: images/blue-mug.jpg
 # AUDIO: audio/valleys.mp3
@@ -75,20 +76,19 @@ OBJECTIVES for {Season04}
 ->DONE
 
 === 04Ep1 ===
-// Room 1: Guardian OR Room 2: Puzzle /Role-play Challenge
+# CLEAR
+// Room 1: Guardian
 {04EpisodeOne}
-# IMAGE: images/lake-mishigami.jpg
-
-- The party makes its way to {lake3} without incident.
+# IMAGE: images/lake-mishigami.png
+- The party makes its way to the southern shore of {lake3} without incident.
 - (lake_shorelines) You:
-    + "Let's explore the northern shoreline"
-    + "Let's explore the eastern shoreline"
     + "Let's explore the southern shoreline"
-    + "Let's explore the western shoreline"
-- The party is just heading out when...
-    + [next]
+    + "Let's go east"
+    + "Let's go west"
+- 
++ The party is just heading out when [...]
 - (combat1)
-- {d4()+1} {~Crocodiles} come out of the water at you.
+- {d4()+1} {~Crocodiles} come at you from the tall marsh grass.
 # IMAGE: images/monster-crocodile.jpg
     // Image credit - https://forgottenrealms.fandom.com/wiki/Crocodile
     // Source - Mike Mearls, Kate Welch (May 2019). Ghosts of Saltmarsh. Edited by Kim Mohan. (Wizards of the Coast), p. 85. ISBN 978-0-7869-6686-8. Artist/photographer(s) Leesha Hannigan
@@ -99,10 +99,11 @@ OBJECTIVES for {Season04}
 - You:
     + "Fight!"
     + "Flee!"
-        -- You attempt to run, but the the party isn't fast enough.
+        -- {TheFighter}: yells "No! they are way too fast in a sprint. We need to stand our ground"
+        -- The creatures gain the Initiative.
     + "Can we talk about this?"
         -- You attempt to talk. <>
-        -- The creatures growl at you and has advantage on its first attack.
+        -- The creatures respond with low growls and now have advantage on the first attack.
 - Roll Initiative.
     + Proceed to fight.
     + Combat Encounter HOW-TO:
@@ -125,47 +126,55 @@ Combat actions by individuals and each party are determined LIVE in class and no
 - (postcombat)
 - Congratulations on your victory!
     + [next]
-- Only now do you notice the traces of a path through the tall reeds.
-    + Follow the single track path.
--
+- You loot the creatures, but find nothing of interest.
+    + [next]
+- {TheCleric}: "Well, that explains why few people travel between the villages of {lake3} and the rest of the realm."
+- Follow the single track path.
+    + [To the west]
+    -- {TheCleric}: "The road to {village42} is much farther than {village41}. Perhaps it would be better to travel to {village41} first and take a boat to {village42} if we decide to head there?"
+    -- You: "I think that's an excellent idea."
+    + [To the east]
+- The path takes you along the eastern shore. You come to a clearing.
 +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
         ->04Ep2
-
-        # CLEAR
-
 ->DONE
 
 === 04Ep2 ===
-// Room 2: Puzzle /Role-play Challenge OR Room 1: Guardian
+# CLEAR
 {04EpisodeTwo}
-# IMAGE: images/lake-mishigami.png
-- The path takes you along the western shore. You come to a clearing.
-    + [next]
-- There is a very small village. The buildings are more hut-like than anything. The roofs are covered in reeds and the walls are made of bark from the encroaching forest.
-    + You go to the center market.
-- The locals are trading various fish and local catches from the lake.
-    + You talk with an old man
-    + You talk with a young boy
+// Room 2: Puzzle /Role-play Challenge
+# IMAGE: images/village-42.jpg
+- There is a very small village. The buildings are more hut-like than anything. Some of them are built over the water. The roofs are covered in reeds and the walls are made of wood and bark from the encroaching forest and marsh grasses.
+    + You go to the center market[.] <>
+- where folks are trading various wares and local catches.
+- The party approaches an old man and a young boy talking at a nearby fish stand.
+    + You talk to the old main.
+    -- You: "Hello there."
+    + You talk to the young boy.
+    -- You: "Hello there."
     -- Young boy: "Get away from me creeps!"
-    ++ Right. You talk with the old man.
+    -- He runs off.
+    ++ Right...You turn to the old man.
 - Old man: "Hello there strangers. Would you be interested in some smoked fish?"
     + You: "Not right now, thank you."
         -- {TheFighter}: "We've heard of strange things happening around these waters. We were hoping you might have some information."
         ++ { not buy_fish } Old man: "That'll be 5 copper pieces if you please."
     + (buy_fish) You: "Sure!"
-        -- You hand over two copper and put the smoked fish in your pack.
-        -- You: ""We've heard off strange things happening around these waters. We were hoping you might have some information."
+        -- You hand over {~two|three} copper pieces and put the smoked fish in your pack.
+        -- You: "We've heard of strange weather and other odd things happening around these waters. We were hoping you might have some information."
         ++ { buy_fish } Old man: "You seem like the friendly sort..."
-- Old man: "Aye, strange things for sure. I've lived around this lake my entire life and I've never seen anything like it. Year after year it seems to be getting warmer and warmer, but we get more snow now on the west shore than ever before."
-    + You: "Hmm. That seems counter-intuitive[.] 
--    <> (not what you'd expect). Anything else going on?"
-- Old man: "Captains are saying winds are coming out of no where. They're not even blowing from the prevailing directions! Then just as suddenly winds die out to nothing. Others been seeing water spouts spring up out of the water, too. THAT is an even stranger thing. We never get water spouts up this way."
-    + You: "Wow!"
-- Old man: "Well its a big lake, and men sometimes go out for days. Crews tend to drink a bit too much. Drinkin' is about the only thing that can explain all the odd rumors."
-    + You: "I see your meaning."
-- Old Man: "Anyway, do you want to explore the shallows or depths for clues?"
+- The old  man pauses to consider.
+- Old man: "Aye, stranger things for sure. I've lived around this lake my entire life and I've never seen anything like it. Year after year the air and water gets warmer and warmer. Funny thing is we get more snow on the eastern shore than ever before."
+    + You: "Hmm[.]
+- <>, that seems counter-intuitive (not what you'd expect). Anything else going on?"
+- Old man: "Captains are saying the winds on the lake aren't the usual prevailing winds either. Around these parts winds nearly always blow east. Coming from the west, we call em' the Westerlies. I've been told other parts of the world have different prevailing winds."
++ \ {TheWizard} nods an affirmative.
+- Old man: "That ain't all. More ships than usual are going missing up north off the coasts of {village42} and the {BearIslands}. Some say the {BearIslands} haven't got a shipment in months. As if this wasn't all enough, water spouts are springing are up out of no where!"
+    + You: "Very odd."
+- {TheCleric}: "We don't know about all of these things, but we're hoping to help with the water spouts."
+- Old Man: "So where do you want to explore for clues - the shallows or the deep?"
    
 - (episode_end)
     +[Ω]
@@ -176,9 +185,13 @@ Combat actions by individuals and each party are determined LIVE in class and no
 ->DONE
 
 === 04Ep3 ===
+# CLEAR
+# IMAGE: images/lake-mishigami.png
 // Room 3: Trick or Setback
+
 {04EpisodeThree}
-+ You: "The shallows"
+The old man cocks his head to one side waiting for your answer.
++ You: "Let's explore the shallows."
         -- Old man: "Ok. Well I can take ya a few miles out and around the coast if ya like."
         ++ [Have the old man take you]
             --- (old_man_boat) {TheWizard}: "It would be nice if you could take us"
@@ -216,76 +229,84 @@ Combat actions by individuals and each party are determined LIVE in class and no
                         -> Death
 //          +++ [Have the old man take you] -> old_man_boat
          
-    + You: "The depths"
+    + You: "Let's explore the deep waters."
       // - This is good for some species of fish, bad for other species.
       // - Do you have any idea what might be causing this?
       // - Unfortunately I do not. We could take some more water samples and explore shoreline or the deep water.
-- If you want to find out what's going on in deeper waters, I highly recommend {Hess}. You can usually find {Hess} at the docks around dusk.
-- You wait until the end of the day and then go down to the docks.
+- Old man: "I highly recommend {Hess} for the deep, open lake waters. You can usually find him at the docks around dusk."
+- {TheWizard}: "Thank you for your help."
+- You wait until the end of the day and go down to the docks.
     + [next]
-    TODO: There is a 25% chance you will encounter the rough ends on your way to the docks.
+    TODO: There is a 25% chance you will encounter the ruffians on your way to the docks.
 - You can't find the man described as {Hess}. You ask a man at the docks.
 - Fisherman: "{Hess} is gone to the {SeaTavern}, the tavern up the hill."
-    + [next]
-- You walk up a few streets to the {SeaTavern}.
-// Walking to the sea tavern there is a 33% chance of encountering ruffians. Your party will be able to dispatch them easily if you do.
-
+    + [Ask some more questions]
+    -- {TheFighter}: "Are you a local?"
+    -- Fisherman: "Aye"
+    -- {TheWizard}: "Any ideas about what's going on with the weather around here?"
+    -- Fisherman: "I'm no sage or shaman, but I do know the water temperatures are getting warmer. Less ice than previous years. Anyone around the water will tell you too that the water changes are less extreme than the land."
+    ++ You: "What do you mean?"
+    -- Fisherman: "As the air gets hotter, water and land get hotter, but the water takes longer to change (a slower rate). Likewise, as things cool down, the water takes longer to cool off than the land. Water has a big moderating effect on the land nearby, that is, the weather tends to be less extreme around big bodies of water like our lake."
+    ++ You: "I didn't realize that."
+    -- Fisherman: "Yep, prevailing winds blow the warmer or cooler air from the water onto the land. I heard a shaman call it a 'micro-climate' before."
+    ++ [next]
+    - Fisherman: "There's also winds called sea breezes and land breezes. Would like to hear about them?"
+    ++ You: "Not right now, but thanks"
+    -- Fisherman: "Any time."
+    ++ [You leave]
+    + [Leave]
+- You walk a few streets up to the {SeaTavern}.
+TODO: Walking to the sea tavern there is a 33% chance of encountering ruffians. Your party will be able to dispatch them easily if you do.
 - You enter the {SeaTavern} and ask the barkeep where you might find {Hess}.
-- You find {Hess} sitting in a booth. You introduce yourselves and you intentions.
-    + [He replied...]
-- {Hess}: "I'll take ya to deep waters and up the lake for {~8|9|10} gold pieces"
+- The barkeep points to {Hess} sitting in a booth. You introduce yourselves and you intentions.
+    + [He replies...]
+- {Hess}: "I'll take ya our to deep waters for {~8|9|10} gold pieces"
 - {TheFighter}: "That's not too bad"
 - {Hess}: "Per person, per day"
     + \ {TheFighter}: "What?! We'll get our own ship!"
-- {Hess}: "Sailing a {lake3} is dangerous in the best of conditions. These are troubled times."
-    + You: "Nevermind my hasty friend.["]
+- {Hess}: "Sailing on {lake3} is dangerous in the best of conditions. These are troubled times."
+    + You: "Please ignore my hasty friend.["]
     + You: "I think we'll go it alone"
     -- {Hess}: "Well that's your choice. Good luck! You'll need it."
     ++ [next]
     -> sail_alone
--  <>; we agree to your conditions captian."
-- {Hess}: I'll take you out onto the lake tomorrow provided the weather is fair."
+-  <> We agree to your conditions captian."
+- {Hess}: "We head out tomorrow provided the weather is fair."
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
         ->04Ep4
-
 ->DONE
 
 === 04Ep4 ===
+# CLEAR
+# IMAGE: images/lake-mishigami.png
 // Room 4: Climax
 {04EpisodeFour}
 TODO: There is a 20% chance the next day that the weather will not be favorable. If you have to wait another day there is a 10% chance though second day that the weather is unfavorable.
 // {~{weather_delay}|{weather_delay}|{weather_no_delay}}
-
 - {Hess}'s crew and your party set sail on the mighty {lake3}.
-- Once out on the lake he suggest heading to deeper water.
-- {Hess} "But we're staying away from the north-central part of the lake."
+- {Hess}: "Heading to deep waters now, but we're staying away from the north-central part of the lake."
     + You: "Why's that?"
-- {Hess}: "That's where the most ships have gone missing. To my knowledge, no ships have made it too or from the {BearIslands} in over a year. Things gotta be getting bad out there."
-- You sail around out on the waters {d4()+2} days without finding anything.
+- {Hess}: "That's where the most ships have gone missing. To my knowledge, no ships have made it to or from the {BearIslands} in over a year. Things gotta be getting bad out there."
+    + [next]
+- You sail out on the water for {d4()+2} days without finding anything.
 - During this time your party is helping the crew take water and air measurements along with various samples. e.g. soundings, water temperatures at the surface and depths, collecting samples water samples at different depths. You are also making observations about when patterns and water current patterns.
+//  + [Discuss the results with the captain]
     + [next]
-- Everyone aboard is growing more weary without any insights thus far.
-+ You: "Can we talk about the waters around the {BearIslands}?"
-- {Hess}: "Sure."
-- {TheFighter}: "Our party is willing to take a chance and head north if your men are willing."
-- {Hess}: "Are you questioning my crew's bravery or more ability to command them?"
-- {TheFighter}: "Not at all sir. I just know its asking a lot."
-- {Hess}: "You are asking a lot of risk for them and my ship. We'd expect to be compensated."
-+ \ {TheWizard}: "You will be."
-- 
-At this point you tell him you are curious and heading north towards the bear islands where the strangest occurrences have been happening on the lake.
+- Everyone aboard is growing more weary without any insights thus far. {TheFighter} brings up the decision you've all been avoiding the last few days.
+// + You: "Can we talk about the waters around the {BearIslands}?"
+// - {Hess}: "Sure."
+- {TheFighter}: "We need to head north towards the {BearIslands} or head back to main land. Are your men are willing to go north?"
+- {Hess}: "Are you questioning my crew's bravery or my ability to command them?"
     + [next]
-
-- A waterspout suddenly occurs off the starboard side of the bow. It is clear from the start that it does not an ordinary water spout and search for vaguely humanoid shape. Players attempt to attack they will be unsuccessful. If they do manage to kill the quickly if the water kill a reform and
+- {TheFighter}: "Not at all sir, but I know its asking a lot."
+- {Hess}: "We'd expect to be compensated for such a risk."
+    + \ {TheWizard}: "You will be compensated well."
+- The ship travels north. You're now only a few miles southwest of {village41}.
     + [next]
-- The water spout tells the players about the science of lake effect snow and how less ice and warmer water leads to more snow over the colder land. The water elemental cannot say why the water and air temperatures are increasing It also points out that the water is more alkaline than it previously was. The water spout also tells that the warmer waters are Cozumel the kraken to reawaken and accelerate its growth. The water spout offers itself as sacrifice it's water essence due to players. This actually creates a more powerful water essence.
-    + [next]
-TODO: copy and paste "CombatScene" template into a story as needed.
-- (combat1)
-TODO: Add a specific monster here
-- A large Water Elemental comes at you.
+- (combat44)
+- A water spout suddenly rises off the {~starboard|port} side of the {bow|stern} and quickly forms into a humanoid shape. The WATER ELEMENTAL approaches the boat. You get the odd feeling that although menacing its moving in a way that doesn't appear hostile.
 # IMAGE: images/monster-water-elemental.jpeg
     // https://www.dndbeyond.com/monsters/water-elemental
     // https://www.dndbeyond.com/encounters/23de5781-db2b-4767-88fd-947da3d28b41
@@ -293,11 +314,33 @@ TODO: Add a specific monster here
 - You:
     + "Fight!"
     + "Flee!"
-        -- You attempt to run, but the the party isn't fast enough.
+        -- {Hess}: "Idiot! There's no way we can outrun a water elemental on the water!"
     + "Can we talk about this?"
         -- You attempt to talk.
-        TODO: Add a custom response
-        -- <> Diplomacy doesn't seem to be the best option in this situation. Creature gains advantage on its first attack.
+        -- <> You're not sure what the WATER ELEMENTAL is saying or doing, but it seems to be responding to you without hostile intentions.
+            ++ [next]
+        -- You: "Anyone have a charm, spell, or trinket to help us understand?"
+            ++ \ {TheWizard}: "I have a ring!["] <>
+        -- The spell 'TONGUES' has been permanently enchanted on it."
+            ++ [next]
+        -- {TheWizard} slips on the ring. yThe party continues to hear strange wooshes and gurgles of water.
+        -- {TheWizard}: "Quick, get me some parchment and pen."
+        -- {TheWizard} scribbles a quick transcription of the elemental's words.
+            ++ [next]
+        -- The water spout tells you about the science of lake effect snow (cold dry air moves over "warmer" moist water, the air warms up and absorbs more moisture, it moves onto colder land and cannot hold onto the moisture, dumping it from the sky as snow). Less ice from warmer water leads to more moisture being absorbed by air masses moving over it.
+            ++ [next]
+        -- The water elemental cannot say why the water and air temperatures are increasing though.
+            ++ [next]
+        -- It says the water is more alkaline than it previously.
+            ++ [next]
+        -- The elemental says another side effect of warmer waters: dorminant kraken are reawakening and their growth is accelerated by the warm water.
+            ++ [next]
+        -- {TheWizard} shares your over-arching quest with the objectives of collecting elemental essence for the {EpicWeapon}.
+            ++ [next]
+        -- {TheWizard} sucks in his breath.
+        -- {TheWizard}: "The WATER ELEMENTAL offers itself as sacrifice. This will creates a more powerful water essence."
+        -- Before there is time to discuss. The WATER ELEMENTAL dissipates.
+            ++ [next] ->episode_end
 - Roll Initiative.
     + Proceed to fight.
     + Combat Encounter HOW-TO:
@@ -305,27 +348,26 @@ TODO: Add a specific monster here
             ++ [next]
         -- {CombatTurns}
             ++ Proceed to fight.
-
 - \**************************
 Combat actions by individuals and each party are determined LIVE in class and not scripted into the story.
 \**************************
     + [next]
 - The fight is over.
-    + SUCCESS[!]
+    + SUCCESS!
         ->postcombat
-    + FAILURE[!]
-        ->Death
-        TODO: Add a specific death message
+    + FAILURE!
         -- (death) <>
-        -- You have died.
-        ++[next]
-            --> 04StartMenu
+        -- Down to Davy Jones locker with ya. Yer now swimming with the fishes.
+            ++[next]
+            ->Death
 - (postcombat)
 - Congratulations on your victory!
     + [next]
-
-TODO: Make this specific to the story
-- Next part of story...
+- Unfortunately, you are not able to gather any water essence before the elemental dissipates.
+    + However[...]
+- <>, you soon get another chance.
+    + [next] ->combat44
+- (episode_end)
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
@@ -334,6 +376,8 @@ TODO: Make this specific to the story
 ->DONE
 
 === 04Ep5 ===
+# CLEAR
+# IMAGE: images/lake-mishigami.png
 // Room 5: Reward, Revelation, or Twist
 {04EpisodeFive}
 
