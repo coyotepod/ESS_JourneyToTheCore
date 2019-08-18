@@ -61,8 +61,9 @@ This story is still in active development
 // - {TheWizard}: "Hmm. We might also try a Potion of Water Breathing"
 - You: "Let's leave for {lake3}."
     + [next]
+
 - (episode_end)
-OBJECTIVES for {Season04}
+- OBJECTIVES for {Season04}
 // Learning Objectives
 \* Answer the Enduring Question: {Q04}
 // Phenomena
@@ -85,7 +86,7 @@ OBJECTIVES for {Season04}
     + "Let's explore the southern shoreline"
     + "Let's go east"
     + "Let's go west"
-- 
+-
 + The party is just heading out when [...]
 - (combat1)
 - {d4()+1} {~Crocodiles} come at you from the tall marsh grass.
@@ -135,6 +136,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
     -- You: "I think that's an excellent idea."
     + [To the east]
 - The path takes you along the eastern shore. You come to a clearing.
+- (episode_end)
 +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
@@ -173,9 +175,9 @@ Combat actions by individuals and each party are determined LIVE in class and no
 + \ {TheWizard} nods an affirmative.
 - Old man: "That ain't all. More ships than usual are going missing up north off the coasts of {village42} and the {BearIslands}. Some say the {BearIslands} haven't got a shipment in months. As if this wasn't all enough, water spouts are springing are up out of no where!"
     + You: "Very odd."
-- {TheCleric}: "We don't know about all of these things, but we're hoping to help with the water spouts."
+- {TheCleric}: "We don't know about all of these things, but we're hoping to help with the water spouts at least."
 - Old Man: "So where do you want to explore for clues - the shallows or the deep?"
-   
+
 - (episode_end)
     +[Ω]
         ->04StartMenu
@@ -196,12 +198,12 @@ The old man cocks his head to one side waiting for your answer.
         ++ [Have the old man take you]
             --- (old_man_boat) {TheWizard}: "It would be nice if you could take us"
             --- Old man: "Great! We'll set out first thing tomorrow morning."
-            --- The old man agrees to take your party out on the lake for 10 silver pieces a day. You set out the next morning. You make your way along the coast to the north for a couple miles. 
+            --- The old man agrees to take your party out on the lake for 10 silver pieces a day. You set out the next morning. You make your way along the coast to the north for a couple miles.
                 ++++ [next]
               ---- An aboleth suddenly comes up from below. The boat is flipped and swamped. The creature makes quick work of your party.
               # IMAGE: images/monster-aboleth.jpeg
               // https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/11/1000/1000/636238825975375671.jpeg
-              
+
               +++++ [next]
               ----- Your remains sink down to Davey Jones locker.
               ++++++ [next]
@@ -210,9 +212,9 @@ The old man cocks his head to one side waiting for your answer.
             --- (rent_boat)
             --- You: "I think we'll rent a boat."
             --- Old man: "I'd advise against that unless you're experienced sailors. This isn't some pond you go splashing about.
-        +++ [Have the old man take you] 
+        +++ [Have the old man take you]
             -> old_man_boat
-            
+
         +++ [Rent your own boat anyway]
             --- {TheCleric}: "We're good. Thanks anyway."
             --- (sail_alone)
@@ -228,7 +230,7 @@ The old man cocks his head to one side waiting for your answer.
                 ++++++ [next]
                         -> Death
 //          +++ [Have the old man take you] -> old_man_boat
-         
+
     + You: "Let's explore the deep waters."
       // - This is good for some species of fish, bad for other species.
       // - Do you have any idea what might be causing this?
@@ -272,6 +274,7 @@ TODO: Walking to the sea tavern there is a 33% chance of encountering ruffians. 
     -> sail_alone
 -  <> We agree to your conditions captian."
 - {Hess}: "We head out tomorrow provided the weather is fair."
+- (episode_end)
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
@@ -303,10 +306,22 @@ TODO: There is a 20% chance the next day that the weather will not be favorable.
 - {TheFighter}: "Not at all sir, but I know its asking a lot."
 - {Hess}: "We'd expect to be compensated for such a risk."
     + \ {TheWizard}: "You will be compensated well."
+    + \ {TheFighter}: "Risk is part of the job you were hired for"
+    -- {Hess}: "Going towards the {BearIslands} was NOT part of the deal."
 - The ship travels north. You're now only a few miles southwest of {village41}.
     + [next]
 - (combat44)
-- A water spout suddenly rises off the {~starboard|port} side of the {bow|stern} and quickly forms into a humanoid shape. The WATER ELEMENTAL approaches the boat. You get the odd feeling that although menacing its moving in a way that doesn't appear hostile.
+- A water spout suddenly rises off the {~starboard|port} side of the {bow|stern} and quickly forms into a humanoid shape - a very large WATER ELEMENTAL.
+- Roll INSIGHT (Wisdom) check.
+    + [1-5]
+        -- (roll1) The WATER ELEMENTAL approaches the boat.
+        ++ [next]
+    + [6-11]
+        -- (roll6) Although menacing, you get the feeling the WATER ELEMENTAL may not be hostile yet.
+        ++ [next]
+    + [12+]
+        -- (roll12) The WATER ELEMENTAL is approaching the boat, but not aggressively.
+        ++ [next]
 # IMAGE: images/monster-water-elemental.jpeg
     // https://www.dndbeyond.com/monsters/water-elemental
     // https://www.dndbeyond.com/encounters/23de5781-db2b-4767-88fd-947da3d28b41
@@ -337,7 +352,7 @@ TODO: There is a 20% chance the next day that the weather will not be favorable.
             ++ [next]
         -- {TheWizard} shares your over-arching quest with the objectives of collecting elemental essence for the {EpicWeapon}.
             ++ [next]
-        -- {TheWizard} sucks in his breath.
+        -- {TheWizard} lets out a suprised gasp.
         -- {TheWizard}: "The WATER ELEMENTAL offers itself as sacrifice. This will creates a more powerful water essence."
         -- Before there is time to discuss. The WATER ELEMENTAL dissipates.
             ++ [next] ->episode_end
@@ -380,7 +395,8 @@ Combat actions by individuals and each party are determined LIVE in class and no
 # IMAGE: images/lake-mishigami.png
 // Room 5: Reward, Revelation, or Twist
 {04EpisodeFive}
-
+- {TheWizard} quickly gathers the essence.
+- (episode_end)
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
@@ -389,10 +405,12 @@ Combat actions by individuals and each party are determined LIVE in class and no
 ->DONE
 
 == 04Epilogue ==
+# CLEAR
+
 EPILOGUE
 Code for Season 5:
 CBfTn33B
-
+- (episode_end)
     +[Ω]
       ->04StartMenu
 
