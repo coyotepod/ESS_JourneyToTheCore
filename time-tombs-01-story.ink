@@ -1,32 +1,32 @@
 #title: The Mountain
 #author: Master Scoy
 
-->TT1StartMenu
+->01StartMenu
 
 INCLUDE origins-GlobalVariables.ink
 INCLUDE time-tombs-GlobalVariables.ink
 
 
-=== TT1StartMenu ===
+=== 01StartMenu ===
 Start Menu
-//    + {not TT1Preface} [Preface]
-//        ->TT1Preface
+//    + {not 01Preface} [Preface]
+//        ->01Preface
     + [PRESS START]
-        -> TT1Prologue
-    + [{TT1EpisodeOne}]
-        -> TT1Ep1
-    + [{TT1EpisodeTwo}]
-        -> TT1Ep2
-    + [{TT1EpisodeThree}]
-        -> TT1Ep3
-    + [{TT1EpisodeFour}]
+        -> 01Prologue
+    + [{01EpisodeOne}]
+        -> 01Ep1
+    + [{01EpisodeTwo}]
+        -> 01Ep2
+    + [{01EpisodeThree}]
+        -> 01Ep3
+    + [{01EpisodeFour}]
         -> S0Ep4
-    + [{TT1EpisodeFive}]
-        -> TT1Ep5
+    + [{01EpisodeFive}]
+        -> 01Ep5
 
 -> DONE
 
-=== TT1Prologue ===
+=== 01Prologue ===
 PROLOGUE
 "Welcome weary adventurers!" {Maid}, the serving maid, says as she greets you with a big smile.
 Your party of adventurers is once again at the Blue Mug inn & tavern.
@@ -52,21 +52,21 @@ A boy yells in gasps, "My sister! ... My sister!"
     + Your party decides to finish their dinner first.
 - Another dozen or so townsfolk also rise. The crowd quickly makes its way to the edge of town to {FarmBoy}'s small farm.
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep1
+        ->01Ep1
 
 ->DONE
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep1
+        ->01Ep1
 
 ->DONE
 
-=== TT1Ep1 ===
+=== 01Ep1 ===
 // Room 1: Guardian OR Room 2: Puzze/Roleplay Challenge
-{TT1EpisodeOne}
+{01EpisodeOne}
 ...Previous night at the Blue Mug...
 {TheWizard} says, "I think its best the townsfolk stay outside."
 Some of them start to grumble, "Who are you to tell us to stay outside?"
@@ -130,29 +130,29 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 “Amhairghin, says, "That initial attack really took a lot out of me. I'm going to need an hour or so for a short rest before setting out."
 "Good this will give us time to talk with locals about what's available and what's best for an epic endurance run," you say.
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep2
+        ->01Ep2
 ->DONE
 
 ->DONE
 
-=== TT1Ep2 ===
+=== 01Ep2 ===
 // Room 2: Puzze/Roleplay Challenge OR Room 1: Guardian
 
-{TT1EpisodeTwo}
+{01EpisodeTwo}
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep3
+        ->01Ep3
 
 ->DONE
 
-=== TT1Ep3 ===
+=== 01Ep3 ===
 // Room 3: Trick or Setback
-{TT1EpisodeThree}
+{01EpisodeThree}
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
         ->S0Ep4
 
@@ -160,26 +160,26 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 
 === S0Ep4 ===
 // Room 4: Climax
-{TT1EpisodeFour}
+{01EpisodeFour}
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep5
+        ->01Ep5
 
 ->DONE
 
-=== TT1Ep5 ===
+=== 01Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{TT1EpisodeFive}
+{01EpisodeFive}
 
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Epilogue
+        ->01Epilogue
 
 ->DONE
 
-=== TT1Epilogue ===
+=== 01Epilogue ===
     EPILOGUE
 
 ->END
@@ -190,8 +190,8 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 // VARIABLES for Story Outline
 
 
-//== TT1Ep3 ==
-{TT1EpisodeThree}
+//== 01Ep3 ==
+{01EpisodeThree}
 - The party finally enters the small village of Leadville.
 - {TheCleric} grabs a nearby man: "Where is your healer?!"
 - The startled man points to a small stone and thatch hut on the back edge of the village, tucked up in the pines and a crook of the mountain.
@@ -208,13 +208,13 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 - Thorsbjorg continues: "Bring a handful of the fungus to me and I will create a drinkable potion."
 - {TheWizard}: "Thank you Thorsbjorg!"
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep4
+        ->01Ep4
 ->DONE
 
-== TT1Ep4 ==
-{TT1EpisodeFour}
+== 01Ep4 ==
+{01EpisodeFour}
 - The party enters a large mouthed cave. You scan the area as best as you can, but you are also trying to hurry. After all, there is a sick child waiting for your return.
 - The cave is dimly lit, but not dark yet at this distance inside.
 - About 20 feet ahead, you notice an area covered with white-ish colored puffball fungi.
@@ -222,13 +222,13 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 - What do you do?
 - You have defeat the giant as it collapses onto the cave floor. You quickly run past the large body and grab the fungus. You waste no time leaving the cave and heading back to Leadville.
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep5
+        ->01Ep5
 ->DONE
 
-//== TT1Ep5 ==
-{TT1EpisodeFive}
+//== 01Ep5 ==
+{01EpisodeFive}
 - {TheCleric} smiles as you enter the hut. You are unsure if its a maniacal smile or one of pleasant surprise. You still don't know, but after a moments hesitation you all enter, and she takes the fungi. She brews a foul smelling potion for Becca to drink.
 - {TheCleric}: "Be sure she drinks half of the immediately upon your return and the other half the next day. She must drink it ALL. If she does not, she will get better from half of the potion but the sickness will return within a few days and be even stronger. She would not survive the second strain."
 - You thank her for help and run out the door.
@@ -240,16 +240,16 @@ When you and {theWizard} join {theCleric} you see the old healer and other men h
 - The next day she seems to be more recovered than your party! You remind her father that she must drink the other half, lest the illness comeback even stronger. She complies.
 - By the end of the week both your party and Becca have made a full recovery.
     +[NEXT]
-        ->TT1Epi
+        ->01Epi
 
 ->DONE
 
-== TT1Epi ==
-{TT1Epilogue}
+== 01Epi ==
+{01Epilogue}
 You find yourselves sitting at the Blue Mug when the serving maid Jane comes up to you.
 "Welcome weary adventures!"
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
 ->END
 
 // CHARACTERS
@@ -272,7 +272,7 @@ VAR 1items = "flint and steel"
 // THE RETURN JOURNEY
 // THE CURE
 
-{TT1EpisodeTwo}
+{01EpisodeTwo}
 “It's too bad that you didn't have more time for training. Twelve months or more would be great an ultra run like this, but even three or four months would be extremely beneficial," says Timothy and Becca's dad.
 He continues, "My family would spend 80% of the week running modest distances at a modest intensity. Maybe we'd run really far once or twice a week, but it'd still be a low intensity. About 20% of the time we'd run or stack wood with great intensity. The human body is really quite amazing. You give it just the right amount of stress and it responds by getting stronger!”
 - “Your party continues talking to Timothy and Becca's father who suggest eating a lot of dried meats. You talk to another local runner that suggest eating dried fruits and nuts. You talk to another neighbor and get more conflicting advice. He suggest eating lots of grains and pastas.
@@ -288,6 +288,6 @@ He continues, "My family would spend 80% of the week running modest distances at
 - After the short rest, the food analysis is performed and each runner does some reflection on how they are feeling. Darius learns that he tends to eat foods high in protein and fat. He finds that eating foods with similar amounts of protein and fat make him feel better. The remaining team members didn't share much in common with food before running. Now though they all seem to feel better eating high carbohydrate based foods.
 - Your party of runners continues in this way for a total of 12 hours. Each runner experiences highs and lows, but the party trudges on up the trail and mountain. During this time, the druid in pronghorn form seems just fine.
     +[Ω]
-        ->TT1StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->TT1Ep3
+        ->01Ep3

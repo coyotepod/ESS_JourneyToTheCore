@@ -1,52 +1,52 @@
 #title: The Desert
 #author: Master Scoy
 
-->TT2StartMenu
+->02StartMenu
 
 INCLUDE origins-GlobalVariables.ink
 INCLUDE time-tombs-GlobalVariables.ink
 
 
-=== TT2StartMenu ===
+=== 02StartMenu ===
 Start Menu
-//    + {not TT2Preface} [Preface]
-//        ->TT2Preface
+//    + {not 02Preface} [Preface]
+//        ->02Preface
     + [PRESS START]
-        -> TT2Prologue
-    + [{TT2EpisodeOne}]
-        -> TT2Ep1
-    + [{TT2EpisodeTwo}]
-        -> TT2Ep2
-    + [{TT2EpisodeThree}]
-        -> TT2Ep3
-    + [{TT2EpisodeFour}]
+        -> 02Prologue
+    + [{02EpisodeOne}]
+        -> 02Ep1
+    + [{02EpisodeTwo}]
+        -> 02Ep2
+    + [{02EpisodeThree}]
+        -> 02Ep3
+    + [{02EpisodeFour}]
         -> S0Ep4
-    + [{TT2EpisodeFive}]
-        -> TT2Ep5
+    + [{02EpisodeFive}]
+        -> 02Ep5
 
 -> DONE
 
-=== TT2Preface ===
-{SeasonTT2}
-SETTING
+=== 02Preface ===
+{Season02}
+SE0ING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
 
 ->DONE
 
-=== TT2Prologue ===
+=== 02Prologue ===
 PROLOGUE
     +[Ω]
-        ->TT2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
-        ->TT2Ep1
+        ->02Ep1
 
 ->DONE
 
-=== TT2Ep1 ===
+=== 02Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{TT2EpisodeOne}
+{02EpisodeOne}
 {Your} party ventures from the ship's cabin onto the deck. A band of eight crewman have offered to join you ashore for your protection against indigenous animals. This strikes you as odd. The captain acts mistrustful. He suspects you looking for previously hidden treasure and not gathering research about desert animals.
 + You shrug your shoulders with indifference.
     ->c1
@@ -140,28 +140,28 @@ The captain meets you as soon as you get aboard.
 - He continues even more seriously, “This is not a fight we can win. This battle needs heroes and siege engines.”
 The captain hastily writes a note and attaches it to a crow and sends it off toward Storm Crown.
     +[Ω]
-        ->TT2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
-        ->TT2Ep1
+        ->02Ep1
 
 ->DONE
 
-=== TT2Ep2 ===
+=== 02Ep2 ===
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
-{TT2EpisodeTwo}
+{02EpisodeTwo}
     +[Ω]
-        ->TT2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
-        ->TT2Ep3
+        ->02Ep3
 
 ->DONE
 
-=== TT2Ep3 ===
+=== 02Ep3 ===
 // Room 3: Trick or Setback
-{TT2EpisodeThree}
+{02EpisodeThree}
     +[Ω]
-        ->TT2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
         ->S0Ep4
 
@@ -169,26 +169,26 @@ The captain hastily writes a note and attaches it to a crow and sends it off tow
 
 === S0Ep4 ===
 // Room 4: Climax
-{TT2EpisodeFour}
+{02EpisodeFour}
     +[Ω]
-        ->TT2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
-        ->TT2Ep5
+        ->02Ep5
 
 ->DONE
 
-=== TT2Ep5 ===
+=== 02Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{TT2EpisodeFive}
+{02EpisodeFive}
 
     +[Ω]
-        ->TT2StartMenu
+        ->02StartMenu
     +[NEXT EPISODE]
-        ->TT2Epilogue
+        ->02Epilogue
 
 ->DONE
 
-=== TT2Epilogue ===
+=== 02Epilogue ===
     EPILOGUE
 
 ->END

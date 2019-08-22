@@ -2,81 +2,78 @@
 #author: Master Scoy
 
 
-->TT5StartMenu
 
-INCLUDE origins-GlobalVariables.ink
-INCLUDE time-tombs-GlobalVariables.ink
 
-=== TT5Preface ===
+=== 05Preface ===
 
 ->DONE
 
-=== TT5Prologue ===
+=== 05Prologue ===
 PROLOGUE
     +[Ω]
-        ->TT5StartMenu
+        ->05StartMenu
     +[NEXT EPISODE]
-        ->TT5Ep1
+        ->05Ep1
 
 ->DONE
 
-=== TT5Ep1 ===
+=== 05Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{TT5EpisodeOne}
+{05EpisodeOne}
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
 - (end_episode)
     +[Ω]
-        ->TT5StartMenu
+        ->05StartMenu
     +[NEXT EPISODE]
-        ->TT5Ep1
+        ->05Ep1
 
 ->DONE
 
-=== TT5Ep2 ===
+=== 05Ep2 ===
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
-{TT5EpisodeTwo}
+{05EpisodeTwo}
     +[Ω]
-        ->TT5StartMenu
+        ->05StartMenu
     +[NEXT EPISODE]
-        ->TT5Ep3
+        ->05Ep3
 
 ->DONE
 
-=== TT5Ep3 ===
+=== 05Ep3 ===
 // Room 3: Trick or Setback
-{TT5EpisodeThree}
+{05EpisodeThree}
     +[Ω]
-        ->TT5StartMenu
+        ->05StartMenu
     +[NEXT EPISODE]
-        ->TT5Ep4
+        ->05Ep4
 
 ->DONE
 
-=== TT5Ep4 ===
+=== 05Ep4 ===
 // Room 4: Climax
-{TT5EpisodeFour}
+{05EpisodeFour}
     +[Ω]
-        ->TT5StartMenu
+        ->05StartMenu
     +[NEXT EPISODE]
-        ->TT5Ep5
+        ->05Ep5
 
 ->DONE
 
-=== TT5Ep5 ===
+=== 05Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{TT5EpisodeFive}
+{05EpisodeFive}
 
     +[Ω]
-        ->TT5StartMenu
+        ->05StartMenu
     +[NEXT EPISODE]
-        ->TT5Epilogue
+        ->05Epilogue
 
 ->DONE
 
-=== TT5Epilogue ===
+=== 05Epilogue ===
     EPILOGUE
 
 ->END
@@ -84,22 +81,22 @@ PROLOGUE
 
 ->DONE
 
-=== TT5StartMenu ===
+=== 05StartMenu ===
     // Start Menu
-    // + {not TT5Preface} [Preface]
-    //    ->TT5Preface
+    // + {not 05Preface} [Preface]
+    //    ->05Preface
     + [PRESS START]
-        -> TT5Prologue
+        -> 05Prologue
     + [Episode 1]
-        -> TT5Ep1
+        -> 05Ep1
     + [Episode 2]
-        -> TT5Ep2
+        -> 05Ep2
     + [Episode 3]
-        -> TT5Ep3
+        -> 05Ep3
     + [Episode 4]
-        -> TT5Ep4
+        -> 05Ep4
     + [Episode 5]
-        -> TT5Ep5
+        -> 05Ep5
 
 ->DONE
 ->END

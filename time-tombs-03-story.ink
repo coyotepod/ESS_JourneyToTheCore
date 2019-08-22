@@ -1,34 +1,34 @@
 #title: The Forest
 #author: Master Scoy
 
-->TT3StartMenu
+->03StartMenu
 INCLUDE origins-GlobalVariables.ink
 INCLUDE time-tombs-GlobalVariables.ink
 
 
 
-=== TT3StartMenu ===
+=== 03StartMenu ===
 Start Menu
-//    + {not TT3Preface} [Preface]
-//        ->TT3Preface
+//    + {not 03Preface} [Preface]
+//        ->03Preface
     + [PRESS START]
-        -> TT3Prologue
-    + [{TT3EpisodeOne}]
-        -> TT3Ep1
-    + [{TT3EpisodeTwo}]
-        -> TT3Ep2
-    + [{TT3EpisodeThree}]
-        -> TT3Ep3
-    + [{TT3EpisodeFour}]
-        -> S0Ep4
-    + [{TT3EpisodeFive}]
-        -> TT3Ep5
+        -> 03Prologue
+    + [{03EpisodeOne}]
+        -> 03Ep1
+    + [{03EpisodeTwo}]
+        -> 03Ep2
+    + [{03EpisodeThree}]
+        -> 03Ep3
+    + [{03EpisodeFour}]
+        -> 0Ep4
+    + [{03EpisodeFive}]
+        -> 03Ep5
 
 -> DONE
 
-=== TT3Preface ===
-{SeasonTT4}
-SETTING
+=== 03Preface ===
+{Season04}
+SE0ING
 {WorldSetting}
 PURPOSE
 {CYOAPurpose}
@@ -41,7 +41,7 @@ FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
 ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
 WIZARD: {Wizard} (also {TheWizard} & {theWizard})
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     + [next (spoilers if you proceed!)]
         ->NPCs
 
@@ -50,7 +50,7 @@ NPCs
 BLUE MUG OWNER: {MugOwner}
 SERVING MAID: {ServingMaid}
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     + [next]
         ->DiceRolls
 
@@ -64,7 +64,7 @@ d12 {d12}
 d20 {d20}
 d100 {100}
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     + [next]
         ->Movement
 
@@ -74,49 +74,49 @@ Walk - {MoveWalk}
 Hustle - {MoveHustle}
 Run - {MoveRun}
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     + [next]
         ->Movement
 
-=== TT3Prologue ===
+=== 03Prologue ===
 PROLOGUE
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->TT3Ep1
+        ->03Ep1
 
 ->DONE
 
-=== TT3Ep1 ===
+=== 03Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{TT3EpisodeOne}
+{03EpisodeOne}
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
 - (end_episode)
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->TT3Ep1
+        ->03Ep1
 
 ->DONE
 
-=== TT3Ep2 ===
+=== 03Ep2 ===
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
-{TT3EpisodeTwo}
+{03EpisodeTwo}
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->TT3Ep3
+        ->03Ep3
 
 ->DONE
 
-=== TT3Ep3 ===
+=== 03Ep3 ===
 // Room 3: Trick or Setback
-{TT3EpisodeThree}
+{03EpisodeThree}
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
         ->S0Ep4
 
@@ -124,26 +124,26 @@ PROLOGUE
 
 === S0Ep4 ===
 // Room 4: Climax
-{TT3EpisodeFour}
+{03EpisodeFour}
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->TT3Ep5
+        ->03Ep5
 
 ->DONE
 
-=== TT3Ep5 ===
+=== 03Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{TT3EpisodeFive}
+{03EpisodeFive}
 
     +[Ω]
-        ->TT3StartMenu
+        ->03StartMenu
     +[NEXT EPISODE]
-        ->TT3Epilogue
+        ->03Epilogue
 
 ->DONE
 
-=== TT3Epilogue ===
+=== 03Epilogue ===
     EPILOGUE
 
 ->END

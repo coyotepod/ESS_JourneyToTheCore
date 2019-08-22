@@ -42,6 +42,26 @@ VAR Wizard =        "WIZARD"
     VAR TheWizard = "The wizard"
     VAR theWizard = "the wizard"
 
+// ***************************************************************
+// Main NPCs
+// ***************************************************************
+VAR Innkeeper =         "Fin"
+VAR Maid =              "Jane"
+VAR MaidTwo =           "Suzie"
+VAR DwarfSmith =        "Cedalion" // Say-dale-yon // a mostly friendly blacksmithing dwarf in Canis Villa or KABEIROI
+VAR ForgeMaster =       "Hephaestus"
+VAR EvilMage  =         "Malum Magus" // Ma-loom
+VAR Queen =             "Queen Justina"
+VAR NobleFamily =       "Noord Vlakte"
+VAR Farmer1 =           "James"
+VAR Farmer2 =           "Robert"
+VAR Villager1 =         "Dan"
+VAR Boy1    =           "Timothy"
+VAR Girl1   =           "Becca"
+VAR Castellan =         "Mr. Hillenar"
+VAR FarmBoy =           "Timothy"
+VAR ProfessorL =        "Professor Leyder" // a.k.a Leidenbrock
+VAR Axel =              "Axel"
 
 
 // ***************************************************************

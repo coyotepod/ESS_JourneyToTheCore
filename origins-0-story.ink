@@ -160,7 +160,7 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
     + (east_canis) Looking to the eastern side, <>
         -- you see the main path exit the village. Next to the path is a general store. No need to leave yet or visit that store. You look around some more. ->courtyard_views
     + (west_canis) Looking to the western side, <>
-        -- you see an apothecary shop and main path entering {village1} (the one you followed in). No need to leave yet or visit that shop. You look around some more. ->courtyard_views
+        -- you see an apothecary shop and main path entering {village00} (the one you followed in). No need to leave yet or visit that shop. You look around some more. ->courtyard_views
     + {(north_canis && west_canis && east_canis)} [You observe...]
 - Most people are either justing passing through Canis Villa or visiting the large inn & tavern on the southern side. At least there you could sit in the shade.
     + [next]->south_canis

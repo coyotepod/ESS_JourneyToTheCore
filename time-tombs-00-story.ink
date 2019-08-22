@@ -7,19 +7,19 @@
 
 
 
-=== TT0Prologue ===
+=== 00Prologue ===
 PROLOGUE
 #audio:salt-mine
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much.
     +[Take action]
-        ->TT0Ep3
+        ->00Ep3
     +[Gather your thoughts]
-        ->TT0Ep1
+        ->00Ep1
 ->DONE
 
-=== TT0Ep1 ===
+=== 00Ep1 ===
 // Puzzle Or Roleplaying Challenge
-{TT0EpisodeOne} #audio: BlueMug
+{00EpisodeOne} #audio: BlueMug
 - \...Previous night
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
@@ -50,18 +50,18 @@ Distraught woman: Starts to tear up. "I don't have much money, but I need him ba
 - The party decides to set out tomorrow morning.
 
     +[Ω]
-        ->TT0StartMenu
-    +[NEXT EPISODE: {TT0EpisodeTwo}]
-        ->TT0Ep2
+        ->00StartMenu
+    +[NEXT EPISODE: {00EpisodeTwo}]
+        ->00Ep2
 ->DONE
 
-=== TT0Ep2 ===
-{TT0EpisodeTwo} #mine-arrival.mp3
+=== 00Ep2 ===
+{00EpisodeTwo} #mine-arrival.mp3
 The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
     + Make your way into the mine. #mine-ambience.mp3
     + Look around outside.
     -- Seems like a typical mine entrance. You enter the mine.
-- Tools of the trade such as pick axes and hammers are scattered haphhazardly. It would appear the miners left in a hurry.
+- Tools of the trade such as pick axes and hammers are scattered haphazardly. It would appear the miners left in a hurry.
     + \ {TheRogue} spots blood.
     + \ {TheFighter} spots something shiny.
         -- {TheFighter} inspects the shiny object which turns out to be a couple silver coins. He pocKets the extra coin.
@@ -69,7 +69,7 @@ The next day the party arrives at the mine without incident. There doesn't seem 
     + You take a closer look at the blood. <>
         -- There is a lot of blood.
             ++ [<em>WISDOM check pass</em>]
-                --- You notice very large bloody paw prints from a quadraped heading deeper into the mine. They could be from a wolf or bear.
+                --- You notice very large bloody paw prints from a quadruped heading deeper into the mine. They could be from a wolf or bear.
                 Its probably time to move along.
              ++ [<em>WISDOM check fail</em>]
                 --- You don't notice anything unusual except for the quantity of blood spilled.
@@ -163,15 +163,15 @@ The cave bear charges.
 - You turn tail and literally run for your life.
 - You dart and dash through numerous side passages. Suddenly you have the sensation of flying through the air headfirst in utter darkness.
     +[Ω]
-        ->TT0StartMenu
-    +{TT0Ep3 > 1} [{TT0EpisodeThree}]
-        ->TT0Ep4
-    +{TT0Ep3 == 0} [NEXT EPISODE: {TT0EpisodeThree}]
-        ->TT0Ep3
+        ->00StartMenu
+    +{00Ep3 > 1} [{00EpisodeThree}]
+        ->00Ep4
+    +{00Ep3 == 0} [NEXT EPISODE: {00EpisodeThree}]
+        ->00Ep3
 ->DONE
 
-=== TT0Ep3 ===
-{TT0EpisodeThree}
+=== 00Ep3 ===
+{00EpisodeThree}
 // Entrance And Guardian
 # audio:SaltMine
 - (senses_in_the_dark)
@@ -218,16 +218,16 @@ A small spark whooshes the torch into life. You at a tunnel dead end. The tunnel
     + The alabaster walls practically glow from the torch light.
 - What to do?
     +[Ω]
-        ->TT0StartMenu
-    +{TT0Ep1 > 0} [Walk down the tunnel NEXT EPISODE]
-        ->TT0Ep4
-    +{TT0Ep1 < 1} [Gather your thoughts before leaving the room]
-        ->TT0Ep1
+        ->00StartMenu
+    +{00Ep1 > 0} [Walk down the tunnel NEXT EPISODE]
+        ->00Ep4
+    +{00Ep1 < 1} [Gather your thoughts before leaving the room]
+        ->00Ep1
 ->DONE
 
-== TT0Ep4 ==
+== 00Ep4 ==
 TODO: Write Episode 4
-{TT0EpisodeFour}
+{00EpisodeFour}
 You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking and you come to a crossroads. By now the salt has been reduced to veins a few inches thick.
 ... not done yet
 // =2
@@ -236,84 +236,33 @@ You enter the tunnel. After walking for a minute you notice the tunnel starts to
 // * Cautiously leave the room ->Ep2_END
 // * Sit on the floor ->Ep2_END
     +[Ω]
-        ->TT0StartMenu
+        ->00StartMenu
     +[NEXT EPISODE]
-        ->TT0Ep5
+        ->00Ep5
 ->DONE
 
-== TT0Ep5 ==
+== 00Ep5 ==
 TODO: Write Episode 5
-{TT0EpisodeFive}
+{00EpisodeFive}
 ...not done yet
     +[Ω]
-        ->TT0StartMenu
+        ->00StartMenu
     +[NEXT EPISODE]
-        ->TT0Epilogue
+        ->00Epilogue
 ->DONE
 
-=== TT0Epilogue ===
+=== 00Epilogue ===
 EPILOGUE
 
 ->END
 
-=== TT0Preface ===
-PREFACE: {SeasonTT0}
-- WORLD SETTING
-{WorldSetting}
-    +[Ω]
-        ->TT0StartMenu
-    + [PURPOSE]
-- PURPOSE
-{CYOAPurpose}
-    +[Ω]
-        ->TT0StartMenu
-    + [Game Mechanics]
-        ->GameMechanics
-    + [CHARACTERS (potential spoilers if you proceed!)]
-
-- (GameMechanics)
-- EXAMPLE DICE ROLLS
-d4      {d4}
-d6      {d6}
-d8      {d8}
-d10     {d10}
-d12     {d12}
-d20     {d20}
-d100    {100}
-
-- MOVEMENT
-Stealth - {MoveStealth}
-Walk - {MoveWalk}
-Hustle - {MoveHustle}
-Run - {MoveRun}
-    +[Ω]
-        ->TT0StartMenu
-    + [Story Elements (likely spoilers if you proceed)]
-
-- (StoryElements)
-- CHARACTERS
-CLERIC: {Cleric} (also {TheCleric} & {theCleric})
-FIGHTER: {Fighter} (also {TheFighter} & {theFighter})
-ROGUE: {Rogue} (also {TheRogue} & {TheRogue})
-WIZARD: {Wizard} (also {TheWizard} & {theWizard})
-    +[Ω]
-        ->TT0StartMenu
-
-- NPCs
-BLUE MUG OWNER: {MugOwner}
-SERVING MAID: {ServingMaid}
-    +[Ω]
-        ->TT0StartMenu
-
-->DONE
-
-SEASON: 0."{SeasonTT0}" is a actually a prologue to our a class narrative "Time Tombs."
+SEASON: 0."{Season00}" is a actually a prologue to our a class narrative "Time Tombs."
 PURPOSE:
 \* Introduce students to a "Choose Your Own Adventure" (CYOA) narratives
-\* Introduce students to role-plaging games (RPG)
+\* Introduce students to role-playing games (RPG)
 \* Teach students how combat works in a RPG
 \* Develop students' social skills
-\* Develop habots of mind; persistence, growth mindset
+\* Develop habits of mind; persistence, growth mindset
 \* Build rapport and a sense of community in the classroom
 \* Add some different, something fun to students' day
 HABITS OF MIND: persistence, growth mindset
@@ -330,7 +279,7 @@ MONSTERS:
 // {CaveBearAction1}
 
 +[<strong>Ω</strong>]
-    ->TT0StartMenu
+    ->00StartMenu
 
 ->DONE
 

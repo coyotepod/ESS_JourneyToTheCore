@@ -24,7 +24,7 @@ This knot is for the Series and Season Number. For Example "Preface" and "Season
 Purpose: to keep INKY from getting confused between each season "S" and episode "Ep"
 +[START MENU]
     ->StartMenu
-    
+
 ->DONE
 
 === StartMenu ===
@@ -58,15 +58,15 @@ Purpose: to keep INKY from getting confused between each season "S" and episode 
     ->StartMenu
 +[NEXT]
     ->Ep1
-    
+
 ->DONE
 
 === S1 ===
 <h1>{SeasonTitle}</h1>
-This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader. 
+This section is for SEASON to keep INKY from getting confused. Its also a place to write a season summary without special text formatting. It shouldn't be visible to the reader.
 +[START MENU]
     ->StartMenu
-    
+
 ->DONE
 
 == Ep1 ==
@@ -75,7 +75,7 @@ This section is for SEASON to keep INKY from getting confused. Its also a place 
     ->StartMenu
 +[NEXT]
     ->Ep1
-    
+
 ->DONE
 
 == Ep2 ==
@@ -84,7 +84,7 @@ This section is for SEASON to keep INKY from getting confused. Its also a place 
     ->StartMenu
 +[NEXT]
     ->Ep3
-    
+
 ->DONE
 
 == Ep3 ==
@@ -93,7 +93,7 @@ This section is for SEASON to keep INKY from getting confused. Its also a place 
     ->StartMenu
 +[NEXT]
     ->Ep4
-    
+
 ->DONE
 
 == Ep4 ==
@@ -102,7 +102,7 @@ This section is for SEASON to keep INKY from getting confused. Its also a place 
     ->StartMenu
 +[NEXT]
     ->Ep5
-    
+
 ->DONE
 
 == Ep5 ==
@@ -112,7 +112,7 @@ This section is for SEASON to keep INKY from getting confused. Its also a place 
     ->StartMenu
 +[NEXT]
     ->Epilogue
-    
+
 ->DONE
 
 == Epilogue ==
