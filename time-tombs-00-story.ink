@@ -192,7 +192,7 @@ What do you do?
 - You turn tail and literally run for your life.
 - You dart and dash through numerous side passages. Suddenly you have the sensation of flying through the air headfirst in utter darkness and the world goes black.
     + [next]
-    -- Then awoke to your current siutation in the dark room. Still not entirely sure how you got here, but its time to take action
+    -- You wake up in a cool, dry room. Inky blackness engulfs the senses. Still not entirely sure how you got here, but its time to take action
 - (episode_end)
     +[Ω]
         ->00StartMenu
@@ -249,12 +249,16 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
     + The alabaster walls practically glow from the torch light.
 - What to do?
 
+-(episode_end)
+// Already gathered thoughts and went through flashback
 +{00Ep1 > 0} [Walk down the tunnel]
 -- You walk down the tunnel.
     ++[Ω]
         ->00StartMenu
     ++ [NEXT]
         ->00Ep5
+
+// Did not gather thoughts yet
 +{00Ep1 < 1} [Gather your thoughts]
 -- You gather your thoughts before leaving the room.
     ++[Ω]
