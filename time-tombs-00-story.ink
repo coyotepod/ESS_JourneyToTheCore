@@ -1,6 +1,6 @@
 # theme: dark
-# title: The Cave
 # author: Master Scoy
+#title: WANDERING in the CAVE
 
 
 
@@ -19,7 +19,8 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 
 === 00Ep1 ===
 // Puzzle Or Roleplaying Challenge
-{00EpisodeOne} #audio: BlueMug
+{00EpisodeOne} # AUDIO: BlueMug
+# IMAGE: images/blue-mug.jpg
 - You recall the previous night...
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} the serving maid greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
@@ -54,6 +55,7 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 
 === 00Ep2 ===
 {00EpisodeTwo} #mine-arrival.mp3
+#IMAGE: 
 - The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
     + Make your way into the mine. #mine-ambience.mp3
     + Look around outside.
