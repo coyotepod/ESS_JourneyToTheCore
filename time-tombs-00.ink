@@ -1,6 +1,6 @@
 #theme: dark
 #author: Master Scoy
-#title: in the CAVE
+#title: WANDERING in the CAVE
 
 ->00StartMenu
 
@@ -10,15 +10,15 @@ INCLUDE time-tombs-00-story.ink
 
 === 00StartMenu ===
     + [PRESS START]
-        ->00Prologue
+        -> 00Prologue
     + [{00EpisodeOne}]
-        ->00Ep1
+        -> 00Ep1
     + [{00EpisodeTwo}]
-        ->00Ep2
+        -> 00Ep2
     + [{00EpisodeThree}]
-        ->00Ep3
+        -> 00Ep3
     + [{00EpisodeFour}]
-        ->00Ep4
+        -> 00Ep4
     + [{00EpisodeFive}]
-        ->00Ep5
+        -> 00Ep5
     -> DONE
