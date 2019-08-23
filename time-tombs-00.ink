@@ -10,7 +10,7 @@ INCLUDE time-tombs-00-story.ink
 
 === 00StartMenu ===
     + [PRESS START]
-        ->00Ep1
+        ->00Prologue
     + [{00EpisodeOne}]
         ->00Ep1
     + [{00EpisodeTwo}]
