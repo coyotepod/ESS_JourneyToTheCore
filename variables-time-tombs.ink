@@ -4,7 +4,7 @@
 
 // ***************************************************************
 VAR Topic00 =   "Habits of Mind"
-VAR Season00 =  "THE CAVE"
+VAR Season00 =  "WANDERING in the CAVE"
 // ***************************************************************
 VAR Q00 = "What are habits of mind"
 VAR Q00b = "What habits of mind make a person successful?"
@@ -17,16 +17,18 @@ VAR 00EpisodeFour =  "THE TUNNEL"
 VAR 00EpisodeFive =  "TIME"
 
 // ***************************************************************
-VAR Season01 =          "THE MOUNTAIN"
+VAR Topic01 =   ""
+VAR Season01 =          "DISCOVERY in the MOUNTAIN"
 // ***************************************************************
-VAR 01EpisodeOne = "The Illness"
-VAR 01EpisodeTwo = "The Mountain"
-VAR 01EpisodeThree = "Leadville"
-VAR 01EpisodeFour = "The Cave"
-VAR 01EpisodeFive = "The Mountain II."
+VAR 01EpisodeOne = "THE ILLNESS"
+VAR 01EpisodeTwo = "THE MOUNTAIN"
+VAR 01EpisodeThree = "LEADVILLE"
+VAR 01EpisodeFour = "A CAVE"
+VAR 01EpisodeFive = "THE MOUNTAIN II."
 
 // ***************************************************************
-VAR Season02 =          "THE DESERT"
+VAR Topic02 =   ""
+VAR Season02 =          "EXPEDITION in the DESERT"
 // ***************************************************************
 VAR 02EpisodeOne = "INSULAR MARSUPLIA"
 VAR 02EpisodeTwo = "ARRAKIS"
@@ -35,7 +37,8 @@ VAR 02EpisodeFour = "ROOM FOUR: Big Battle"
 VAR 02EpisodeFive = "ROOM FIVE: Revelation"
 
 // ***************************************************************
-VAR Season03 =          "THE FOREST"
+VAR Topic03 =   ""
+VAR Season03 =          "JOURNEY through the FOREST"
 // ***************************************************************
 VAR 03EpisodeOne =     "ROOM ONE: Gain Entrance"
 VAR 03EpisodeTwo =     "ROOM TWO: Puzzle or Role-play Challenge"
@@ -44,7 +47,8 @@ VAR 03EpisodeFour =    "ROOM FOUR: Big Battle"
 VAR 03EpisodeFive =    "ROOM FIVE: Revelation"
 
 // ***************************************************************
-VAR Season04 =          "THE GRASSLAND"
+VAR Topic04 =   ""
+VAR Season04 =          "VOYAGE across the GRASSLAND"
 // ***************************************************************
 VAR 04EpisodeOne =     "ROOM ONE: Gain Entrance"
 VAR 04EpisodeTwo =     "ROOM TWO: Puzzle or Role-play Challenge"
@@ -53,7 +57,8 @@ VAR 04EpisodeFour =    "ROOM FOUR: Big Battle"
 VAR 04EpisodeFive =    "ROOM FIVE: Revelation"
 
 // ***************************************************************
-VAR Season05 =          "THE WATER"
+VAR Topic05 =   ""
+VAR Season05 =          "ADVENTURE on the WATER"
 // ***************************************************************
 VAR 05EpisodeOne =     "ROOM ONE: Gain Entrance"
 VAR 05EpisodeTwo =     "ROOM TWO: Puzzle or Role-play Challenge"
