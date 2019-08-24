@@ -9,8 +9,6 @@
 
 === 00Prologue ===
 PROLOGUE
-# IMAGE: ~/images/monster-bear.jpeg
-
 # AUDIO: salt-mine
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much at all.
     +[Gather your thoughts]
@@ -56,7 +54,7 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 
 === 00Ep2 ===
 {00EpisodeTwo} #mine-arrival.mp3
-#IMAGE: images/mine-entrance.jpg
+#IMAGE: images00/mine-entrance.jpg
 TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBach-photo-mine-entrance.jpg
 - The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
     + Make your way into the mine. #mine-ambience.mp3
@@ -85,7 +83,7 @@ TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBa
     -- You {MoveRun} down the tunnel.
 - You proceed a few minor twists and turns.
 + Then[...] <>
-# IMAGE: images/monster-giant-spiders.jpeg
+# IMAGE: images00/monster-giant-spiders.jpeg
 
 - {~two|three} giant spiders at the edge of the torch light suddenly rush up the tunnel towards the party, chattering loudly looking very menacing. #spiders
     + { tunnel_stealth } [Fight!]
@@ -130,7 +128,7 @@ TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBa
     + [Leave them alone]
 TODO: {TheFighter}: "Crossbow is ready!"
 
-# IMAGE: images/monster-bats.jpeg
+# IMAGE: images00/monster-bats.jpeg
 - Your party opts to leave the bats alone. They fly overhead harmlessly and leave you alone.
 - Not much longer you find two bodies, presumably miners. A third that stirs ever so slightly when hearing you approach.
 What do you do?
@@ -175,7 +173,7 @@ What do you do?
 
 === 00Ep3 ===
 {00EpisodeThree}
-# IMAGE: images/monster-bear.jpeg
+# IMAGE: images00/monster-bear.jpeg
 
 - A large cave bear opens its maw and roars again. The cave bear charges.
     + [{TheRogue} attacks first]
