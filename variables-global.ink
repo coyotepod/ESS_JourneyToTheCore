@@ -435,5 +435,6 @@ VAR ContinualFlame = "Continual Flame: LEVEL 2nd; CASTING TIME: 1 Action RANGE/A
 // ***************************************************************
 
 // END OF GLOBAL VARIABLES
+
 === GlobalVariables ===
 -> DONE

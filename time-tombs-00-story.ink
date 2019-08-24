@@ -1,6 +1,6 @@
 # theme: dark
 # author: Master Scoy
-#title: WANDERING in the CAVE
+# title: WANDERING in the CAVE
 
 
 
@@ -9,7 +9,9 @@
 
 === 00Prologue ===
 PROLOGUE
-#audio:salt-mine
+# IMAGE: ~/images/monster-bear.jpeg
+
+# AUDIO: salt-mine
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much at all.
     +[Gather your thoughts]
         ->00Ep1
@@ -18,13 +20,12 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 ->DONE
 
 === 00Ep1 ===
-// Puzzle Or Roleplaying Challenge
+- You recall the previous night...
 {00EpisodeOne} # AUDIO: BlueMug
 # IMAGE: images/blue-mug.jpg
-- You recall the previous night...
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} the serving maid greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
-    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
+    + You: "We grow {~bored|tired} of town life. What news of adventures do you have?""
 - A distraught woman burst into the room.
 - She pleads "Someone help please! "My husband has gone missing in the salt mine!"
 - She starts to tear up. "I don't have much money, but I'll pay whatever I have. I just need him back!"
@@ -42,7 +43,7 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
     + You: "I don't think this is our sort of thing."
         -- {TheCleric}: Turns to you and says, "Surely we can help this nice young couple out?"
             ++ You: "OK, fine"
-- Everyone else in the party {~|reluctantly|hestitantly} agrees.
+- Everyone else in the party {~|reluctantly|hesitantly} agrees.
 - "Thank you!" My name is {YoungMinerWife}. I pray you can find {YoungMiner}. {TheCleric} nods.
 - {YoungMinerWife} gives you directions to the mine and describes her husband.
 - The party decides to set out tomorrow morning.
@@ -55,7 +56,8 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 
 === 00Ep2 ===
 {00EpisodeTwo} #mine-arrival.mp3
-#IMAGE: 
+#IMAGE: images/mine-entrance.jpg
+TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBach-photo-mine-entrance.jpg
 - The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
     + Make your way into the mine. #mine-ambience.mp3
     + Look around outside.
@@ -79,17 +81,19 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
     -- You {MoveWalk} down the tunnel.
     + (tunnel_hustle) [Hustle]
     -- You {MoveHustle} down the tunnel.
-    + (tunnel_run) [Run] 
+    + (tunnel_run) [Run]
     -- You {MoveRun} down the tunnel.
 - You proceed a few minor twists and turns.
 + Then[...] <>
+# IMAGE: images/monster-giant-spiders.jpeg
+
 - {~two|three} giant spiders at the edge of the torch light suddenly rush up the tunnel towards the party, chattering loudly looking very menacing. #spiders
     + { tunnel_stealth } [Fight!]
     -- You were being stealthy so you surprise the beasts. You get an extra attack and fight with advantage the first round!
     + { tunnel_stealth } [Flee!]
     -- You may attempt to flee undetected
     + { tunnel_walk } [Fight!]
-    -- 
+    --
     + { tunnel_walk } [Flee!]
     --
     + { tunnel_hustle or tunnel_run } [Fight!]
@@ -121,16 +125,19 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
     + [Collect the venom]
     -- Carefully, {theWizard} holds a vial up to the fangs and collects some of the dripping venom.
     ++ [next]
-- The clamoring of the battle has spooked a medium group (1d8) of bats from their perches farther in. They aren't in range yet. They seem to be staying close to the ceiling.
+- The clamoring of the battle has spooked a medium group ({d10()+6}) of bats from their perches farther in. They aren't in range yet. They seem to be staying close to the ceiling.
 - {TheWizard}: "I urge caution to leave the bats alone"
-    + [next]
+    + [Leave them alone]
 TODO: {TheFighter}: "Crossbow is ready!"
+
+# IMAGE: images/monster-bats.jpeg
 - Your party opts to leave the bats alone. They fly overhead harmlessly and leave you alone.
 - Not much longer you find two bodies, presumably miners. A third that stirs ever so slightly when hearing you approach.
 What do you do?
     + [Healing spell]
         -- "Perhaps I should perform a minor healing spell?" asks {theCleric}.
         -- You say "I was thinking the same thing." {TheCleric} performs a MINOR HEALING spell.
+        -- (\+ {d4()} 
         ++ [next]
     + [Healing potion]
         -- "I'll give him a POTION OF HEALING (2d4 + 2)" you say.
@@ -168,7 +175,8 @@ What do you do?
 
 === 00Ep3 ===
 {00EpisodeThree}
-// Entrance And Guardian
+# IMAGE: images/monster-bear.jpeg
+
 - A large cave bear opens its maw and roars again. The cave bear charges.
     + [{TheRogue} attacks first]
         -- {TheRogue} releases two throwing knives into the front shoulders of the cave bear. It barely pauses before crashing into the party. Everyone in the party takes bludgeoning damage.
@@ -198,7 +206,7 @@ What do you do?
 - (episode_end)
     +[Ω]
         ->00StartMenu
-    +{ 00Ep4 > 1 } [NEXT EPISODE: 00EpisodeFive]
+    +{ 00Ep4 > 1 } [NEXT EPISODE: {00EpisodeFive}]
         ->00Ep5
     +{00Ep4 == 0} [NEXT EPISODE: {00EpisodeFour}]
         ->00Ep4
@@ -232,7 +240,7 @@ Reaching into your tunic you grasp the handle of a greasy torch and pull it out.
 After standing in the dark for a moment, you realize that was {~an idiotic choice|a dumb decision|a rather stupid decision|a hasty decision|not well thought out|not an intelligent choice|not a smart idea}. You fumble around for ten or fifteen minutes on the floor before finding the flint and steel.
     + You strike the flint and steel near the torch.
     ->flint_strike
-    
+
 - (flint_strike)
 {~Nothing happens|A spark starts a flame but it fizzles out|The torch whooshes to life and then quickly dies}.
     + {flint_strike_fail < 4} You strike the flint and steel near the torch again.
@@ -272,7 +280,7 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 == 00Ep5 ==
 {00EpisodeFive}
 You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking and you come to a crossroads. By now the salt has been reduced to veins a few inches thick.
-... to be continued 
+... to be continued
 TODO: Write Episode 5
 // =2
 // You start walking through the tunnel.
@@ -339,3 +347,19 @@ VAR GiantSpiderAction1 = "<b>Spider Bite</b> +5 to hit, 7 piercing damage, targe
 VAR GiantSpiderAction2 = "<b>Web</b> +5 to hit, range 30/60 ft. The target is restrained by webbing. As an action, the restrained target can make a  Strength check bursting the webbing on a success. The webbing can also be attacked and destroyed"
     // DC 12
     // Webbing AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage.
+=== credits_00 ===
+Blue Mug Inn 
+    deviantart
+
+mine entrance
+    http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBach-photo-mine-entrance.jpg
+    https://s3.amazonaws.com/gs-waymarking-images/b1396a00-af7d-43fc-85a9-239968c21514.jpg
+giant spiders
+    https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/323/1000/1000/636252775648743317.jpeg
+bats
+    https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/906/1000/1000/636334289313689439.jpeg
+bear
+    https://www.huffpost.com/entry/todd-orr-grizzly-bear-attack_n_57f237c9e4b082aad9bbec90
+
+
+    -> END
