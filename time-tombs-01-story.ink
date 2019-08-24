@@ -1,30 +1,8 @@
-#title: The Mountain
+#theme: dark
 #author: Master Scoy
 
-->01StartMenu
+#title: The Mountain
 
-INCLUDE origins-GlobalVariables.ink
-INCLUDE time-tombs-GlobalVariables.ink
-
-
-=== 01StartMenu ===
-Start Menu
-//    + {not 01Preface} [Preface]
-//        ->01Preface
-    + [PRESS START]
-        -> 01Prologue
-    + [{01EpisodeOne}]
-        -> 01Ep1
-    + [{01EpisodeTwo}]
-        -> 01Ep2
-    + [{01EpisodeThree}]
-        -> 01Ep3
-    + [{01EpisodeFour}]
-        -> S0Ep4
-    + [{01EpisodeFive}]
-        -> 01Ep5
-
--> DONE
 
 === 01Prologue ===
 PROLOGUE
