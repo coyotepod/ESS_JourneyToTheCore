@@ -27,12 +27,14 @@ PROLOGUE
     + "Lets head to the {CelestialTower}."
 - (episode_end)
 TODO: Change "04" to specific Season
-OBJECTIVES for {Season04}
+OBJECTIVES for {Season02}
 // Learning Objectives
-\* Answer the Enduring Question: {Q04}
+\* Answer the Enduring Question: {Q02a}
+\* Answer the Enduring Question: {Q02b}
+\* Answer the Enduring Question: {Q02c}
 
 // Phenomena
-\* Explain the phenomena of {Ph04}.
+\* Explain the phenomena of {Ph02}.
 
 // Game Objectives
 \* Enter the {CelestialTower}.
