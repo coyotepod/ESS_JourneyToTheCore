@@ -87,7 +87,7 @@ OBJECTIVES for {Season02}
 - {Castellan}: Sorry for doubting you
 - {TheWizard}: We weren't finished. We have reason and evidence to support the idea that the planets orbit the sun as Brahe stated, BUT our planet also orbits the sun.
 + [next]
-- {Castellan}: Oh my, now that's an original! I'm sure Master Brahe and Kepler will have...thoughts on your idea. A word of caution; move cautiously up to the 13th floor to meet them and you are likely to encounter...less problems.
+- {Castellan}: Oh my, now that's an original! I'm sure Master Brahe and Kepler will have...thoughts on your idea. A word of advice; move cautiously up to the 13th floor to meet them. You are likely to encounter...less problems.
 + [next]
 You glance at {theWizard} surprised by his additional idea. The entire party looks at each other questioningly at {Castellan}'s warning.  The party walks inside the main door.
   ->enter_celestial_towers
@@ -146,9 +146,9 @@ You head to the kitchen. No one is around except {~a couple rats chewing on mold
     + Go up the stairs -> up_the_stairs
 - (leave_castle_early)You walk back to the vestibule. A shadowy figure steps into the entrance front of you with a drawn dagger. You turn and bolt up the stairs .-> up_the_stairs
 - (up_the_stairs)
-    + {Front_Door} You walk up the stairs for {2+d4()} floors. <>
-    + {Side_Door} You run up the stairs for {2+d4()} floors. <>
--
+    + {Front_Door} You walk up the stairs[.] <>
+    + {Side_Door} You run up the stairs[.] <>
+- for {2+d4()} floors.
     + [next]
 - {d4()+1} SKELETONS come from the stairs above.
         // https://www.dndbeyond.com/
@@ -182,7 +182,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
             --> 02StartMenu
 - (postcombat)
 - Congratulations on your victory!
-    + { not Side_Door} [next]
+    // + { not Side_Door } [next]
         ->landing
     + { Side_Door } The party continues running up the stairs.
         -- You face SKELETONS. Again.
@@ -201,6 +201,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
 ->DONE
 
 === 02Ep3 ===
+# CLEAR
 // Room 3: Trick or Setback
 {02EpisodeThree}
 - You enter the mage's study and discover his notebook on the desk. It is magically locked.
