@@ -8,44 +8,29 @@ INCLUDE origins-variables.ink
 INCLUDE ess-storylines.ink
 
 //INCLUDE origins-about.ink
-INCLUDE origins-0.ink
-INCLUDE origins-1.ink
-INCLUDE origins-2.ink
-INCLUDE origins-3.ink
-INCLUDE origins-4.ink
-INCLUDE origins-5.ink
-INCLUDE origins-06.ink
-INCLUDE origins-07.ink
+INCLUDE origins-00.ink
+//INCLUDE origins-01.ink
+//INCLUDE origins-02.ink
+//INCLUDE origins-03.ink
+//INCLUDE origins-04.ink
+//INCLUDE origins-05.ink
+//INCLUDE origins-06.ink
+//INCLUDE origins-07.ink
 
 ==OriginsStartMenu==
-    + PROLOGUE: {Season00}
-        ->00StartMenu
-    + SEASON 1: {Season01}
-        ->01StartMenu
-    + SEASON 2: {Season02}
-        ->02StartMenu
-    + SEASON 3: {Season03}
-       ->03StartMenu
-    + SEASON 4: {Season04}
-       ->04StartMenu
-    + SEASON 5: {Season05}
-       ->05StartMenu
+//+ PROLOGUE: {Season00}    ->00StartMenu
+//+ SEASON 1: {Season01}    ->01StartMenu
+//+ SEASON 2: {Season02}    ->02StartMenu
+//+ SEASON 3: {Season03}    ->03StartMenu
+//+ SEASON 4: {Season04}    ->04StartMenu
+//+ SEASON 5: {Season05}    ->05StartMenu
 
-    + PROLOGUE
-        ->00StartMenu
-    + SEASON 1
-        ->01StartMenu
-    + SEASON 2
-        ->02StartMenu
-    + SEASON 3
-       ->03StartMenu
-    + SEASON 4
-       ->04StartMenu
-    + SEASON 5
-       ->05StartMenu
-
-
-
+//+ PROLOGUE    ->00StartMenu
+//+ SEASON 1    ->01StartMenu
+//+ SEASON 2    ->02StartMenu
+//+ SEASON 3    ->03StartMenu
+//+ SEASON 4    ->04StartMenu
+//+ SEASON 5    ->05StartMenu
 ->DONE
 
 ->END
