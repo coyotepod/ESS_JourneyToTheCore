@@ -217,7 +217,7 @@ Combat actions by individuals and each party are determined LIVE in class and no
       --- {ForgeMaster} didn't even break a sweat. You've experienced a crushing death.
         ++++ [Death] -> 04StartMenu
 - {ForgeMaster}: "Okay. Tell me more"
-- You: "We are from {village1}, same as him, so when we recently acquired some {ore30} we went to him to talk about it."
+- You: "We are from Canis Villa, same as him, so when we recently acquired some {ore30} we went to him to talk about it."
     + You tell him about the {CelestialTower}[...]<>
 - , Kepler's notebook, the conversation with Hutton & Lyell, and the Air Temple.
 - {ForgeMaster}'s intense blue eyes haven't left you.

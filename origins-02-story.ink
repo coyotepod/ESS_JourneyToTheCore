@@ -5,13 +5,16 @@
 VAR Season02Hook = "a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit. They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself. She can't openly accuse them of ill doing, but she's willing to make secret inquiries into their predictions. She will pay handsomely for valuable information. You must enter the Celestial Tower and figure out how the mages are able to predict events in the ether with such great accuracy."
 
 === 02Prologue ===
+# IMAGE: images/blue-mug.jpg
+
 PROLOGUE
 - {Maid}: "Welcome weary adventurers!"
 - Your party is greeted with a {~ warm| big| kind} smile from {Maid} at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news do you have?"
-
 - (season_hook) // SEASON HOOK
 - {Maid}: "Well, a very large fireball recently streaked through the sky and at least a piece of it hit the ground nearby. It made a big hole in the ground and scorched a patch of land on farmer Jameson's property. Two mages in the Celestial Tower predicted when it would arrive and where it would hit."
+# IMAGE: images/comet.jpg
+
   + [next]
 - <> "They even collected a piece of the fireball! Its been said they've predicted many great events in the ether over the past few decades. They can say when the moon will turn blood red or when nearby stars seem to brighten. The Queen is concerned they are using dark magic to make these events happen. The mages are notoriously reclusive and have offered little information to anyone - even the Queen herself."
   + [next]
@@ -29,16 +32,18 @@ PROLOGUE
 TODO: Change "04" to specific Season
 OBJECTIVES for {Season02}
 // Learning Objectives
-\* Answer the Enduring Question: {Q02a}
-\* Answer the Enduring Question: {Q02b}
-\* Answer the Enduring Question: {Q02c}
+//\* Answer the Enduring Question: {Q02a}
+//\* Answer the Enduring Question: {Q02b}
+//\* Answer the Enduring Question: {Q02c}
 
 // Phenomena
-\* Explain the phenomena of {Ph02}.
+//\* Explain the phenomena of {Ph02}.
 
 // Game Objectives
 \* Enter the {CelestialTower}.
 \* Figure out what the mages are up to.
+# IMAGE: images/celestial-tower.png
+
 
     +[Ω]
         ->02StartMenu
@@ -151,7 +156,8 @@ You head to the kitchen. No one is around except {~a couple rats chewing on mold
 - for {2+d4()} floors.
     + [next]
 - {d4()+1} SKELETONS come from the stairs above.
-        // https://www.dndbeyond.com/
+# IMAGE: images/skeleton.jpeg
+
 - (combat1)
 - {CombatStart}
 - You:
