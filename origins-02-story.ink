@@ -53,6 +53,7 @@ OBJECTIVES for {Season02}
 
 === 02Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle/Role play Challenge
+# IMAGE: images/celestial-tower-outside.png
 {02EpisodeOne}
 - You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick moss and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied.
 - {TheCleric}: Mr. Kepler, one of the mages, wrote a book that I just so happen to have in my BAG OF HOLDING. I think we should read "Astronomia nova" before going inside.
@@ -232,8 +233,10 @@ Combat actions by individuals and each party are determined LIVE in class and no
 (reload the webpage to start again) ->END
 -- (missed_concept) ->concept_keys
 + {correct_concept ==4} [UNLOCKED!]
-- You unlock and open the notebook!
+- You unlock and open the notebook and notice a sketch
 Unfortunately, the mage has also left a guardian as a trap and the trap has been triggered. A monster oozes from behind towards the party.
+# IMAGE: images/brahe-kepler-drawings.png
+# IMAGE: images/star-fusion.png
 
 - (enter_tower_study)
     +[Ω]
@@ -249,8 +252,12 @@ The room is filled with tombs of knowledge, thick stacks of parchment, and appar
 {02EpisodeFour}
 A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway that leads into and out of the study's.
 - Battle the GELATINOUS CUBE
+# IMAGE: images/gel-cube.jpeg
+
 + VICTORY
 + DEFEAT
+# IMAGE: images/gel-cube.jpeg
+
 - With a shudder, the previously coagulated cube collapses and becomes an oozing puddle.
 + You inspect and loot the puddle with your hand.
 -- You take acid damage on your hand every 5 seconds you are in contact with the ooze.
@@ -260,6 +267,8 @@ A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway t
 -- {TheCleric}: I've got a bad feeling about this. Let's take a closer look at the puddle.
 The part goes back in and {theFighter} swishes the ooze around with his hand and takes acid damage in the process.
 - You notice an unusual ore left on the floor from the CUBE. You stuff the ore and mage's notebook into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
+# IMAGE: images/thorium.png
+
     +[Ω]
         ->02StartMenu
     +[NEXT EPISODE]
