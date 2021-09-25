@@ -16,14 +16,10 @@ PROLOGUE
 - You are unconscious in some bushes along the side of a dirt path in the forest. You start to stir...
     + [next]
 - (episode_end)
-- \ (Each "Season" story will have a summary of objectives. Objectives may include learning science ideas and game-only goals. The summary will usually be in the PROLOGUE of the story)
-    + [next]
+// \ (Each "Season" story will have a summary of objectives. Objectives may include learning science ideas and game-only goals. The summary will usually be in the PROLOGUE of the story)
 - OBJECTIVES for {Season01}
 // Learning Objectives
-\* Answer the Enduring Questions:
-\-- {Q01}
-\ -- {Q01b}
-
+\* Discover and use helpful "Habits of Mind"
 // Phenomena
 //\* Explain the phenomena of {Ph01}.
 
