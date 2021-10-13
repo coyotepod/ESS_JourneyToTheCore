@@ -29,7 +29,6 @@ PROLOGUE
 - You:
     + "Lets head to the {CelestialTower}."
 - (episode_end)
-TODO: Change "04" to specific Season
 OBJECTIVES for {Season02}
 // Learning Objectives
 //\* Answer the Enduring Question: {Q02a}
@@ -55,11 +54,11 @@ OBJECTIVES for {Season02}
 // Room 1: Guardian OR Room 2: Puzzle/Role play Challenge
 # IMAGE: images/celestial-tower-outside.png
 {02EpisodeOne}
-- You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick moss and ivy cover many of the stones. The tower is the only thing really left standing. The place looks more abandoned than occupied.
-- {TheCleric}: Mr. Kepler, one of the mages, wrote a book that I just so happen to have in my BAG OF HOLDING. I think we should read "Astronomia nova" before going inside.
+- You arrive at the {CelestialTower} without incident. Many stones have fallen from the wall. Thick moss and ivy cover many of the stones.
+- {TheCleric}: Mr. Kepler, one of the mages, wrote a book that I just so happen to have in my BAG OF HOLDING. I think we should read <i>Astronomia nova</i> before going inside.
 # IMAGE: images/astronomia-nova.jpg
 - You: <>
-    + Great idea! Its best to be prepared.
+    + "Great idea! Its best to be prepared."
     -- (Astronomia_Nova) {TheCleric} opens the book and reads.
         Tycho Brahe is {Brahe}.
         {BraheAbout}
@@ -67,31 +66,31 @@ OBJECTIVES for {Season02}
     -- Johannes Kepler is {Kepler}.
         {KeplerAbout}
     ++ You: "Lets go in now."
-    + I don't see the point.
+    + "I don't see the point."
 - {TheFighter} knocks on the door.
 - The castellan opens the door.
 - The castellan: "Greetings. I am {Castellan}."
-- With exasperation {Castellan}: "Another party of adventurers hoping to earn easy gold from the royal family? Save yourself the trouble and go home."
+- With exasperation, {Castellan}: "Another party of adventurers hoping to earn easy gold from the royal family? Save yourself the trouble and go home."
 - {TheFighter} turns to go, but {theCleric} stops the fighter with a hand on the shoulder.
 - You: <>
-    + Yes, this was a bad idea.
-    + We are assistants to the mages.
-- {Castellan}: Really? <>
-    + {not Astronomia_Nova} I don't believe you.
+    + "Yes, this was a bad idea."
+    + "We are the new assistants to the mages."
+- {Castellan}: "Really? <>
+    + {not Astronomia_Nova} I don't believe you."
       ->enter_side
-    + {Astronomia_Nova } Then you should have no problem providing evidence to your claim.
+    + {Astronomia_Nova } Then you should have no problem providing evidence to your claim."
         -- You: Sure,
         ++ Brahe thinks our planet is at the center of the universe and our solar system
             --- Incorrect!
             ->enter_side
         ++ Brahe thinks the our planet is at the center of the solar system, but not the universe
-        --- Imbeciles!
+        --- Ha!
         ->enter_side
         ++ Brahe thinks the nearby planets orbit the sun but the sun orbits our planet.
         -> enter_front
 - (enter_front)
-- {Castellan}: Sorry for doubting you
-- {TheWizard}: We weren't finished. We have reason and evidence to support the idea that the planets orbit the sun as Brahe stated, BUT our planet also orbits the sun.
+- {Castellan}: "Sorry for doubting you"
+- {TheWizard}: "We weren't finished. We have reason and evidence to support the idea that the planets orbit the sun as Brahe stated, BUT our planet also orbits the sun."
 + [next]
 - {Castellan}: Oh my, now that's an original! I'm sure Master Brahe and Kepler will have...thoughts on your idea. A word of advice; move cautiously up to the 13th floor to meet them. You are likely to encounter...less problems.
 + [next]
@@ -110,21 +109,24 @@ The party walks down the path a little aways from the tower and stops to talk.
 - (open_the_door)
     + Ask {TheFighter} to break down the door.
     -- ROLL a STRENGTH check
+    // DC of 10
     ++ [Success]
     ++ [Fail] ->open_the_door
     + You attempt to pick the lock.
     -- ROLL a DEXTERITY check
+    // DC of 15
     ++ [Success]
     ++ [Fail] ->open_the_door
     + Ask {TheWizard} to use a spell to unlock the door.
     -- ROLL a WISDOM check
+    // DC 12
     ++ [Success]
     ++ [Fail] ->open_the_door
 - (enter_celestial_towers)
 - (end_episode)
     +[Ω]
         ->02StartMenu
-    + {enter_side} You: Probably not the best plan, but being adaptable is an important trait, too. [next]
+    + {enter_side} You: "Probably not the best plan, but being adaptable is an important trait, too". [next]
         ->02Ep2.Side_Door
     + {enter_front} [next]
         ->02Ep2.Front_Door
@@ -255,9 +257,14 @@ A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway t
 # IMAGE: images/gel-cube.jpeg
 
 + VICTORY
+    ->cube_victory
 + DEFEAT
 # IMAGE: images/gel-cube.jpeg
-
+      ->cube_death
+        -- (cube_death) A man in the shadows watches your party fall to the floor and the gelatinous cube slowly engulf your bodies. The acidic fluids quickly melt away your remains. You die an inglorious death.
+        ++ [next]
+            --> 02StartMenu
+--(cube_victory)            
 - With a shudder, the previously coagulated cube collapses and becomes an oozing puddle.
 + You inspect and loot the puddle with your hand.
 -- You take acid damage on your hand every 5 seconds you are in contact with the ooze.
@@ -265,7 +272,8 @@ A GELATINOUS CUBE is slowly approaching from the hall and blocking the doorway t
 -- {TheWizard} casts "MAGE HAND" and loots the puddle without taking any damage.
 + Avoid the puddle entirely and leave the room.
 -- {TheCleric}: I've got a bad feeling about this. Let's take a closer look at the puddle.
-The part goes back in and {theFighter} swishes the ooze around with his hand and takes acid damage in the process.
+The party goes back in and {theFighter} carelessly swishes the ooze around with his hand and takes acid damage in the process. {RANDOM(1,4)} additional party members also takes damage. 
+- <i>Roll table and seat number to see if anyone else gets acid splashed on them. Roll determines the seat location. A saving throw may be attempted.</i>
 - You notice an unusual ore left on the floor from the CUBE. You stuff the ore and mage's notebook into a bag of holding. Later, you can always seek someone more knowledgeable about ore.
 # IMAGE: images/thorium.png
 
@@ -283,13 +291,17 @@ The part goes back in and {theFighter} swishes the ooze around with his hand and
 - You make your way back to the Blue Mug Inn & Tavern. You go through the notebook and find an encoded message code.
 + [next]
 - (encoded_message) Ask the Game Master for a copy of the coded message if you're up to the challenge.
+
+01010100 01101000 01100101 00100000 01100110 01101111 01110010 01100011 01100101 01110011 00100000 01101111 01100110 00100000 01100001 01101001 01110010 00101100 00100000 01100110 01101001 01110010 01100101 00101100 00100000 01100101 01100001 01110010 01110100 01101000 00100000 01100001 01101110 01100100 00100000 01110111 01100001 01110100 01100101 01110010 00100000 01110011 01101000 01100001 01101100 01101100 00100000 01100010 01100101 01100111 01101001 01101110 00100000 01100001 01101110 01100101 01110111 00100000 01110111 01101001 01110100 01101000 00100000 01100001 00100000 01000010 01101001 01100111 00100000 01000010 01100001 01101110 01100111
+// The forces of air, fire, earth and water shall begin anew with a Big Bang
+
 + SUCCESS
 + FAIL (for now)
 -- Comeback another time after you've figured it out.
 -- END for now ->END
 + A hint please?
-++ [The language of Dr. Who] ->encoded_message
-- The party deciphers the Gallifreyan code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
+++ [The language of an automated apparatus] ->encoded_message
+- The party deciphers the code. The encoded message code talks of an evil plot to remake the universe. This mage has found a way to somehow recreate the Big Bang using a combination of elemental forces - air, fire, earth, and water.  It is unclear if Brahe and Kepler are behind the plan or if their discoveries are being used for ill purposes without their consent.
 + [next]
 - You take the ore to your blacksmithing friend, a dwarf.
 {DwarfSmith}: it is an ore called a meteorite. It originates from the celestial plane. This rock possess unique properties. They are extremely rare and often used in enchanted crafts. How did you come by it?
