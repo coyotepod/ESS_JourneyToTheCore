@@ -237,8 +237,13 @@ Combat actions by individuals and each party are determined LIVE in class and no
 + {correct_concept ==4} [UNLOCKED!]
 - You unlock and open the notebook and notice a sketch
 Unfortunately, the mage has also left a guardian as a trap and the trap has been triggered. A monster oozes from behind towards the party.
-# IMAGE: images/brahe-kepler-drawings.png
-# IMAGE: images/star-fusion.png
+# IMAGE: images/NotebookSketch_1.png
+# IMAGE: images/NotebookSketch_2.png
+# IMAGE: images/NotebookSketch_3.png
+# IMAGE: images/NotebookSketch_4.png
+# IMAGE: images/NotebookSketch_5.png
+# IMAGE: images/NotebookSketch_6.png
+
 
 - (enter_tower_study)
     +[Ω]
