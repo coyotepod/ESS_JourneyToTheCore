@@ -19,12 +19,12 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 30pt;
+    font-size: 2em; // 30pt
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 14pt;
+    font-size: 2em; //14pt
     font-style: italic;
     font-family: sans-serif;
     font-weight: lighter;
@@ -88,8 +88,8 @@ h3.written-in-ink {
 }
 
 p {
-    font-size: 13pt;
-    color: #888;
+    font-size: 1em; //13pt
+    color: #FFF;
     line-height: 1.7em;
     font-weight: lighter;
 }
