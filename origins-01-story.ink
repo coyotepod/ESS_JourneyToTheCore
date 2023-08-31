@@ -138,9 +138,9 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 {01EpisodeThree}
 # IMAGE: images/village-hut.jpg
 - You are greeted by a weathered signpost "Canis Villa".
-- You walk towards the village center. Its an opens grassy courtyard loosely surrounded by a variety of stout timbered buildings. You look around.
+- You walk towards the village center. Its an open grassy courtyard, loosely surrounded by a variety of stout timbered buildings. You look around.
     + [next]
-# IMAGE: images/CanisVilla.png
+# IMAGE: origins-01/images/CanisVilla.png
 - (courtyard_views)
 
 
@@ -185,15 +185,14 @@ An overgrown single-track trail snakes westwards towards a dark foreboding tower
 - Serving maid: "Welcome weary adventurer! I'm {Maid}. What can I get you?" she says with a {~ kind | warm | big} smile.
     + You: Who owns this establishment?
         -- {Maid}: That'd be {Innkeeper}. She's a fine lady with good food, honest prices and never waters down the ale.
-    + You: "What good food and drink do you have?"
+    + You: What good food and drink do you have?
         -- {Maid}: Today we're cooking up{~ roasted boar| chicken| vegetables}
-        ++ You: That sounds good, but I just remembered I have no coin.
+        ++ You: That sounds good, but I have no coin.
         // ++ You: Not what you were hoping for, but reply "OK, I'll have some."
         -- {Maid}: You're always welcome to work off the debt by helping in the stables.
         // -- The meal is good and quickly finish eating. Your thoughts go back to earlier encounters. You were not well prepared. {Maid} comes back to the table.
         ++ [next]
-- You: Wow, thanks! I've had a rough go of it latetly.
-- You: I need to be better prepared for future adventures.
+- You: Thanks! I've had a rough go of it latetly. I need to be better prepared for future adventures.
 - {Maid}: I suggest you to seek a Master trainer. The royal army rarely makes it to small villages like ours, so we've had to learn to protect ourselves. (she finishes with obvious pride)
     + You: What's a Master do?
 - {Maid}: Most villages have at least one Master though occasionaly there are two.
